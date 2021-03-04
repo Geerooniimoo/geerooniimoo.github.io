@@ -1,0 +1,5 @@
+#topDiv {
+    height: 75vh;
+    /* border-radius: 0 0 0 25mm; */
+    background-image: linear-gradient(10deg, transparent 45%,darkcyan,black);
+}
