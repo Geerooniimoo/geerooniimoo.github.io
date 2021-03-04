@@ -3,3 +3,19 @@
     /* border-radius: 0 0 0 25mm; */
     background-image: linear-gradient(10deg, transparent 45%,darkcyan,black);
 }
+
+#title {
+    transform: skewX(-45deg);
+    width: 40rem;
+    box-shadow: 45px 35px 5px gray;
+    border-radius: 0 15px;
+    padding: 25px;
+}
+
+#title h1 {
+    transform: skewX(45deg);
+}
+
+.modal-dialog {
+    max-width: 80%;
+}
