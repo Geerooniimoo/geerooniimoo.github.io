@@ -1,6 +1,7 @@
 #topDiv {
     height: 75vh;
-    /* border-radius: 0 0 0 25mm; */
+    /* border: 1px solid; */
+    padding-top: 1vh;
     background-image: linear-gradient(10deg, transparent 45%,darkcyan,black);
 }
 
@@ -8,8 +9,12 @@
     transform: skewX(-45deg);
     width: 40rem;
     box-shadow: 45px 35px 5px gray;
+    border: 2px solid white;
+    /* border-right: 2px solid white; */
     border-radius: 0 15px;
     padding: 25px;
+    margin:30vh auto 7vh auto;
+    text-anchor: middle;
 }
 
 #title h1 {
@@ -18,4 +23,9 @@
 
 .modal-dialog {
     max-width: 80%;
+}
+
+.accordion {
+    width: 20rem;
+    margin: 0 auto;
 }
