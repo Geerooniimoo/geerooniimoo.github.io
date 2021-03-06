@@ -19,6 +19,7 @@
 
 #title h1 {
     transform: skewX(45deg);
+    font-size: 2rem;
 }
 
 .modal-dialog {
