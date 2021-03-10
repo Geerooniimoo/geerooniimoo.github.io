@@ -15,11 +15,27 @@
     <div id="topDiv">
         <div id='title' class="bg-dark text-white">
             <h1 class="text-center">
-                Hi, I'm Geronimo, a tutor.<br>How can I help?
+                Hi, my name is Geronimo and I'm a tutor.<br>How can I help?
             </h1>
         </div>
-
+        
         <div class="accordion accordion-flush mt-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Schedule Session
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="https://calendly.com/geronimo-perez/50-minute-tutoring-session-1">Calendly</a>
+    
+                    </div>
+                </div>
+            </div>
+
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -80,7 +96,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionFour">
+                                    data-bs-parent="#accordionFive">
                                     <div class="accordion-body">
                                         Computer Science applied to JavaScript (Design Patterns, Data Structures,
                                         Algorithms, Big O Notation), Browser Based Technologies (HTML, CSS, JavaScript,
@@ -115,37 +131,13 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a class="col-md-3 pb-2 text-decoration-none"
                                     class="col-md-3 pb-2" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#github-history">History</a></li>
+                                    data-bs-target="#repos">Repositories</a></li>
                             <li class="breadcrumb-item"><a class="col-md-3 pb-2 text-decoration-none"
                                     class="col-md-3 pb-2" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#repos">Repositories</a></li>
+                                    data-bs-target="#github-history">History</a></li>
                             <li class="breadcrumb-item"><a class="col-md-3 pb-2 text-decoration-none"
                                     href="https://github.com/Geerooniimoo">Website</a></li>
                         </ol>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Accordion Item #3
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These
-                        classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                        can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth
-                        noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the
-                        transition
-                        does limit overflow.
                     </div>
                 </div>
             </div>
@@ -153,115 +145,120 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="github-history" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Github History under Geerooniimoo</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img class="w-100" src='assets/images/Github-2021.png'>
-                    <img class="w-100" src='assets/images/Github-2020.png'>
-                    <img class="w-100" src='assets/images/Github-2019.png'>
-                    <img class="w-100" src='assets/images/Github-2018.png'>
-                    <img class="w-100" src='assets/images/Github-2017.png'>
+    <div>
+        <div class="modal fade" id="github-history" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Github History under Geerooniimoo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="w-100" src='assets/images/Github-2021.png'>
+                        <img class="w-100" src='assets/images/Github-2020.png'>
+                        <img class="w-100" src='assets/images/Github-2019.png'>
+                        <img class="w-100" src='assets/images/Github-2018.png'>
+                        <img class="w-100" src='assets/images/Github-2017.png'>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="modal fade" id="repos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title ms-auto" id="exampleModalLabel">Github History under Geerooniimoo</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade" id="repos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title ms-auto" id="exampleModalLabel">Github History under Geerooniimoo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid row">
+                            <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#leaflet" href="#">Leaflet-challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Geerooniimoo.io</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">D3-Challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">python-api-challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#pandas" href="#">pandas-challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">plotly-challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">SQLAlchemy-Challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Mission_To_Mars</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">matplotlib-challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">NFL-RECORDS</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">heroesmemorygame</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">VBA-Scripting</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">SQL-Challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">infosectechnology</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">SpiritualEngineering</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">JavaScript-Challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Web-Design-Challenge</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Mission_to_Jupiter</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Password-Generator</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">FriendFinder</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Gamazon</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">realnewslinks</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">HYBC</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">New-York-Times-API</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">liri-node-app</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">WeatherForecast</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">GifTastic</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Calender</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">crudaburger</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">porfolio</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">NodeGuessGame</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">TrainScheduler</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">CristalCollectorGame</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Hangman-Game</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">BoxingGame</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Responsive-HYBC</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Bootstrap-Portfolio</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" href="#">Basic-Portfolio</a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <div class="container-fluid row">
-                        <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#leaflet"
-                            href="#">Leaflet-challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Geerooniimoo.io</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">D3-Challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">python-api-challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#pandas"
-                            href="#">pandas-challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">plotly-challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">SQLAlchemy-Challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Mission_To_Mars</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">matplotlib-challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">NFL-RECORDS</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">heroesmemorygame</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">VBA-Scripting</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">SQL-Challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">infosectechnology</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">SpiritualEngineering</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">JavaScript-Challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Web-Design-Challenge</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Mission_to_Jupiter</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Password-Generator</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">FriendFinder</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Gamazon</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">realnewslinks</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">HYBC</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">New-York-Times-API</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">liri-node-app</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">WeatherForecast</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">GifTastic</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Calender</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">crudaburger</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">porfolio</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">NodeGuessGame</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">TrainScheduler</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">CristalCollectorGame</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Hangman-Game</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">BoxingGame</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Responsive-HYBC</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Bootstrap-Portfolio</a>
-                        <a class="col-md-3 pb-2 text-decoration-none" href="#">Basic-Portfolio</a>
-                        </ul>
+            </div>
+        </div>
+
+        <div class="modal fade" id="leaflet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title ms-auto" id="exampleModalLabel">Leaflet-Challenge preview</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="my-4"><img src="./assets/images/leaflet-summary.png" class="w-100" alt="summary">
+                        </div>
+                        <div class="my-4"><img src="./assets/images/leaflet-map1.png" class="w-100" alt="map1"></div>
+                        <div class="my-4"><img src="./assets/images/leaflet-map2.png" class="w-100" alt="map2"></div>
+                        <div class="my-4"><img src="./assets/images/leaflet-map3.png" class="w-100" alt="map3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="pandas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title ms-auto" id="exampleModalLabel">Pandas-Challenge preview</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="my-4"><img src="./assets/images/pandas-4.png" class="w-100" alt="summary"></div>
+                        <div class="my-4"><img src="./assets/images/pandas-5.png" class="w-100" alt="pandas-5"></div>
+                        <div class="my-4"><img src="./assets/images/pandas-6.png" class="w-100" alt="pandas-6"></div>
+                        <div class="my-4"><img src="./assets/images/pandas-1.png" class="w-100" alt="pandas-1"></div>
+                        <div class="my-4"><img src="./assets/images/pandas-2.png" class="w-100" alt="pandas-2"></div>
+                        <div class="my-4"><img src="./assets/images/pandas-3.png" class="w-100" alt="pandas-3"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="leaflet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title ms-auto" id="exampleModalLabel">Leaflet-Challenge preview</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="my-4"><img src="./assets/images/leaflet-summary.png" class="w-100" alt="summary">
-                    </div>
-                    <div class="my-4"><img src="./assets/images/leaflet-map1.png" class="w-100" alt="map1"></div>
-                    <div class="my-4"><img src="./assets/images/leaflet-map2.png" class="w-100" alt="map2"></div>
-                    <div class="my-4"><img src="./assets/images/leaflet-map3.png" class="w-100" alt="map3"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="pandas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title ms-auto" id="exampleModalLabel">Pandas-Challenge preview</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="my-4"><img src="./assets/images/pandas-4.png" class="w-100" alt="summary"></div>
-                    <div class="my-4"><img src="./assets/images/pandas-5.png" class="w-100" alt="pandas-5"></div>
-                    <div class="my-4"><img src="./assets/images/pandas-6.png" class="w-100" alt="pandas-6"></div>
-                    <div class="my-4"><img src="./assets/images/pandas-1.png" class="w-100" alt="pandas-1"></div>
-                    <div class="my-4"><img src="./assets/images/pandas-2.png" class="w-100" alt="pandas-2"></div>
-                    <div class="my-4"><img src="./assets/images/pandas-3.png" class="w-100" alt="pandas-3"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
