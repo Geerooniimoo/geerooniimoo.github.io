@@ -13,7 +13,7 @@
     /* border-right: 2px solid white; */
     border-radius: 0 15px;
     padding: 25px;
-    margin:30vh auto 7vh auto;
+    margin:10vh auto 7vh auto;
     text-anchor: middle;
 }
 
@@ -31,6 +31,7 @@
     margin: 0 auto;
 }
 
-/* .accordion-body {
-    text-align: justify;
-} */
+.sessions {
+    margin-top: 15vh;
+    text-shadow: 5px 5px 5px black;
+}
