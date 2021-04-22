@@ -629,65 +629,41 @@
                             <h6>Created Climate App</h6>
                             Designed a Flask API based on the queries developed and created the following routes:
                             <ul>
-                                <li>"/" - Home page List all routes that are available</li>
-                                <li>"/api/v1.0/precipitation" - Converts the query results to a dictionary using "date" as the key and "prcp" as the value Returns the JSON representation a dictionary</li>
-                                <li>"/api/v1.0/stations" - Returns a JSON list of stations from the dataset</li>
-                                <li>"/api/v1.0/tobs" - Queries the dates and temperature observations of the most active station for the last year of data Returns a JSON list of temperature observations (TOBS) for the previous year</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li><i>"/" -</i> Home page List all routes that are available</li>
+                                <li><i>"/api/v1.0/precipitation" - </i>Converts the query results to a dictionary using
+                                    "date" as the key and "prcp" as the value Returns the JSON representation a
+                                    dictionary</li>
+                                <li><i>"/api/v1.0/stations" - </i>Returns a JSON list of stations from the dataset</li>
+                                <li><i>"/api/v1.0/tobs" - </i>Queries the dates and temperature observations of the most
+                                    active station for the last year of data Returns a JSON list of temperature
+                                    observations (TOBS) for the previous year</li>
+                                <li><i>"/api/v1.0/<start>" and "/api/v1.0/<start>/<end>" - </i>Returns a JSON list of
+                                    the minimum temperature, the average temperature,
+                                    and the max temperature for a given start or start-end range When given the start
+                                    only, calculate "TMIN", "TAVG", and "TMAX" for all dates greater than and equal to
+                                    the start date When given the start and the end date, calculate the "TMIN", "TAVG",
+                                    and "TMAX" for dates between the start and end date inclusive</li>
                             </ul>
-                             
-                            
-                            
-                            
-                            
-                            
-                            
-                            "/api/v1.0/<start>" and "/api/v1.0/<start>/<end>" - Returns a JSON list of the minimum temperature, the average temperature,
-                                        and the max temperature for a given start or start-end range
-                                        When given the start only, calculate "TMIN", "TAVG", and "TMAX" for all
-                                        dates greater than and equal to the start date
-                                        When given the start and the end date, calculate the "TMIN", "TAVG", and
-                                        "TMAX" for dates between the start and end date inclusive
-                                        <p>
-                                            ### Temperature Analysis I
-                                            * Hawaii is reputed to enjoy mild weather all year. Is there a meaningful
-                                            difference
-                                            between the temperature in, for example, June and December?
-                                            * Used pandas to perform this portion
-                                            * Converted the date column format from string to datetime
-                                            * Set the date column as the DataFrame index
-                                            * Dropped the date column
-                                            * Identified the average temperature in June at all stations across all
-                                            available years
-                                            in the dataset. Did the same for December temperature
-                                            * Use the t-test to determine whether the difference in the means, if any,
-                                            is
-                                            statistically significant
-                                        </p>
-                                        <p>
-                                            ### Temperature Analysis II
-                                            * The starter notebook contains a function called "calc_temps" that will
-                                            accept a start
-                                            date and end date in the format "%Y-%m-%d". The function will return the
-                                            minimum,
-                                            average, and maximum temperatures for that range of dates.
-                                            * Used the "calc_temps" function to calculate the min, avg, and max
-                                            temperatures for
-                                            trips using the matching dates from a previous year (i.e., use
-                                            "2017-08-01").
-                                            * Plotted the min, avg, and max temperature from previous query as a bar
-                                            chart
-                                            * Use the average temperature as the bar height (y value).
-                                            * Use the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR)
-                                        </p>
-                                        <div class="row mt-4 bg-dark p-4">
-                                            <div class="col-md-2"></div>
-                                            <div class="col-md-8"><img src="./assets/images/plotly_1.png" class="w-100"
-                                                    alt="jup_3">
-                                            </div>
-                                        </div>
+                                <h6>Temperature Analysis I</h6>
+                                Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in, for example, June and December?
+                                <li> Used pandas to perform this portion </li>
+                                <li> Converted the date column format from string to datetime</li>
+                                <li> Set the date column as the DataFrame index</li>
+                                <li> Dropped the date column</li>
+                                <li> Identified the average temperature in June at all stations across all
+                                available years in the dataset. Did the same for December temperature</li>
+                                <li> Use the t-test to determine whether the difference in the means, if any, is statistically significant</li>
+                                <h6> Temperature Analysis II</h6>
+                                <li> The starter notebook contains a function called "calc_temps" that will accept a start date and end date in the format "%Y-%m-%d". The function will return the minimum, average, and maximum temperatures for that range of dates</li>
+                                <li> Used the "calc_temps" function to calculate the min, avg, and max temperatures for trips using the matching dates from a previous year (i.e., use "2017-08-01")</li> 
+                                <li> Plotted the min, avg, and max temperature from previous query as a bar chart</li>
+                                <li> Use the average temperature as the bar height (y value).</li>
+                                <li> Use the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR)</li>
+                            <div class="row mt-4 p-4">
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_2.png" class="w-100" ></div>
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_3.png" class="w-100" ></div>
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_4.png" class="w-100" ></div>
+                            </div>
                         </div>
                     </div>
                 </div>
