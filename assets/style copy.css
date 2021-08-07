@@ -1,0 +1,37 @@
+#topDiv {
+    height: 75vh;
+    /* border: 1px solid; */
+    padding-top: 1vh;
+    background-image: linear-gradient(10deg, transparent 45%,darkcyan,black);
+}
+
+#title {
+    transform: skewX(-45deg);
+    width: 45rem;
+    box-shadow: 45px 35px 5px gray;
+    border: 2px solid white;
+    /* border-right: 2px solid white; */
+    border-radius: 0 15px;
+    padding: 25px;
+    margin:10vh auto 7vh auto;
+    text-anchor: middle;
+}
+
+#title h1 {
+    transform: skewX(45deg);
+    font-size: 2rem;
+}
+
+.modal-dialog {
+    max-width: 80%;
+}
+
+.accordion {
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.sessions {
+    margin-top: 15vh;
+    text-shadow: 5px 5px 5px black;
+}
