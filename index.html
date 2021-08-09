@@ -16,11 +16,12 @@
         <div class="sessions mb-4">
             <h4 class="text-center text-white pb-2 fst-italic">Tutored over 2,500 sessions</h4>
         </div>
-        
+
         <div id='title' class="bg-dark text-white m-auto">
             <h4 class="text-center p-3">
-                Hi, I'm <a href="https://linkedin.com/in/geronimoperez"> <span class="text-danger fst-italic"> Geronimo</span></a>, <br> a data analytics and web developer tutor.<br>  How can I help?
-            </h4> 
+                Hi, I'm <a href="https://linkedin.com/in/geronimoperez"> <span class="text-danger fst-italic">
+                        Geronimo</span></a>, <br> a data analytics and web developer tutor.<br> How can I help?
+            </h4>
         </div>
 
         <div class="accordion accordion-flush mt-5" id="accordionExample">
@@ -203,8 +204,8 @@
                                 href="#">Password-Generator</a>
                             <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
                                 href="#">FriendFinder</a>
-                            <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
-                                href="#">Gamazon</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#gamazon" href="#">Gamazon</a>
                             <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
                                 href="#">realnewslinks</a>
                             <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
@@ -646,25 +647,167 @@
                                     the start date When given the start and the end date, calculate the "TMIN", "TAVG",
                                     and "TMAX" for dates between the start and end date inclusive</li>
                             </ul>
-                                <h6>Temperature Analysis I</h6>
-                                Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in, for example, June and December?
-                                <li> Used pandas to perform this portion </li>
-                                <li> Converted the date column format from string to datetime</li>
-                                <li> Set the date column as the DataFrame index</li>
-                                <li> Dropped the date column</li>
-                                <li> Identified the average temperature in June at all stations across all
+                            <h6>Temperature Analysis I</h6>
+                            Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between
+                            the temperature in, for example, June and December?
+                            <li> Used pandas to perform this portion </li>
+                            <li> Converted the date column format from string to datetime</li>
+                            <li> Set the date column as the DataFrame index</li>
+                            <li> Dropped the date column</li>
+                            <li> Identified the average temperature in June at all stations across all
                                 available years in the dataset. Did the same for December temperature</li>
-                                <li> Use the t-test to determine whether the difference in the means, if any, is statistically significant</li>
-                                <h6> Temperature Analysis II</h6>
-                                <li> The starter notebook contains a function called "calc_temps" that will accept a start date and end date in the format "%Y-%m-%d". The function will return the minimum, average, and maximum temperatures for that range of dates</li>
-                                <li> Used the "calc_temps" function to calculate the min, avg, and max temperatures for trips using the matching dates from a previous year (i.e., use "2017-08-01")</li> 
-                                <li> Plotted the min, avg, and max temperature from previous query as a bar chart</li>
-                                <li> Use the average temperature as the bar height (y value).</li>
-                                <li> Use the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR)</li>
+                            <li> Use the t-test to determine whether the difference in the means, if any, is
+                                statistically significant</li>
+                            <h6> Temperature Analysis II</h6>
+                            <li> The starter notebook contains a function called "calc_temps" that will accept a start
+                                date and end date in the format "%Y-%m-%d". The function will return the minimum,
+                                average, and maximum temperatures for that range of dates</li>
+                            <li> Used the "calc_temps" function to calculate the min, avg, and max temperatures for
+                                trips using the matching dates from a previous year (i.e., use "2017-08-01")</li>
+                            <li> Plotted the min, avg, and max temperature from previous query as a bar chart</li>
+                            <li> Use the average temperature as the bar height (y value).</li>
+                            <li> Use the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR)</li>
                             <div class="row mt-4 p-4">
-                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_2.png" class="w-100" ></div>
-                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_3.png" class="w-100" ></div>
-                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_4.png" class="w-100" ></div>
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_2.png" class="w-100"></div>
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_3.png" class="w-100"></div>
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_4.png" class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hide" id="gamazon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title ms-auto" id="exampleModalLabel">SQL Database Manipulation with Javascript
+                            and Node</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="./assets/images/gamazon1.jpg" alt="" class="w-100">
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <h4>Gamazon</h4>
+                                        <h6>Use:</h6>
+                                        <ul>
+                                            <li>
+                                                Python and SQLAlchemy to do basic climate analysis and data exploration
+                                                of
+                                                climate
+                                                database using SQLAlchemy ORM queries, Pandas, and Matplotlib
+                                            </li>
+                                            <li>
+                                                SQLAlchemy "create_engine" to connect to an sqlite database
+                                            </li>
+                                            <li>
+                                                SQLAlchemy "automap_base()" to reflect tables into classes and save a
+                                                reference
+                                            </li>
+                                            <li>
+                                                Linked Python to the database by creating an SQLAlchemy session.
+                                            </li>
+                                        </ul>
+                                        <h6>Precipitation Analysis</h6>
+                                        <ul>
+                                            <li>
+                                                Loaded the query results into a Pandas DataFrame
+                                            </li>
+                                            <li>
+                                                Use Pandas to print the summary statistics for the precipitation data
+                                            </li>
+                                        </ul>
+                                        <h6>Station Analysis</h6>
+                                        Used function "func.min", "func.max", "func.avg", and "func.count" in queries
+                                        and
+                                        designed
+                                        queries to:
+                                        <ul>
+                                            <li>calculate the total number of stations in the dataset</li>
+                                            <li>find the most active stations</li>
+                                            <li>List the stations and observation counts in descending order</li>
+                                            <li>calculated the lowest, highest, and average temperature</li>
+                                            <li>retrieved the last 12 months of temperature observation data (TOBS)</li>
+                                            <li>Filtered by the station with the highest number of observations</li>
+                                            <li>Ploted the results as a histogram with "bins=12"</li>
+                                        </ul>
+                                        <h6>Created Climate App</h6>
+                                        Designed a Flask API based on the queries developed and created the following
+                                        routes:
+                                        <ul>
+                                            <li><i>"/" -</i> Home page List all routes that are available</li>
+                                            <li><i>"/api/v1.0/precipitation" - </i>Converts the query results to a
+                                                dictionary
+                                                using
+                                                "date" as the key and "prcp" as the value Returns the JSON
+                                                representation a
+                                                dictionary</li>
+                                            <li><i>"/api/v1.0/stations" - </i>Returns a JSON list of stations from the
+                                                dataset
+                                            </li>
+                                            <li><i>"/api/v1.0/tobs" - </i>Queries the dates and temperature observations
+                                                of the
+                                                most
+                                                active station for the last year of data Returns a JSON list of
+                                                temperature
+                                                observations (TOBS) for the previous year</li>
+                                            <li><i>"/api/v1.0/<start>" and "/api/v1.0/<start>/<end>" - </i>Returns a
+                                                JSON list
+                                                of
+                                                the minimum temperature, the average temperature,
+                                                and the max temperature for a given start or start-end range When given
+                                                the
+                                                start
+                                                only, calculate "TMIN", "TAVG", and "TMAX" for all dates greater than
+                                                and equal
+                                                to
+                                                the start date When given the start and the end date, calculate the
+                                                "TMIN",
+                                                "TAVG",
+                                                and "TMAX" for dates between the start and end date inclusive</li>
+                                        </ul>
+                                        <h6>Temperature Analysis I</h6>
+                                        Hawaii is reputed to enjoy mild weather all year. Is there a meaningful
+                                        difference
+                                        between the temperature in, for example, June and December?
+                                        <li> Used pandas to perform this portion </li>
+                                        <li> Converted the date column format from string to datetime</li>
+                                        <li> Set the date column as the DataFrame index</li>
+                                        <li> Dropped the date column</li>
+                                        <li> Identified the average temperature in June at all stations across all
+                                            available years in the dataset. Did the same for December temperature</li>
+                                        <li> Use the t-test to determine whether the difference in the means, if any, is
+                                            statistically significant</li>
+                                        <h6> Temperature Analysis II</h6>
+                                        <li> The starter notebook contains a function called "calc_temps" that will
+                                            accept a
+                                            start date and end date in the format "%Y-%m-%d". The function will return
+                                            the
+                                            minimum, average, and maximum temperatures for that range of dates</li>
+                                        <li> Used the "calc_temps" function to calculate the min, avg, and max
+                                            temperatures for
+                                            trips using the matching dates from a previous year (i.e., use "2017-08-01")
+                                        </li>
+                                        <li> Plotted the min, avg, and max temperature from previous query as a bar
+                                            chart</li>
+                                        <li> Use the average temperature as the bar height (y value).</li>
+                                        <li> Use the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR)</li>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4 p-4">
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_2.png" class="w-100"></div>
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_3.png" class="w-100"></div>
+                                <div class="col-md-4"><img src="./assets/images/sqlalchemy_4.png" class="w-100"></div>
                             </div>
                         </div>
                     </div>
