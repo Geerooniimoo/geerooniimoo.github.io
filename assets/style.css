@@ -21,7 +21,6 @@
 
 #title h4, #title a {
     transform: skewX(-40deg);
-    text-decoration: none;
 }
 
 .modal-dialog {
