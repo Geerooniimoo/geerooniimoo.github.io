@@ -745,118 +745,124 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h4 class="text-center">It's like iPhone's SIRI</h4>
+                        <div class="container w-75">
 
-                        <h4>Overview</h4>
-                        <p>while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a
-                            _Language_ Interpretation and Recognition Interface. LIRI is a command line
-                            node app that takes in parameters and gives you back data. It searchs
-                            Spotify for songs, Bands in Town for concerts, Twitter for tweets and OMDB
-                            for movies.
-                        </p>
-                        <h6>Liri App takes in one of the following commands:</h6>
-                        <p> * concert-this<br>
-                            * spotify-this-song<br>
-                            * movie-this<br>
-                            * do-what-it-says<br>
-                        </p>
-                        <H4 class="text-center mb-4">What Each Command Does</H4>
-                        <div class="">
+                            <h4 class="text-center">It's like iPhone's SIRI</h4>
 
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-6">
-                                <img class="w-100 me-4" src='assets/images/liri1.png'>
-                            </div>
-                            <div class="col-md-4">
-                                <p>
-                                    <b>1. node liri.js concert-this:</b><br>
-                                    This will search the Bands in Town Artist Events API
-                                    ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=
-                                    <api-key>") for an artist and render the following information about each event to
-                                        the terminal:
-                                </p>
-                                <p>
-                                    * Date of the Event<br>
-                                    * Name of the venue<br>
-                                    * Venue location
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row my-4">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-6">
-                                <img class="w-100" src='assets/images/liri2.png'>
+                            <h4>Overview</h4>
+                            <p>while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a
+                                _Language_ Interpretation and Recognition Interface. LIRI is a command line
+                                node app that takes in parameters and gives you back data. It searchs
+                                Spotify for songs, Bands in Town for concerts, Twitter for tweets and OMDB
+                                for movies.
+                            </p>
+                            <h6>Liri App takes in one of the following commands:</h6>
+                            <p> * concert-this<br>
+                                * spotify-this-song<br>
+                                * movie-this<br>
+                                * do-what-it-says<br>
+                            </p>
+                            <H4 class="text-center mb-4">What Each Command Does</H4>
+                            <div class="">
 
                             </div>
-                            <div class="col-md-4">
-                                <p>
-
-                                    <b>2. node liri.js spotify-this-song:</b><br>
-                                    This will show the following information about the song in your
-                                    terminal/bash window:
-                                </p>
-                                <p>
-                                    * Artist(s)<br>
-                                    * The song's name <br>
-                                    * A preview link of the song from Spotify <br>
-                                    * The album that the song is from <br>
-                                    * Album date
-                                </p>
-
+                            <div class="row mb-4">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+                                    <img class="w-100 me-4" src='assets/images/liri1.png'>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>
+                                        <b>1. node liri.js concert-this:</b><br>
+                                        This will search the Bands in Town Artist Events API
+                                        ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=
+                                        <api-key>") for an artist and render the following information about each event
+                                            to
+                                            the terminal:
+                                    </p>
+                                    <p>
+                                        * Date of the Event<br>
+                                        * Name of the venue<br>
+                                        * Venue location
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-6">
-                                <img class="w-100" src='assets/images/liri4.png'>
-                            </div>
-                            <div class="col-md-4">
-                                <p><b>3. node liri.js movie-this:</b><br>
-                                    This will output the following information to your terminal/bash
-                                    window:
-                                </p>
+                            <div class="row my-4">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+                                    <img class="w-100" src='assets/images/liri2.png'>
 
-                                <p>
-                                    * Title of the movie.<br>
-                                    * Year the movie came out.<br>
-                                    * IMDB Rating of the movie.<br>
-                                    * Rotten Tomatoes Rating of the movie.<br>
-                                    * Country where the movie was produced.<br>
-                                </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>
+
+                                        <b>2. node liri.js spotify-this-song:</b><br>
+                                        This will show the following information about the song in your
+                                        terminal/bash window:
+                                    </p>
+                                    <p>
+                                        * Artist(s)<br>
+                                        * The song's name <br>
+                                        * A preview link of the song from Spotify <br>
+                                        * The album that the song is from <br>
+                                        * Album date
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+                                    <img class="w-100" src='assets/images/liri4.png'>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><b>3. node liri.js movie-this:</b><br>
+                                        This will output the following information to your terminal/bash
+                                        window:
+                                    </p>
+
+                                    <p>
+                                        * Title of the movie.<br>
+                                        * Year the movie came out.<br>
+                                        * IMDB Rating of the movie.<br>
+                                        * Rotten Tomatoes Rating of the movie.<br>
+                                        * Country where the movie was produced.<br>
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <p class="col-md-6">
+                                        * Language of the movie.<br>
+                                        * Plot of the movie.<br>
+                                        * Actors in the movie.<br>
+                                    </p>
+                                </div>
                             </div>
                             <div class="row">
+
                                 <div class="col-md-1"></div>
-                                <p class="col-md-6">
-                                    * Language of the movie.<br>
-                                    * Plot of the movie.<br>
-                                    * Actors in the movie.<br>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
+                                <div class="col-md-6">
+                                    <img class="w-100" src='assets/images/liri2.png'>
+                                </div>
 
-                            <div class="col-md-1"></div>
-                            <div class="col-md-6">
-                                <img class="w-100" src='assets/images/liri2.png'>
-                            </div>
-
-                            <div class="col-md-4">
-                                <p>
-                                    <b>4. node liri.js do-what-it-says:</b><br>
-                                    Using the fs Node package, LIRI will take the text inside of
-                                    random.txt file and then use it to call one of LIRI's commands.
-                                </p>
-                                <p>
-                                    * It should run spotify-this-song for "I Want it That Way," as
-                                    follows the text in random.txt.<br>
-                                    * Edit the text in random.txt to test out the feature for
-                                    movie-this, concert-this and my-tweets.
-                                </p>
+                                <div class="col-md-4">
+                                    <p>
+                                        <b>4. node liri.js do-what-it-says:</b><br>
+                                        Using the fs Node package, LIRI will take the text inside of
+                                        random.txt file and then use it to call one of LIRI's commands.
+                                    </p>
+                                    <p>
+                                        * It should run spotify-this-song for "I Want it That Way," as
+                                        follows the text in random.txt.<br>
+                                        * Edit the text in random.txt to test out the feature for
+                                        movie-this, concert-this and my-tweets.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
