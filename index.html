@@ -220,10 +220,10 @@
                                 href="#">GifTastic</a>
                             <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
                                 href="#">Calender</a>
-                            <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
+                            <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#burger"
                                 href="#">crudaburger</a>
-                            <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
-                                href="#">porfolio</a>
+                            <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#" href="#">porfolio</a>
                             <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
                                 href="#">NodeGuessGame</a>
                             <a class="col-md-3 pb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#"
@@ -866,6 +866,79 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal hide" id="burger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title ms-auto" id="exampleModalLabel">CRUD A Burger App</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <img class="w-100" src="assets/images/crudbuger1.png">
+
+                            <div>
+                                <h3>SQL, Node, Express, Handlebars App</h3>
+
+                                <p>
+                                    In this app we test the safe manipulation of data on a SQL database server through
+                                    the use
+                                    of a web app. Here you can create, read, update and delete a restaurant's burger
+                                    order,
+                                    CRUD. We used HTML, CSS, BootStrap, JavaScript, JQuery, Font Awesome, Express, Node,
+                                    Handlebars, MSQL, GitHub and Heroku to create this app. We maintain the status of
+                                    orders of
+                                    a burger restaurant (yum!).
+                                </p>
+
+                                <h3>
+                                    MVC Directories structure:
+                                </h3>
+
+                                <p class="ms-4 fw-bold bg-dark text-warning w-50 rounded p-4">
+                                    ├── config<br>
+                                    │   ├── connection.js<br>
+                                    │   └── orm.js<br>
+                                    │ <br>
+                                    ├── controllers<br>
+                                    │   └── burgers_controller.js<br>
+                                    │<br>
+                                    ├── db<br>
+                                    │   ├── schema.sql<br>
+                                    │   └── seeds.sql<br>
+                                    │<br>
+                                    ├── models<br>
+                                    │   └── burger.js<br>
+                                    │ <br>
+                                    ├── node_modules<br>
+                                    │ <br>
+                                    ├── package.json<br>
+                                    │<br>
+                                    ├── public<br>
+                                    │   └── assets<br>
+                                    │      ├── css<br>
+                                    │      │   └── burger_style.css<br>
+                                    │      └── img<br>
+                                    │      └── burger.png<br>
+                                    │<br>
+                                    ├── server.js<br>
+                                    │<br>
+                                    └── views<br>
+                                    ├── index.handlebars<br>
+                                    └── layouts<br>
+                                    └── main.handlebars<br>
+
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
