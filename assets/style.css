@@ -1,3 +1,8 @@
+.img {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 0;
+}
 
 #topDiv {
     height: 75vh;
