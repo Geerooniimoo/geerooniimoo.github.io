@@ -42,6 +42,19 @@
     text-shadow: 5px 5px 5px black;
 }
 
+.vba {
+    background-image: url('./images/vba0.jpg');
+    color: black;
+    padding: 10%;
+}
+
+.vba div {
+    background-color: #fff;
+    padding: 2%;
+    opacity: .85;
+    box-shadow: 5px 5px 20px;
+}
+
 @media screen and (max-width: 576px) {
     
     #topDiv {
