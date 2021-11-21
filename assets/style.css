@@ -47,13 +47,17 @@
     color: black;
     padding: 10%;
 }
-
 .vba div {
     background-color: #fff;
     padding: 2%;
     opacity: .85;
     box-shadow: 5px 5px 20px;
 }
+.python {
+    background-image: url('./images/python0.png');
+    background-size: 110% 100%;
+}
+
 
 @media screen and (max-width: 576px) {
     
