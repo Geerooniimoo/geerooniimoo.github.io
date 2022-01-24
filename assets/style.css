@@ -42,12 +42,28 @@
     text-shadow: 5px 5px 5px black;
 }
 
+.team {
+    background-image: url('./images/team.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    padding: 10%;
+}
+
+.leaflet {
+    background-image: url('./images/leaflet.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    padding: 10%;
+}
+
 .vba {
     background-image: url('./images/vba0.jpg');
     color: black;
     padding: 10%;
 }
-.vba div {
+.vba div, .team div, .leaflet div {
     background-color: #fff;
     padding: 2%;
     opacity: .85;
@@ -78,5 +94,5 @@
     #title h4 {
         transform: skewX(0deg);
         font-size: 1rem;
-    }
+ /   }
 }
