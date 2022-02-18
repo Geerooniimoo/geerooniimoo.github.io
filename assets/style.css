@@ -77,7 +77,16 @@ body {
     padding: 10%;
 }
 
-.vba div, .team div, .leaflet div, .firebase div {
+.mars {
+    background-image: url('./images/mars1.png');
+    background-size: 100% 135%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    color: black;
+    padding: 10%;
+}
+
+.vba div, .team div, .leaflet div, .firebase div, .mars div {
     background-color: #fff;
     padding: 2%;
     opacity: .85;
