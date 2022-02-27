@@ -1,5 +1,5 @@
 body {
-    height: 124vh;
+    height: 140vh;
 }
 
 #accordionExample {
@@ -28,8 +28,8 @@ body {
     transform: skewX(40deg);
     width: 600px;
     box-shadow: -25px 15px 5px gray;
-    border-left: 4px solid white;
-    border-bottom: 4px solid white;
+    border-left: 4px solid purple;
+    border-bottom: 4px solid purple;
     border-radius: 15px 15px;
     padding: 10px 40px;
     text-anchor: middle;
@@ -108,7 +108,7 @@ body {
 .carousel {
     box-shadow: 5px 5px 20px black;
     transform-origin: 50% 50%;
-    animation: carousel 13.5s;
+    animation: carousel 11.2s;
     border-radius: 12px;
     overflow: hidden;
     margin: 2% auto;
@@ -125,12 +125,19 @@ body {
     stroke:black;
 }
 
+button {
+    color: purple;
+}
+
+/* .calendar {
+    position: absolute;
+} */
+
 .type {
     text-align: center;
     min-height: 8vh;
     max-width: 60%;
     margin: 0 auto;
-    color: blue;
     font-weight: bold;
     font-family: cursive;
     font-size: 1.3rem;
@@ -138,12 +145,15 @@ body {
 @keyframes carousel {
     0% {
         opacity: 0;
+        transform: scale(0%);
     }
     90% {
         opacity: 0;
+        transform: scale(50%);
     }
     100% {
         opacity: 1;
+        transform: scale(100%);
     }
 }
 
@@ -158,7 +168,7 @@ body {
     text-shadow: none;
     z-index: 99;
     transform-origin: -20%;
-    animation: hours 3s 9.5s;
+    animation: hours 3s 8s;
 }
 
 .child_1 {
@@ -244,7 +254,7 @@ body {
     width: 107px;
 }
 
-g text {
+.hours g text {
     font-size: 1.40rem;
     /* font-weight: bold; */
     font-family: fantasy;
@@ -252,11 +262,12 @@ g text {
 }
 
 .caroImg {
-    animation: caroImg 6s infinite;
+    animation: caroImg 7s infinite;
 }
 
 @keyframes caroImg {
     0% {
+        opacity: 0.1;
         transform: scale(200%);
     }
     100% {
@@ -286,39 +297,33 @@ g text {
         transform: rotate(10deg);
     }
     20% {
-        transform: rotate(120deg);
-    }
-    30% {
-        transform: rotate(70deg);
-    }
-    40% {
         transform: rotate(110deg);
     }
-    50% {
+    30% {
         transform: rotate(80deg);
     }
-    60% {
+    40% {
         transform: rotate(100deg);
     }
-    65% {
+    50% {
         transform: rotate(90deg);
     }
-    75% {
-        transform: translateY(70vh);
+    60% {
+        transform: translateY(80vh) translateX(-50%);
     }
-    76% {
-        transform: translateY(68vh);
+    61% {
+        transform: translateY(78vh) translateX(-50%);
     }
-    77% {
-        transform: translateY(70vh);
+    62% {
+        transform: translateY(80vh) translateX(-50%);
     }
-    79% {
-        transform: translateY(70vh);
+    65% {
+        transform: translateY(80vh) translateX(-50%);
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: translate(-600%, 1300%) scale(900%);
+        transform: translate(-100%, 1000%) scale(200%);
     }
 }
 
@@ -331,7 +336,7 @@ g text {
     border-radius: 90px;
     background: orange;
     opacity: 0;
-    animation: fire 7s 1s;
+    animation: fire 6s 1s;
 }
 
 @keyframes fire {
@@ -406,7 +411,7 @@ g text {
     left: 68%;
     top: -25%;
     opacity: 0;
-    animation: smoke 4s 7s;
+    animation: smoke 4s 6s;
 }
 
 @keyframes smoke {
