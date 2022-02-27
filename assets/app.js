@@ -42,8 +42,9 @@ type = () => {
             : document.querySelector('#type').innerText += speech[i]
         i++;
         if (!(i < speech.length)) { i=0 };
-    }, 100)
+    }, 80)
 };
 
+setTimeout(()=>window.scrollTo(0,(document.body.scrollHeight*.3)),9500);
 setTimeout(type,11000);
 setInterval(changeImg, 7000);

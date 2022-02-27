@@ -108,7 +108,7 @@ body {
 .carousel {
     box-shadow: 5px 5px 20px black;
     transform-origin: 50% 50%;
-    animation: carousel 11.2s;
+    animation: carousel 20s;
     border-radius: 12px;
     overflow: hidden;
     margin: 2% auto;
@@ -270,6 +270,9 @@ button {
         opacity: 0.1;
         transform: scale(200%);
     }
+    50% {
+        opacity: 1;
+    }
     100% {
         transform: scale(100%);
     }
@@ -309,21 +312,21 @@ button {
         transform: rotate(90deg);
     }
     60% {
-        transform: translateY(80vh) translateX(-50%);
+        transform: translateY(45vh) translateX(-50%);
     }
     61% {
-        transform: translateY(78vh) translateX(-50%);
+        transform: translateY(42vh) translateX(-50%);
     }
     62% {
-        transform: translateY(80vh) translateX(-50%);
+        transform: translateY(45vh) translateX(-50%);
     }
     65% {
-        transform: translateY(80vh) translateX(-50%);
+        transform: translateY(45vh) translateX(-50%);
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: translate(-100%, 1000%) scale(200%);
+        transform: translate(-400%, 45vh) scaleX(6);
     }
 }
 
