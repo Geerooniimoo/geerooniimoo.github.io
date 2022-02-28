@@ -168,7 +168,7 @@ button {
     text-shadow: none;
     z-index: 99;
     transform-origin: -20%;
-    animation: hours 3s 8s;
+    animation: hours 3.5s 8s;
 }
 
 .child_1 {
@@ -193,14 +193,14 @@ button {
     rx: 16%;
     ry: 19%;
     border: 2px solid black;
-    fill: #068e8e;
+    fill: #006969;
 }
 .child_6 {
     cx: 85%;
     cy: 13%;
     rx: 14%;
     ry: 37%;
-    fill: #068e8e;
+    fill: #006969;
 }
 .child_8 {
     cx: 64%;
@@ -208,7 +208,7 @@ button {
     rx: 14%;
     ry: 15%;
     border: 2px solid black;
-    fill: #068e8e;
+    fill: #006969;
 }
 .child_9 {
     cx: 53%;
@@ -262,12 +262,12 @@ button {
 }
 
 .caroImg {
-    animation: caroImg 7s infinite;
+    animation: caroImg 7s 8.5s infinite;
 }
 
 @keyframes caroImg {
     0% {
-        opacity: 0.1;
+        opacity: 0;
         transform: scale(200%);
     }
     50% {
@@ -312,21 +312,21 @@ button {
         transform: rotate(90deg);
     }
     60% {
-        transform: translateY(45vh) translateX(-50%);
+        transform: translateY(33vh) translateX(-50%);
     }
     61% {
-        transform: translateY(42vh) translateX(-50%);
+        transform: translateY(30vh) translateX(-50%);
     }
     62% {
-        transform: translateY(45vh) translateX(-50%);
+        transform: translateY(33vh) translateX(-50%);
     }
     65% {
-        transform: translateY(45vh) translateX(-50%);
+        transform: translateY(33vh) translateX(-50%);
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: translate(-400%, 45vh) scaleX(6);
+        transform: translate(-400%, 33vh) scaleX(6);
     }
 }
 
@@ -421,7 +421,7 @@ button {
     10% {
         opacity: 1;
     }
-    90% {
+    70% {
         transform: translateY(1px) scale(400%);
         opacity: 0;
     }
@@ -431,7 +431,26 @@ button {
 
     #topDiv {
         height: auto;
-        padding-top: auto;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #topDiv div:nth-child(2) {
+        order: 1;
+        width: 100%;
+    }
+    #topDiv div:nth-child(1) {
+        order: 2;
+    }
+    #topDiv div:nth-child(3) {
+        order: 3;
+    }
+    #topDiv h5:nth-child(4) {
+        order: 4;
+    }
+    #topDiv div:nth-child(5) {
+        order: 5;
     }
 
     #title {
@@ -446,5 +465,19 @@ button {
     #title h4 {
         transform: skewX(0deg);
         font-size: 1rem;
+    }
+    .type {
+        width: 100%;
+        max-width: 100%;
+    }
+    .carousel {
+        width: 95%;
+    }
+    .accordion {
+        display: block;
+    }
+    #accordionExample {
+        display: flex;
+        flex-direction: column;
     }
 }
