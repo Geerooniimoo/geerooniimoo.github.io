@@ -28,8 +28,8 @@ body {
     transform: skewX(40deg);
     width: 600px;
     box-shadow: -25px 15px 5px gray;
-    border-left: 4px solid purple;
-    border-bottom: 4px solid purple;
+    border-left: 4px solid red;
+    border-bottom: 4px solid red;
     border-radius: 15px 15px;
     padding: 10px 40px;
     text-anchor: middle;
@@ -118,6 +118,7 @@ body {
 .textShadow {
     fill: red;
     stroke:black;
+    text-shadow: 3px 3px 4px black;
 }
 
 .textLetter {
@@ -321,29 +322,29 @@ button {
         transform: rotate(90deg);
     }
     60% {
-        transform: translateY(33vh) translateX(-50%);
+        transform: translateY(50vh) translateX(-50%);
     }
     61% {
-        transform: translateY(30vh) translateX(-50%);
+        transform: translateY(48vh) translateX(-50%);
     }
     62% {
-        transform: translateY(33vh) translateX(-50%);
+        transform: translateY(50vh) translateX(-50%);
     }
     65% {
-        transform: translateY(33vh) translateX(-50%);
+        transform: translateY(50vh) translateX(-50%);
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: translate(-400%, 33vh) scaleX(6);
+        transform: translate(-400%, 50vh) scaleX(6);
     }
 }
 
 .fire {
     top: -30%;
     left: 10%;
-    width: 24px;
-    height: 27px;
+    width: 35px;
+    height: 35px;
     position: absolute;
     border-radius: 90px;
     background: orange;
@@ -418,10 +419,10 @@ button {
 
 .smoke {
     position: absolute;
-    height: 80px;
-    width: 80px;
-    left: 68%;
-    top: -25%;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    top: -75%;
     opacity: 0;
     animation: smoke 4s 6s;
 }
@@ -431,6 +432,9 @@ button {
         opacity: 1;
     }
     70% {
+        opacity: 0;
+    }
+    100% {
         transform: translateY(1px) scale(400%);
         opacity: 0;
     }
@@ -466,7 +470,7 @@ button {
         transform: skewX(0deg);
         width: auto;
         box-shadow: none;
-        border: none;
+        border-left: none;
         border-radius: 0px;
         padding: 0;
     }
