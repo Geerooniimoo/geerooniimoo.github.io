@@ -1,5 +1,5 @@
 const images = [
-    'jup_2.png', 'jup_1.gif', 'jup_3.png', 'web_1.png', 'web_2.png', 'd3_1.png', 'D3-Projects.gif', 'crudburger1.png', 'crudburger1.png', 'mars2.png', 'mars5.png', 'mars1.png', 'firebase1.jpg', 'firebase2.png', 'leaflet-map1.png', 'leaflet-map2.png', 'leaflet-map1.png', 'team.jpg', 'team1.png', 'team2.png', 'team3.png', 'plotly_1.png', 'gamazon1.jpg', 'gamazon2.png', 'gamazon3.png', 'liri1.png', 'liri2.png', 'liri3.png', 'liri4.png', 'vba0.jpg', 'vba1.png', 'vba2.png', 'vba3.png', 'vba4.png', 'vba5.png', 'vba6.png', 'vba7.png', 'vba8.png', 'bike1.png', 'bike2.png', 'bike3.png', 'bike4.png', 'bike5.png', 'bike6.png', 'pandas-4.png', 'pandas-6.png', 'pandas-5.png', 'pandas-1.png', 'pandas-2.png', 'pandas-3.png', 'matplotlib_lab.jpg', 'matplotlib_boxplot.png', 'matplotlib_line.png', 'matplotlib_pie.png', 'matplotlib_regression.png', 'python0.png', 'python1.png', 'python2.png', 'python3.png', 'sql_bar.png', 'sql_hist.png', 'sqlalchemy_1.png', 'sqlalchemy_2.png', 'sqlalchemy_3.png', 'sqlalchemy_4.png'
+    'jup_2.png', 'jup_1.gif', 'jup_3.png', 'web_1.png', 'web_2.png', 'd3_1.png', 'D3-Projects.gif', 'crudburger1.png', 'crudburger1.png', 'mars2.png', 'mars5.png', 'mars1.png', 'firebase2.png', 'leaflet-map1.png', 'leaflet-map2.png', 'leaflet-map1.png', 'team.jpg', 'team1.png', 'team2.png', 'team3.png', 'plotly_1.png', 'gamazon1.jpg', 'gamazon2.png', 'gamazon3.png', 'liri1.png', 'liri2.png', 'liri3.png', 'liri4.png', 'vba0.jpg', 'vba1.png', 'vba2.png', 'vba3.png', 'vba4.png', 'vba5.png', 'vba6.png', 'vba7.png', 'vba8.png', 'bike1.png', 'bike2.png', 'bike3.png', 'bike4.png', 'bike5.png', 'bike6.png', 'pandas-4.png', 'pandas-6.png', 'pandas-5.png', 'pandas-1.png', 'pandas-2.png', 'pandas-3.png', 'matplotlib_lab.jpg', 'matplotlib_boxplot.png', 'matplotlib_line.png', 'matplotlib_pie.png', 'matplotlib_regression.png', 'python0.png', 'python1.png', 'python2.png', 'python3.png', 'sql_bar.png', 'sql_hist.png', 'sqlalchemy_1.png', 'sqlalchemy_2.png', 'sqlalchemy_3.png', 'sqlalchemy_4.png'
 ]
 
 const speech =
@@ -46,8 +46,8 @@ type = () => {
 
 setTimeout(type, 11000);
 setTimeout(() => { setInterval(changeImg, 7000) }, 8500);
-setTimeout(() => {
-    if (window.screen.width > 576) {
-        window.scrollTo(0, (document.body.scrollHeight * .2))
-    }
-}, 9800);
+// setTimeout(() => {
+//     if (window.screen.width > 576) {
+//         window.scrollTo(0, (document.body.scrollHeight * .2))
+//     }
+// }, 9800);

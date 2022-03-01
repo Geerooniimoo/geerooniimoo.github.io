@@ -322,21 +322,21 @@ button {
         transform: rotate(90deg);
     }
     60% {
-        transform: translateY(50vh) translateX(-50%);
+        transform: translateY(38vh) translateX(-50%);
     }
     61% {
-        transform: translateY(48vh) translateX(-50%);
+        transform: translateY(36vh) translateX(-50%);
     }
     62% {
-        transform: translateY(50vh) translateX(-50%);
+        transform: translateY(38vh) translateX(-50%);
     }
     65% {
-        transform: translateY(50vh) translateX(-50%);
+        transform: translateY(38vh) translateX(-50%);
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: translate(-400%, 50vh) scaleX(6);
+        transform: translate(-400%, 38vh) scaleX(6);
     }
 }
 
