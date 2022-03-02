@@ -44,8 +44,8 @@ type = () => {
     }, 80)
 };
 
-setTimeout(type, 11000);
-setTimeout(() => { setInterval(changeImg, 7000) }, 8500);
+// setTimeout(type, 11000);
+// setTimeout(() => { setInterval(changeImg, 7000) }, 8500);
 // setTimeout(() => {
 //     if (window.screen.width > 576) {
 //         window.scrollTo(0, (document.body.scrollHeight * .2))

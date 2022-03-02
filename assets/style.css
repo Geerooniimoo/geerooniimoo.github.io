@@ -1,5 +1,5 @@
 body {
-    height: 140vh;
+    height: 105vh;
 }
 
 #accordionExample {
@@ -16,7 +16,7 @@ body {
 }
 
 #topDiv {
-    height: 75vh;
+    /* height: 75vh; */
     padding-top: 1vh;
     background-image: linear-gradient(10deg, transparent 45%, darkcyan, black);
     background-size: 100% 75%;
@@ -108,7 +108,8 @@ body {
 .carousel {
     box-shadow: 5px 5px 20px black;
     transform-origin: 50% 50%;
-    animation: carousel 20s;
+    /* animation: carousel 20s; */
+    display: none;
     border-radius: 12px;
     overflow: hidden;
     margin: 2% auto;
@@ -126,15 +127,27 @@ body {
     stroke:black;
 }
 
-button {
-    color: purple;
-}
-
 /* .calendar {
     position: absolute;
 } */
 
+.type button {
+    color: white;
+    background-color: black;
+    border: none;
+    border-left: 4px solid red;
+    border-bottom: 4px solid red;
+    padding: 1%;
+    border-radius: 12px;
+    box-shadow: -11px 12px 5px gray;
+    /* font-size: 1.2rem; */
+    /* text-shadow: -.5px 1px 0px red; */
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .type {
+    position: relative;
     text-align: center;
     min-height: 8vh;
     max-width: 60%;
@@ -142,7 +155,7 @@ button {
     font-weight: bold;
     font-family: sans-serif;
     font-size: 1.3rem;
-    animation: type 1s 11s;
+    /* animation: type 1s 11s; */
 }
 
 @keyframes type {
@@ -178,7 +191,7 @@ button {
     text-shadow: none;
     z-index: 99;
     transform-origin: -20%;
-    animation: hours 3.5s 8s;
+    /* animation: hours 3.5s 8s; */
 }
 
 .child_1 {
@@ -272,7 +285,7 @@ button {
 }
 
 .caroImg {
-    animation: caroImg 7s 8.5s infinite;
+    /* animation: caroImg 7s 8.5s infinite; */
 }
 
 @keyframes caroImg {
@@ -322,21 +335,21 @@ button {
         transform: rotate(90deg);
     }
     60% {
-        transform: translateY(38vh) translateX(-50%);
+        transform: translateY(44vh) translateX(-50%);
     }
     61% {
-        transform: translateY(36vh) translateX(-50%);
+        transform: translateY(42vh) translateX(-50%);
     }
     62% {
-        transform: translateY(38vh) translateX(-50%);
+        transform: translateY(44vh) translateX(-50%);
     }
     65% {
-        transform: translateY(38vh) translateX(-50%);
+        transform: translateY(44vh) translateX(-50%);
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: translate(-400%, 38vh) scaleX(6);
+        transform: translate(-400%, 44vh) scaleX(6);
     }
 }
 
@@ -349,7 +362,7 @@ button {
     border-radius: 90px;
     background: orange;
     opacity: 0;
-    animation: fire 6s 1s;
+    /* animation: fire 6s 1s; */
 }
 
 @keyframes fire {
@@ -424,7 +437,7 @@ button {
     left: 50%;
     top: -75%;
     opacity: 0;
-    animation: smoke 4s 6s;
+    /* animation: smoke 4s 6s; */
 }
 
 @keyframes smoke {
@@ -494,5 +507,58 @@ button {
     #accordionExample {
         display: flex;
         flex-direction: column;
+    }
+
+    @keyframes hours {
+        0% {
+            transform: rotate(6deg);
+        }
+        2% {
+            transform: rotate(0deg);
+        }
+        4% {
+            transform: rotate(6deg);
+        }
+        6% {
+            transform: rotate(0deg);
+        }
+        8% {
+            transform: rotate(6deg);
+        }
+        10% {
+            transform: rotate(10deg);
+        }
+        20% {
+            transform: rotate(10deg);
+        }
+        20% {
+            transform: rotate(110deg);
+        }
+        30% {
+            transform: rotate(80deg);
+        }
+        40% {
+            transform: rotate(100deg);
+        }
+        50% {
+            transform: rotate(90deg);
+        }
+        60% {
+            transform: translateY(36vh) translateX(-50%);
+        }
+        61% {
+            transform: translateY(34vh) translateX(-50%);
+        }
+        62% {
+            transform: translateY(36vh) translateX(-50%);
+        }
+        65% {
+            transform: translateY(36vh) translateX(-50%);
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translate(-400%, 36vh) scaleX(6);
+        }
     }
 }
