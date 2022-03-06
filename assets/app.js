@@ -31,6 +31,15 @@ function changeImg() {
     }
 };
 
+// function scroll() {
+//     let h = 3;
+//     setInterval(()=>{
+//         document.getElementById('type').style.transform = `translateY(${h}%)`
+//         if (h<-99) { h = 3 };
+//         h--;
+//     },2000);
+// };
+
 type = () => {
     let i = 0;
     document.querySelector('#type').innerText = speech;
