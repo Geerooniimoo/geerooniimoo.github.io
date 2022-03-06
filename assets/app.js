@@ -19,7 +19,6 @@ const speech =
     How about if with the use of Python, Jupyter Notebook, Pandas and Matplotlib we analyze drugs' information to determine which drug is the most effective against cancer and visualize the results and predictions of the information analyzed.
     Or what about creating a interative dashboard with JavaScript and D3JS library that allows us to analyze biodiversity very close to home, our belly button.
     How about if with the Python language we analyze financial data to obtain a summary of revenue fluctuations in which we can see the average revenue change, total gain or loss, greatest increase and greatest decrease.
-
     `
 
 var imgIndex = 0;
@@ -28,24 +27,23 @@ function changeImg() {
         document.querySelector('.caroImg').setAttribute('src', `./assets/images/${images[imgIndex]}`);
         imgIndex++;
     } else {
-        i = 0;
+        imgIndex = 0;
     }
 };
 
 type = () => {
     let i = 0;
-    document.querySelector('#blinker').innerText = '|';
-    let intervalId = setInterval(() => {
-        speech[i - 1] + speech[i] == '.\n'
-            ? document.querySelector('#type').innerText = speech[i]
-            : document.querySelector('#type').innerText += speech[i]
-        i++;
-        if (!(i < speech.length)) { i = 0 };
-    }, 80)
+    document.querySelector('#type').innerText = speech;
+    // document.querySelector('#blinker').innerText = '|';
+    // let intervalId = setInterval(() => {
+    //     document.querySelector('#type').innerText = speech[i]
+    //     i++;
+    //     if (!(i < speech.length)) { i = 0 };
+    // }, 2000)
 };
 
-// setTimeout(type, 11000);
-// setTimeout(() => { setInterval(changeImg, 7000) }, 8500);
+setTimeout(type, 11000);
+setTimeout(() => { setInterval(changeImg, 7000) }, 8500);
 // setTimeout(() => {
 //     if (window.screen.width > 576) {
 //         window.scrollTo(0, (document.body.scrollHeight * .2))
