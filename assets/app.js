@@ -3,11 +3,26 @@ const images = [
 ]
 
 const speech =
-    `Hi! 
-    Here are some examples of the many things we can do together.
-    Imagine automatically going to multiple NASA's websites and collecting information about Jupiter to store it on a SQL database and display it any way you like on your own website.
-    Or how about obtaining current weather of hundreds of cities around the world to conduct your own study about the effect of latitude on the climate and then displaying it on your own interactive website.
-    How about if we obtain Cesus Data from a data bank like Kaggle and with the use of HTML, CSS and JavaScript libraries create an interactive website that would allows us to visually analyze correlation between location, obesity, income, helthcare, and smokers.
+    [
+        {
+            title: 'Intro',
+            message: `Hi!
+            Here are some examples of the many things we can do together.`,
+            images: []
+        },
+        {
+            title: 'Mission to Jupiter',
+            message: `Imagine automatically going to multiple NASA's websites and collecting information about Jupiter to store it on a SQL database and display it any way you like on your own website.`,
+            images: ['jup_2.png', 'jup_1.gif', 'jup_3.png']
+        },
+        {
+            title: 'Latitude & Weather Analysis',
+            message: `Or how about obtaining current weather of hundreds of cities around the world to conduct your own study about the effect of latitude on the climate and then displaying it on your own interactive website.`,
+            images: ['web_1.png', 'web_2.png']
+        },
+        {
+            title: 'Census Analysis',
+    How about if we obtain Census Data from a data bank like Kaggle and with the use of HTML, CSS and JavaScript libraries create an interactive website that would allows us to visually analyze correlation between location, obesity, income, helthcare, and smokers.
     How about creating a full stack application that through a website securely manages a restaurant's data on an SQL Database server.
     How about if we display the latest news and updates of the planet Mars by scrapping the latest images, news and weather information from NASA, Twitter, Space Facts and USGS websites.
     Imagine using Firebase, an online Google Database that through the use of a website allows us to manage a train's scheduler live.
