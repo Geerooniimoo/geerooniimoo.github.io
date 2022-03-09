@@ -5,9 +5,8 @@ const images = [
 const speech =
     [
         {
-            title: 'Intro',
-            message: `Hi!
-            Here are some examples of the many things we can do together.`,
+            title: 'Introduction',
+            message: `Hi! Here are some examples of the many things we can do together.<br><br>`,
             images: []
         },
         {
@@ -102,8 +101,8 @@ type = () => {
     // }, 2000)
 };
 
-setTimeout(type, 11000);
-setTimeout(() => { setInterval(handleSpeech, 7000) }, 8500);
+// setTimeout(type, 11000);
+// setTimeout(handleSpeech, 8500);
 // setTimeout(() => { setInterval(changeImg, 7000) }, 8500);
 setTimeout(() => {
     if (window.screen.width > 576) {
@@ -113,24 +112,22 @@ setTimeout(() => {
 
 
 let speechIndex = 0;
-
+setTimeout(handleSpeech,11500);
 function handleSpeech() {
     const {title,message,images} = speech[speechIndex];
-    
     document.getElementById('speechTitle').innerText = title;
     document.querySelector('.type').innerHTML = `<p>${message}</p>`;
+    speechIndex<speech.length-1? speechIndex++ : speechIndex = 0;
+    changeImg(images,0);
+    setTimeout(handleSpeech,10000);
+};
 
-    speechIndex<speech.length ? speechIndex ++ : speechIndex = 0;
-}
-
-var imgIndex = 0;
-function changeImg() {
+function changeImg(images, imgIndex) {
     if (imgIndex < images.length) {
         document.querySelector('.caroImg').setAttribute('src', `./assets/images/${images[imgIndex]}`);
+        setTimeout(()=>changeImg(images,imgIndex),700);
         imgIndex++;
-    } else {
-        imgIndex = 0;
-    }
+    };
 };
 
 
