@@ -1,12 +1,9 @@
-const images = [
-    'jup_2.png', 'jup_1.gif', 'jup_3.png', 'web_1.png', 'web_2.png', 'd3_1.png', 'D3-Projects.gif', 'crudburger1.png', 'crudburger1.png', 'mars2.png', 'mars5.png', 'mars1.png', 'firebase2.png', 'leaflet-map1.png', 'leaflet-map2.png', 'leaflet-map1.png', 'pandas-4.png', 'pandas-6.png', 'pandas-5.png', 'pandas-1.png', 'pandas-2.png', 'pandas-3.png', 'bike1.png', 'bike2.png', 'bike3.png', 'bike4.png', 'bike5.png', 'bike6.png', 'gamazon2.png', 'gamazon3.png', 'gamazon1.jpg', 'liri1.png', 'liri2.png', 'liri3.png', 'liri4.png', 'matplotlib_lab.jpg', 'matplotlib_boxplot.png', 'matplotlib_line.png', 'matplotlib_pie.png', 'matplotlib_regression.png', 'plotly_1.png', 'team.jpg', 'team1.png', 'team2.png', 'team3.png', 'vba0.jpg', 'vba1.png', 'vba2.png', 'vba3.png', 'vba4.png', 'vba5.png', 'vba6.png', 'vba7.png', 'vba8.png', 'python0.png', 'python1.png', 'python2.png', 'python3.png', 'sql_bar.png', 'sql_hist.png', 'sqlalchemy_1.png', 'sqlalchemy_2.png', 'sqlalchemy_3.png', 'sqlalchemy_4.png'
-]
 
 const speech =
     [
         {
             title: 'Introduction',
-            message: `Hi! Here are some examples of the many things we can do together.<br><br>`,
+            message: `Hi!<br> Here are some examples of the many things we can do together.`,
             images: []
         },
         {
@@ -32,7 +29,7 @@ const speech =
         {
             title: 'Mission to Mars',
             message: `How about if we display the latest news and updates of the planet Mars by scrapping the latest images, news and weather information from NASA, Twitter, Space Facts and USGS websites.`,
-            images: ['mars2.png', 'mars5.png', 'mars1.png']
+            images: ['mars2.png', 'mars3.png', 'mars4.png', 'mars5.png']
         },
         {
             title: 'Online Train Scheduler',
@@ -76,57 +73,40 @@ const speech =
         }
     ]
 
-
-
-
-// function scroll() {
-//     let h = 3;
-//     setInterval(()=>{
-//         document.getElementById('type').style.transform = `translateY(${h}%)`
-//         if (h<-99) { h = 3 };
-//         h--;
-//     },2000);
-// };
-
 document.body.scrollIntoView();
 
 type = () => {
     let i = 0;
     document.querySelector('#type').innerText = speech;
-    // document.querySelector('#blinker').innerText = '|';
-    // let intervalId = setInterval(() => {
-    //     document.querySelector('#type').innerText = speech[i]
-    //     i++;
-    //     if (!(i < speech.length)) { i = 0 };
-    // }, 2000)
 };
 
-// setTimeout(type, 11000);
-// setTimeout(handleSpeech, 8500);
-// setTimeout(() => { setInterval(changeImg, 7000) }, 8500);
 setTimeout(() => {
     if (window.screen.width > 576) {
         document.querySelector('.accordion').scrollIntoView();
     }
 }, 9800);
 
-
 let speechIndex = 0;
-setTimeout(handleSpeech,11500);
+setTimeout(handleSpeech,11000);
 function handleSpeech() {
     const {title,message,images} = speech[speechIndex];
     document.getElementById('speechTitle').innerText = title;
     document.querySelector('.type').innerHTML = `<p>${message}</p>`;
     speechIndex<speech.length-1? speechIndex++ : speechIndex = 0;
-    changeImg(images,0);
+    if(images.length){
+        document.querySelector('.carousel').innerHTML = `<img class="caroImg" src="./assets/images/${images[0]}">`;
+        // changeImg(images,1);
+    };
     setTimeout(handleSpeech,10000);
 };
 
 function changeImg(images, imgIndex) {
     if (imgIndex < images.length) {
-        document.querySelector('.caroImg').setAttribute('src', `./assets/images/${images[imgIndex]}`);
-        setTimeout(()=>changeImg(images,imgIndex),700);
-        imgIndex++;
+        setTimeout(()=>{
+            document.querySelector('.carousel').innerHTML = `<img class="caroImg" src="./assets/images/${images[imgIndex]}">`;
+            changeImg(images,imgIndex);
+            imgIndex++;
+        },3000);
     };
 };
 

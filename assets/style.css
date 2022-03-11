@@ -109,7 +109,7 @@ body {
 .carousel {
     box-shadow: 5px 5px 20px black;
     transform-origin: 50% 50%;
-    animation: carousel 20s;
+    /* animation: carousel 20s; */
     /* display: none; */
     border-radius: 12px;
     overflow: hidden;
@@ -147,10 +147,14 @@ body {
 
 .type p {
     font-size: 1.2rem;
-    animation: scroll 10s linear;
+    line-height: 1.6;
     animation: scroll 10s linear infinite;
     position: absolute;
     bottom: 10px;
+}
+
+.accordion-item {
+    max-width: 400px;
 }
 
 @keyframes scroll {
@@ -323,7 +327,7 @@ body {
 }
 
 .caroImg {
-    animation: caroImg 7s 8.5s infinite;
+    animation: caroImg 10s;
 }
 
 @keyframes caroImg {
