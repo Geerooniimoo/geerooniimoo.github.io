@@ -3,13 +3,13 @@ const speech =
     [
         {
             title: 'Introduction',
-            message: `Hi!<br> Here are some examples of the many things we can do together.`,
+            message: `Here are some examples of the many things we can do together.<br><br>`,
             images: []
         },
         {
             title: 'Mission to Jupiter',
             message: `Imagine automatically going to multiple NASA's websites and collecting information about Jupiter to store it on a SQL database and display it any way you like on your own website.`,
-            images: ['jup_2.png', 'jup_1.gif', 'jup_3.png']
+            images: ['jup_2.png', 'jup_3.png']
         },
         {
             title: 'Latitude & Weather Analysis',
@@ -34,7 +34,7 @@ const speech =
         {
             title: 'Online Train Scheduler',
             message: `Imagine using Firebase, an online Google Database that through the use of a website allows us to manage a train's scheduler live.`,
-            images: ['firebase2.png']
+            images: ['firebase2.png','firebase1.jpg']
         },
         {
             title: 'Earthquakes',
@@ -87,27 +87,26 @@ setTimeout(() => {
 }, 9800);
 
 let speechIndex = 0;
-setTimeout(handleSpeech,11000);
+setTimeout(handleSpeech, 11000);
 function handleSpeech() {
-    const {title,message,images} = speech[speechIndex];
+    const { title, message, images } = speech[speechIndex];
     document.getElementById('speechTitle').innerText = title;
     document.querySelector('.type').innerHTML = `<p>${message}</p>`;
-    speechIndex<speech.length-1? speechIndex++ : speechIndex = 0;
-    if(images.length){
+    speechIndex < speech.length - 1 ? speechIndex++ : speechIndex = 0;
+    if (images.length) {
         document.querySelector('.carousel').innerHTML = `<img class="caroImg" src="./assets/images/${images[0]}">`;
-        // changeImg(images,1);
+        changeImg(images, 0);
     };
-    setTimeout(handleSpeech,10000);
+    setTimeout(handleSpeech, 10000);
 };
 
 function changeImg(images, imgIndex) {
-    if (imgIndex < images.length) {
-        setTimeout(()=>{
-            document.querySelector('.carousel').innerHTML = `<img class="caroImg" src="./assets/images/${images[imgIndex]}">`;
-            changeImg(images,imgIndex);
-            imgIndex++;
-        },3000);
-    };
+    imgIndex++;
+    setTimeout(() => {
+        if (imgIndex < images.length) {
+            document.querySelector('.caroImg').setAttribute('src', `./assets/images/${images[imgIndex]}`);
+            changeImg(images, imgIndex);
+        };
+
+    }, 3000);
 };
-
-

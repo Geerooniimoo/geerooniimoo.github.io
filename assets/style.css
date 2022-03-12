@@ -1,7 +1,6 @@
 body {
     height: 150vh;
 }
-
 #accordionExample {
     display:flex;
     width: fit-content;
@@ -14,7 +13,6 @@ body {
     border-radius: 12px;
     padding: 0;
 }
-
 #topDiv {
     /* height: 75vh; */
     padding-top: 1vh;
@@ -22,7 +20,6 @@ body {
     background-size: 100% 75%;
     background-repeat: no-repeat;
 }
-
 #title {
     font-family: Arial, Helvetica, sans-serif;
     transform: skewX(40deg);
@@ -34,26 +31,21 @@ body {
     padding: 10px 40px;
     text-anchor: middle;
 }
-
 #title h4, #title a {
     transform: skewX(-40deg);
 }
-
 .modal-dialog {
     max-width: 80%;
 }
-
 .accordion {
     width: 20rem;
     margin: 0 auto;
 }
-
 .sessions {
     margin-top: 5vh;
     text-shadow: 5px 5px 5px black;
     position: relative;
 }
-
 .team {
     background-image: url('./images/team.jpg');
     background-repeat: no-repeat;
@@ -61,7 +53,6 @@ body {
     color: black;
     padding: 10%;
 }
-
 .leaflet {
     background-image: url('./images/leaflet.png');
     background-repeat: no-repeat;
@@ -69,13 +60,11 @@ body {
     color: black;
     padding: 10%;
 }
-
 .vba {
     background-image: url('./images/vba0.jpg');
     color: black;
     padding: 10%;
 }
-
 .firebase {
     background-image: url('./images/firebase1.jpg');
     background-size: 100% 135%;
@@ -84,7 +73,6 @@ body {
     color: black;
     padding: 10%;
 }
-
 .mars {
     background-image: url('./images/mars1.png');
     background-size: 100% 135%;
@@ -93,19 +81,16 @@ body {
     color: black;
     padding: 10%;
 }
-
 .vba div, .team div, .leaflet div, .firebase div, .mars div {
     background-color: #fff;
     padding: 2%;
     opacity: .85;
     box-shadow: 5px 5px 20px;
 }
-
 .python {
     background-image: url('./images/python0.png');
     background-size: 110% 100%;
 }
-
 .carousel {
     box-shadow: 5px 5px 20px black;
     transform-origin: 50% 50%;
@@ -116,22 +101,15 @@ body {
     margin: 5% auto;
     width: 50%;
 }
-
 .textShadow {
     fill: red;
     stroke:black;
     text-shadow: 3px 3px 4px black;
 }
-
 .textLetter {
     fill: white;
     stroke:black;
 }
-
-/* .calendar {
-    position: absolute;
-} */
-
 .type {
     position: relative;
     width: 90%;
@@ -144,7 +122,6 @@ body {
     margin: 0% auto;
     height: 7.5rem;
 }
-
 .type p {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -152,11 +129,9 @@ body {
     position: absolute;
     bottom: 10px;
 }
-
 .accordion-item {
     max-width: 400px;
 }
-
 @keyframes scroll {
     0% {
         transform: translateY(110%);
@@ -168,7 +143,27 @@ body {
         transform: translateY(0%);
     }
 }
-
+#titleDiv {
+    transform: skewX(40deg);
+}
+.scroll2 {
+    transform: skewX(-40deg);
+    animation: scroll2 10s linear infinite;
+}
+@keyframes scroll2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-110%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-110%);
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
 #typeDiv {
     color: white;
     margin: 0 auto;
@@ -186,13 +181,11 @@ body {
     overflow: hidden;
     animation: type 12s;
 }
-
 #speechTitle {
     transform: skewX(40deg);
     text-align: center;
     color: cornflowerblue;
 }
-
 @keyframes type {
     0% {
         opacity: 0;
@@ -204,7 +197,6 @@ body {
         transform: scaleX(200%);
     }
 }
-
 @keyframes carousel {
     0% {
         opacity: 0;
@@ -219,7 +211,6 @@ body {
         transform: scale(100%);
     }
 }
-
 .carousel img {
     width: 100%;
     border-radius: 12px;
@@ -228,7 +219,6 @@ body {
     position: relative;
     z-index: 2;
 }
-
 .hours {
     display: inline-block;
     position: relative;
@@ -237,7 +227,6 @@ body {
     transform-origin: -20%;
     animation: hours 3.5s 8s;
 }
-
 .child_1 {
     cx: 50%;
     cy: 84%;
@@ -246,7 +235,6 @@ body {
     border: 2px solid black;
     fill: yellow;
 }
-
 .child_4 {
     cx: 57%;
     cy: 48%;
@@ -315,21 +303,17 @@ body {
     cy: 50%;
     fill: orange;
 }
-
 #hours {
     height: 50px;
     width: 107px;
 }
-
 .hours g text {
     font-size: 3rem;
     font-weight: bolder;
 }
-
 .caroImg {
     animation: caroImg 10s;
 }
-
 @keyframes caroImg {
     0% {
         opacity: 0;
@@ -394,7 +378,6 @@ body {
         transform: translate(-400%, 50vh) scaleX(6);
     }
 }
-
 .fire {
     position: absolute;
     top: -50%;
@@ -409,7 +392,6 @@ body {
     opacity: 0;
     animation: fire 6s 1s;
 }
-
 @keyframes fire {
     0% {
         /* transform: translateX(200px); */
@@ -458,7 +440,6 @@ body {
 
     }
 }
-
 .eli1 {
     cx: 21%;
     cy: 7%;
@@ -466,7 +447,6 @@ body {
     ry: 7%;
     fill: gray;
 }
-
 .eli2 {
     cx: 29%;
     cy: 21%;
@@ -474,7 +454,6 @@ body {
     ry: 7%;
     fill: gray;
 }
-
 .smoke {
     position: absolute;
     height: 150px;
@@ -484,7 +463,6 @@ body {
     opacity: 0;
     animation: smoke 4s 6s;
 }
-
 @keyframes smoke {
     10% {
         opacity: 1;
@@ -497,7 +475,6 @@ body {
         opacity: 0;
     }
 }
-
 @media screen and (max-width: 576px) {
 
     #topDiv {
