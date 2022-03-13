@@ -86,43 +86,48 @@ setTimeout(() => {
     }
 }, 9800);
 
+var imgId;
 let speechIndex = 0;
 var speechId = setTimeout(handleSpeech, 11000);
 function handleSpeech() {
     const { title, message, images } = speech[speechIndex];
     document.getElementById('titleDiv').innerHTML = `<h4 id='speechTitle'>${title}</h4>`;
     document.querySelector('.type').innerHTML = `<p>${message}</p>`;
-    if (images.length) {
-        document.querySelector('.carousel').innerHTML = `<img class="caroImg" src="./assets/images/${images[0]}">`;
-        changeImg(images, 0);
-    };
+    images.length
+        ? (document
+            .querySelector('.carousel')
+            .innerHTML = `<img class="caroImg" src="./assets/images/${images[0]}">`,
+            changeImg(images, 0))
+        : document.querySelector('.carousel').innerHTML = '';
+    
     clearInterval(speechId);
     speechIndex < speech.length - 1 ? speechIndex++ : speechIndex = 0;
-    speechId=setTimeout(handleSpeech, 10000);
+    speechId = setTimeout(handleSpeech, 10000);
 };
 
 function changeImg(images, imgIndex) {
-    imgIndex++;
-    setTimeout(() => {
-        if (imgIndex < images.length) {
+    
+    if (imgIndex < images.length) {
+        setTimeout(() => {
             document.querySelector('.caroImg').setAttribute('src', `./assets/images/${images[imgIndex]}`);
+            imgIndex++;
             changeImg(images, imgIndex);
-        };
-
-    }, 3000);
+        }, 3000);
+    };
 };
 
 document.getElementById('rewind').addEventListener('click', handleRewind);
 document.getElementById('forward').addEventListener('click', handleForward);
 
 function handleRewind() {
-    speechIndex>1 ? (
-        speechIndex-=2,
+    speechIndex > 1 ? (
+        speechIndex -= 2,
         console.log(speechIndex),
         clearInterval(speechId),
+        // clearInterval(imgId),
         document.querySelector('#speechTitle').innerText = '',
         document.querySelector('.type').innerHTML = '',
-        handleSpeech()) : speechIndex=0;
+        handleSpeech()) : speechIndex = 0;
     // speechIndex ? (speechIndex--, clearInterval(speechId) ) : '';    
 };
 
@@ -130,6 +135,7 @@ function handleForward() {
     speechIndex < speech.length - 1 ? (
         console.log(speechIndex),
         clearInterval(speechId),
+        clearInterval(imgId),
         document.querySelector('#speechTitle').innerText = '',
         document.querySelector('.type').innerHTML = '',
         handleSpeech()) : '';
