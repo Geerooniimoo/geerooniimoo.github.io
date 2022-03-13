@@ -34,7 +34,7 @@ const speech =
         {
             title: 'Online Train Scheduler',
             message: `Imagine using Firebase, an online Google Database that through the use of a website allows us to manage a train's scheduler live.`,
-            images: ['firebase2.png','firebase1.jpg']
+            images: ['firebase2.png', 'firebase1.jpg']
         },
         {
             title: 'Earthquakes',
@@ -87,17 +87,18 @@ setTimeout(() => {
 }, 9800);
 
 let speechIndex = 0;
-setTimeout(handleSpeech, 11000);
+var speechId = setTimeout(handleSpeech, 11000);
 function handleSpeech() {
     const { title, message, images } = speech[speechIndex];
-    document.getElementById('speechTitle').innerText = title;
+    document.getElementById('titleDiv').innerHTML = `<h4 id='speechTitle'>${title}</h4>`;
     document.querySelector('.type').innerHTML = `<p>${message}</p>`;
-    speechIndex < speech.length - 1 ? speechIndex++ : speechIndex = 0;
     if (images.length) {
         document.querySelector('.carousel').innerHTML = `<img class="caroImg" src="./assets/images/${images[0]}">`;
         changeImg(images, 0);
     };
-    setTimeout(handleSpeech, 10000);
+    clearInterval(speechId);
+    speechIndex < speech.length - 1 ? speechIndex++ : speechIndex = 0;
+    speechId=setTimeout(handleSpeech, 10000);
 };
 
 function changeImg(images, imgIndex) {
@@ -110,3 +111,33 @@ function changeImg(images, imgIndex) {
 
     }, 3000);
 };
+
+document.getElementById('rewind').addEventListener('click', handleRewind);
+document.getElementById('forward').addEventListener('click', handleForward);
+
+function handleRewind() {
+    speechIndex>1 ? (
+        speechIndex-=2,
+        console.log(speechIndex),
+        clearInterval(speechId),
+        document.querySelector('#speechTitle').innerText = '',
+        document.querySelector('.type').innerHTML = '',
+        handleSpeech()) : speechIndex=0;
+    // speechIndex ? (speechIndex--, clearInterval(speechId) ) : '';    
+};
+
+function handleForward() {
+    speechIndex < speech.length - 1 ? (
+        console.log(speechIndex),
+        clearInterval(speechId),
+        document.querySelector('#speechTitle').innerText = '',
+        document.querySelector('.type').innerHTML = '',
+        handleSpeech()) : '';
+    // speechIndex ? (speechIndex--, clearInterval(speechId) ) : '';    
+};
+
+
+
+
+
+

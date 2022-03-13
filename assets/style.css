@@ -146,10 +146,6 @@ body {
 #titleDiv {
     transform: skewX(40deg);
 }
-.scroll2 {
-    transform: skewX(-40deg);
-    animation: scroll2 10s linear infinite;
-}
 @keyframes scroll2 {
     0% {
         opacity: 0;
@@ -165,6 +161,7 @@ body {
     }
 }
 #typeDiv {
+    position: relative;
     color: white;
     margin: 0 auto;
     height: 9rem;
@@ -181,10 +178,39 @@ body {
     overflow: hidden;
     animation: type 12s;
 }
+
+#typeDiv:hover #rewind {
+    left: 0;
+}
+#rewind {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    background: white;
+    opacity: .8;
+    transition-property: left;
+    transition-duration: .6s;
+}
+#typeDiv:hover #forward {
+    right:0;
+}
+#forward {
+    position: absolute;
+    top: 0;
+    opacity: .8;
+    right: -100%;
+    width: 20%;
+    height: 100%;
+    background: white;
+    transition-property: right;
+    transition-duration: .6s;
+}
 #speechTitle {
-    transform: skewX(40deg);
     text-align: center;
     color: cornflowerblue;
+    animation: scroll2 10s linear;
 }
 @keyframes type {
     0% {
