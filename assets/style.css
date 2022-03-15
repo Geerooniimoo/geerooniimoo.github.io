@@ -25,6 +25,8 @@ body {
     transform: skewX(40deg);
     width: 600px;
     box-shadow: -25px 15px 5px gray;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
     border-left: 4px solid red;
     border-bottom: 4px solid red;
     border-radius: 15px 15px;
@@ -90,6 +92,29 @@ body {
 .python {
     background-image: url('./images/python0.png');
     background-size: 110% 100%;
+}
+.geronimo {
+    color: cornflowerblue;
+}
+.titleImg {
+    width: 35px;
+    transform: skewX(-40deg);
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+}
+.titleImg2 {
+    width: 35px;
+    transform: skewX(-40deg);
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
 }
 .carousel {
     box-shadow: 5px 5px 20px black;
@@ -170,8 +195,10 @@ body {
     background: black;
     width: 600px;
     box-shadow: -25px 15px 5px grey;
+    border-right: 4px solid black;
     border-left: 4px solid red;
     border-top: 4px solid red;
+    border-bottom: 4px solid black;
     border-radius: 15px 15px;
     padding: 10px 40px;
     text-anchor: middle;
@@ -528,6 +555,7 @@ body {
     }
 
     #title {
+        position: relative;
         transform: skewX(0deg);
         width: auto;
         box-shadow: none;
@@ -535,10 +563,25 @@ body {
         border-radius: 0px;
         padding: 0;
     }
-
+    #typeDiv {
+        position: relative;
+        transform: skewX(0deg);
+        width: auto;
+        box-shadow: none;
+        border-left: none;
+        border-radius: 0px;
+        padding: 0;
+    }
+    #titleDiv {
+        transform: skewX(0deg);
+    }
+    
     #title h4 {
         transform: skewX(0deg);
         font-size: 1rem;
+    }
+    .type {
+        transform: skewX(0deg);
     }
     #type {
         width: 100%;

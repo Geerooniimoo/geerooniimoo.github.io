@@ -108,7 +108,8 @@ function handleSpeech() {
 function changeImg(images, imgIndex) {
     
     if (imgIndex < images.length) {
-        setTimeout(() => {
+        clearTimeout(imgId);
+        imgId = setTimeout(() => {
             document.querySelector('.caroImg').setAttribute('src', `./assets/images/${images[imgIndex]}`);
             imgIndex++;
             changeImg(images, imgIndex);
@@ -134,7 +135,7 @@ function handleRewind() {
 function handleForward() {
     speechIndex < speech.length - 1 ? (
         console.log(speechIndex),
-        clearInterval(speechId),
+        clearTimeout(speechId),
         clearInterval(imgId),
         document.querySelector('#speechTitle').innerText = '',
         document.querySelector('.type').innerHTML = '',
