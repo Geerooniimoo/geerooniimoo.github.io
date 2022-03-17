@@ -1,4 +1,5 @@
 body {
+    background-image: linear-gradient(24deg, white 50%, darkcyan 85%, black 110%);
     height: 150vh;
 }
 #accordionExample {
@@ -6,7 +7,7 @@ body {
     width: fit-content;
     margin-top: 1%;
     position: relative;
-    left: 5%;
+    left: 10%;
 }
 .img {
     border: 2px solid black;
@@ -16,17 +17,90 @@ body {
 #topDiv {
     /* height: 75vh; */
     padding-top: 1vh;
-    background-image: linear-gradient(10deg, transparent 45%, darkcyan, black);
     background-size: 100% 75%;
     background-repeat: no-repeat;
+}
+.linkImg {
+    z-index: 5;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    top: 10px;
+    left: 25px;
+    width: 50px;
+    height: 40px;
+
+    text-decoration: none;
+}
+.linkImg h6 {
+    position: relative;
+    display: none;
+    left: 10px;
+    bottom: -10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    width: 140px;
+    border: 1px solid black;
+    z-index: 6;
+}
+.linkImg2 {
+    z-index: 5;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    top: 10px;
+    left: 100px;
+    width: 50px;
+    height: 40px;
+}
+.linkImg2 h6 {
+    z-index: 6;
+    display: none;
+    position: relative;
+    left: 10px;
+    bottom: -10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    width: 163px;
+    border: 1px solid black;
+}
+#calenImg {
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* opacity: .8; */
+}
+.linkImg:hover h6,.linkImg2:hover h6 {
+    display:block;
+}
+#evalImg {
+    /* position: fixed; */
+    top: 75px;
+    right: 10px;
+    width: 50px;
+    height: 35px;
+    /* opacity: .8; */
+    border-radius: 4px;
+    border: 1px solid black;
+}
+#scheImg {
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: fixed;
+    right: 1%;
+    top: 50px;
+    background-color: #fff;
 }
 #title {
     font-family: Arial, Helvetica, sans-serif;
     transform: skewX(40deg);
     width: 600px;
     box-shadow: -25px 15px 5px gray;
-    border-top: 4px solid black;
-    border-right: 4px solid black;
+    border-top: 4px solid #a39f9f;
+    border-right: 4px solid #a39f9f;
     border-left: 4px solid red;
     border-bottom: 4px solid red;
     border-radius: 15px 15px;
@@ -156,6 +230,8 @@ body {
 }
 .accordion-item {
     max-width: 400px;
+    position: relative;
+    left: -20px;
 }
 @keyframes scroll {
     0% {
@@ -195,10 +271,10 @@ body {
     background: black;
     width: 600px;
     box-shadow: -25px 15px 5px grey;
-    border-right: 4px solid black;
+    border-right: 4px solid #a39f9f;
     border-left: 4px solid red;
     border-top: 4px solid red;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #a39f9f;
     border-radius: 15px 15px;
     padding: 10px 40px;
     text-anchor: middle;
@@ -529,14 +605,26 @@ body {
     }
 }
 @media screen and (max-width: 576px) {
-
+    .titleImg2 {
+        transform: skewX(0deg);
+        right: 0;
+        bottom: 5px;
+    }
+    .titleImg {
+        transform: skewX(0deg);
+        right: 40px;
+        bottom: 5px;
+    }
+    #typeDiv {
+        border-top: 4px solid black;
+        border-bottom: 4px solid red;
+    }
     #topDiv {
         height: auto;
         padding-top: 0;
         display: flex;
         flex-direction: column;
     }
-
     #topDiv div:nth-child(2) {
         order: 1;
         width: 100%;
@@ -575,7 +663,6 @@ body {
     #titleDiv {
         transform: skewX(0deg);
     }
-    
     #title h4 {
         transform: skewX(0deg);
         font-size: 1rem;
@@ -599,7 +686,15 @@ body {
         display: flex;
         flex-direction: column;
     }
-
+    .accordion-item {
+        margin: 0;
+    }
+    .accordion-button {
+        padding: 5px;
+    }
+    .sessions {
+        margin-top: 2vh;
+    }
     @keyframes hours {
         0% {
             transform: rotate(6deg);
