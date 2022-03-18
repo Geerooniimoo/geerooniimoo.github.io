@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(24deg, white 50%, darkcyan 85%, black 110%);
-    height: 150vh;
+    height: 250vh;
 }
 #accordionExample {
     display:flex;
