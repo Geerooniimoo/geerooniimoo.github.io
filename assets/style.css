@@ -1,3 +1,10 @@
+
+.accordion-item:nth-child(n+2) {
+margin: 16px 15px 0 0;
+}
+a {
+    color: black;
+}
 body {
     background-image: linear-gradient(24deg, white 50%, darkcyan 85%, black 110%);
     height: 250vh;
@@ -5,9 +12,13 @@ body {
 #accordionExample {
     display:flex;
     width: fit-content;
-    margin-top: 1%;
+    /* margin-top: 1%; */
     position: relative;
-    left: 10%;
+    left: 7%;
+}
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
 }
 .img {
     border: 2px solid black;
@@ -118,7 +129,7 @@ body {
     margin: 0 auto;
 }
 .sessions {
-    margin-top: 5vh;
+    margin: 7vh 0;
     text-shadow: 5px 5px 5px black;
     position: relative;
 }
@@ -635,12 +646,6 @@ body {
     #topDiv div:nth-child(3) {
         order: 3;
     }
-    #topDiv h5:nth-child(4) {
-        order: 4;
-    }
-    #topDiv div:nth-child(5) {
-        order: 5;
-    }
 
     #title {
         position: relative;
@@ -679,9 +684,19 @@ body {
     .carousel {
         width: 95%;
     }
-    .accordion {
-        display: block;
+    .accordion-item {
+        /* display: block; */
+        position: relative;
     }
+    .accordion-item:nth-child(2) {
+        border: 2px solid red;
+        order: 3;
+    }
+    .accordion-item:nth-child(3) {
+        border: 2px solid red;
+        order: 1;
+    }
+
     #accordionExample {
         display: flex;
         flex-direction: column;
@@ -693,7 +708,10 @@ body {
         padding: 5px;
     }
     .sessions {
-        margin-top: 2vh;
+        margin: 2vh auto 0 auto;
+    }
+    #calenImg, #evalImg {
+        display: none;
     }
     @keyframes hours {
         0% {
