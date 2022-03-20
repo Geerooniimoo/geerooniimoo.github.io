@@ -133,7 +133,7 @@ function handleRewind() {
 };
 
 function handleForward() {
-    speechIndex < speech.length - 1 ? (
+    speechIndex < speech.length ? (
         console.log(speechIndex),
         clearTimeout(speechId),
         clearInterval(imgId),

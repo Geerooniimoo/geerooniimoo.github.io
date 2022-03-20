@@ -684,28 +684,31 @@ body {
     .carousel {
         width: 95%;
     }
-    .accordion-item {
+    #accordionExample {
         /* display: block; */
         position: relative;
     }
-    .accordion-item:nth-child(2) {
-        border: 2px solid red;
+    #accordionExample div:nth-child(1) {
         order: 3;
     }
-    .accordion-item:nth-child(3) {
-        border: 2px solid red;
+    #accordionExample div:nth-child(2) {
+        order: 2;
+    }
+    #accordionExample div:nth-child(3) {
         order: 1;
     }
-
+    .accordion-item:nth-child(n+2) {
+        margin: 0;
+    }
+    .accordion-button {
+        padding: 4px 0;
+    }
     #accordionExample {
         display: flex;
         flex-direction: column;
     }
     .accordion-item {
         margin: 0;
-    }
-    .accordion-button {
-        padding: 5px;
     }
     .sessions {
         margin: 2vh auto 0 auto;
