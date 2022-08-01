@@ -5,11 +5,11 @@ type = () => {
     document.querySelector('#type').innerText = speech;
 };
 
-setTimeout(() => {
-    if (window.screen.width > 576) {
-        document.querySelector('.accordion').scrollIntoView();
-    }
-}, 9800);
+// setTimeout(() => {
+//     if (window.screen.width > 576) {
+//         document.querySelector('.accordion').scrollIntoView();
+//     }
+// }, 9800);
 
 var imgId;
 let speechIndex = 0;
