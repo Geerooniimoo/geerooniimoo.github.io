@@ -3,8 +3,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
-    top: 0;
     width: 100%;
     height: fit-content;
     z-index: 7;
@@ -53,9 +51,6 @@ body {
     padding: 0;
 }
 #topDiv {
-    /* height: 75vh; */
-    margin-top: 8vh;
-    padding-top: 1vh;
     background-size: 100% 75%;
     background-repeat: no-repeat;
 }
