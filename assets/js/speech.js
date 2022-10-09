@@ -6,6 +6,11 @@ const speech =
             images: []
         },
         {
+            title: 'Weather Dashboard',
+            message: `Let's create an application that provides a weather dashboard from which you can obtain current weather conditions for any city and a five days forecast, all from a public API.  This includes the UV index with a numeric value and danger color scale.`,
+            images: ['weather.png']
+        },
+        {
             title: 'Mission to Jupiter',
             message: `Imagine automatically going to multiple NASA's websites and collecting information about Jupiter to store it on a SQL database and display it any way you like on your own website.`,
             images: ['jup_2.png', 'jup_3.png']

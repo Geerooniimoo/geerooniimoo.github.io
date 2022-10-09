@@ -1,6 +1,6 @@
 document.body.scrollIntoView();
 
-type = () => {
+let type = () => {
     let i = 0;
     document.querySelector('#type').innerText = speech;
 };
