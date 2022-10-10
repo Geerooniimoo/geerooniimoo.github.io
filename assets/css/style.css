@@ -228,12 +228,10 @@ body {
 .carousel {
     box-shadow: 5px 5px 20px black;
     transform-origin: 50% 50%;
-    /* animation: carousel 20s; */
-    /* display: none; */
     border-radius: 12px;
     overflow: hidden;
     margin: 5% auto;
-    width: 50%;
+    width: 80%;
 }
 .textShadow {
     fill: red;
@@ -259,7 +257,7 @@ body {
 .type p {
     font-size: 1.2rem;
     line-height: 1.6;
-    animation: scroll 10s linear infinite;
+    animation: scroll 10s linear;
     position: absolute;
     bottom: 10px;
 }
@@ -273,7 +271,7 @@ body {
     0% {
         transform: translateY(110%);
     }
-    95% {
+    80% {
         transform: translateY(0%);
     }
     100% {
@@ -288,7 +286,7 @@ body {
         opacity: 0;
         transform: translateY(-110%);
     }
-    95% {
+    80% {
         opacity: 1;
         transform: translateY(0%);
     }
@@ -479,6 +477,7 @@ body {
     font-weight: bolder;
 }
 .caroImg {
+    height: 60vh;
     animation: caroImg 10s;
 }
 @keyframes caroImg {
