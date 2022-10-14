@@ -35,7 +35,7 @@ a {
 }
 body {
     background-image: linear-gradient(24deg, white 50%, darkcyan 85%, black 110%);
-    height: 170vh;
+    height: 1200px;
 }
 
 body::-webkit-scrollbar {
@@ -294,6 +294,7 @@ body::-webkit-scrollbar {
 }
 #typeDiv {
     position: relative;
+    z-index: 1;
     color: white;
     margin: 0 auto;
     height: 9rem;
@@ -310,7 +311,23 @@ body::-webkit-scrollbar {
     padding: 10px 40px;
     text-anchor: middle;
     overflow: hidden;
-    animation: type 12s;
+    animation: type 11.5s;
+}
+
+@keyframes type {
+    0% {
+        opacity: 0;
+        transform:translateY(-200px);
+        transform:skewX(-40deg);
+    }
+    90% {
+        opacity: 0;
+        transform:translateY(-200px);
+    }
+    100% {
+        transform:translateY(0);
+        transform:skewX(-40deg);
+    }
 }
 
 #typeDiv:hover #rewind {
@@ -346,34 +363,7 @@ body::-webkit-scrollbar {
     color: cornflowerblue;
     animation: scroll2 10s linear;
 }
-@keyframes type {
-    0% {
-        opacity: 0;
-    }
-    90% {
-        opacity: 0;
-    }
-    91% {
-        transform: scaleX(200%);
-    }
-}
-@keyframes carousel {
-    0% {
-        opacity: 0;
-        transform: scale(0%);
-    }
-    90% {
-        opacity: 0;
-        transform: scale(50%);
-    }
-    95% {
-        opacity: 1;
-        transform: scale(100%);
-    }
-    100% {
-        transform: scale(100%);
-    }
-}
+
 .carousel img {
     width: 100%;
     border-radius: 12px;
@@ -481,14 +471,29 @@ body::-webkit-scrollbar {
     overflow: hidden;
     margin: 5% auto;
     width: 70%;
+    border: 2px solid black;
+    animation: carousel 5s;
 }
+
+@keyframes carousel {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
+
 .caroImg {
-    height: 65vh;
+    height: 450px;
     animation: caroImg 10s;
 }
 @keyframes caroImg {
     0% {
         opacity: 0;
+        
         transform: scale(200%);
     }
     50% {
@@ -498,6 +503,7 @@ body::-webkit-scrollbar {
         transform: scale(100%);
     }
 }
+
 @keyframes hours {
     0% {
         transform: rotate(6deg);
@@ -530,24 +536,19 @@ body::-webkit-scrollbar {
         transform: rotate(100deg);
     }
     50% {
-        transform: rotate(90deg);
-    }
-    60% {
-        transform: translateY(50vh) translateX(-50%);
-    }
-    61% {
-        transform: translateY(48vh) translateX(-50%);
-    }
-    62% {
-        transform: translateY(50vh) translateX(-50%);
+        transform: rotate(90deg) translateY(0);
+        
     }
     65% {
-        transform: translateY(50vh) translateX(-50%);
         opacity: 1;
+        transform:scale(100%) rotate(90deg) translateX(0);
+    }
+    80% {
+        opacity: 0;
+        transform:rotate(90deg) translateX(100px) scale(200%);
     }
     100% {
         opacity: 0;
-        transform: translate(-400%, 50vh) scaleX(6);
     }
 }
 .fire {
@@ -555,8 +556,6 @@ body::-webkit-scrollbar {
     top: -50%;
     left: 0%;
     z-index: 1;
-    /* width: 100px;
-    height: 100px; */
     width: 50px;
     height: 55px;
     border-radius: 90px;
@@ -566,7 +565,6 @@ body::-webkit-scrollbar {
 }
 @keyframes fire {
     0% {
-        /* transform: translateX(200px); */
         opacity: 1;
     }
     8%{
@@ -609,7 +607,6 @@ body::-webkit-scrollbar {
     100% {
         transform: rotateY(90deg);
         left: 60%
-
     }
 }
 .eli1 {
@@ -666,7 +663,6 @@ body::-webkit-scrollbar {
         border-bottom: 4px solid red;
     }
     #topDiv {
-        height: auto;
         padding-top: 0;
         display: flex;
         flex-direction: column;
@@ -717,7 +713,10 @@ body::-webkit-scrollbar {
         padding: 5%;
     }
     .carousel {
-        width: 90%;
+        width: 95%;
+    }
+    .caroImg {
+        height: 400px;
     }
     #accordionExample {
         /* display: block; */

@@ -18,12 +18,16 @@ function handleSpeech() {
     const { title, message, images } = speech[speechIndex];
     document.getElementById('titleDiv').innerHTML = `<h4 id='speechTitle'>${title}</h4>`;
     document.querySelector('.type').innerHTML = `<p>${message}</p>`;
+
     images.length
-        ? (document
-            .querySelector('.carousel')
-            .innerHTML = `<img class="caroImg" src="./assets/images/${images[0]}">`,
+        ? (
+            !carousel.classList.contains('carousel') ? carousel.classList.toggle('carousel'): '',
+            carousel.innerHTML = `<img class="caroImg" src="./assets/images/${images[0]}">`, 
             changeImg(images, 0))
-        : document.querySelector('.carousel').innerHTML = '';
+            : ( 
+                carousel.innerHTML = '',
+                carousel.classList.contains('carousel') ? carousel.classList.toggle('carousel'): ''
+          );
     
     clearInterval(speechId);
     speechIndex < speech.length - 1 ? speechIndex++ : speechIndex = 0;
