@@ -36,6 +36,7 @@ a {
 body {
     background-image: linear-gradient(24deg, white 50%, darkcyan 85%, black 110%);
     height: 1200px;
+    background-size: 100% 200vh;
 }
 
 body::-webkit-scrollbar {
@@ -470,7 +471,7 @@ body::-webkit-scrollbar {
     border-radius: 12px;
     overflow: hidden;
     margin: 5% auto;
-    width: 70%;
+    width: 700px;
     border: 2px solid black;
     animation: carousel 5s;
 }
@@ -645,6 +646,9 @@ body::-webkit-scrollbar {
     }
 }
 @media screen and (max-width: 576px) {
+    body {
+        height: 110vh;
+    }
     nav {
         display: none;
     }

@@ -1,4 +1,4 @@
-document.body.scrollIntoView();
+// document.body.scrollIntoView();
 
 let type = () => {
     let i = 0;
