@@ -1,48 +1,10 @@
-# Geronimo
+# Analytics And Web Development
 
-#### Github History under username Geerooniimoo
-<img src='assets/images/Github-2021.png'>
-<img src='assets/images/Github-2020.png'>
-<img src='assets/images/Github-2019.png'>
-<img src='assets/images/Github-2018.png'>
-<img src='assets/images/Github-2017.png'>
+## Description: 
+```md
+    A booking site for tutoring students and professionals on data analytics and full stack web development.
+```
+<img src='assets/images/analyticsandwebdevelopment.png'>
 
-## 39 repositories:
-* Leaflet-challenge
-* Geerooniimoo.io
-* D3-Challenge
-* python-api-challenge
-* pandas-challenge
-* plotly-challenge
-* SQLAlchemy-Challenge
-* Mission_To_Mars
-* matplotlib-challenge
-* NFL-RECORDS
-* heroesmemorygame
-* VBA-Scripting
-* SQL-Challenge
-* infosectechnology
-* SpiritualEngineering
-* JavaScript-Challenge
-* Web-Design-Challenge
-* Mission_to_Jupiter
-* Password-Generator
-* FriendFinder
-* Gamazon
-* realnewslinks
-* HYBC
-* New-York-Times-API
-* liri-node-app
-* WeatherForecast
-* GifTastic
-* Calender
-* crudaburger
-* porfolio
-* NodeGuessGame
-* TrainScheduler
-* CristalCollectorGame
-* Hangman-Game
-* BoxingGame
-* Responsive-HYBC
-* Bootstrap-Portfolio
-* Basic-Portfolio
+#### Questions of concerns:
+* [Email](mailto:Geronimo.Perez4@Gmail.com)
