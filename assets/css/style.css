@@ -11,7 +11,7 @@ nav {
 }
 
 nav a {
-    font-size: 13px;
+    font-size: 1.2rem;
     text-decoration: none;
     color: rgb(212, 219, 226);
     margin: 0 10px;
@@ -19,6 +19,7 @@ nav a {
     background: transparent;
     padding: 8px;
     border-radius: 12px;
+    font-family: Abril Fatface, Arial, sans-serif;
 }
 
 nav a:hover {
@@ -34,9 +35,10 @@ a {
     color: black;
 }
 body {
-    background-image: linear-gradient(24deg, white 50%, #0e5daf 85%, black 110%);
+    background-image: linear-gradient(24deg, white 35%, #0e5daf 90%, black 110%);
     height: 1200px;
     background-size: 100% 200vh;
+    font-family: Abril Fatface, Arial, sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -150,6 +152,8 @@ body::-webkit-scrollbar {
 }
 #title h4, #title a {
     transform: skewX(-40deg);
+    font-size: 1.8rem;
+    font-family: Abril Fatface, Arial, sans-serif;
 }
 .modal-dialog {
     max-width: 80%;
@@ -163,6 +167,11 @@ body::-webkit-scrollbar {
     text-shadow: 5px 5px 5px black;
     position: relative;
 }
+
+.sessions h4 {
+    font-size: 2.5rem;
+}
+
 .team {
     background-image: url('./images/team.jpg');
     background-repeat: no-repeat;
@@ -253,19 +262,23 @@ body::-webkit-scrollbar {
     margin: 0% auto;
     height: 7.5rem;
 }
+
 .type p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     animation: scroll 10s linear;
     position: absolute;
     bottom: 10px;
+    font-family: Abril Fatface, Arial, sans-serif;
 }
+
 .accordion-item {
     max-width: 400px;
     margin: 10px;
     /* position: relative;
     left: 60px; */
 }
+
 @keyframes scroll {
     0% {
         transform: translateY(110%);
@@ -279,6 +292,8 @@ body::-webkit-scrollbar {
 }
 #titleDiv {
     transform: skewX(40deg);
+    font-family: Abril Fatface, Arial, sans-serif;
+    /* font-size: 2.8rem; */
 }
 @keyframes scroll2 {
     0% {
@@ -363,6 +378,8 @@ body::-webkit-scrollbar {
     text-align: center;
     color: cornflowerblue;
     animation: scroll2 10s linear;
+    font-family: Abril Fatface, Arial, sans-serif;
+    font-size: 1.8rem;
 }
 
 .carousel img {
@@ -377,6 +394,7 @@ body::-webkit-scrollbar {
     width: 115px;
     margin-left: 10px;
     margin-top: 10px;
+    font-family:sans-serif;
 }
 
 .hours {
