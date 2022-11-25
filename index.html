@@ -14,13 +14,76 @@
 
 <body>
     <nav>
-        <a href="https://calendly.com/fsf-tutor-team/geronimo-perez" target="_blank">Developer Tutoring Sessions</a>
-        <a href="https://calendly.com/dv-tutor-team/geronimo-perez" target="_blank">Analyst Tutoring Sessions</a>
-        <a href="https://calendly.com/geronimo-perez/private-tutoring-session" target="_blank">Post Classes Sessions</a>
-        <a target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdb4ejjbqoqKO-Q4k7zeO_xwykwB0dxYLWYm1mX5Ik45MzEeg/viewform">Student
-            Evaluation</a>
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Students
+        </button>
+
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Professionals
+        </button>
+
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content studentModal">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center" id="exampleModalLabel">Students</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="accordion-body scheduleDiv">
+                        <h2>Schedule Session</h2>
+                        <a target="_blank" href="https://calendly.com/dv-tutor-team/geronimo-perez"><button id="analyst"
+                                class="btn btn-outline-primary">
+                                <h6 class="g-font">Data Analytics</h6>
+                            </button></a>
+                        <div class="scheduleDev">
+                            <a target="_blank" href="https://calendly.com/fsf-tutor-team/geronimo-perez"><button
+                                    id="developer" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Web Development</h6>
+                                </button></a>
+                        </div>
+
+                        <h2 class="evalTitle">Evaluation</h2>
+                        <a target="_blank"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdb4ejjbqoqKO-Q4k7zeO_xwykwB0dxYLWYm1mX5Ik45MzEeg/viewform">
+                            <button id="evaluation">
+                                <h6 class="g-font">Student's Evaluation</h6>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content studentModal">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center" id="exampleModalLabel">Professionals</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body professionalModal">
+                    <div class="accordion-body scheduleDiv">
+                        <h2>Schedule Private Session</h2>
+                        <a target="_blank" href="https://calendly.com/geronimo-perez/private-tutoring-session"><button id="analyst"
+                                class="btn btn-outline-primary">
+                                <h6 class="g-font">Data Analytics</h6>
+                            </button></a>
+                        <div class="scheduleDev">
+                            <a target="_blank" href="https://calendly.com/geronimo-perez/private-tutoring-session"><button
+                                    id="developer" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Web Development</h6>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="topDiv">
         <div class="sessions">
@@ -63,7 +126,7 @@
 
         <div id='title' class="text-white m-auto">
             <h4 class="text-center p-3">
-               Tutoring students and professionals one session at the time
+                Tutoring students and professionals one session at the time
             </h4>
             <a target="_blank" href="https://linkedin.com/in/geronimoperez"><img src="./assets/images/linkedIn.png"
                     class="titleImg"></a><a target="_blank" href="https://github.com/Geerooniimoo"><img
@@ -76,20 +139,31 @@
                 <h2 class="accordion-item" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h4>Schedule Student's Sessions</h4>
+                        <h4 class="mx-auto">Students</h4>
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <a href="https://calendly.com/dv-tutor-team/geronimo-perez" target="_blank"><button
-                                class="mb-4 btn btn-outline-primary">
-                                <h6>Developer Tutoring Sessions</h6>
-                            </button></a>
-                        <a href="https://calendly.com/dv-tutor-team/geronimo-perez" target="_blank"><button
+                    <div class="accordion-body scheduleDiv">
+                        <h2>Schedule Session</h2>
+                        <a target="_blank" href="https://calendly.com/dv-tutor-team/geronimo-perez"><button id="analyst"
                                 class="btn btn-outline-primary">
-                                <h6>Analyst Tutoring Sessions</h6>
+                                <h6 class="g-font">Data Analytics</h6>
                             </button></a>
+                        <div class="scheduleDev">
+                            <a target="_blank" href="https://calendly.com/fsf-tutor-team/geronimo-perez"><button
+                                    id="developer" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Web Development</h6>
+                                </button></a>
+                        </div>
+
+                        <h2 class="evalTitle">Evaluation</h2>
+                        <a target="_blank"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdb4ejjbqoqKO-Q4k7zeO_xwykwB0dxYLWYm1mX5Ik45MzEeg/viewform">
+                            <button id="evaluation">
+                                <h6 class="g-font">Student's Evaluation</h6>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -98,101 +172,128 @@
                 <h2 class="accordion-item" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
-                        <h4>Knowledge base</h4>
+                        <h4 class="mx-auto">Knowledge base</h4>
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>
-                            <strong>Data Analytics: </strong>
+                    <div class="accordion-body knowledgeDiv">
+                        <div class="analyticDiv">
+                            <h3>Data Analytics: </h3>
                             Intermediate Excel
-
-                            • Pivot Tables
-                            • VBA Scripting
+                            <ul>
+                                <li> Pivot Tables</li>
+                                <li> VBA Scripting</li>
+                            </ul>
                             Fundamental Statistics
-
-                            • Modelling
-                            • Forecast
+                            <ul>
+                                <li> Modelling</li>
+                                <li> Forecast</li>
+                            </ul>
                             Python Programming
-
-                            • Python 3
-                            • NumPy
-                            • Pandas
-                            • Matplotlib
-                            • API Interactions
+                            <ul>
+                                <li> Python 3</li>
+                                <li> NumPy</li>
+                                <li> Pandas</li>
+                                <li> Matplotlib</li>
+                                <li> API Interactions</li>
+                            </ul>
                             Databases
+                            <ul>
+                                <li> Postgres/pgAdmin</li>
+                                <li> MongoDB</li>
+                                <li> Extract-Transform-Load (ETL)</li>
+                            </ul>
 
-                            • Postgres/pgAdmin
-                            • MongoDB
-                            • Extract-Transform-Load (ETL)
                             Front End Web Visualization
+                            <ul>
+                                <li> HTML</li>
+                                <li> CSS</li>
+                                <li> Bootstrap</li>
+                                <li> Dashboarding</li>
+                                <li> JavaScript</li>
+                                <li> Geomapping with JavaScript libraries</li>
+                            </ul>
 
-                            • HTML
-                            • CSS
-                            • Bootstrap
-                            • Dashboarding
-                            • JavaScript
-                            • Geomapping with JavaScript libraries
                             Business Intelligence Software
+                            <ul>
+                                <li> Tableau</li>
+                            </ul>
 
-                            • Tableau
                             Advanced Topics
+                            <ul>
+                                <li> Big Data Analytics with Hadoop</li>
+                                <li> Amazon Web Services</li>
+                                <li> Machine Learning</li>
+                            </ul>
 
-                            • Big Data Analytics with Hadoop
-                            • Amazon Web Services
-                            • Machine Learning
-                        </p>
-                        <p>
-                            <strong>Web Developer: </strong>
+                        </div>
+                        <div class="webDiv">
+                            <h3>Web Developer: </h3>
                             Computer Science applied to JavaScript
-                            • Design Patterns
-                            • Data Structures
-                            • Algorithms
-                            • Big O Notation
+                            <ul>
+                                <li> Design Patterns</li>
+                                <li> Data Structures</li>
+                                <li> Algorithms</li>
+                                <li> Big O Notation</li>
+                            </ul>
 
                             Browser Based Technologies
-                            • HTML
-                            • CSS
-                            • JavaScript
-                            • jQuery
-                            • Responsive Design
-                            • Bootstrap
-                            • Handlebars
-                            • Local Storage, Session Storage, IndexedDB
-                            • React.js
+                            <ul>
+                                <li> HTML</li>
+                                <li> CSS</li>
+                                <li> JavaScript</li>
+                                <li> jQuery</li>
+                                <li> Responsive Design</li>
+                                <li> Bootstrap</li>
+                                <li> Handlebars</li>
+                                <li> Local Storage, Session Storage, IndexedDB</li>
+                                <li> React.js</li>
+                            </ul>
 
                             Deployment
-                            • Heroku
-                            • Git
+                            <ul>
+                                <li> Heroku</li>
+                                <li> Git</li>
+                            </ul>
 
                             Locally Popular MVC Framework
-                            • C#/ASP.NET
-                            • Python/Django
-                            • Java/Spring
-                            • PHP/Laravel
+                            <ul>
+                                <li> C#/ASP.NET</li>
+                                <li> Python/Django</li>
+                                <li> Java/Spring</li>
+                                <li> PHP/Laravel</li>
+                            </ul>
 
                             Databases
-                            • MySQL
-                            • MongoDB
+                            <ul>
+                                <li> MySQL</li>
+                                <li> MongoDB</li>
+                            </ul>
 
                             Server-Side Development
-                            • Express
-                            • User Authentication
-                            • Sequelize
-                            • MERN Stack (MongoDB, Express.js, React.js, Node.js)
+                            <ul>
+                                <li> Express</li>
+                                <li> User Authentication</li>
+                                <li> Sequelize</li>
+                                <li> MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                            </ul>
 
                             Quality and Performance
-                            • Unit Testing
-                            • Google Lighthouse
-                            • Webpack
-                            • PWAs (Progressive Web Apps)
-                            • Lazy Loading
-                            • Service Workers
+                            <ul>
+                                <li> Unit Testing</li>
+                                <li> Google Lighthouse</li>
+                                <li> Webpack</li>
+                                <li> PWAs (Progressive Web Apps)</li>
+                                <li> Lazy Loading</li>
+                                <li> Service Workers</li>
+                            </ul>
 
                             Accessibility
-                            • Semantic HTML
-                        </p>
+                            <ul>
+                                <li> Semantic HTML</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,27 +302,31 @@
                 <h2 class="accordion-item" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
-                        <h4>Miscellaneous</h4>
+                        <h4 class="mx-auto">Professionals</h4>
                     </button>
                 </h2>
+
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <a target="_blank"
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSdb4ejjbqoqKO-Q4k7zeO_xwykwB0dxYLWYm1mX5Ik45MzEeg/viewform"><button
-                                class="mb-4 btn btn-outline-primary">
-                                <h6>Student Evaluation</h6>
-                            </button></a>
-                        <br>
+
+                        <h2>Schedule Private Session</h2>
                         <a target="_blank" href="https://calendly.com/geronimo-perez/private-tutoring-session"><button
-                                class="btn btn-outline-primary">
-                                <h6>Post Classes Sessions</h6>
+                                id="analyst" class="btn btn-outline-primary">
+                                <h6 class="g-font">Data Analytics</h6>
                             </button></a>
+
+                        <a target="_blank" href="https://calendly.com/geronimo-perez/private-tutoring-session"><button
+                                id="developer" class="btn btn-outline-primary">
+                                <h6 class="g-font">Web Development</h6>
+                            </button></a>
+
                     </div>
                 </div>
             </div>
-
         </div>
+
+    </div>
     </div>
     <div id="typeDiv">
         <div id="titleDiv">
