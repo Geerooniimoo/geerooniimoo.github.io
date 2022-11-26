@@ -48,6 +48,22 @@ nav button:hover {
     margin: 0 auto;
 }
 
+.forStudents {
+    color: red;
+    font-size: .9rem;
+    font-family: sans-serif;
+}
+
+.forStudents2 {
+    color: white;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    width: 875px;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px;
+}
+
 #exampleModalLabel {
     margin: 0 auto 0 325px;
 }
@@ -351,8 +367,12 @@ a {
 
 .scheduleDev {
     position: absolute;
-    top: 57px;
+    top: 118px;
     left: 500px;
+}
+
+#collapseTwo .scheduleDev {
+    top: 139px;
 }
 
 .knowledgeDiv {
