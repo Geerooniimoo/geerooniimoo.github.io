@@ -1,4 +1,4 @@
-/* * {
+/* #accordionExample * {
     border: 2px dotted red;
 } */
 
@@ -62,6 +62,17 @@ nav button:hover {
     text-align: left;
     border-radius: 8px;
     padding: 10px;
+}
+
+#collapseTwo h2, #collapseThree h2 {
+    width: 400px;
+}
+
+.professionalDiv {
+    position: relative;
+    right: 550px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 #exampleModalLabel {
@@ -392,6 +403,10 @@ a {
 
 .knowledgeDiv {
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 300%;
+    right: 100%;
 }
 
 .analyticDiv, .webDiv {
@@ -405,13 +420,13 @@ a {
 }
 
 .analyticDiv {
-    position: absolute;
-    right: 200px;
+    /* position: absolute;
+    right: 180px; */
 }
 
 .webDiv {
-    position: relative;
-    left: 200px;
+    /* position: relative;
+    left: 180px; */
 }
 
 #collapseTwo button {
@@ -659,6 +674,7 @@ a {
     height: 450px;
     animation: caroImg 10s;
 }
+
 @keyframes caroImg {
     0% {
         opacity: 0;
@@ -832,42 +848,98 @@ a {
     #exampleModal #evaluation {
         left: 25px;
     }
+
+    .studentModal .scheduleDiv {
+        justify-content: space-between;
+        width: 670px;
+    }
+}
+
+@media screen and (max-width:950px) and (max-height:450px) and (orientation: landscape) {
+
+    body {
+        background-size: 100% 600vh;
+    }
+    
+    #accordionExample {
+        width: 100%;
+        margin: 25px auto;
+        justify-content: space-around;
+    }
+
+    .accordion-item {
+        margin: 0 auto;
+    }
+
+    #topDiv {
+        margin-top: 60px;
+    }
+
+    .forStudents2 {
+        width: 700px;
+    }
+
+    #exampleModalLabel {
+        margin: 0 auto 0 230px;
+    }
+
+    .studentModal .scheduleDiv {
+        width: 500px;
+    }
+
+    #analyst, #developer, #evaluation {
+        width: 200px;
+    }
+
+    .forStudents {
+        font-size: 1rem;
+    }
+    
 }
 
 
 @media screen and (max-width: 576px) {
     body {
-        height: 110vh;
+        background-size: 100% 340vh;
+        background-image: linear-gradient(24deg, white 74%, #0e5daf 90%, black 100%);
     }
+
     nav {
         display: none;
     }
+
     .titleImg2 {
         transform: skewX(0deg);
         right: 0;
         bottom: 5px;
     }
+
     .titleImg {
         transform: skewX(0deg);
         right: 40px;
         bottom: 5px;
     }
+
     #typeDiv {
         border-top: 4px solid black;
         border-bottom: 4px solid red;
     }
+
     #topDiv {
         padding-top: 0;
         display: flex;
         flex-direction: column;
     }
+
     #topDiv div:nth-child(2) {
         order: 1;
         width: 100%;
     }
+
     #topDiv div:nth-child(1) {
         order: 2;
     }
+
     #topDiv div:nth-child(3) {
         order: 3;
     }
@@ -881,6 +953,7 @@ a {
         border-radius: 0px;
         padding: 0;
     }
+
     #typeDiv {
         position: relative;
         transform: skewX(0deg);
@@ -890,53 +963,82 @@ a {
         border-radius: 0px;
         padding: 0;
     }
+
     #titleDiv {
         transform: skewX(0deg);
     }
+
     #title h4 {
         transform: skewX(0deg);
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
+
     .type {
         transform: skewX(0deg);
     }
+
     #type {
         width: 100%;
         max-width: 100%;
         font-size: .9rem;
         padding: 5%;
     }
+
+    .knowledgeDiv {
+        right: 0;
+    }
+
+    .professionalDiv {
+        right: 0;
+    }
+    
+
     .carousel {
         width: 95%;
     }
+
     .caroImg {
         height: 400px;
     }
-    #accordionExample {
-        position: relative;
-    }
+
+
     #accordionExample div:nth-child(2) {
         order: 3;
     }
+
     #accordionExample div:nth-child(1) {
         order: 2;
     }
+
     .accordion-item:nth-child(n+2) {
         margin: 0;
     }
+
     .accordion-button {
         padding: 4px 0;
     }
+
     #accordionExample {
         display: flex;
         flex-direction: column;
+        width: 95%;
     }
+
     .accordion-item {
         margin: 0;
+        width: 100%;
     }
+
+    .accordion-item h4 {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
     .sessions {
         margin: 2vh auto 0 auto;
     }
+
     #calenImg, #evalImg {
         display: none;
     }
@@ -945,6 +1047,62 @@ a {
         width: 95%;
     }
 
+    .sessions h4 {
+        font-size: 1.5rem;
+        margin: 25px auto;
+    }
+
+    .accordion-flush .accordion-item:last-of-type .accordion-button.collapsed {
+        height: 45px;
+        margin: 5px auto;
+        background: transparent;
+    }
+
+    #headingTwo {
+        position: relative;
+        z-index: 8;
+        background: transparent;
+    }
+
+    .accordion-flush .accordion-item:first-of-type .accordion-button {
+        background: transparent;
+        border: 2px solid black;
+        border-radius: 8px;
+        color: black;
+    }
+
+    .accordion-body {
+        width: 100%;
+    }
+
+    .forStudents2 {
+        font-size: .88rem;
+        width: auto;
+        padding: 0;
+    }
+
+    .scheduleDiv {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #evaluation {
+        margin-top: 40px;
+        left: 25px;
+    }
+
+    /* #topDiv div:nth-child(2) {
+        width: auto;
+    } */
+
+    .analyticDiv, .webDiv {
+        background: transparent;
+        border: none;
+        overflow: auto;
+        border: 2px solid black;
+        background: white;
+    }
     @keyframes hours {
         0% {
             transform: rotate(6deg);
