@@ -6,6 +6,16 @@ const speech =
             images: []
         },
         {
+            title: 'Node Team Builder',
+            message: `Let's create a backend node application which inquires about team members and builds a html dashbord with members' info on a card`,
+            images: ['team.jpg','team1.png']
+        },
+        {
+            title: 'Python Budget Analysis',
+            message: `How abut if with Python we do a budget analysis of a company that outputs a report in which we determine total revenue, greatest increase, average change, etc.`,
+            images: ['python0.png','python2.png']
+        },
+        {
             title: 'Weather Dashboard',
             message: `Let's create an application that provides a weather dashboard from which you can obtain current weather conditions for any city and a five days forecast, all from a public API.  This includes the UV index with a numeric value and danger color scale.`,
             images: ['weather.png']

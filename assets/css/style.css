@@ -35,6 +35,7 @@ nav button {
     padding: 8px;
     border-radius: 12px;
     font-family: Abril Fatface, Arial, sans-serif;
+    -webkit-text-stroke: 0.5px black;
 }
 
 nav button:hover {
@@ -292,7 +293,7 @@ a {
     border-radius: 5px;
     margin: 0 10px;
     position: absolute;
-    right: 70px;
+    right: 110px;
     bottom: 10px;
 }
 .titleImg2 {
@@ -302,8 +303,19 @@ a {
     border-radius: 5px;
     margin: 0 10px;
     position: absolute;
-    right: 15px;
+    right: 60px;
     bottom: 10px;
+}
+
+.titleImg1 {
+    width: 35px;
+    transform: skewX(-40deg);
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 4px;
 }
 
 .textShadow {
@@ -538,7 +550,7 @@ a {
 #speechTitle {
     text-align: center;
     color: cornflowerblue;
-    animation: scroll2 10s linear;
+    /* animation: scroll2 10s linear; */
     font-family: Abril Fatface, Arial, sans-serif;
     font-size: 1.8rem;
 }
@@ -869,6 +881,26 @@ a {
 
     .accordion-item {
         margin: 0 auto;
+        width: 220px;
+    }
+
+    .mx-auto {
+        font-size: 1.2rem;
+    }
+
+    .sessions h4 {
+        font-size: 2.2rem;
+        margin-top: 80px;
+    }
+
+    .scheduleDiv {
+        justify-content: space-between;
+        width: 550px;
+        margin-left: 50px;
+    }
+
+    .professionalDiv {
+        padding-left: 80px;
     }
 
     #topDiv {
@@ -894,6 +926,16 @@ a {
     .forStudents {
         font-size: 1rem;
     }
+
+    #title {
+        width: 550px;
+        height: 160px;
+    }
+    
+    #typeDiv {
+        width: 550px;
+        height: 160px;
+    }
     
 }
 
@@ -908,16 +950,22 @@ a {
         display: none;
     }
 
-    .titleImg2 {
+    .titleImg1 {
         transform: skewX(0deg);
         right: 0;
-        bottom: 5px;
+        bottom: 4px;
     }
 
+    .titleImg2 {
+        transform: skewX(0deg);
+        right: 45px;
+        bottom: 10px;
+    }
+    
     .titleImg {
         transform: skewX(0deg);
-        right: 40px;
-        bottom: 5px;
+        right: 95px;
+        bottom: 10px;
     }
 
     #typeDiv {
