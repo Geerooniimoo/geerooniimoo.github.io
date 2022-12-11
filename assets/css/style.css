@@ -343,7 +343,7 @@ a {
 .type p {
     font-size: 1.2rem;
     line-height: 1.6;
-    animation: scroll 10s linear;
+    animation: scroll 6s linear;
     position: absolute;
     bottom: 10px;
     font-family: Abril Fatface, Arial, sans-serif;
@@ -554,11 +554,6 @@ a {
     font-size: 1.8rem;
 }
 
-.carousel img {
-    width: 100%;
-    border-radius: 12px;
-}
-
 #hours {
     position: relative;
     z-index: 2;
@@ -667,7 +662,28 @@ a {
     margin: 5% auto;
     width: 900px;
     border: 2px solid black;
-    animation: carousel 5s;
+    animation: carousel 3s;
+    position: relative;
+}
+
+.carousel a {
+    position: absolute;
+    border: 2px solid black;
+    padding: 5px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    background: lightgrey;
+    opacity: .65;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 12px;
 }
 
 @keyframes carousel {
@@ -675,15 +691,11 @@ a {
         opacity: 0;
         transform: translateY(-150px);
     }
-    20% {
-        opacity: 0;
-        transform: translateY(-150px);
-    }
 }
 
 .caroImg {
     height: 450px;
-    animation: caroImg 10s;
+    animation: caroImg 9s;
 }
 
 @keyframes caroImg {
