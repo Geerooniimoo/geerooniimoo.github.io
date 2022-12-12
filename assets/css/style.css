@@ -293,7 +293,7 @@ a {
     border-radius: 5px;
     margin: 0 10px;
     position: absolute;
-    right: 110px;
+    left: 20px;
     bottom: 10px;
 }
 .titleImg2 {
@@ -308,7 +308,7 @@ a {
 }
 
 .titleImg1 {
-    width: 35px;
+    width: 100px;
     transform: skewX(-40deg);
     margin: 0 0 0 auto;
     border-radius: 5px;
@@ -598,14 +598,14 @@ a {
     rx: 16%;
     ry: 19%;
     border: 2px solid black;
-    fill: #007373;
+    fill: #216ab5;
 }
 .child_6 {
     cx: 85%;
     cy: 13%;
     rx: 14%;
     ry: 37%;
-    fill: #007373;
+    fill: #216ab5;
 }
 .child_8 {
     cx: 64%;
@@ -613,7 +613,7 @@ a {
     rx: 14%;
     ry: 15%;
     border: 2px solid black;
-    fill: #007373;
+    fill: #216ab5;
 }
 .child_9 {
     cx: 53%;
