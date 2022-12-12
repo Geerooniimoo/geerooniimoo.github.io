@@ -7,10 +7,16 @@ const speech =
             website: ''
         },
         {
-            title: 'React Portfolio',
-            message: `Imagine creating a react portfolio that showcase some of your created applications and provides contact information`,
-            images: ['portfolio1.png','portfolio2.png','portfolio3.png','portfolio4.png','portfolio5.png','portfolio6.png','portfolio7.png'],
-            website: 'https://analyticsandwebdevelopment.com/Portfolio/'
+            title: 'React Memory Game',
+            message: `How about if we start by creating a single page react game application which reinforces memory power.  Which the objective of the game would be to click all images once as the change position in every click`,
+            images: ['reactMemoryGame.png'],
+            website: 'https://analyticsandwebdevelopment.com/react-memory-game/'
+        },
+        {
+            title: 'Password Generator',
+            message: `It's difficult to keep creating passwords to secure all our electronic interactions.  Imagine creating a custome password generator that does that for you.`,
+            images: ['password1.png','password2.png','password3.png','password4.png','password5.png','password6.png'],
+            website: ''
         },
         {
             title: 'Node Team Builder',
@@ -63,11 +69,17 @@ const speech =
         {
             title: 'Online Train Scheduler',
             message: `Imagine using Firebase, an online Google Database that through the use of a website allows us to manage a train's scheduler live.`,
-            images: ['firebase2.png', 'firebase1.jpg'],
+            images: ['firebase1.jpg','firebase2.png'],
             website: ''
         },
         {
-            title: 'Earthquakes',
+            title: 'React Portfolio',
+            message: `Imagine creating a react portfolio that showcase some of your created applications and provides contact information`,
+            images: ['portfolio1.png','portfolio2.png','portfolio3.png','portfolio4.png','portfolio5.png','portfolio6.png','portfolio7.png'],
+            website: 'https://analyticsandwebdevelopment.com/Portfolio/'
+        },
+        {
+            title: 'Earthquakes Analysis',
             message: `Or we can acquire earthquake and tactonic plates information in a GeoJSON format from an USGS API and with the use of HTML, CSS, JavaScript and Leaflet CDN display the world's latest earthquakes' locations, magnitude and depth on different map styles.`,
             images: ['leaflet-map1.png', 'leaflet-map2.png', 'leaflet-map1.png'],
             website: ''
@@ -75,7 +87,7 @@ const speech =
         {
             title: 'Schools Analysis',
             message: `For example with the Python language and Pandas library we conduct an analysis of reginal schools' data to obtain an inside on school budget, school types, students count, passing averages of the math and reading scores to determine the difference between charter or district, inexpensive or expensive schools have on overall passing grades.`,
-            images: ['pandas-4.png', 'pandas-6.png', 'pandas-5.png', 'pandas-1.png', 'pandas-2.png', 'pandas-3.png'],
+            images: ['pandas-4.png', 'pandas-1.png', 'pandas-2.png', 'pandas-3.png'],
             website: ''
         },
         {
