@@ -77,7 +77,15 @@ nav button:hover {
 }
 
 #exampleModalLabel {
-    margin: 0 auto 0 325px;
+    margin: 0 0 25px 0;
+    position: relative;
+    width: 800px;
+    text-align: center;
+
+}
+
+#exampleModalLabel2 {
+    display: none;
 }
 
 .professionalModal button {
@@ -884,6 +892,11 @@ a {
         background-size: 100% 600vh;
     }
     
+    #exampleModalLabel {
+        width: 650px;
+        font-size: 1.4rem;
+    }
+    
     #accordionExample {
         width: 100%;
         margin: 25px auto;
@@ -922,12 +935,10 @@ a {
         width: 700px;
     }
 
-    #exampleModalLabel {
-        margin: 0 auto 0 230px;
-    }
-
     .studentModal .scheduleDiv {
-        width: 500px;
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-around;
     }
 
     #analyst, #developer, #evaluation {
@@ -955,6 +966,23 @@ a {
     body {
         background-size: 100% 340vh;
         background-image: linear-gradient(24deg, white 74%, #0e5daf 90%, black 100%);
+    }
+
+    #exampleModalLabel {
+        display: none;
+    }
+
+    #exampleModalLabel2 {
+        display: block;
+        width: 350px;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    #collapseTwo h2, #collapseThree h2 {
+        width: 350px;
+        text-align: left;
+        font-size: 1.9rem;
     }
 
     nav {
