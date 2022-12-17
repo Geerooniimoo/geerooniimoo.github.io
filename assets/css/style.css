@@ -224,7 +224,7 @@ a {
     text-anchor: middle;
 }
 
-#title h4, #title a {
+#title p, #title a {
     transform: skewX(-40deg);
     font-size: 1.8rem;
     font-family: Abril Fatface, Arial, sans-serif;
@@ -1055,7 +1055,7 @@ a {
         transform: skewX(0deg);
     }
 
-    #title h4 {
+    #title p {
         transform: skewX(0deg);
         font-size: 1.7rem;
     }
