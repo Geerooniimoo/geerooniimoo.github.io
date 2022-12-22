@@ -5,8 +5,12 @@
 body {
     background-image: linear-gradient(24deg, white 35%, #0e5daf 90%, black 110%);
     height: 1200px;
-    background-size: 100% 200vh;
+    background-size: 100% 280vh;
     font-family: Abril Fatface, Arial, sans-serif;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+    border-bottom-width: 0px;
 }
 
 body::-webkit-scrollbar {
@@ -252,6 +256,10 @@ a {
     z-index: 2;
 }
 
+.scheduleTitle2 {
+    display: none;
+}
+
 .schedule div {
     display: flex;
     justify-content: space-between;
@@ -449,16 +457,6 @@ a {
     border-radius: 8px;
     width: 300px;
     border: 2px solid black;
-}
-
-.analyticDiv {
-    /* position: absolute;
-    right: 180px; */
-}
-
-.webDiv {
-    /* position: relative;
-    left: 180px; */
 }
 
 #collapseTwo button {
@@ -900,19 +898,23 @@ a {
 @media screen and (max-width:950px) and (max-height:450px) and (orientation: landscape) {
 
     body {
-        background-size: 100% 600vh;
+        background-size: 100% 620vh;
+    }
+
+    #title button {
+        margin-top: 10px;
     }
 
     .child_5 {
-        fill: #0c4e93;
+        fill: #0c4f95;
     }
 
     .child_6 {
-        fill: #0c4e93;
+        fill: #0c4f95;
     }
 
     .child_8 {
-        fill: #0c4e93;
+        fill: #0c4f95;
     }
     
     #exampleModalLabel {
@@ -989,9 +991,24 @@ a {
 
 @media screen and (max-width: 576px) {
     body {
-        background-size: 100% 340vh;
+        background-size: 100% 410vh;
         background-image: linear-gradient(24deg, white 74%, #0e5daf 90%, black 100%);
     }
+
+    #title button {
+        margin-top: 35px;
+    }
+
+    .child_5 {
+        fill: #0b4581;
+    }
+    .child_6 {
+        fill: #0b4581;
+    }
+    .child_8 {
+        fill: #0b4581;
+    }
+    
 
     #exampleModalLabel {
         display: none;
@@ -1042,18 +1059,44 @@ a {
         display: flex;
         flex-direction: column;
     }
+    
+    .schedule {
+        width: 100vw;
+        left: 0;
+    }
 
-    #topDiv div:nth-child(2) {
-        order: 1;
-        width: 100%;
+    .scheduleTitle1 {
+        display: none;
+    }
+
+    .scheduleTitle2 {
+        display: block;
+    }
+
+    .schedule div {
+        flex-direction: column;
     }
 
     #topDiv div:nth-child(1) {
         order: 2;
     }
 
+    #topDiv div:nth-child(2) {
+        order: 1;
+    }
+    
     #topDiv div:nth-child(3) {
         order: 3;
+    }
+
+    .knowledgeDiv {
+        justify-content: space-between;
+        width: 100vw;
+        left: 0;
+    }
+    
+    #topDiv div:nth-child(4) {
+        order: 4;
     }
 
     #title {
@@ -1061,9 +1104,11 @@ a {
         transform: skewX(0deg);
         width: auto;
         box-shadow: none;
-        border-left: none;
+        border: none;
+        border-bottom: 4px solid red;
         border-radius: 0px;
         padding: 0;
+        top: -5px;
     }
 
     #typeDiv {
@@ -1204,10 +1249,9 @@ a {
 
     .analyticDiv, .webDiv {
         background: transparent;
-        border: none;
         overflow: auto;
-        border: 2px solid black;
         background: white;
+        margin: 5px;
     }
     @keyframes hours {
         0% {
