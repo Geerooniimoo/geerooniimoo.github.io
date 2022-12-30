@@ -419,6 +419,7 @@ a {
     position: relative;
     height: 150px;
     width: 300px;
+    box-shadow: -20px 20px 20px #00000080;
 }
 
 #developer {
@@ -521,33 +522,61 @@ a {
 }
 
 #typeDiv:hover #rewind {
-    left: 0;
+    cursor: pointer;
 }
 #rewind {
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 20%;
+    left: 0;
+    width: 100px;
     height: 100%;
     background: white;
-    opacity: .8;
+    opacity: .2;
     transition-property: left;
     transition-duration: .6s;
+    animation: rewind 4s;
 }
+
+@keyframes rewind {
+    0% {
+        opacity: 1;
+        left: -100%;
+    }
+
+    50% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
 #typeDiv:hover #forward {
-    right:0;
+    cursor: pointer;
 }
 #forward {
     position: absolute;
     top: 0;
-    opacity: .8;
-    right: -100%;
-    width: 20%;
+    opacity: .2;
+    right: 0;
+    width: 100px;
     height: 100%;
     background: white;
     transition-property: right;
     transition-duration: .6s;
+    animation: forward 4s;
 }
+
+@keyframes forward {
+    0% {
+        opacity: 1;
+        right: -100%;
+    }
+
+    50% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
 #speechTitle {
     text-align: center;
     color: cornflowerblue;
