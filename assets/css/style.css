@@ -517,23 +517,7 @@ a {
     padding: 10px 40px;
     text-anchor: middle;
     overflow: hidden;
-    animation: type 11.5s;
-}
-
-@keyframes type {
-    0% {
-        opacity: 0;
-        transform:translateY(-200px);
-        transform:skewX(-40deg);
-    }
-    90% {
-        opacity: 0;
-        transform:translateY(-200px);
-    }
-    100% {
-        transform:translateY(0);
-        transform:skewX(-40deg);
-    }
+    /* animation: type 11.5s; */
 }
 
 #typeDiv:hover #rewind {

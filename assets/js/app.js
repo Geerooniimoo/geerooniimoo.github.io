@@ -12,8 +12,10 @@
 // }, 9800);
 
 let imgId;
+let speechId;
 let speechIndex = 0;
-let speechId = setTimeout(handleSpeech, 11500);
+// let speechId = setTimeout(handleSpeech, 11500);
+handleSpeech();
 
 function handleSpeech() {
     let imgIndex = 0;
