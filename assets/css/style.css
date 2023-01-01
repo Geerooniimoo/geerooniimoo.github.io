@@ -25,6 +25,7 @@ body::-webkit-scrollbar {
 
 #emailUs img {
     width: 170px;
+    opacity: 0.75;
 }
 
 #emailBtn {
@@ -880,6 +881,16 @@ a {
 
     body {
         background-size: 100% 620vh;
+    }
+
+    #emailUs {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    #emailUs img {
+        width: 125px;
     }
 
     #title button {
