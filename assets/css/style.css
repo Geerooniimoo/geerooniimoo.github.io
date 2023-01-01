@@ -17,56 +17,24 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+#emailUs {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#emailUs img {
+    width: 170px;
+}
+
+#emailBtn {
     width: 100%;
-    height: fit-content;
-    z-index: 7;
-    padding: 5px;
-}
-
-nav button {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: rgb(212, 219, 226);
-    margin: 0 10px;
-    border: 2px solid transparent;
-    background: transparent;
-    padding: 8px;
-    border-radius: 12px;
-    font-family: Abril Fatface, Arial, sans-serif;
-    -webkit-text-stroke: 0.5px black;
-}
-
-nav button:hover {
+    background: #024f95;
     color: white;
-    background: rgb(3, 74, 14);
-    border: 2px solid black;
-}
-
-.studentModal {
-    width: 900px;
-    margin: 0 auto;
-}
-
-.forStudents {
-    color: red;
-    font-size: 1.2rem;
-    font-family: sans-serif;
-}
-
-.forStudents2 {
-    color: white;
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    width: 875px;
-    text-align: left;
-    border-radius: 8px;
-    padding: 10px;
+    border: none;
+    border-top: 4px solid #919191;
+    font-size: 1.8rem;
+    display: none;
 }
 
 #collapseTwo h2, #collapseThree h2 {
@@ -1006,6 +974,14 @@ a {
     body {
         background-size: 100% 410vh;
         background-image: linear-gradient(24deg, white 74%, #0e5daf 90%, black 100%);
+    }
+
+    #emailUs {
+        display: none;
+    }
+
+    #emailBtn {
+        display: block;
     }
 
     #title button {
