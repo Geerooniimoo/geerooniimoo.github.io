@@ -761,7 +761,7 @@ a {
     }
     80% {
         opacity: 0;
-        transform:rotate(90deg) translateX(100px) scale(200%);
+        transform:rotate(90deg) translateX(80vh) scale(100%);
     }
     100% {
         opacity: 0;
@@ -1136,7 +1136,8 @@ a {
 
     #title p {
         transform: skewX(0deg);
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        padding: 10px;
     }
 
     .type {
