@@ -543,6 +543,10 @@ a {
     animation: forward 4s;
 }
 
+#forward:hover, #rewind:hover {
+    opacity: .75;
+}
+
 @keyframes forward {
     0% {
         opacity: 1;
