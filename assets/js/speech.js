@@ -10,7 +10,7 @@ const speech =
             title: 'React Memory Game',
             message: `How about if we start by creating a single page react game application which reinforces memory power.  Which the objective of the game would be to click all images once as the change position in every click`,
             images: ['reactMemoryGame.png'],
-            website: ''
+            website: 'https://analyticsandwebdevelopment.com/react-memory-game/'
         },
         {
             title: 'Password Generator',
