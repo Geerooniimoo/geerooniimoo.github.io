@@ -513,7 +513,7 @@ a {
     width: 100px;
     height: 100%;
     background: white;
-    opacity: .2;
+    opacity: .5;
     transition-property: left;
     transition-duration: .6s;
     animation: rewind 4s;
@@ -537,7 +537,7 @@ a {
 #forward {
     position: absolute;
     top: 0;
-    opacity: .2;
+    opacity: .5;
     right: 0;
     width: 100px;
     height: 100%;
@@ -547,8 +547,13 @@ a {
     animation: forward 4s;
 }
 
-#forward:hover, #rewind:hover {
-    opacity: .75;
+@keyframes hover {
+    0% {
+        opacity: .75;
+    }
+    100% {
+        opacity: .2;
+    }
 }
 
 @keyframes forward {
