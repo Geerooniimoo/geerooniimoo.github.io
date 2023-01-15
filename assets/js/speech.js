@@ -48,11 +48,11 @@ const speech =
             images: ['web_1.png', 'web_2.png'],
             website: ''
         },
-        {
-            title: 'Census Analysis',
+        { 
+            title: 'U.S. Census Analysis Dashboard ',
             message: `How about if we obtain Census Data from a data bank like Kaggle and with the use of HTML, CSS and JavaScript libraries create an interactive website that would allows us to visually analyze correlation between location, obesity, income, helthcare, and smokers.`,
-            images: ['d3_1.png', 'D3-Projects.gif'],
-            website: ''
+            images: ['D3-Projects.gif'],
+            website: 'https://analyticsandwebdevelopment.com/US-Census-Analysis-Dashboard/'
         },
         {
             title: 'SQL Data Management',
