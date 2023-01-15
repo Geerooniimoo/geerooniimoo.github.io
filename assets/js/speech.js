@@ -13,9 +13,9 @@ const speech =
             website: 'https://analyticsandwebdevelopment.com/react-memory-game/'
         },
         {
-            title: 'Password Generator',
-            message: `It's difficult to keep creating passwords to secure all our electronic interactions.  Imagine creating a custome password generator that does that for you.`,
-            images: ['password1.png','password2.png','password3.png','password4.png','password5.png','password6.png'],
+            title: 'GenPass',
+            message: `It's difficult to keep creating passwords to secure all our electronic interactions and remembering them when you need them.  Imagine creating a password management solution.`,
+            images: ['genPass1.png','genPass2.png','genPass3.png','genPass4.png','genPass5.png','genPass6.png'],
             website: 'https://analyticsandwebdevelopment.com/Password-Generator/'
         },
         {
