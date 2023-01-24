@@ -13,6 +13,12 @@ const speech =
             website: 'https://analyticsandwebdevelopment.com/react-memory-game/'
         },
         {
+            title: 'Spiritual Engineering',
+            message: `How about if we strive for greatness and we provide the users more than a game.  We provide them with a spiritual experience like no other`,
+            images: ['SpiritualEngineering.png'],
+            website: 'http://analyticsandwebdevelopment.com/SpiritualEngineering/'
+        },
+        {
             title: 'GenPass',
             message: `It's difficult to keep creating passwords to secure all our electronic interactions and remembering them when you need them.  Imagine creating a password management solution.`,
             images: ['genPass1.png','genPass2.png','genPass3.png','genPass4.png','genPass5.png','genPass6.png'],
