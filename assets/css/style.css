@@ -1,6 +1,3 @@
-/* #accordionExample * {
-    border: 2px dotted red;
-} */
 
 :root {
     --x: 100px;
@@ -23,55 +20,55 @@ body::-webkit-scrollbar {
     z-index: 3;
     top: var(--y);
     left: var(--x);
-    filter:grayscale(.5);
+    filter: grayscale(.5);
     animation: sale1 50s infinite;
     /* animation: sale2 2s infinite; */
 }
 
 @keyframes sale1 {
-    
+
     10% {
         top: calc(var(--y) + 75px);
         left: calc(var(--x) + 50px);
     }
-    
+
     30% {
         top: calc(var(--y) + 50px);
         left: calc(var(--x) + 100px);
         transform: scale(1.5);
     }
-    
+
     40% {
         transform: scale(1);
         top: calc(var(--y) + 50px);
         left: calc(var(--x) + 100px);
     }
-    
+
     55% {
         top: calc(var(--y) + 30px);
         left: calc(var(--x) + 50px);
     }
 
-    
+
     75% {
         transform: scale(1.3);
         top: calc(var(--y) + 30px);
         left: calc(var(--x) + 50px);
     }
 
-    
-    
+
+
 }
 
 @keyframes sale2 {
-    
+
     75% {
         transform: scale(.95);
     }
 }
 
 #sale:hover {
-    filter:hue-rotate(180deg);
+    filter: hue-rotate(180deg);
 }
 
 
@@ -85,6 +82,7 @@ body::-webkit-scrollbar {
 #emailUs {
     position: absolute;
     top: 65px;
+    z-index: 2;
     right: 90px;
     filter: grayscale(0.4) drop-shadow(3px 4px 0px #531420);
     width: 170px;
@@ -120,10 +118,12 @@ a {
     border-radius: 12px;
     padding: 0;
 }
+
 #topDiv {
     background-size: 100% 75%;
     background-repeat: no-repeat;
 }
+
 .linkImg {
     z-index: 5;
     color: black;
@@ -181,8 +181,8 @@ a {
     /* opacity: .8; */
 }
 
-.linkImg:hover h6,.linkImg2:hover h6 {
-    display:block;
+.linkImg:hover h6, .linkImg2:hover h6 {
+    display: block;
 }
 
 #evalImg {
@@ -254,6 +254,7 @@ a {
     left: 40px;
     z-index: 2;
 }
+
 .scheduleTitle1, .scheduleTitle2 {
     color: black;
     margin-bottom: 20px;
@@ -285,6 +286,7 @@ a {
     color: black;
     padding: 10%;
 }
+
 .leaflet {
     background-image: url('./images/leaflet.png');
     background-repeat: no-repeat;
@@ -292,11 +294,13 @@ a {
     color: black;
     padding: 10%;
 }
+
 .vba {
     background-image: url('./images/vba0.jpg');
     color: black;
     padding: 10%;
 }
+
 .firebase {
     background-image: url('./images/firebase1.jpg');
     background-size: 100% 135%;
@@ -305,6 +309,7 @@ a {
     color: black;
     padding: 10%;
 }
+
 .mars {
     background-image: url('./images/mars1.png');
     background-size: 100% 135%;
@@ -313,19 +318,23 @@ a {
     color: black;
     padding: 10%;
 }
+
 .vba div, .team div, .leaflet div, .firebase div, .mars div {
     background-color: #fff;
     padding: 2%;
     opacity: .85;
     box-shadow: 5px 5px 20px;
 }
+
 .python {
     background-image: url('./images/python0.png');
     background-size: 110% 100%;
 }
+
 .geronimo {
     color: cornflowerblue;
 }
+
 .titleImg {
     width: 35px;
     transform: skewX(-40deg);
@@ -336,6 +345,7 @@ a {
     left: 20px;
     bottom: 10px;
 }
+
 .titleImg2 {
     width: 35px;
     transform: skewX(-40deg);
@@ -364,13 +374,15 @@ a {
 
 .textShadow {
     fill: red;
-    stroke:black;
+    stroke: black;
     text-shadow: 3px 3px 4px black;
 }
+
 .textLetter {
     fill: white;
-    stroke:black;
+    stroke: black;
 }
+
 .type {
     position: relative;
     width: 90%;
@@ -480,31 +492,38 @@ a {
     0% {
         transform: translateY(110%);
     }
+
     80% {
         transform: translateY(0%);
     }
+
     100% {
         transform: translateY(0%);
     }
 }
+
 #titleDiv {
     transform: skewX(40deg);
     font-family: Abril Fatface, Arial, sans-serif;
     /* font-size: 2.8rem; */
 }
+
 @keyframes scroll2 {
     0% {
         opacity: 0;
         transform: translateY(-110%);
     }
+
     80% {
         opacity: 1;
         transform: translateY(0%);
     }
+
     100% {
         transform: translateY(0%);
     }
 }
+
 #typeDiv {
     position: relative;
     z-index: 1;
@@ -529,6 +548,7 @@ a {
 #typeDiv:hover #rewind {
     cursor: pointer;
 }
+
 #rewind {
     position: absolute;
     top: 0;
@@ -557,6 +577,7 @@ a {
 #typeDiv:hover #forward {
     cursor: pointer;
 }
+
 #forward {
     position: absolute;
     top: 0;
@@ -574,6 +595,7 @@ a {
     0% {
         opacity: .75;
     }
+
     100% {
         opacity: .2;
     }
@@ -605,7 +627,7 @@ a {
     width: 115px;
     margin-left: 10px;
     margin-top: 10px;
-    font-family:sans-serif;
+    font-family: sans-serif;
     filter: grayscale(.4);
 }
 
@@ -622,6 +644,7 @@ a {
     font-size: 3rem;
     font-weight: bolder;
 }
+
 .child_1 {
     cx: 50%;
     cy: 84%;
@@ -630,6 +653,7 @@ a {
     border: 2px solid black;
     fill: yellow;
 }
+
 .child_4 {
     cx: 57%;
     cy: 48%;
@@ -637,6 +661,7 @@ a {
     border: 2px solid black;
     fill: yellow;
 }
+
 .child_5 {
     cx: 21%;
     cy: 27%;
@@ -645,6 +670,7 @@ a {
     border: 2px solid black;
     fill: #216ab5;
 }
+
 .child_6 {
     cx: 85%;
     cy: 13%;
@@ -652,6 +678,7 @@ a {
     ry: 37%;
     fill: #216ab5;
 }
+
 .child_8 {
     cx: 64%;
     cy: 13%;
@@ -660,6 +687,7 @@ a {
     border: 2px solid black;
     fill: #216ab5;
 }
+
 .child_9 {
     cx: 53%;
     cy: 42%;
@@ -668,6 +696,7 @@ a {
     border: 2px solid black;
     fill: orange;
 }
+
 .child_7 {
     cx: 51%;
     cy: 22%;
@@ -675,6 +704,7 @@ a {
     border: 2px solid black;
     fill: orange;
 }
+
 .child_3 {
     cx: 34%;
     cy: 50%;
@@ -682,6 +712,7 @@ a {
     border: 2px solid black;
     fill: orange;
 }
+
 .child_2 {
     cx: 77%;
     cy: 48%;
@@ -691,6 +722,7 @@ a {
     border: 2px solid black;
     fill: orange;
 }
+
 .child_10 {
     r: 50%;
     fill: black;
@@ -746,12 +778,14 @@ a {
 @keyframes caroImg {
     0% {
         opacity: 0;
-        
+
         transform: scale(200%);
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         transform: scale(100%);
     }
@@ -761,49 +795,63 @@ a {
     0% {
         transform: rotate(6deg);
     }
+
     2% {
         transform: rotate(0deg);
     }
+
     4% {
         transform: rotate(6deg);
     }
+
     6% {
         transform: rotate(0deg);
     }
+
     8% {
         transform: rotate(6deg);
     }
+
     10% {
         transform: rotate(10deg);
     }
+
     20% {
         transform: rotate(10deg);
     }
+
     20% {
         transform: rotate(110deg);
     }
+
     30% {
         transform: rotate(80deg);
     }
+
     40% {
         transform: rotate(100deg);
     }
+
     50% {
         transform: rotate(90deg) translateY(0);
-        
+
     }
+
     65% {
         opacity: 1;
-        transform:scale(100%) rotate(90deg) translateX(0);
+        transform: scale(100%) rotate(90deg) translateX(0);
     }
+
     80% {
         opacity: 0;
-        transform:rotate(90deg) translateX(80vh) scale(100%);
+        transform: rotate(90deg) translateX(80vh) scale(100%);
     }
+
     100% {
         opacity: 0;
     }
 }
+
 .fire {
     position: absolute;
     top: -50%;
@@ -817,52 +865,67 @@ a {
     animation: fire 6s 1s;
     filter: grayscale(.3);
 }
+
 @keyframes fire {
     0% {
         opacity: 1;
     }
-    8%{
+
+    8% {
         transform: rotateY(0deg);
     }
+
     10% {
         transform: rotateY(50deg);
     }
+
     18% {
         transform: rotateY(50deg);
     }
+
     20% {
         transform: rotateY(0deg);
     }
+
     28% {
         transform: rotateY(180deg);
     }
+
     30% {
         transform: rotateY(50deg);
     }
+
     38% {
         transform: rotateY(50deg);
     }
+
     40% {
         transform: rotateY(180deg);
     }
+
     48% {
         transform: rotateY(180deg);
     }
+
     50% {
         transform: rotateY(0deg);
     }
+
     70% {
         transform: rotateY(50deg);
     }
+
     80% {
         left: 60%;
         opacity: 1;
     }
+
     100% {
         transform: rotateY(90deg);
         left: 60%
     }
 }
+
 .eli1 {
     cx: 21%;
     cy: 7%;
@@ -870,6 +933,7 @@ a {
     ry: 7%;
     fill: gray;
 }
+
 .eli2 {
     cx: 29%;
     cy: 21%;
@@ -877,6 +941,7 @@ a {
     ry: 7%;
     fill: gray;
 }
+
 .smoke {
     position: absolute;
     height: 150px;
@@ -886,53 +951,74 @@ a {
     opacity: 0;
     animation: smoke 4s 6s;
 }
+
 @keyframes smoke {
     10% {
         opacity: 1;
     }
+
     70% {
         opacity: 0;
     }
+
     100% {
         transform: translateY(1px) scale(400%);
         opacity: 0;
     }
 }
 
-/* #myModal {
+.myModal {
     position: fixed;
     top: 0px;
     width: 100%;
     height: 100%;
-    padding-top: 5%;
+    padding-top: 0;
     z-index: 4;
-    border: 2px dotted red;
     background: rgba(0, 0, 0, 0.71);
-}  */
+    animation: myModal 1.5s;
+}
+
+@keyframes myModal {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 4; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
     background-color: rgba(0, 0, 0, 0);
     padding: 0;
     margin: 5% auto;
     /* border: 1px solid #888; */
     width: 1100px;
-  }
-  
-  .close {
+}
+
+.close {
     color: #aaa;
     font-size: 60px;
     font-weight: bold;
@@ -941,14 +1027,12 @@ a {
     margin: 0 10% auto auto;
 }
 
-*, ::after,
-
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 @media screen and (max-width: 1100px) {
     .carousel {
@@ -987,7 +1071,7 @@ a {
     .child_8 {
         fill: #0c4f95;
     }
-    
+
     .mx-auto {
         font-size: 1.2rem;
     }
@@ -1029,12 +1113,12 @@ a {
         width: 550px;
         height: 160px;
     }
-    
+
     #typeDiv {
         width: 550px;
         height: 160px;
     }
-    
+
 }
 
 
@@ -1059,13 +1143,15 @@ a {
     .child_5 {
         fill: #0b4581;
     }
+
     .child_6 {
         fill: #0b4581;
     }
+
     .child_8 {
         fill: #0b4581;
     }
-    
+
     nav {
         display: none;
     }
@@ -1081,7 +1167,7 @@ a {
         right: 46px;
         bottom: 10px;
     }
-    
+
     .titleImg {
         transform: skewX(0deg);
         right: 95px;
@@ -1098,7 +1184,7 @@ a {
         display: flex;
         flex-direction: column;
     }
-    
+
     .schedule {
         width: 100vw;
         left: 0;
@@ -1123,7 +1209,7 @@ a {
     #topDiv div:nth-child(2) {
         order: 1;
     }
-    
+
     #topDiv div:nth-child(3) {
         order: 3;
     }
@@ -1133,7 +1219,7 @@ a {
         width: 100vw;
         left: 0;
     }
-    
+
     #topDiv div:nth-child(4) {
         order: 4;
     }
@@ -1188,7 +1274,7 @@ a {
     .professionalDiv {
         right: 0;
     }
-    
+
     #developer {
         margin-top: 40px;
     }
@@ -1296,49 +1382,63 @@ a {
         background: white;
         margin: 5px;
     }
+
     @keyframes hours {
         0% {
             transform: rotate(6deg);
         }
+
         2% {
             transform: rotate(0deg);
         }
+
         4% {
             transform: rotate(6deg);
         }
+
         6% {
             transform: rotate(0deg);
         }
+
         8% {
             transform: rotate(6deg);
         }
+
         10% {
             transform: rotate(10deg);
         }
+
         20% {
             transform: rotate(10deg);
         }
+
         20% {
             transform: rotate(110deg);
         }
+
         30% {
             transform: rotate(80deg);
         }
+
         40% {
             transform: rotate(100deg);
         }
+
         50% {
             transform: rotate(90deg) translateY(0);
-            
+
         }
+
         65% {
             opacity: 1;
-            transform:scale(100%) rotate(90deg) translateX(0);
+            transform: scale(100%) rotate(90deg) translateX(0);
         }
+
         80% {
             opacity: 0;
-            transform:rotate(90deg) translateX(5px) scale(200%);
+            transform: rotate(90deg) translateX(5px) scale(200%);
         }
+
         100% {
             opacity: 0;
         }
@@ -1347,14 +1447,16 @@ a {
     @keyframes type {
         0% {
             opacity: 0;
-            transform:translateY(-40px);
+            transform: translateY(-40px);
         }
+
         90% {
             opacity: 0;
-            transform:scale(80%) translateY(-40px);
+            transform: scale(80%) translateY(-40px);
         }
+
         100% {
-            transform:translateY(0);
+            transform: translateY(0);
         }
     }
 
