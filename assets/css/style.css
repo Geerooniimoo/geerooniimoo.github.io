@@ -1,4 +1,3 @@
-
 :root {
     --x: 100px;
     --y: 50px;
@@ -18,6 +17,7 @@ body::-webkit-scrollbar {
 #sale {
     position: absolute;
     z-index: 3;
+    width: 150px;
     top: var(--y);
     left: var(--x);
     filter: grayscale(.5);
@@ -73,11 +73,9 @@ body::-webkit-scrollbar {
 
 
 #sale img {
-    width: 150px;
+    width: 100%;
     filter: drop-shadow(10px 10px 3px black);
 }
-
-
 
 #emailUs {
     position: absolute;
@@ -236,6 +234,10 @@ a {
 }
 
 #title button {
+    position: absolute;
+    left: 248px;
+    bottom: 10px;
+    transform: skewX(-40deg);
     width: fit-content;
     font-size: 1.2rem;
     background: transparent;
@@ -257,7 +259,7 @@ a {
 
 .scheduleTitle1, .scheduleTitle2 {
     color: black;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .scheduleTitle2 {
@@ -419,7 +421,7 @@ a {
 
 .accordion-item {
     max-width: 400px;
-    margin: 15px 20px 0px 20px;
+    margin: 0 auto;
     width: 250px;
     border-radius: 8px;
 }
@@ -437,6 +439,7 @@ a {
 
 #analyst:hover, #developer:hover {
     filter: brightness(1.3);
+    transform: scale(1.05);
 }
 
 #developer {
@@ -1011,6 +1014,7 @@ a {
 
 /* Modal Content/Box */
 .modal-content {
+    position: relative;
     background-color: rgba(0, 0, 0, 0);
     padding: 0;
     margin: 5% auto;
@@ -1019,12 +1023,14 @@ a {
 }
 
 .close {
+    position: absolute;
     color: #aaa;
     font-size: 60px;
     font-weight: bold;
-    text-align: right;
     width: fit-content;
-    margin: 0 10% auto auto;
+    top: -20px;
+    right: 20px;
+    z-index: 2;
 }
 
 .close:hover,
@@ -1034,11 +1040,7 @@ a {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1100px) {
-    .carousel {
-        width: 700px;
-    }
-}
+/* @media screen and (max-width: 1100px) {} */
 
 @media screen and (max-width:950px) and (max-height:450px) and (orientation: landscape) {
 
@@ -1050,10 +1052,6 @@ a {
         position: absolute;
         top: 10px;
         right: 10px;
-    }
-
-    #emailUs img {
-        width: 125px;
     }
 
     #title button {
@@ -1121,11 +1119,317 @@ a {
 
 }
 
+/* iPad Pro */
+@media screen and (max-width:1500px) and (max-height:1100px) {
+    body {
+        background-size: 100% 320vh;
+    }
+    
+    
+}
+
+@media screen and (max-width:1200px) and (min-height:1000px) {}
+
+@media screen and (max-width:1000px) and (max-height:2300px) {}
+
+@media screen and (max-width:1100px) and (max-height:1900px) {
+
+    :root {
+        --y: 50px;
+        --x: 20px;
+    }
+
+    #sale {
+        width: 120px;
+    }
+    
+    #emailUs {
+        top: 170px;
+        right: 40px;
+    }
+    
+    .carousel {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:1100px) and (max-height:1900px) and (min-height:1500px) {}
+
+@media screen and (max-width:1100px) and (max-height:768px) {
+
+    body {
+        background-size: 100% 2800px;
+    }
+    
+    #emailUs {
+        top: 120px;
+        right: 100px;
+        width: 120px;
+    }
+    
+    .modal-content {
+        width: 800px;
+    }
+    
+    .calendly-inline-widget {
+        height: 1000px !important;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (max-height:1500px) {
+
+    :root {
+        --y: 130px;
+        --x: 150px;
+    }
+
+    #sale {
+        width: 100px;
+    }
+
+    #emailUs {
+        top: 20px;
+        right: 20px;
+        width: 140px;
+    }
+
+    .titleImg1:hover {
+        scale: 1;
+    }
+
+    #title {
+        width: 600px;
+    }
+
+    .schedule {
+        width: 650px;
+        margin: 0 auto 40px;
+        text-align: center;
+        position: relative;
+        left: 25px;
+        z-index: 2;
+    }
+
+    #typeDiv {
+        width: 600px;
+    }
+
+    .modal-content {
+        width: 80%;
+        top: 100px;
+    }
+
+    .calendly-inline-widget {
+        height: 1000px !important;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (max-height:1000px) {
+    :root {
+        --x: 20px;
+        --y: 50px;
+    }
+
+    #sale {
+        width: 100px;
+    }
+
+    #emailUs {
+        top: 125px;
+        right: 30px;
+        width: 120px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .calendly-inline-widget {
+        height: 950px !important;
+    }
+}
+
+@media screen and (max-width:1000px) and (max-height:768px) {}
+
+@media screen and (max-width:1200px) and (max-height:600px) {
+    :root {
+        --y: 75px;
+        --x: 10px;
+    }
+
+    body {
+        background-size: 100% 620vh;
+    }
+    
+    #sale {
+        width: 75px;
+    }
+
+    .modal-content {
+        width: 50%;
+        height: 929%;
+    }
+    
+    #emailUs {
+        position: absolute;
+        top: 120px;
+        right: 30px;
+        width: 100px;
+    }
+
+    .knowledgeDiv {
+        left: -90%;
+    }
+    
+    
+}
+
+@media screen and (max-width:1200px) and (max-height:500px) {
+    emailUs {
+        top: 170px;
+        right: 40px;
+        width: 170px;
+    }
+    
+    
+}
+
+/* Galaxy Fold */
+@media screen and (max-width:700px) and (max-height:300px) {
+
+    :root {
+        --y: -30px;
+        --x: 20px;
+    }
+
+    #sale {
+        width: 75px;
+    }
+
+    body {
+        height: 1400px;
+        background-size: 100% 1000vh;
+    }
+    
+    #emailUs {
+        top: 10px;
+        right: 20px;
+    }
+    
+    .modal-content {
+        width: 500px;
+        height: 929%;
+    }
+    
+    .sessions h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    #title {
+        width: 400px;
+        overflow: hidden;
+        height: 120px;
+    }
+    
+    #title p, #title a {
+        font-size: 1.2rem;
+    }
+    
+    .titleImg {
+        width: 30px;
+        left: 15px;
+        bottom: 2px;
+    }
+    
+    #title button {
+        left: 150px;
+        bottom: 5px;
+        font-size: 0.8rem;
+        height: 25px;
+    }
+
+    .titleImg1 {
+        width: 70px;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    #topDiv {
+        margin-top: 60px;
+        width: auto;
+    }
+
+    .schedule {
+        width: 450px;
+    }
+
+    .knowledgeDiv {
+        width: 500px;
+        left: -45%;
+    }
+    
+    .analyticDiv, .webDiv {
+        width: 200px;
+    }
+    
+    
+
+    #analyst, #developer {
+        height: 100px;
+        width: 200px;
+    }
+    
+    #analyst h3, #developer h3 {
+        font-size: 1rem;
+    }
+
+    #typeDiv {
+        width: 400px;
+        height: 160px;
+    }
+        
+    .carousel {
+        width: 550px;
+    }
+    
+    #speechTitle {
+        font-size: 1.2rem;
+    }
+    
+    .type p {
+        font-size: .8rem;
+        line-height: 1.6;
+        animation: scroll 6s linear;
+        position: absolute;
+        bottom: 10px;
+        font-family: Abril Fatface, Arial, sans-serif;
+    }
+
+}
 
 @media screen and (max-width: 576px) {
+
+    :root {
+        --y: 160px;
+        --x: 50px;
+    }
+
     body {
         background-size: 100% 410vh;
         background-image: linear-gradient(24deg, white 74%, #0e5daf 90%, black 100%);
+    }
+
+    #sale {
+        width: 75px;
+    }
+
+    .titleImg1:hover {
+        scale: 1;
     }
 
     #emailUs {
@@ -1137,19 +1441,39 @@ a {
     }
 
     #title button {
-        margin-top: 35px;
+        left: 150px;
+        bottom: 10px;
+        transform: skewX(0deg);
     }
-
+    
     .child_5 {
-        fill: #0b4581;
+        fill: #0d57a4;
     }
 
     .child_6 {
-        fill: #0b4581;
+        fill: #0d57a4;
     }
 
     .child_8 {
-        fill: #0b4581;
+        fill: #0d57a4;
+    }
+
+
+    #exampleModalLabel {
+        display: none;
+    }
+
+    #exampleModalLabel2 {
+        display: block;
+        width: 350px;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    #collapseTwo h2, #collapseThree h2 {
+        width: 350px;
+        text-align: left;
+        font-size: 1.9rem;
     }
 
     nav {
@@ -1212,6 +1536,8 @@ a {
 
     #topDiv div:nth-child(3) {
         order: 3;
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .knowledgeDiv {
@@ -1279,14 +1605,9 @@ a {
         margin-top: 40px;
     }
 
-    .carousel {
-        width: 95%;
-    }
-
     .caroImg {
         height: 400px;
     }
-
 
     #accordionExample div:nth-child(2) {
         order: 3;
@@ -1323,6 +1644,7 @@ a {
 
     .sessions {
         margin: 2vh auto 0 auto;
+        margin-top: 75px;
     }
 
     #calenImg, #evalImg {
@@ -1460,4 +1782,92 @@ a {
         }
     }
 
+}
+
+@media screen and (max-width: 400px) {
+
+    .child_5, .child_6, .child_8 {
+        fill: #3174bb;
+    }
+
+    #title p {
+        font-size: 1.2rem;
+    }
+
+    .titleImg {
+        left: 1px;
+    }
+
+    .titleImg1 {
+        width: 80px;
+        right: 10px;
+        bottom: 4px;
+    }
+
+    #title button {
+        left: 105px;
+        bottom: 10px;
+        transform: skewX(0deg);
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .scheduleTitle2 {
+        font-size: 1rem;
+    }
+
+    #analyst, #developer {
+        width: 240px;
+    }
+
+    .scheduleTitle1, .scheduleTitle2 {
+        color: black;
+        margin: 20px auto;
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .sessions h4 {
+        font-size: 2rem;
+        margin: 25px auto;
+        word-spacing: 0.9rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    body {
+        background-size: 100% 500vh;
+    }
+    
+    #title button {
+        left: 75px;
+        bottom: 10px;
+    }
+
+    .titleImg1 {
+        right: 0px;
+    }
+
+    .sessions h4 {
+        font-size: 2rem;
+        margin: 25px auto;
+        word-spacing: 0.9rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .analyticDiv, .webDiv {
+        background: transparent;
+        overflow: auto;
+        background: white;
+        margin: 0 11px 0 -5px;
+        font-size: .7rem;
+    }
+    
+    .accordion-body {
+        width: 75%;
+    }
 }
