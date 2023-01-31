@@ -556,25 +556,14 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
+    width: 50%;
     height: 100%;
-    background: white;
-    opacity: .5;
-    transition-property: left;
-    transition-duration: .6s;
-    animation: rewind 4s;
+    display: flex;
+    align-items: center;
 }
 
-@keyframes rewind {
-    0% {
-        opacity: 1;
-        left: -100%;
-    }
-
-    50% {
-        opacity: 1;
-        left: 0;
-    }
+#rewind h1 {
+    margin-left: 10px;
 }
 
 #typeDiv:hover #forward {
@@ -584,36 +573,16 @@ a {
 #forward {
     position: absolute;
     top: 0;
-    opacity: .5;
     right: 0;
-    width: 100px;
+    width: 50%;
     height: 100%;
-    background: white;
-    transition-property: right;
-    transition-duration: .6s;
-    animation: forward 4s;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
-@keyframes hover {
-    0% {
-        opacity: .75;
-    }
-
-    100% {
-        opacity: .2;
-    }
-}
-
-@keyframes forward {
-    0% {
-        opacity: 1;
-        right: -100%;
-    }
-
-    50% {
-        opacity: 1;
-        right: 0;
-    }
+#forward h1 {
+    margin-right: 10px;
 }
 
 #speechTitle {
