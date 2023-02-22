@@ -3,7 +3,59 @@ const speech =
         {
             title: 'Introduction',
             message: `Here are some examples of the many things we can do together.<br><br>`,
+<<<<<<< Updated upstream
             images: [],
+=======
+            images: ['leaflet-map1.png','plotly_1.png','bike4.png','jup_3.png','web_2.png','D3-Projects.gif','pandas-3.png','crudburger1.png','mars5.png','matplotlib_regression.png'],
+            website: ''
+        },
+        { 
+            title: 'U.S. Census Analysis Dashboard ',
+            message: `How about if we obtain Census Data from a data bank like Kaggle and with the use of HTML, CSS and JavaScript libraries create an interactive website that would allows us to visually analyze correlation between location, obesity, income, helthcare, and smokers.`,
+            images: ['D3-Projects.gif'],
+            website: 'https://analyticsandwebdevelopment.com/US-Census-Analysis-Dashboard/'
+        },
+        {
+            title: 'Tableau',
+            message: `how about with Tableau, we can create detailed visualizations which proivdes a quick analysis into CitiBiki's data.`,
+            images: ['bike1.png', 'bike2.png', 'bike3.png', 'bike4.png', 'bike5.png', 'bike6.png'],
+            website: 'https://public.tableau.com/app/profile/geronimo.augusto.perez/viz/GroveStationMostActiveDepartureTime/CitiBikeAnalysis?publish=yes'
+        },
+        {
+            title: 'Earthquakes Analysis',
+            message: `Or we can acquire earthquake and tactonic plates information in a GeoJSON format from an USGS API and with the use of HTML, CSS, JavaScript and Leaflet CDN display the world's latest earthquakes' locations, magnitude and depth on different map styles.`,
+            images: ['leaflet-map1.png', 'leaflet-map2.png', 'leaflet-map1.png'],
+            website: ''
+        },
+        {
+            title: 'Latitude & Weather Analysis',
+            message: `Or how about obtaining current weather of hundreds of cities around the world to conduct your own study about the effect of latitude on the climate and then displaying it on your own interactive website.`,
+            images: ['web_1.png', 'web_2.png'],
+            website: 'https://analyticsandwebdevelopment.com/Weather_And_Latitude_Analysis'
+        },
+        {
+            title: 'Schools Analysis',
+            message: `For example with the Python language and Pandas library we conduct an analysis of reginal schools' data to obtain an inside on school budget, school types, students count, passing averages of the math and reading scores to determine the difference between charter or district, inexpensive or expensive schools have on overall passing grades.`,
+            images: ['pandas-4.png', 'pandas-1.png', 'pandas-2.png', 'pandas-3.png'],
+            website: ''
+        },
+        {
+            title: 'SQL Database Management',
+            message: `Let's create a backend application with the use of NodeJS and MySQL to create, read, update and delete data of and online store on a SQL database server.`,
+            images: ['gamazon2.png', 'gamazon3.png', 'gamazon1.jpg'],
+            website: ''
+        },
+        {
+            title: 'Cancer Drugs Analysis',
+            message: `How about if with the use of Python, Jupyter Notebook, Pandas and Matplotlib we analyze drugs' information to determine which drug is the most effective against cancer and visualize the results and predictions of the information analyzed.`,
+            images: ['matplotlib_lab.jpg', 'matplotlib_boxplot.png', 'matplotlib_line.png', 'matplotlib_pie.png', 'matplotlib_regression.png'],
+            website: ''
+        },
+        {
+            title: 'Biodiversity',
+            message: `Or what about creating a interative dashboard with JavaScript and D3JS library that allows us to analyze biodiversity very close to home, our belly button. How about if with the Python language we analyze financial data to obtain a summary of revenue fluctuations in which we can see the average revenue change, total gain or loss, greatest increase and greatest decrease.`,
+            images: ['plotly_1.png'],
+>>>>>>> Stashed changes
             website: ''
         },
         {
