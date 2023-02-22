@@ -28,7 +28,7 @@ const speech =
             title: 'Latitude & Weather Analysis',
             message: `Or how about obtaining current weather of hundreds of cities around the world to conduct your own study about the effect of latitude on the climate and then displaying it on your own interactive website.`,
             images: ['web_1.png', 'web_2.png'],
-            website: ''
+            website: 'https://analyticsandwebdevelopment.com/Weather_And_Latitude_Analysis'
         },
         {
             title: 'Schools Analysis',
