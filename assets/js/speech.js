@@ -34,6 +34,12 @@ const speech =
             website: 'https://analyticsandwebdevelopment.com/Weather_And_Latitude_Analysis'
         },
         {
+            title: 'Employees Management Node Sql Js',
+            message: `How about if we create a backend application that manages employee\'s data with the use of SQL, Node and JavaScript?`,
+            images: ['empMgmt1.png', 'empMgmt2.png', 'empMgmt3.png', 'empMgmt4.png', 'empMgmt5.png', 'empMgmt6.png'],
+            website: ''
+        },
+        {
             title: 'Schools Analysis',
             message: `For example with the Python language and Pandas library we conduct an analysis of reginal schools' data to obtain an inside on school budget, school types, students count, passing averages of the math and reading scores to determine the difference between charter or district, inexpensive or expensive schools have on overall passing grades.`,
             images: ['pandas-4.png', 'pandas-1.png', 'pandas-2.png', 'pandas-3.png'],
