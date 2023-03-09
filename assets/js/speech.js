@@ -61,6 +61,12 @@ const speech =
             website: ''
         },
         {
+            title: 'Professional ReadMe Generator',
+            message: 'We can also create an application that builds a professional readme file for any project.',
+            images: ['readme4.png','readme3.png','readme2.png','readme.png'],
+            webside: ''
+        },
+        {
             title: 'React Memory Game',
             message: `How about if we start by creating a single page react game application which reinforces memory power.  Which the objective of the game would be to click all images once as the change position in every click`,
             images: ['reactMemoryGame.png'],
