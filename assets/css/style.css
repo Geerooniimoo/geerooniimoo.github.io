@@ -14,6 +14,13 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+#carouselContainer {
+    background: black;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 10px auto;
+}
+
 #sale {
     position: absolute;
     z-index: 3;
@@ -78,12 +85,7 @@ body::-webkit-scrollbar {
 }
 
 #emailUs {
-    position: absolute;
-    top: 65px;
-    z-index: 2;
-    right: 90px;
     filter: grayscale(0.4) drop-shadow(3px 4px 0px #531420);
-    width: 170px;
     opacity: 0.85;
 }
 
@@ -94,7 +96,7 @@ body::-webkit-scrollbar {
 }
 
 #emailUs img {
-    width: 100%;
+    width: 170px;
 }
 
 #emailBtn {
@@ -213,31 +215,19 @@ a {
 #title {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    transform: skewX(40deg);
-    width: 650px;
-    height: 170px;
-    border-top: 4px solid #a39f9f;
-    border-right: 4px solid #a39f9f;
-    border-left: 4px solid red;
     border-bottom: 4px solid red;
-    border-radius: 15px 15px;
     padding: 10px 40px;
-    text-anchor: middle;
-    position: relative;
-    z-index: 2;
+    display: flex;
+    justify-content: space-between;
 }
 
 #title p, #title a {
-    transform: skewX(-40deg);
     font-size: 1.8rem;
     font-family: Abril Fatface, Arial, sans-serif;
+    color: white;
 }
 
 #title button {
-    position: absolute;
-    left: 248px;
-    bottom: 10px;
-    transform: skewX(-40deg);
     width: fit-content;
     font-size: 1.2rem;
     background: transparent;
@@ -339,35 +329,23 @@ a {
 
 .titleImg {
     width: 35px;
-    transform: skewX(-40deg);
     margin: 0 0 0 auto;
     border-radius: 5px;
     margin: 0 10px;
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
 }
 
 .titleImg2 {
     width: 35px;
-    transform: skewX(-40deg);
     margin: 0 0 0 auto;
     border-radius: 5px;
     margin: 0 10px;
-    position: absolute;
-    right: 60px;
-    bottom: 10px;
 }
 
 .titleImg1 {
     width: 100px;
-    transform: skewX(-40deg);
     margin: 0 0 0 auto;
     border-radius: 5px;
     margin: 0 10px;
-    position: absolute;
-    right: 15px;
-    bottom: 4px;
 }
 
 .titleImg1:hover {
@@ -388,7 +366,6 @@ a {
 .type {
     position: relative;
     width: 90%;
-    transform: skewX(40deg);
     overflow: hidden;
     /* background: white; */
     /* margin: 0% 0 5% 10%; */
@@ -506,7 +483,6 @@ a {
 }
 
 #titleDiv {
-    transform: skewX(40deg);
     font-family: Abril Fatface, Arial, sans-serif;
     /* font-size: 2.8rem; */
 }
@@ -534,15 +510,10 @@ a {
     margin: 0 auto;
     height: 170px;
     font-family: Arial, Helvetica, sans-serif;
-    transform: skewX(-40deg);
     background: black;
-    width: 650px;
-    border-right: 4px solid #a39f9f;
-    border-left: 4px solid red;
-    border-top: 4px solid red;
-    border-bottom: 4px solid #a39f9f;
-    border-radius: 15px 15px;
-    padding: 10px 40px;
+    width: 100%;
+    border-bottom: 5px solid red;
+    padding: 10px 0;
     text-anchor: middle;
     overflow: hidden;
     /* animation: type 11.5s; */
@@ -1017,12 +988,6 @@ a {
         background-size: 100% 620vh;
     }
 
-    #emailUs {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-
     #title button {
         margin-top: 10px;
     }
@@ -1412,7 +1377,6 @@ a {
     #title button {
         left: 150px;
         bottom: 10px;
-        transform: skewX(0deg);
     }
     
     .child_5 {
@@ -1450,19 +1414,16 @@ a {
     }
 
     .titleImg1 {
-        transform: skewX(0deg);
         right: 0;
         bottom: 4px;
     }
 
     .titleImg2 {
-        transform: skewX(0deg);
         right: 46px;
         bottom: 10px;
     }
 
     .titleImg {
-        transform: skewX(0deg);
         right: 95px;
         bottom: 10px;
     }
@@ -1521,7 +1482,6 @@ a {
 
     #title {
         position: relative;
-        transform: skewX(0deg);
         width: auto;
         box-shadow: none;
         border: none;
@@ -1533,7 +1493,6 @@ a {
 
     #typeDiv {
         position: relative;
-        transform: skewX(0deg);
         width: auto;
         box-shadow: none;
         border-left: none;
@@ -1542,17 +1501,14 @@ a {
     }
 
     #titleDiv {
-        transform: skewX(0deg);
     }
 
     #title p {
-        transform: skewX(0deg);
         font-size: 1.5rem;
         padding: 10px;
     }
 
     .type {
-        transform: skewX(0deg);
     }
 
     #type {
@@ -1776,7 +1732,6 @@ a {
     #title button {
         left: 105px;
         bottom: 10px;
-        transform: skewX(0deg);
     }
 
     .modal-content {
