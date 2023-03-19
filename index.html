@@ -3,8 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,188 +32,225 @@
 </head>
 
 <body>
-    <!-- <a id="sale" class="calendly-badge-content"><img src="./assets/images/sale.png" alt="5 sessions sale"></a> -->
-
-    <div id="topDiv">
-        <div id='title'>
-            <p>
-                Learn data analytics and/or web development at your own pace
-            </p>
-            <div>
-
-                <a target="_blank" href="https://linkedin.com/in/geronimoperez">
-                    <img src="./assets/images/linkedIn.png" class="titleImg">
-                </a>
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                    aria-controls="collapseTwo">
-                    Syllabus
-                </button>
-                <a target="_blank" href="https://g.page/r/CeWB47Bolh99EAI/review">
-                    <img class="titleImg1" src="./assets/images/google-reviews2.png">
-                </a>
-                <a href="mailto:concerns@analyticsandwebdevelopment.com" id="emailUs"><img
-                        src="./assets/images/emailUs3.png" alt="email us"></a>
+    <nav>
+        <div id="logo">
+            <div id="logoTop"></div>
+            <h1>Analytics and Web Development</h1>
+            <div id="logoBottom">
+                <h3>.com</h3>
             </div>
         </div>
+        <div id="logoCir"></div>
+        <div id="links">
+            <a target="_blank" href="https://g.page/r/CeWB47Bolh99EAI/review">Reviews Us On Google</a>
+            <a target="_blank" href="https://linkedin.com/in/geronimoperez">Find Us On LinkedIn</a>
+            <a href="mailto:concerns@analyticsandwebdevelopment.com" id="emailUs">Email Us</a>
+        </div>
+        <svg class="logo">
+            <polygon fill="red" points="
+                294.5,155 
+                301,162 
+                308.5,157 
+                316,150 
+                327,135 
+                333,125 
+                337,122 
+                345,120 
+                365,119.5 
+                366,110
+                355,110
+                343,110
+                332.6,110.5
+                325,119
+                305,145
+            "></polygon>
+        </svg>
+        <svg id="speed1" class="logo">
+            <polygon fill="silver" stroke="white" points="390,68 445,56"></polygon>
+            <polygon fill="silver" stroke="white" points="100,70 260,37"></polygon>
+        </svg>
+        <svg id="speed2" class="logo">
+            <polygon fill="silver" stroke="white" points="290,58 400,36"></polygon>
+            <polygon fill="silver" stroke="white" points="150,100 250,80"></polygon>
+        </svg>
+        <svg id="speed3" class="logo">
+            <polygon fill="silver" stroke="white" points="250,110 360,87"></polygon>
+            <polygon fill="silver" stroke="white" points="50,130 130,115"></polygon>
+        </svg>
+    </nav>
 
-        <div id="carouselContainer">
-          
-            <div id="typeDiv">
-                <div id="titleDiv">
-                    <h4 id="speechTitle" class="scroll2"></h4>
-                </div>
-                <div class="type">
-                </div>
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+        aria-controls="collapseTwo">
+        Syllabus
+    </button>
 
-                <div id="rewind">
-                    <h1><<</h1>
-                </div>
-                <div id="forward">
-                    <h1>>></h1>
-                </div>
+    <div id="carouselContainer">
+
+        <div id="typeDiv">
+            <div id="titleDiv">
+                <h4 id="speechTitle" class="scroll2"></h4>
             </div>
-            <div id="carousel">
+            <div class="type">
+            </div>
+
+            <div id="rewind">
+                <h1>
+                    <<< /h1>
+            </div>
+            <div id="forward">
+                <h1>>></h1>
             </div>
         </div>
+        <div id="carousel">
+        </div>
+    </div>
 
-        <div class="accordion accordion-flush" id="accordionExample">
+    <div class="accordion accordion-flush" id="accordionExample">
 
-            <div class="accordion-item">
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body knowledgeDiv">
-                        <div class="analyticDiv">
-                            <h3>Data Analytics: </h3>
-                            Intermediate Excel
-                            <ul>
-                                <li> Pivot Tables</li>
-                                <li> VBA Scripting</li>
-                            </ul>
-                            Fundamental Statistics
-                            <ul>
-                                <li> Modelling</li>
-                                <li> Forecast</li>
-                            </ul>
-                            Python Programming
-                            <ul>
-                                <li> Python 3</li>
-                                <li> NumPy</li>
-                                <li> Pandas</li>
-                                <li> Matplotlib</li>
-                                <li> API Interactions</li>
-                            </ul>
-                            Databases
-                            <ul>
-                                <li> Postgres/pgAdmin</li>
-                                <li> MongoDB</li>
-                                <li> Extract-Transform-Load (ETL)</li>
-                            </ul>
+        <div class="accordion-item">
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body knowledgeDiv">
+                    <div class="analyticDiv">
+                        <h3>Data Analytics: </h3>
+                        Intermediate Excel
+                        <ul>
+                            <li> Pivot Tables</li>
+                            <li> VBA Scripting</li>
+                        </ul>
+                        Fundamental Statistics
+                        <ul>
+                            <li> Modelling</li>
+                            <li> Forecast</li>
+                        </ul>
+                        Python Programming
+                        <ul>
+                            <li> Python 3</li>
+                            <li> NumPy</li>
+                            <li> Pandas</li>
+                            <li> Matplotlib</li>
+                            <li> API Interactions</li>
+                        </ul>
+                        Databases
+                        <ul>
+                            <li> Postgres/pgAdmin</li>
+                            <li> MongoDB</li>
+                            <li> Extract-Transform-Load (ETL)</li>
+                        </ul>
 
-                            Front End Web Visualization
-                            <ul>
-                                <li> HTML</li>
-                                <li> CSS</li>
-                                <li> Bootstrap</li>
-                                <li> Dashboarding</li>
-                                <li> JavaScript</li>
-                                <li> Geomapping with JavaScript libraries</li>
-                            </ul>
+                        Front End Web Visualization
+                        <ul>
+                            <li> HTML</li>
+                            <li> CSS</li>
+                            <li> Bootstrap</li>
+                            <li> Dashboarding</li>
+                            <li> JavaScript</li>
+                            <li> Geomapping with JavaScript libraries</li>
+                        </ul>
 
-                            Business Intelligence Software
-                            <ul>
-                                <li> Tableau</li>
-                            </ul>
+                        Business Intelligence Software
+                        <ul>
+                            <li> Tableau</li>
+                        </ul>
 
-                            Advanced Topics
-                            <ul>
-                                <li> Big Data Analytics with Hadoop</li>
-                                <li> Amazon Web Services</li>
-                                <li> Machine Learning</li>
-                            </ul>
+                        Advanced Topics
+                        <ul>
+                            <li> Big Data Analytics with Hadoop</li>
+                            <li> Amazon Web Services</li>
+                            <li> Machine Learning</li>
+                        </ul>
 
-                        </div>
-                        <div class="webDiv">
-                            <h3>Web Developer: </h3>
-                            Computer Science applied to JavaScript
-                            <ul>
-                                <li> Design Patterns</li>
-                                <li> Data Structures</li>
-                                <li> Algorithms</li>
-                                <li> Big O Notation</li>
-                            </ul>
+                    </div>
+                    <div class="webDiv">
+                        <h3>Web Developer: </h3>
+                        Computer Science applied to JavaScript
+                        <ul>
+                            <li> Design Patterns</li>
+                            <li> Data Structures</li>
+                            <li> Algorithms</li>
+                            <li> Big O Notation</li>
+                        </ul>
 
-                            Browser Based Technologies
-                            <ul>
-                                <li> HTML</li>
-                                <li> CSS</li>
-                                <li> JavaScript</li>
-                                <li> jQuery</li>
-                                <li> Responsive Design</li>
-                                <li> Bootstrap</li>
-                                <li> Handlebars</li>
-                                <li> Local Storage, Session Storage, IndexedDB</li>
-                                <li> React.js</li>
-                            </ul>
+                        Browser Based Technologies
+                        <ul>
+                            <li> HTML</li>
+                            <li> CSS</li>
+                            <li> JavaScript</li>
+                            <li> jQuery</li>
+                            <li> Responsive Design</li>
+                            <li> Bootstrap</li>
+                            <li> Handlebars</li>
+                            <li> Local Storage, Session Storage, IndexedDB</li>
+                            <li> React.js</li>
+                        </ul>
 
-                            Deployment
-                            <ul>
-                                <li> Heroku</li>
-                                <li> Git</li>
-                            </ul>
+                        Deployment
+                        <ul>
+                            <li> Heroku</li>
+                            <li> Git</li>
+                        </ul>
 
-                            Locally Popular MVC Framework
-                            <ul>
-                                <li> C#/ASP.NET</li>
-                                <li> Python/Django</li>
-                                <li> Java/Spring</li>
-                                <li> PHP/Laravel</li>
-                            </ul>
+                        Locally Popular MVC Framework
+                        <ul>
+                            <li> C#/ASP.NET</li>
+                            <li> Python/Django</li>
+                            <li> Java/Spring</li>
+                            <li> PHP/Laravel</li>
+                        </ul>
 
-                            Databases
-                            <ul>
-                                <li> MySQL</li>
-                                <li> MongoDB</li>
-                            </ul>
+                        Databases
+                        <ul>
+                            <li> MySQL</li>
+                            <li> MongoDB</li>
+                        </ul>
 
-                            Server-Side Development
-                            <ul>
-                                <li> Express</li>
-                                <li> User Authentication</li>
-                                <li> Sequelize</li>
-                                <li> MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
-                            </ul>
+                        Server-Side Development
+                        <ul>
+                            <li> Express</li>
+                            <li> User Authentication</li>
+                            <li> Sequelize</li>
+                            <li> MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                        </ul>
 
-                            Quality and Performance
-                            <ul>
-                                <li> Unit Testing</li>
-                                <li> Google Lighthouse</li>
-                                <li> Webpack</li>
-                                <li> PWAs (Progressive Web Apps)</li>
-                                <li> Lazy Loading</li>
-                                <li> Service Workers</li>
-                            </ul>
+                        Quality and Performance
+                        <ul>
+                            <li> Unit Testing</li>
+                            <li> Google Lighthouse</li>
+                            <li> Webpack</li>
+                            <li> PWAs (Progressive Web Apps)</li>
+                            <li> Lazy Loading</li>
+                            <li> Service Workers</li>
+                        </ul>
 
-                            Accessibility
-                            <ul>
-                                <li> Semantic HTML</li>
-                            </ul>
-                        </div>
+                        Accessibility
+                        <ul>
+                            <li> Semantic HTML</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="schedule">
-            <div>
-                <button id="analyst" class="btn btn-outline-primary">
-                    <h3 class="g-font">Data Analytics</h3>
-                </button>
 
-                <button id="developer" class="btn btn-outline-primary">
-                    <h3 class="g-font">Web Development</h3>
-                </button>
-            </div>
+    </div>
+    <div class="schedule">
+        <div>
+            <button id="analyst" class="btn btn-outline-primary">
+                <h3 class="g-font">Data Analytics</h3>
+            </button>
+
+            <button id="developer" class="btn btn-outline-primary">
+                <h3 class="g-font">Web Development</h3>
+            </button>
         </div>
+    </div>
+
+    <div id="offersDiv">
+        <div id="offersBtns">
+            <button>$35</button>
+            <button>$65</button>
+            <button>$250</button>
+        </div>
+    </div>
     </div>
 
     <a href="mailto:concerns@AnalyticsAndWebDevelopment.com"> <button id="emailBtn">✉ Email us</button> </a>
@@ -256,17 +291,10 @@
         </div>
     </div>
 
-
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
         crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-        crossorigin="anonymous"></script>
-
-    <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <script src="./assets/js/speech.js"></script>
     <script src="./assets/js/app.js"></script>
