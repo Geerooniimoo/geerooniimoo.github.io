@@ -65,37 +65,37 @@ function handleForward() {
         handleSpeech()) : '';
 };
 
-let btn1 = document.getElementById("sale");
-let btn2 = document.getElementById("analyst");
-let btn3 = document.getElementById("developer");
 let modal1 = document.getElementById("myModal1");
 let modal2 = document.getElementById("myModal2");
 let modal3 = document.getElementById("myModal3");
 
 
-btn1.onclick = () => {
-    let y = btn1.getBoundingClientRect().y, x = btn1.getBoundingClientRect().x;
-    btn1.style = `top: ${y}px;left: ${x}px;animation: sale2 .5s`;
 
-    setTimeout(()=>{
-        btn1.style = 'display:none';
-        modal1.style.display = "block";
-    },500)
+// btn2.onclick = () => modal2.style.display = "block";
+// btn3.onclick = () => modal3.style.display = "block";
+
+// window.onclick = e => {
+//     console.log(e.target);
+//     if (e.target == modal1 || 
+//         e.target == modal2 || 
+//         e.target == modal3 || 
+//         e.target.classList.value == "close"
+//     ) {
+//     btn1.style = 'display:block;animate: sale 50s infinite';
+//     modal1.style.display = "none";
+//     modal2.style.display = "none";
+//     modal3.style.display = "none";
+//   }
+// }
+
+const handleOffer = e => {
+    document.querySelectorAll('.offersBtns').forEach(el => el.style.filter = 'contrast(.1)')
+    document.querySelectorAll('#details input[type="radio"]').forEach(el => el.disabled = true)
+    e.style.filter = 'contrast(1)';
+    document.querySelectorAll(`.${e.id}`).forEach(el => {
+        el.disabled=false;
+        el.checked=true;
+    })
 };
 
-btn2.onclick = () => modal2.style.display = "block";
-btn3.onclick = () => modal3.style.display = "block";
-
-window.onclick = e => {
-    console.log(e.target);
-    if (e.target == modal1 || 
-        e.target == modal2 || 
-        e.target == modal3 || 
-        e.target.classList.value == "close"
-    ) {
-    btn1.style = 'display:block;animate: sale 50s infinite';
-    modal1.style.display = "none";
-    modal2.style.display = "none";
-    modal3.style.display = "none";
-  }
-}
+handleOffer(class65)

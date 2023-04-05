@@ -1,9 +1,12 @@
 /* * {
-    border: 2px dotted red;
+    border: 2px dotted teal;
 } */
 
 body {
     margin: 0;
+    background: rgb(216, 141, 3);
+    background-image: url('../images/bg1.png');
+    background-size: 100vh;
 }
 
 nav {
@@ -11,10 +14,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 40px;
     color: white;
-    position: relative;
-    border-bottom: 10px solid red;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 10px solid teal;
 }
 
 #logo {
@@ -22,7 +27,101 @@ nav {
     bottom: -20px;
     left: 100px;
     transform: rotate(-10deg);
+    z-index: 3;
+}
+
+#asteroid {
+    width: 50px;
+    position: absolute;
+    opacity: 0;
+    top: 40px;
+    left: 500px;
     z-index: 2;
+    animation: asteroid 60s infinite;
+}
+
+@keyframes asteroid {
+    0% {
+        z-index: 4;
+        top: 30px;
+        left: 500px;
+        opacity: .5;
+        filter: drop-shadow(5px 5px 5px black);
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    18% {
+        opacity: 1;
+    }
+
+    21% {
+        top: 150px;
+        left: 30px;
+        opacity: 0;
+        width: 50px;
+    }
+
+    45% {
+        z-index: 4;
+        opacity: 0;
+        top: -140px;
+        left: 500px;
+    }
+    
+    51% {
+        z-index: 2;
+        opacity: .5;
+        top: -140px;
+        left: 500px;
+        width: 100px;
+    }
+
+    52% {
+        opacity: 1
+    }
+
+    70% {
+        width: 100px;
+        opacity: 1;
+        top: 80px;
+        left: -10px;
+    }
+
+    71% {
+        z-index: 2;
+        width: 100px;
+        opacity: 0;
+        top: 80px;
+        left: -10px;
+    }
+
+    80% {
+        z-index: 4;
+        opacity: 0;
+        top: -100px;
+        left: 500px;
+        width: 115px;
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    89% {
+        opacity: 1;
+    }
+    
+    100% {
+        z-index: 4;
+        opacity: 0;
+        top: 80px;
+        left: -40px;
+        width: 115px;
+        filter: drop-shadow(5px 5px 5px black);
+    }
 }
 
 #logoCir {
@@ -34,16 +133,16 @@ nav {
     left: 78px;
     background: black;
     border-radius: 50%;
-    border-left: 10px solid red;
+    border-left: 10px solid teal;
     border-right: 10px solid black;
-    border-bottom: 10px solid red;
+    border-bottom: 10px solid teal;
 }
 
 .logo {
     position: absolute;
     bottom: -140px;
     left: 32px;
-    z-index: 2;
+    z-index: 1;
     width: 500px;
     height: 250px;
     /* border: 2px solid orange; */
@@ -109,16 +208,19 @@ nav {
 }
 
 #speed1 {
+    z-index: 4;
     opacity: 0;
     animation: speed 4.1s infinite ease-in-out;
 }
 
 #speed2 {
+    z-index: 4;
     opacity: 0;
     animation: speed 4.3s 1s infinite ease-in-out;
 }
 
 #speed3 {
+    z-index: 4;
     opacity: 0;
     animation: speed 4.5s 1.5s infinite ease-in-out;
 }
@@ -129,11 +231,13 @@ nav {
         opacity: 1;
         /* left: 40px; */
     }
+
     80% {
         opacity: .2;
         left: 0px;
         top: 14px
     }
+
     100% {
         left: 0px;
         top: 14px
@@ -141,16 +245,275 @@ nav {
 }
 
 
-#links * {
+#links a {
     height: 50px;
     margin: 0 20px;
-    color: white;
+    color: teal;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: sans-serif;
-    border-bottom: 5px solid teal;
+    border-bottom: 7px solid rgb(124, 38, 38);
+    border-radius: 8px;
 }
 
+#links a:hover {
+    filter: brightness(2);
+}
 
+#title {
+    font-size: 1.2rem;
+    margin: 150px auto 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    color: #c0d1ee;
+    width: 60%;
+    max-width: 900px;
+    border-radius: 25px;
+    background: linear-gradient(215deg, black 48%, teal 60%);
+}
 
+#carouselContainer {
+    background: black;
+    width: 60%;
+    padding: 0 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+    height: 50vh;
+    border-radius: 25px;
+}
+
+#carousel {
+    margin: 75px auto 50px;
+    overflow: hidden;
+    background: repeating-linear-gradient(35deg, silver, black 1px);
+    border-radius: 25px;
+    height: 25vh;
+    width: fit-content;
+    max-width: 90%;
+}
+
+#carousel img {
+    height: 100%;
+    width: 100%;
+}
+
+#typeDiv {
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin: 0 auto;
+    /* height: 170px; */
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    width: 100%;
+    padding: 10px 0;
+    text-anchor: middle;
+    overflow: hidden;
+    /* animation: type 11.5s; */
+}
+
+#typeDiv:hover #rewind {
+    cursor: pointer;
+}
+
+#rewind {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#rewind h1 {
+    margin-left: 10px;
+}
+
+#typeDiv:hover #forward {
+    cursor: pointer;
+}
+
+#forward {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#forward h1 {
+    margin-right: 10px;
+}
+
+#titleDiv {
+    font-family: Abril Fatface, Arial, sans-serif;
+}
+
+#speechTitle {
+    text-align: center;
+    color: cornflowerblue;
+    font-family: Abril Fatface, Arial, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.type {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    /* background: white; */
+    /* margin: 0% 0 5% 10%; */
+    text-align: center;
+    padding: 5% 0%;
+    margin: 0% auto;
+    height: 7.5rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.type p {
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#text {
+    color: white;
+}
+
+#offersDiv {
+    text-align: center;
+    margin: 10px auto;
+    width: 60%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 25px;
+    background: black;
+    color: white;
+}
+
+#offersBtns {
+    display: flex;
+    justify-content:space-around;
+}
+
+#offersBtns button {
+    text-align: center;
+    background: none;
+    color: teal;
+    font-size: 3rem;
+    border: none;
+    border-bottom: 10px solid teal;
+    border-radius: 10px;
+    margin: 10px 63px 20px;
+    filter: contrast(.1);
+}
+
+#details {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+#details * {
+    width: 24%;
+}
+
+#details hr {
+    width: 100%;
+    height:15px;
+    background:linear-gradient(gray,black 30px);
+    border-radius:50px;
+    margin: 50px 0;
+}
+
+#details input {
+    transform: scale(.4);
+    accent-color: green;
+}
+
+#scheduleBtn {
+    font-size: 2.5rem;
+    background: teal;
+    color: white;
+    padding: 10px;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    filter: drop-shadow(-2px -2px 1px silver);
+}
+
+#scheduleBtn:hover {
+    cursor: pointer;
+}
+
+#scheduleBtn:active {
+    transform: scale(.95);
+    filter: unset;
+}
+
+.myModal {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    z-index: 4;
+    background: rgba(0, 0, 0, 0.71);
+    animation: myModal 1.5s;
+}
+
+@keyframes myModal {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 5% auto;
+    width: 1100px;
+}
+
+.close {
+    position: absolute;
+    color: #aaa;
+    font-size: 60px;
+    font-weight: bold;
+    width: fit-content;
+    top: -20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
