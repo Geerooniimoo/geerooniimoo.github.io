@@ -250,7 +250,7 @@ nav {
     margin: 0 20px;
     color: teal;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-family: sans-serif;
     border-bottom: 7px solid rgb(124, 38, 38);
     border-radius: 8px;
@@ -261,27 +261,38 @@ nav {
 }
 
 #title {
-    font-size: 1.2rem;
-    margin: 150px auto 0;
+    font-size: 2.8rem;
+    margin: 150px auto 20px auto;
     display: flex;
     justify-content: space-around;
-    padding: 0 20px;
     color: #c0d1ee;
-    width: 60%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 2000px;
     border-radius: 25px;
+    border: 1px solid teal;
     background: linear-gradient(215deg, black 48%, teal 60%);
+}
+
+#title h1 {
+    margin: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 2000px;
+    margin: 40px auto;
 }
 
 #carouselContainer {
     background: black;
-    width: 60%;
     padding: 0 20px;
+    width: 48%;
     max-width: 900px;
-    margin: 50px auto;
     overflow: hidden;
-    height: 50vh;
     border-radius: 25px;
+    border: 1px solid teal;
 }
 
 #carousel {
@@ -389,30 +400,40 @@ nav {
 
 #offersDiv {
     text-align: center;
-    margin: 10px auto;
-    width: 60%;
+    width: 48%;
+    max-width: 900px;
     max-width: 900px;
     padding: 20px;
     border-radius: 25px;
     background: black;
     color: white;
+    border: 1px solid teal;
 }
 
 #offersBtns {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
+}
+
+#offersBtns button h1 {
+    filter: contrast(.1);
+    margin: 0;
+
+}
+
+#offersBtns button:hover {
+    cursor: pointer;
 }
 
 #offersBtns button {
     text-align: center;
     background: none;
-    color: teal;
     font-size: 3rem;
-    border: none;
-    border-bottom: 10px solid teal;
-    border-radius: 10px;
-    margin: 10px 63px 20px;
-    filter: contrast(.1);
+    border: 1px solid silver;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: -3px -3px 1px silver;
+    margin-top: 25px;
 }
 
 #details {
@@ -435,27 +456,67 @@ nav {
 
 #details input {
     transform: scale(.4);
-    accent-color: green;
 }
 
-#scheduleBtn {
-    font-size: 2.5rem;
-    background: teal;
-    color: white;
-    padding: 10px;
-    margin: 0 auto 20px;
+.class35 {
+    accent-color: #0277bd;
+}
+
+.class65 {
+    accent-color: #007d7d;;
+}
+.class250 {
+    accent-color: #7e2832;
+}
+
+#scheduleBtn button {
+    border: 1px solid silver;
+    box-shadow: -3px -3px 1px silver;
+    height: 6rem;
+    font-weight: 900;
+}
+
+.scheduleBtn {
+    background: transparent;
     border-radius: 12px;
-    filter: drop-shadow(-2px -2px 1px silver);
+    width: 90%;
+    line-height: .5;
+    font-size: 4.5rem;
 }
 
-#scheduleBtn:hover {
+.scheduleBtn:hover {
     cursor: pointer;
 }
 
-#scheduleBtn:active {
+.scheduleBtn:active {
     transform: scale(.95);
     filter: unset;
 }
+
+#class35{
+    color: #0277bd;
+}
+
+#class65{
+    color: #007d7d;
+}
+
+#class250{
+    color: #7e2832;
+}
+
+.color1 {
+    color: #0277bd;
+}
+
+.color2 {
+    color: #007d7d;
+}
+
+.color3 {
+    color: #7e2832;
+}
+
 
 .myModal {
     position: fixed;
@@ -516,4 +577,3 @@ nav {
     text-decoration: none;
     cursor: pointer;
 }
-

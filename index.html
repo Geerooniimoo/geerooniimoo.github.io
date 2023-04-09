@@ -87,70 +87,72 @@
         <h1>Data Analysis</h1>
         <h1>Web Development</h1>
     </div>
-    <div id="carouselContainer">
-        <div id="carousel">
-        </div>
-        <div id="typeDiv">
-            <div id="titleDiv">
-                <h4 id="speechTitle"></h4>
+    <main>
+        <div id="offersDiv">
+            <div id="offersBtns">
+                <button> <h1 id="class35" class="offersBtns" onclick="handleOffer(this)">$35</h1></button>
+                <button> <h1 id="class65" class="offersBtns" onclick="handleOffer(this)">$65</h1></button>
+                <button> <h1 id="class250" class="offersBtns" onclick="handleOffer(this)">$250</h1></button>
             </div>
-
-            <div class="type"></div>
-
-            <div id="rewind">
-                <h1>
-                    <<< /h1>
+            <div id="details">
+                <hr>
+                <h1>Tutor</h1>
+                <input type="radio" disabled class="class35" name="tutor">
+                <input type="radio" disabled class="class65" name="tutor">
+                <input type="radio" disabled class="class250" name="tutor">
+                <h1>Data Analyst</h1>
+                <input type="radio" disabled class="class35" name="analytics">
+                <input type="radio" disabled class="class65" name="analytics">
+                <input type="radio" disabled class="class250" name="analytics">
+                <h1>Web Developer</h1>
+                <input type="radio" disabled class="class35" name="developer">
+                <input type="radio" disabled class="class65" name="developer">
+                <input type="radio" disabled class="class250" name="developer">
+                <hr>
+                <h1>30 mins</h1>
+                <input type="radio" disabled class="class35" name="30mins">
+                <input type="radio" disabled name="30mins">
+                <input type="radio" disabled name="30mins">
+                <h1>60 mins</h1>
+                <input type="radio" disabled name="60mins">
+                <input type="radio" disabled class="class65" name="60mins">
+                <input type="radio" disabled name="60mins">
+                <h1>Five hours</h1>
+                <input type="radio" disabled name="5hours">
+                <input type="radio" disabled name="5hours">
+                <input type="radio" disabled class="class250" name="5hours">
+                <h1>Several Days</h1>
+                <input type="radio" disabled name="muliDays">
+                <input type="radio" disabled name="muliDays">
+                <input type="radio" disabled class="class250" name="muliDays">
+                <hr>
             </div>
-            <div id="forward">
-                <h1>>></h1>
+            <div id="scheduleBtn">
             </div>
         </div>
 
-    </div>
+        <div id="carouselContainer">
+            <div id="carousel">
+            </div>
+            <div id="typeDiv">
+                <div id="titleDiv">
+                    <h4 id="speechTitle"></h4>
+                </div>
 
-    <div id="offersDiv">
-        <div id="offersBtns">
-            <div style="width:25%"></div>
-            <button id="class35" class="offersBtns" onclick="handleOffer(this)">$35</button>
-            <button id="class65" class="offersBtns" onclick="handleOffer(this)">$65</button>
-            <button id="class250" class="offersBtns" onclick="handleOffer(this)">$250</button>
-        </div>
-        <div id="details">
-            <hr>
-            <h1>Tutor</h1>
-            <input type="radio" disabled class="class35" name="tutor">
-            <input type="radio" disabled class="class65" name="tutor">
-            <input type="radio" disabled class="class250" name="tutor">
-            <h1>Data Analyst</h1>
-            <input type="radio" disabled class="class35" name="analytics">
-            <input type="radio" disabled class="class65" name="analytics">
-            <input type="radio" disabled class="class250" name="analytics">
-            <h1>Web Developer</h1>
-            <input type="radio" disabled class="class35" name="developer">
-            <input type="radio" disabled class="class65" name="developer">
-            <input type="radio" disabled class="class250" name="developer">
-            <hr>
-            <h1>30 mins</h1>
-            <input type="radio" disabled class="class35" name="30mins">
-            <input type="radio" disabled name="30mins">
-            <input type="radio" disabled name="30mins">
-            <h1>60 mins</h1>
-            <input type="radio" disabled name="60mins">
-            <input type="radio" disabled class="class65" name="60mins">
-            <input type="radio" disabled name="60mins">
-            <h1>Five hours</h1>
-            <input type="radio" disabled name="5hours">
-            <input type="radio" disabled name="5hours">
-            <input type="radio" disabled class="class250" name="5hours">
-            <h1>Several Days</h1>
-            <input type="radio" disabled name="muliDays">
-            <input type="radio" disabled name="muliDays">
-            <input type="radio" disabled class="class250" name="muliDays">
-            <hr>
+                <div class="type"></div>
+
+                <div id="rewind">
+                    <h1>
+                        <<
+                    </h1>
+                </div>
+                <div id="forward">
+                    <h1>>></h1>
+                </div>
+            </div>
         </div>
 
-        <button id="scheduleBtn">Schedule Session</button>
-    </div>
+    </main>
 
     <div class="accordion accordion-flush" id="accordionExample">
 
