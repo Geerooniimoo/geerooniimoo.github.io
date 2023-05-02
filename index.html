@@ -8,27 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Analytics And Web Development</title>
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5NP8H7W');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVD9YG3HKH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-CVD9YG3HKH');
-    </script>
 </head>
 
 <body>
@@ -37,7 +16,7 @@
             <div id="logoTop"></div>
             <h1>Analytics and Web Development</h1>
             <div id="logoBottom">
-                <h3>.com</h3>
+                .com
             </div>
         </div>
 
@@ -87,47 +66,121 @@
         <h1>Data Analysis</h1>
         <h1>Web Development</h1>
     </div>
+
     <main>
         <div id="offersDiv">
-            <div id="offersBtns">
-                <button> <h1 id="class35" class="offersBtns" onclick="handleOffer(this)">$35</h1></button>
-                <button> <h1 id="class65" class="offersBtns" onclick="handleOffer(this)">$65</h1></button>
-                <button> <h1 id="class250" class="offersBtns" onclick="handleOffer(this)">$250</h1></button>
-            </div>
-            <div id="details">
-                <hr>
-                <h1>Tutor</h1>
-                <input type="radio" disabled class="class35" name="tutor">
-                <input type="radio" disabled class="class65" name="tutor">
-                <input type="radio" disabled class="class250" name="tutor">
-                <h1>Data Analyst</h1>
-                <input type="radio" disabled class="class35" name="analytics">
-                <input type="radio" disabled class="class65" name="analytics">
-                <input type="radio" disabled class="class250" name="analytics">
-                <h1>Web Developer</h1>
-                <input type="radio" disabled class="class35" name="developer">
-                <input type="radio" disabled class="class65" name="developer">
-                <input type="radio" disabled class="class250" name="developer">
-                <hr>
-                <h1>30 mins</h1>
-                <input type="radio" disabled class="class35" name="30mins">
-                <input type="radio" disabled name="30mins">
-                <input type="radio" disabled name="30mins">
-                <h1>60 mins</h1>
-                <input type="radio" disabled name="60mins">
-                <input type="radio" disabled class="class65" name="60mins">
-                <input type="radio" disabled name="60mins">
-                <h1>Five hours</h1>
-                <input type="radio" disabled name="5hours">
-                <input type="radio" disabled name="5hours">
-                <input type="radio" disabled class="class250" name="5hours">
-                <h1>Several Days</h1>
-                <input type="radio" disabled name="muliDays">
-                <input type="radio" disabled name="muliDays">
-                <input type="radio" disabled class="class250" name="muliDays">
-                <hr>
-            </div>
-            <div id="scheduleBtn">
+            <button id="class35" class="color1" onclick="handleOffer(this)">$35</button>
+            <button id="class65" class="color2" onclick="handleOffer(this)">$65</button>
+            <button id="class250" class="color3" onclick="handleOffer(this)">$250</button>
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Tutor
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class35" name="tutor">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class65" name="tutor">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class250" name="tutor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Data Analyst
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class35" name="analytics">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class65" name="analytics">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class250" name="analytics">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Web Developer
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class35" name="developer">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class65" name="developer">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class250" name="developer">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td>
+                        30 mins
+                    </td>
+                    <td>
+                        <input type="radio" disabled class="class35" name="30mins">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="30mins">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="30mins">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        60 mins
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="60mins">
+                    </td>
+                    <td>
+                        <input type="radio" disabled class="class65" name="60mins">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="60mins">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Five hours
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="5hours">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="5hours">
+                    </td>
+                    <td>
+                        <input type="radio" disabled class="class250" name="5hours">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Several Days
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="muliDays">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="muliDays">
+                    </td>
+                    <td>
+                        <input type="radio" disabled class="class250" name="muliDays">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <div id="scheduleBtnDiv">
+                <button id="scheduleBtn" onclick="handleModal('myModal2')" class="color2" style="transform: scale(1);">Click To Schedule</button>
             </div>
         </div>
 
@@ -143,8 +196,7 @@
 
                 <div id="rewind">
                     <h1>
-                        <<
-                    </h1>
+                        << </h1>
                 </div>
                 <div id="forward">
                     <h1>>></h1>
@@ -161,7 +213,7 @@
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body knowledgeDiv">
                     <div class="analyticDiv">
-                        <h3>Data Analytics: </h3>
+                        Data Analytics:
                         Intermediate Excel
                         <ul>
                             <li> Pivot Tables</li>
@@ -211,7 +263,7 @@
 
                     </div>
                     <div class="webDiv">
-                        <h3>Web Developer: </h3>
+                        Web Developer:
                         Computer Science applied to JavaScript
                         <ul>
                             <li> Design Patterns</li>

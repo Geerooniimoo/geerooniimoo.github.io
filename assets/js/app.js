@@ -89,38 +89,51 @@ let modal3 = document.getElementById("myModal3");
 // }
 
 // const handleModal = modal => console.log(modal);
-const handleModal = modal => document.getElementById(modal).style.display = 'block';
+const handleModal = modal => {
+    scheduleBtn.style.transform = 'scale(.9)';
+    setTimeout(()=>scheduleBtn.style.transform = 'scale(1)', 250);
+    document.getElementById(modal).style.display = 'block';
+};
 
 const handleOffer = e => {
-    document.querySelectorAll('.offersBtns').forEach(el => el.style.filter = 'contrast(.1)')
-    document.querySelectorAll('#details input[type="radio"]').forEach(el => {
-        el.disabled = true;
-        el.style = 'transform:scale(.4)'
+    
+    ['#class35', '#class65', '#class250']
+        .forEach(e => {
+            document.querySelector(e).style.filter = 'contrast(0)';
+            document.querySelector(e).style = 'text-shadow:none;background:none';
     });
-    e.style.filter = 'contrast(1)';
-    document.querySelectorAll(`.${e.id}`).forEach(el => {
-        el.disabled=false;
-        el.checked=true;
-    })
+
+    e.style.transform = 'scale(.9)';
+    e.style.textShadow = '0px 0px 5px black, -2px 2px 1px silver';
+    e.style.background = e.id == 'class35' ? '#7e2832' : e.id == 'class65' ? '#007d7d' : '#0277bd';
+    setTimeout(()=> {e.style.transform = 'scale(1)'}, 250)
+
+    e.style.filter = 'contrast(1)'
+    document.querySelectorAll('input[type="radio"]').forEach(el => {
+        el.disabled = true;
+        el.style = 'transform:scale(1)'
+    });
     
     let radioList = document.querySelectorAll(`.${e.id}`);
-    
+
     radioList.forEach((el,i) => {
-        setTimeout(()=> {el.style = 'transform:scale(.6)'}, i*200);
+        setTimeout(()=> {
+            el.disabled=false;
+            el.checked=true;
+            el.style = 'transform:scale(1.6)'
+        }, i*200);
         // setTimeout(()=> {el.style = 'transform:scale(.4)'}, i*200+500);
-        
     });
 
     setTimeout(()=>{
         let offer = e.id=='class35' ? '1' :  e.id=='class65' ? '2' : 3;
-        scheduleBtn.innerHTML = `<button onclick="handleModal('myModal${offer}')" class="scheduleBtn color${offer}">Click To Schedule</button>`;
-        document.querySelector('.scheduleBtn').style = 'transform:scale(.9)'
+        scheduleBtnDiv.innerHTML = `<button id="scheduleBtn" onclick="handleModal('myModal${offer}')" class="color${offer}">Click To Schedule</button>`;
+        document.querySelector('#scheduleBtn').style = 'transform:scale(.9)'
     }, radioList.length*300)
     
     setTimeout(()=>{
-        document.querySelector('.scheduleBtn').style = 'transform:scale(1)'
-
-    }, radioList.length*300+500)
+        document.querySelector('#scheduleBtn').style = 'transform:scale(1)';
+    }, radioList.length*300+250)
 
 };
 

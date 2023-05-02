@@ -7,6 +7,8 @@ body {
     background: rgb(216, 141, 3);
     background-image: url('../images/bg1.png');
     background-size: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 nav {
@@ -20,6 +22,7 @@ nav {
     width: 100%;
     z-index: 2;
     border-bottom: 10px solid teal;
+    height: 10vh;
 }
 
 #logo {
@@ -157,7 +160,7 @@ nav {
 #logo h1 {
     margin: 0;
     left: 40px;
-    font-size: 1.5rem;
+    font-size: .95rem;
     color: whitesmoke;
     text-shadow: 1px 1px 1px black;
     font-style: italic;
@@ -247,13 +250,13 @@ nav {
 
 #links a {
     height: 50px;
-    margin: 0 20px;
     color: teal;
+    margin: 0 20px;
+    border-radius: 8px;
+    font-size: 1.4vmax;
     text-decoration: none;
-    font-size: 2.2rem;
     font-family: sans-serif;
     border-bottom: 7px solid rgb(124, 38, 38);
-    border-radius: 8px;
 }
 
 #links a:hover {
@@ -261,20 +264,23 @@ nav {
 }
 
 #title {
-    font-size: 2.8rem;
-    margin: 150px auto 20px auto;
+    margin: 200px auto 2vh auto;
     display: flex;
     justify-content: space-around;
-    color: #c0d1ee;
     width: 90%;
     max-width: 2000px;
     border-radius: 25px;
     border: 1px solid teal;
     background: linear-gradient(215deg, black 48%, teal 60%);
+    /* height: 10vh; */
 }
 
 #title h1 {
-    margin: 20px 0;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    font-size: 3vmax;
+    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
 }
 
 main {
@@ -287,9 +293,9 @@ main {
 
 #carouselContainer {
     background: black;
-    padding: 0 20px;
-    width: 48%;
-    max-width: 900px;
+    height: 55vh;
+    padding: 2%;
+    width: 60%;
     overflow: hidden;
     border-radius: 25px;
     border: 1px solid teal;
@@ -399,89 +405,83 @@ main {
 }
 
 #offersDiv {
+    height: 55vh;
     text-align: center;
-    width: 48%;
-    max-width: 900px;
-    max-width: 900px;
-    padding: 20px;
+    width: 28%;
+    padding: 2%;
     border-radius: 25px;
     background: black;
     color: white;
     border: 1px solid teal;
-}
-
-#offersBtns {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+#class35, #class65, #class250 {
+    display: flex;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 600;
+    width: 30%;
+    align-items: center;
+    height: 10%;
+    border-radius: 12px;
+    border: 1px solid silver;
     justify-content:space-evenly;
+    box-shadow: -3px -3px 1px silver;
+    filter: contrast(0);
 }
 
-#offersBtns button h1 {
-    filter: contrast(.1);
-    margin: 0;
-
-}
-
-#offersBtns button:hover {
+#offersDiv button:hover {
     cursor: pointer;
 }
 
-#offersBtns button {
-    text-align: center;
-    background: none;
-    font-size: 3rem;
-    border: 1px solid silver;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: -3px -3px 1px silver;
-    margin-top: 25px;
-}
-
-#details {
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-}
-
-#details * {
-    width: 24%;
-}
-
-#details hr {
+#scheduleBtn {
     width: 100%;
-    height:15px;
-    background:linear-gradient(gray,black 30px);
-    border-radius:50px;
-    margin: 50px 0;
+    height: 10%;
+    border-radius: 12px;
+    border: 1px solid silver;
+    justify-content:space-evenly;
+    box-shadow: -3px -3px 1px silver;
+    font-size: 2vmax;
+    font-weight: 900;
 }
 
-#details input {
-    transform: scale(.4);
+#offersDiv hr {
+    width: 100%;
+    background: silver;
+    height: 5px;
+    border-radius: 8px;
 }
 
-.class35 {
+table {
+    width: 100%;
+}
+
+table * {
+    /* border: 2px solid red; */
+}
+
+tr>td {
+    width: 25%;
+}
+
+.class250 {
     accent-color: #0277bd;
 }
 
 .class65 {
     accent-color: #007d7d;;
 }
-.class250 {
+.class35 {
     accent-color: #7e2832;
-}
-
-#scheduleBtn button {
-    border: 1px solid silver;
-    box-shadow: -3px -3px 1px silver;
-    height: 6rem;
-    font-weight: 900;
 }
 
 .scheduleBtn {
     background: transparent;
     border-radius: 12px;
-    width: 90%;
-    line-height: .5;
-    font-size: 4.5rem;
 }
 
 .scheduleBtn:hover {
@@ -493,28 +493,42 @@ main {
     filter: unset;
 }
 
-#class35{
-    color: #0277bd;
+#class250{
+    color: white;
+    background: #0277bd;
 }
 
 #class65{
-    color: #007d7d;
+    color: white;
+    background: #007d7d;
 }
 
-#class250{
-    color: #7e2832;
-}
-
-.color1 {
-    color: #0277bd;
-}
-
-.color2 {
-    color: #007d7d;
+#class35{
+    color: white;
+    background: #7e2832;
 }
 
 .color3 {
-    color: #7e2832;
+    color: white;
+    background: #0277bd;
+    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
+}
+
+.color2 {
+    color: white;
+    background: #007d7d;
+    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
+}
+
+.color1 {
+    color: white;
+    background: #7e2832;
+    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
+}
+
+#scheduleBtnDiv {
+    width: 100%;
+    height: fit-content;
 }
 
 
