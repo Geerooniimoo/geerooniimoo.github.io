@@ -74,19 +74,19 @@ let modal3 = document.getElementById("myModal3");
 // btn2.onclick = () => modal2.style.display = "block";
 // btn3.onclick = () => modal3.style.display = "block";
 
-// window.onclick = e => {
-//     console.log(e.target);
-//     if (e.target == modal1 || 
-//         e.target == modal2 || 
-//         e.target == modal3 || 
-//         e.target.classList.value == "close"
-//     ) {
-//     btn1.style = 'display:block;animate: sale 50s infinite';
-//     modal1.style.display = "none";
-//     modal2.style.display = "none";
-//     modal3.style.display = "none";
-//   }
-// }
+window.onclick = e => {
+    console.log(e.target);
+    if (e.target == modal1 || 
+        e.target == modal2 || 
+        e.target == modal3 || 
+        e.target.classList.value == "close"
+    ) {
+    // btn1.style = 'display:block;animate: sale 50s infinite';
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+  }
+}
 
 // const handleModal = modal => console.log(modal);
 const handleModal = modal => {
@@ -138,3 +138,23 @@ const handleOffer = e => {
 };
 
 handleOffer(class65)
+
+{/* <svg class="logo">
+            <polygon fill="teal" points="
+                294.5,155 
+                250,162 
+                290.5,157 
+                311.5,150 
+                322,140 
+                333,125 
+                337,122 
+                345,120 
+                365,119.5 
+                366,110
+                355,110
+                343,110
+                332.6,110.5
+                325,119
+                304,145
+            "></polygon>
+        </svg> */}

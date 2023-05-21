@@ -4,17 +4,15 @@
 
 body {
     margin: 0;
-    background: rgb(216, 141, 3);
     background-image: url('../images/bg1.png');
     background-size: 100vh;
-    height: 100vh;
-    overflow: hidden;
+    /* height: 100vh; */
 }
 
 nav {
     background: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     color: white;
     position: fixed;
@@ -73,7 +71,7 @@ nav {
         top: -140px;
         left: 500px;
     }
-    
+
     51% {
         z-index: 2;
         opacity: .5;
@@ -116,7 +114,7 @@ nav {
     89% {
         opacity: 1;
     }
-    
+
     100% {
         z-index: 4;
         opacity: 0;
@@ -159,10 +157,11 @@ nav {
 
 #logo h1 {
     margin: 0;
+    width: 275px;
     left: 40px;
     font-size: .95rem;
     color: whitesmoke;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
     font-style: italic;
     padding: 5px 10px;
     position: relative;
@@ -210,46 +209,11 @@ nav {
     color: black;
 }
 
-#speed1 {
-    z-index: 4;
-    opacity: 0;
-    animation: speed 4.1s infinite ease-in-out;
-}
-
-#speed2 {
-    z-index: 4;
-    opacity: 0;
-    animation: speed 4.3s 1s infinite ease-in-out;
-}
-
-#speed3 {
-    z-index: 4;
-    opacity: 0;
-    animation: speed 4.5s 1.5s infinite ease-in-out;
-}
-
-
-@keyframes speed {
-    20% {
-        opacity: 1;
-        /* left: 40px; */
-    }
-
-    80% {
-        opacity: .2;
-        left: 0px;
-        top: 14px
-    }
-
-    100% {
-        left: 0px;
-        top: 14px
-    }
-}
-
-
-#links a {
-    height: 50px;
+#links a,#links button {
+    background: black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     color: teal;
     margin: 0 20px;
     border-radius: 8px;
@@ -264,7 +228,7 @@ nav {
 }
 
 #title {
-    margin: 200px auto 2vh auto;
+    margin: 210px auto 2vh auto;
     display: flex;
     justify-content: space-around;
     width: 90%;
@@ -288,7 +252,9 @@ main {
     justify-content: space-between;
     width: 90%;
     max-width: 2000px;
-    margin: 40px auto;
+    position: relative;
+    z-index: 2;
+    margin: 35px auto;
 }
 
 #carouselContainer {
@@ -302,11 +268,11 @@ main {
 }
 
 #carousel {
-    margin: 75px auto 50px;
+    margin: 0 auto;
     overflow: hidden;
     background: repeating-linear-gradient(35deg, silver, black 1px);
     border-radius: 25px;
-    height: 25vh;
+    height: 40vh;
     width: fit-content;
     max-width: 90%;
 }
@@ -384,14 +350,12 @@ main {
     position: relative;
     width: 90%;
     overflow: hidden;
-    /* background: white; */
-    /* margin: 0% 0 5% 10%; */
     text-align: center;
-    padding: 5% 0%;
+    padding: 1% 0%;
     margin: 0% auto;
     height: 7.5rem;
     color: white;
-    font-size: 1.3rem;
+    font-size: .9rem;
 }
 
 .type p {
@@ -429,7 +393,7 @@ main {
     height: 10%;
     border-radius: 12px;
     border: 1px solid silver;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     box-shadow: -3px -3px 1px silver;
     filter: contrast(0);
 }
@@ -443,7 +407,7 @@ main {
     height: 10%;
     border-radius: 12px;
     border: 1px solid silver;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     box-shadow: -3px -3px 1px silver;
     font-size: 2vmax;
     font-weight: 900;
@@ -473,8 +437,10 @@ tr>td {
 }
 
 .class65 {
-    accent-color: #007d7d;;
+    accent-color: #007d7d;
+    ;
 }
+
 .class35 {
     accent-color: #7e2832;
 }
@@ -493,17 +459,17 @@ tr>td {
     filter: unset;
 }
 
-#class250{
+#class250 {
     color: white;
     background: #0277bd;
 }
 
-#class65{
+#class65 {
     color: white;
     background: #007d7d;
 }
 
-#class35{
+#class35 {
     color: white;
     background: #7e2832;
 }
@@ -590,4 +556,137 @@ tr>td {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width:1280px) and (max-height:800px) {
+
+    #links a {
+        font-size: 1.8vmax;
+    }
+
+    #title {
+        margin: 140px 5% 2vh auto;
+        width: 58%;
+    }
+
+    #carousel {
+        margin: 0 auto;
+    }
+
+    .type {
+        padding: 1% 0%;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:1280px) and (max-height:600px) {
+    #title {
+        margin: 120px 5% 2vh auto;
+    }
+
+    /* #offersDiv {
+        position: relative;
+        height: 63vh;
+        top: -7vh;
+    } */
+
+    main {
+        margin: 35px auto;
+    }
+
+    #speechTitle {
+        text-align: center;
+        color: cornflowerblue;
+        font-family: Abril Fatface, Arial, sans-serif;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .type {
+        padding: 1% 0%;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:950px) and (max-height:450px) {
+    nav {
+        height: 12vh;
+    }
+
+    #logo {
+        position: relative;
+        bottom: -24px;
+        left: 60px;
+        transform: rotate(-10deg);
+        z-index: 3;
+    }
+
+    #logo h1 {
+        width: 225px;
+    }
+
+    #title {
+        margin: 75px 2% 2vh auto;
+        border-radius: 12px;
+    }
+
+    main {
+        margin: 20px auto;
+        width: 97%;
+    }
+
+    #logoCir {
+        position: absolute;
+        bottom: -83px;
+        left: 20px;
+    }
+
+    .logo {
+        left: -26px;
+    }
+
+    #offersDiv hr {
+        height: 1px;
+    }
+
+    tr>td {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width:700px) and (max-height:300px) {
+    #logo {
+        position: relative;
+        bottom: -24px;
+        left: 30px;
+        transform: rotate(-10deg);
+        z-index: 3;
+    }
+
+    .logo {
+        left: -105px;
+        fill: red;
+    }
+
+    #logo h1 {
+        width: 125px;
+        font-size: .5rem;
+    }
+
+    #logo div {
+        width: 30%;
+        height: 12px;
+        font-size: .5rem;
+        position: relative;
+        left: 27px;
+    }
+
+    #logoCir {
+        position: absolute;
+        bottom: -60px;
+        left: 20px;
+        width: 190px;
+        height: 100px;
+    }
 }

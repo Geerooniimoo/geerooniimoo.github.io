@@ -12,55 +12,122 @@
 
 <body>
     <nav>
-        <div id="logo">
-            <div id="logoTop"></div>
-            <h1>Analytics and Web Development</h1>
-            <div id="logoBottom">
-                .com
-            </div>
-        </div>
+        <style>
+            #logoSvg {
+                width: 1200px;
+                height: 800px;
+                font-size: 100%;
+                text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -.5px .5px 0px black;
+                font-weight: 900;
+                font-style: italic;
+                position: fixed;
+                top: 12px;
+                left: 0;
+            }
+        
+            #circles {
+                transform: translate(12.5%);
+            }
+        
+            #ship {
+                transform: translate(-4.5%,3%) rotate(-12deg);
+            }
+        
+            #leftWing {
+                transform: skewX(50deg) translate(-7.5%,0%);
+            }
+        
+            #rightWing {
+                transform: skewX(-50deg) translate(11.5%,0%);
+            }
 
-        <img id="asteroid" src="./assets/images/asteroid.png" alt="">
+            #speed1 {
+                z-index: 4;
+                opacity: 0;
+                animation: speed 4.1s infinite ease-in-out;
+            }
+            
+            #speed2 {
+                z-index: 4;
+                opacity: 0;
+                animation: speed 4.3s 1s infinite ease-in-out;
+            }
+            
+            #speed3 {
+                z-index: 4;
+                opacity: 0;
+                animation: speed 4.5s 1.5s infinite ease-in-out;
+            }
+            
+            
+            @keyframes speed {
+                20% {
+                    opacity: 1;
+                    /* left: 40px; */
+                }
+            
+                80% {
+                    opacity: .2;
+                    left: 0px;
+                    top: 14px
+                }
+            
+                100% {
+                    left: 0px;
+                    top: 14px
+                }
+            }
+        </style>
+        <svg id="logoSvg">
+                <defs>
+                  <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="black" />
+                    <stop offset="10%" stop-color="teal" stop-opacity="0" />
+                    <stop offset="100%" stop-color="black" />
+                  </linearGradient>
+                </defs>
+                <g id="circles">
+                    <ellipse fill="teal" rx="8%" ry="9%" cx="2%" cy="10%" /> 
+                    <ellipse fill="black" rx="7.5%" ry="8.5%" cx="2.55%" cy="9%" /> 
+                </g>
+                <g id="ship" x="10%" y="40%">
+                    <rect id="leftWing" fill="white" x="15%" y="6.5%" width="6%" height="3%" />
+                    <rect id="leftWing" fill="url(#Gradient2)" x="15%" y="6.5%" width="6%" height="3%" />
+                    <ellipse fill="white" rx="1.5%" ry="2.01%" cx="33%" cy="12%" /> 
+                    <ellipse fill="url(#Gradient2)" rx="1.5%" ry="2.01%" cx="33%" cy="12%" /> 
+                    <rect fill="white" x="15%" y="10%" width="17.98%" height="4%" />
+                    <rect fill="url(#Gradient2)" x="15%" y="10%" width="18%" height="4%" />
+                    <text x="15.5%" y="12.5%" fill="white">Analytics and Web Development</text>
+                    <rect id="rightWing" fill="black" opacity=".3" x="14%" y="14.5%" width="10%" height="3.5%" />
+                    <rect id="rightWing" fill="white" x="15%" y="14.5%" width="6%" height="3%" />
+                    <rect id="rightWing" fill="url(#Gradient2)" x="15%" y="14.5%" width="6%" height="3%" />
+                    <text x="15.5%" y="16.5%" fill="white">.com</text>
+                </g>
+                <g id="speed1">
+                    <polyline fill="silver" stroke="white" points="100,62 200,40"></polyline>
+                    <polyline fill="silver" stroke="white" points="200,105 300,85"></polyline>
+                </g>
+                <g id="speed2">
+                    <polyline fill="silver" stroke="white" points="290,75 360,60"></polyline>
+                    <polyline fill="silver" stroke="white" points="150,100 250,80"></polyline>
+                </g>
+                <g id="speed3">
+                    <polyline fill="silver" stroke="white" points="250,25 320,10"></polyline>
+                    <polyline fill="silver" stroke="white" points="50,130 130,115"></polyline>
+                </g>
+            </svg>
+            <img id="asteroid" src="./assets/images/asteroid.png" alt="" />
 
-        <div id="logoCir"></div>
         <div id="links">
-            <!-- <a href="#">Focus Points</a> -->
+            <button id="syllabus">Syllabus</button>
             <a target="_blank" href="https://g.page/r/CeWB47Bolh99EAI/review">Reviews Us On Google</a>
             <a target="_blank" href="https://linkedin.com/in/geronimoperez">Find Us On LinkedIn</a>
             <a href="mailto:concerns@analyticsandwebdevelopment.com" id="emailUs">Email Us</a>
         </div>
-        <svg class="logo">
-            <polygon fill="teal" points="
-                294.5,155 
-                301,162 
-                308.5,157 
-                316,150 
-                327,135 
-                333,125 
-                337,122 
-                345,120 
-                365,119.5 
-                366,110
-                355,110
-                343,110
-                332.6,110.5
-                325,119
-                305,145
-            "></polygon>
-        </svg>
-        <svg id="speed1" class="logo">
-            <polygon fill="silver" stroke="white" points="390,68 445,56"></polygon>
-            <polygon fill="silver" stroke="white" points="100,70 260,37"></polygon>
-        </svg>
-        <svg id="speed2" class="logo">
-            <polygon fill="silver" stroke="white" points="290,58 400,36"></polygon>
-            <polygon fill="silver" stroke="white" points="150,100 250,80"></polygon>
-        </svg>
-        <svg id="speed3" class="logo">
-            <polygon fill="silver" stroke="white" points="250,110 360,87"></polygon>
-            <polygon fill="silver" stroke="white" points="50,130 130,115"></polygon>
-        </svg>
+
     </nav>
+
+    
 
     <div id="title">
         <h1>Data Analysis</h1>
@@ -72,6 +139,65 @@
             <button id="class35" class="color1" onclick="handleOffer(this)">$35</button>
             <button id="class65" class="color2" onclick="handleOffer(this)">$65</button>
             <button id="class250" class="color3" onclick="handleOffer(this)">$250</button>
+           <hr>
+           <table>
+            <tr>
+                <td>
+                    30 mins
+                </td>
+                <td>
+                    <input type="radio" disabled class="class35" name="30mins">
+                </td>
+                <td>
+                    <input type="radio" disabled name="30mins">
+                </td>
+                <td>
+                    <input type="radio" disabled name="30mins">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1 hour
+                </td>
+                <td>
+                    <input type="radio" disabled name="60mins">
+                </td>
+                <td>
+                    <input type="radio" disabled class="class65" name="60mins">
+                </td>
+                <td>
+                    <input type="radio" disabled name="60mins">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5 hours
+                </td>
+                <td>
+                    <input type="radio" disabled name="5hours">
+                </td>
+                <td>
+                    <input type="radio" disabled name="5hours">
+                </td>
+                <td>
+                    <input type="radio" disabled class="class250" name="5hours">
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    Several Days
+                </td>
+                <td>
+                    <input type="radio" disabled name="muliDays">
+                </td>
+                <td>
+                    <input type="radio" disabled name="muliDays">
+                </td>
+                <td>
+                    <input type="radio" disabled class="class250" name="muliDays">
+                </td>
+            </tr> -->
+        </table>
             <hr>
             <table>
                 <tbody>
@@ -91,7 +217,7 @@
                     </tr>
                     <tr>
                         <td>
-                            Data Analyst
+                            Analyst
                         </td>
                         <td>
                             <input type="radio" disabled class="class35" name="analytics">
@@ -105,7 +231,7 @@
                     </tr>
                     <tr>
                         <td>
-                            Web Developer
+                            Developer
                         </td>
                         <td>
                             <input type="radio" disabled class="class35" name="developer">
@@ -118,65 +244,6 @@
                         </td>
                     </tr>
                 </tbody>
-            </table>
-            <hr>
-            <table>
-                <tr>
-                    <td>
-                        30 mins
-                    </td>
-                    <td>
-                        <input type="radio" disabled class="class35" name="30mins">
-                    </td>
-                    <td>
-                        <input type="radio" disabled name="30mins">
-                    </td>
-                    <td>
-                        <input type="radio" disabled name="30mins">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        60 mins
-                    </td>
-                    <td>
-                        <input type="radio" disabled name="60mins">
-                    </td>
-                    <td>
-                        <input type="radio" disabled class="class65" name="60mins">
-                    </td>
-                    <td>
-                        <input type="radio" disabled name="60mins">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Five hours
-                    </td>
-                    <td>
-                        <input type="radio" disabled name="5hours">
-                    </td>
-                    <td>
-                        <input type="radio" disabled name="5hours">
-                    </td>
-                    <td>
-                        <input type="radio" disabled class="class250" name="5hours">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Several Days
-                    </td>
-                    <td>
-                        <input type="radio" disabled name="muliDays">
-                    </td>
-                    <td>
-                        <input type="radio" disabled name="muliDays">
-                    </td>
-                    <td>
-                        <input type="radio" disabled class="class250" name="muliDays">
-                    </td>
-                </tr>
             </table>
             <hr>
             <div id="scheduleBtnDiv">
@@ -338,19 +405,10 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/5-sessions-bundle?background_color=7e2832&text_color=ffffff&primary_color=ffeb3b"
+                data-url="https://calendly.com/geronimo-perez/30-mins-private-tutoring-session?background_color=7e2832&text_color=ffffff&primary_color=fff300"
                 style="min-width:320px;height:800px;"></div>
         </div>
     </div>
-
-    <!-- <div id="myModal1" class="modal myModal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/private-tutoring-session-1"
-                style="min-width:320px;height:630px;"></div>
-        </div>
-    </div> -->
 
     <div id="myModal2" class="modal myModal">
         <div class="modal-content">
