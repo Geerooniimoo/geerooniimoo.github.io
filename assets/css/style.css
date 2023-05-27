@@ -5,8 +5,10 @@
 body {
     margin: 0;
     background-image: url('../images/bg1.png');
-    background-size: 100vh;
-    /* height: 100vh; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 nav {
@@ -125,91 +127,9 @@ nav {
     }
 }
 
-#logoCir {
-    position: absolute;
-    z-index: 1;
-    height: 160px;
-    width: 268px;
-    bottom: -83px;
-    left: 78px;
-    background: black;
-    border-radius: 50%;
-    border-left: 10px solid teal;
-    border-right: 10px solid black;
-    border-bottom: 10px solid teal;
-}
-
-.logo {
-    position: absolute;
-    bottom: -140px;
-    left: 32px;
-    z-index: 1;
-    width: 500px;
-    height: 250px;
-    /* border: 2px solid orange; */
-}
-
-#logo div {
-    text-align: center;
-    border-radius: 8px;
-    width: 40%;
-}
-
-#logo h1 {
-    margin: 0;
-    width: 275px;
-    left: 40px;
-    font-size: .95rem;
-    color: whitesmoke;
-    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
-    font-style: italic;
-    padding: 5px 10px;
-    position: relative;
-    border-radius: 0 50px 50px 0;
-    /* border-top: 5px dotted black;
-    border-left: 5px solid black; */
-    border-right: 2px solid teal;
-    /* border-right: 2px solid silver; */
-    /* border-bottom: 7px solid #4a4444; */
-    border-bottom: 7px solid teal;
-    background: repeating-linear-gradient(45deg, silver, black 300px);
-}
-
-#logo div h3 {
-    margin: 0;
-    font-size: 1rem;
-}
-
-#logoTop {
-    transform: skewX(50deg);
-    border-top: 8px solid teal;
-    /* border-top: 8px solid #4a4444; */
-    border-left: 2px solid #4a4444;
-    border-right: 3px solid silver;
-    border-bottom: 5px solid black;
-    height: 20px;
-    background: repeating-linear-gradient(45deg, silver, black 111px);
-}
-
-#logoBottom {
-    transform: skewX(-50deg);
-    border-top: 5px solid black;
-    border-left: 5px solid black;
-    border-right: 3px solid silver;
-    border-bottom: 8px solid teal;
-    /* border-bottom: 8px solid #4a4444; */
-
-    background: black;
-    height: 20px;
-    background: repeating-linear-gradient(45deg, silver, black 111px);
-}
-
-#logoBottom h3 {
-    transform: skewX(40deg);
-    color: black;
-}
-
 #links a,#links button {
+    position: relative;
+    z-index: 3;
     background: black;
     border-top: none;
     border-right: none;
@@ -223,7 +143,7 @@ nav {
     border-bottom: 7px solid rgb(124, 38, 38);
 }
 
-#links a:hover {
+#links a:hover, #links button:hover {
     filter: brightness(2);
 }
 
@@ -247,6 +167,30 @@ nav {
     text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
 }
 
+#syllabus {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: black;
+    border-radius: 8px;
+    transform: scaleY(0%);
+    transform-origin: top;
+    transition: transform 1s;
+}
+
+#syllabus div {
+    border: 5px solid teal;
+    border-radius: 40px;
+    padding: 0 25px;
+    background: black;
+    margin: 0 20px;
+    color: white;
+}
+
+
 main {
     display: flex;
     justify-content: space-between;
@@ -259,7 +203,7 @@ main {
 
 #carouselContainer {
     background: black;
-    height: 55vh;
+    height: 40vh;
     padding: 2%;
     width: 60%;
     overflow: hidden;
@@ -272,7 +216,7 @@ main {
     overflow: hidden;
     background: repeating-linear-gradient(35deg, silver, black 1px);
     border-radius: 25px;
-    height: 40vh;
+    height: 30vh;
     width: fit-content;
     max-width: 90%;
 }
@@ -369,7 +313,7 @@ main {
 }
 
 #offersDiv {
-    height: 55vh;
+    height: 40vh;
     text-align: center;
     width: 28%;
     padding: 2%;
