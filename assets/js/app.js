@@ -94,7 +94,7 @@ const handleModal = modal => {
 
 const handleOffer = e => {
 
-    ['#class35', '#class65', '#class250']
+    ['#class35', '#class65', '#class300', '#class500']
         .forEach(e => {
             document.querySelector(e).style.filter = 'contrast(0)';
             document.querySelector(e).style = 'text-shadow:none;background:none';

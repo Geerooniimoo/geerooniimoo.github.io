@@ -327,12 +327,12 @@ main {
     align-content: space-evenly;
 }
 
-#class35, #class65, #class250 {
+#class35, #class65, #class300, #class500 {
     display: flex;
     text-align: center;
     font-size: 3vh;
     font-weight: 600;
-    width: 30%;
+    width: 21%;
     align-items: center;
     height: 10%;
     border-radius: 12px;
@@ -368,15 +368,13 @@ table {
     width: 100%;
 }
 
-table * {
-    /* border: 2px solid red; */
-}
-
 tr>td {
-    width: 25%;
+    width: 18%;
+    font-size: 100%;
+    white-space: normal;
 }
 
-.class250 {
+.class300 {
     accent-color: #0277bd;
 }
 
@@ -403,7 +401,7 @@ tr>td {
     filter: unset;
 }
 
-#class250 {
+#class300 {
     color: white;
     background: #0277bd;
 }
@@ -431,6 +429,12 @@ tr>td {
 }
 
 .color1 {
+    color: white;
+    background: #7e2832;
+    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
+}
+
+.color3 {
     color: white;
     background: #7e2832;
     text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
