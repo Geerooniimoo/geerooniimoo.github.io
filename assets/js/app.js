@@ -8,7 +8,7 @@ handleSpeech();
 function handleSpeech() {
     let imgIndex = 0;
     const { title, message, images, website } = speech[speechIndex];
-    titleDiv.innerHTML = `<h4 id='speechTitle'>${title}</h4>`;
+    titleDiv.innerHTML = `<h1 id='speechTitle'>${title}</h1>`;
     document.querySelector('.type').innerHTML = `<p>${message}</p>`;
 
     images.length
@@ -67,12 +67,14 @@ window.onclick = ({target}) => {
     if (target == myModal1 ||
         target == myModal2 ||
         target == myModal3 ||
+        target == myModal4 ||
         target.classList.value == "close"
     ) {
         // btn1.style = 'display:block;animate: sale 50s infinite';
         myModal1.style.display = "none";
         myModal2.style.display = "none";
         myModal3.style.display = "none";
+        myModal4.style.display = "none";
     };
 
     if(target== syllabusBtn) {
@@ -102,7 +104,11 @@ const handleOffer = e => {
 
     e.style.transform = 'scale(.9)';
     e.style.textShadow = '0px 0px 5px black, -2px 2px 1px silver';
-    e.style.background = e.id == 'class35' ? '#7e2832' : e.id == 'class65' ? '#007d7d' : '#0277bd';
+    e.style.background = 
+        e.id == 'class35' ? '#7e2832' : 
+        e.id == 'class65' ? '#007d7d' : 
+        e.id == 'class300' ? '#0277bd' : 
+        e.id == 'class500' ? '#5c0035' : '';
     setTimeout(() => { e.style.transform = 'scale(1)' }, 250)
 
     e.style.filter = 'contrast(1)'
@@ -123,7 +129,11 @@ const handleOffer = e => {
     });
 
     setTimeout(() => {
-        let offer = e.id == 'class35' ? '1' : e.id == 'class65' ? '2' : 3;
+        let offer = 
+            e.id == 'class35' ? '1' : 
+            e.id == 'class65' ? '2' :
+            e.id == 'class300' ? '3' :
+            e.id == 'class500' ? '4' : '';
         scheduleBtnDiv.innerHTML = `<button id="scheduleBtn" onclick="handleModal('myModal${offer}')" class="color${offer}">Click To Schedule</button>`;
         document.querySelector('#scheduleBtn').style = 'transform:scale(.9)'
     }, radioList.length * 300)

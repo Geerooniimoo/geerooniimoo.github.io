@@ -194,88 +194,72 @@ nav {
 main {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    justify-items: stretch;
+    width: 95%;
     max-width: 2000px;
     position: relative;
     z-index: 2;
     margin: 35px auto;
-}
-
-#carouselContainer {
-    background: black;
-    height: 40vh;
-    padding: 2%;
-    width: 60%;
     overflow: hidden;
-    border-radius: 25px;
-    border: 1px solid teal;
+    height: 47vh;
 }
 
 #carousel {
-    margin: 0 auto;
     overflow: hidden;
-    background: repeating-linear-gradient(35deg, silver, black 1px);
+    background: black;
+    border: 1px solid teal;
     border-radius: 25px;
-    height: 30vh;
-    width: fit-content;
-    max-width: 90%;
+    width: 40%;
 }
 
 #carousel img {
-    height: 100%;
     width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
 #typeDiv {
     position: relative;
-    z-index: 1;
     color: white;
-    margin: 0 auto;
-    /* height: 170px; */
+    border: 1px solid teal;
+    border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
     background: black;
-    width: 100%;
-    padding: 10px 0;
-    text-anchor: middle;
+    width: 25%;
+    padding: 5px;
     overflow: hidden;
-    /* animation: type 11.5s; */
 }
 
-#typeDiv:hover #rewind {
+#switchBtn {
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    width: 90%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rewind:hover, #forward:hover {
     cursor: pointer;
+}
+
+#rewind, #forward {
+    width: 48%;
+    background: black;
+    color: white;
+    border: 1px solid teal;
+    font-size: 1.5rem;
 }
 
 #rewind {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#rewind h1 {
-    margin-left: 10px;
-}
-
-#typeDiv:hover #forward {
-    cursor: pointer;
+    border-radius: 5px 0 0 5px;
 }
 
 #forward {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-#forward h1 {
-    margin-right: 10px;
+    border-radius: 0 5px 5px 0;
 }
 
 #titleDiv {
@@ -286,26 +270,19 @@ main {
     text-align: center;
     color: cornflowerblue;
     font-family: Abril Fatface, Arial, sans-serif;
-    font-size: 2rem;
-    margin: 0;
+    margin: 5px;
 }
 
 .type {
-    position: relative;
-    width: 90%;
-    overflow: hidden;
     text-align: center;
-    padding: 1% 0%;
-    margin: 0% auto;
-    height: 7.5rem;
     color: white;
-    font-size: .9rem;
 }
 
 .type p {
     color: white;
     width: 95%;
     margin: 0 auto;
+
 }
 
 #text {
@@ -315,7 +292,7 @@ main {
 #offersDiv {
     height: 40vh;
     text-align: center;
-    width: 28%;
+    width: 22%;
     padding: 2%;
     border-radius: 25px;
     background: black;
@@ -374,8 +351,8 @@ tr>td {
     white-space: normal;
 }
 
-.class300 {
-    accent-color: #0277bd;
+.class35 {
+    accent-color: #7e2832;
 }
 
 .class65 {
@@ -383,9 +360,14 @@ tr>td {
     ;
 }
 
-.class35 {
-    accent-color: #7e2832;
+.class300 {
+    accent-color: #0277bd;
 }
+
+.class500 {
+    accent-color: #5c0035;
+}
+
 
 .scheduleBtn {
     background: transparent;
@@ -401,32 +383,25 @@ tr>td {
     filter: unset;
 }
 
-#class300 {
-    color: white;
-    background: #0277bd;
-}
-
-#class65 {
-    color: white;
-    background: #007d7d;
-}
-
 #class35 {
     color: white;
     background: #7e2832;
 }
 
-.color3 {
-    color: white;
-    background: #0277bd;
-    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
-}
-
-.color2 {
+#class65 {
     color: white;
     background: #007d7d;
-    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
-}
+}    
+
+#class300 {
+    color: white;
+    background: #0277bd;
+}    
+
+#class500 {
+    color: white;
+    background: #0277bd;
+}    
 
 .color1 {
     color: white;
@@ -434,9 +409,21 @@ tr>td {
     text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
 }
 
+.color2 {
+    color: white;
+    background: #007d7d;
+    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
+}    
+
 .color3 {
     color: white;
-    background: #7e2832;
+    background: #0277bd;
+    text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
+}    
+
+.color4 {
+    color: white;
+    background: #5c0035;
     text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
 }
 
