@@ -15,7 +15,7 @@ function handleSpeech() {
         ? (
             !carousel.classList.contains('carousel') ? carousel.classList.toggle('carousel') : '',
             carousel.innerHTML = `<img class="caroImg">`,
-            website ? carousel.innerHTML += `<a target="blank_" href="${website}">Live Website</a>` : '',
+            website ? document.querySelector('.type').innerHTML += `<a target="blank_" href="${website}"><button>Live Website</button></a>` : '',
             changeImg()
         )
         : (
@@ -68,6 +68,7 @@ window.onclick = ({target}) => {
         target == myModal2 ||
         target == myModal3 ||
         target == myModal4 ||
+        target == myModal5 ||
         target.classList.value == "close"
     ) {
         // btn1.style = 'display:block;animate: sale 50s infinite';
@@ -75,6 +76,7 @@ window.onclick = ({target}) => {
         myModal2.style.display = "none";
         myModal3.style.display = "none";
         myModal4.style.display = "none";
+        myModal5.style.display = "none";
     };
 
     if(target== syllabusBtn) {
@@ -96,7 +98,7 @@ const handleModal = modal => {
 
 const handleOffer = e => {
 
-    ['#class35', '#class65', '#class300', '#class500']
+    ['#class35', '#class65', '#class300', '#class550', '#class1000']
         .forEach(e => {
             document.querySelector(e).style.filter = 'contrast(0)';
             document.querySelector(e).style = 'text-shadow:none;background:none';
@@ -105,10 +107,11 @@ const handleOffer = e => {
     e.style.transform = 'scale(.9)';
     e.style.textShadow = '0px 0px 5px black, -2px 2px 1px silver';
     e.style.background = 
-        e.id == 'class35' ? '#7e2832' : 
+        e.id == 'class35' ? 'black' : 
         e.id == 'class65' ? '#007d7d' : 
         e.id == 'class300' ? '#0277bd' : 
-        e.id == 'class500' ? '#5c0035' : '';
+        e.id == 'class550' ? '#dc5e00' :
+        e.id == 'class1000' ? '#5c0035' : '';
     setTimeout(() => { e.style.transform = 'scale(1)' }, 250)
 
     e.style.filter = 'contrast(1)'
@@ -133,7 +136,8 @@ const handleOffer = e => {
             e.id == 'class35' ? '1' : 
             e.id == 'class65' ? '2' :
             e.id == 'class300' ? '3' :
-            e.id == 'class500' ? '4' : '';
+            e.id == 'class550' ? '4' :
+            e.id == 'class1000' ? '5' : '';
         scheduleBtnDiv.innerHTML = `<button id="scheduleBtn" onclick="handleModal('myModal${offer}')" class="color${offer}">Click To Schedule</button>`;
         document.querySelector('#scheduleBtn').style = 'transform:scale(.9)'
     }, radioList.length * 300)
@@ -155,7 +159,6 @@ const showSyllabus = () => {
     } else {
         document.querySelector('#syllabus').innerHTML = `
 
-    };
         <div>
         <h3>Data Analytics:</h3>
         Intermediate Excel

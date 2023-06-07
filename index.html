@@ -12,73 +12,8 @@
 
 <body>
     <nav>
+        <h1 id="co">Analytics And Web Development</h1>
         <svg id="logoSvg">
-            <style>
-                #logoSvg {
-                    width: 1200px;
-                    height: 800px;
-                    font-size: 100%;
-                    text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -.5px .5px 0px black;
-                    font-weight: 900;
-                    font-style: italic;
-                    position: fixed;
-                    top: 12px;
-                    left: 0;
-                }
-
-                #circles {
-                    transform: translate(12.5%);
-                }
-
-                #ship {
-                    transform: translate(-4.5%, 3%) rotate(-12deg);
-                }
-
-                #leftWing {
-                    transform: skewX(50deg) translate(-7.5%, 0%);
-                }
-
-                #rightWing {
-                    transform: skewX(-50deg) translate(11.5%, 0%);
-                }
-
-                #speed1 {
-                    z-index: 4;
-                    opacity: 0;
-                    animation: speed 4.1s infinite ease-in-out;
-                }
-
-                #speed2 {
-                    z-index: 4;
-                    opacity: 0;
-                    animation: speed 4.3s 1s infinite ease-in-out;
-                }
-
-                #speed3 {
-                    z-index: 4;
-                    opacity: 0;
-                    animation: speed 4.5s 1.5s infinite ease-in-out;
-                }
-
-
-                @keyframes speed {
-                    20% {
-                        opacity: 1;
-                        /* left: 40px; */
-                    }
-
-                    80% {
-                        opacity: .2;
-                        left: 0px;
-                        top: 14px
-                    }
-
-                    100% {
-                        left: 0px;
-                        top: 14px
-                    }
-                }
-            </style>
             <defs>
                 <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
                     <stop offset="0%" stop-color="black" />
@@ -134,11 +69,31 @@
     <div id="syllabus"></div>
 
     <main>
+        <div id="typeDiv">
+            <div id="titleDiv">
+            </div>
+
+            <div class="type"></div>
+
+            <div id="switchBtn">
+                <button id="rewind">
+                    << 
+                </button>
+                <button id="forward">
+                    >>
+                </button>
+            </div>
+        </div>
+
+        <div id="carousel">
+        </div>
+
         <div id="offersDiv">
             <button id="class35" class="color1" onclick="handleOffer(this)">$35</button>
             <button id="class65" class="color2" onclick="handleOffer(this)">$65</button>
             <button id="class300" class="color3" onclick="handleOffer(this)">$300</button>
-            <button id="class500" class="color4" onclick="handleOffer(this)">$500</button>
+            <button id="class550" class="color4" onclick="handleOffer(this)">$550</button>
+            <button id="class1000" class="color5" onclick="handleOffer(this)">$1000</button>
             <hr>
             <table>
                 <tr>
@@ -147,6 +102,9 @@
                     </th>
                     <td>
                         <input type="radio" disabled class="class35" name="30mins">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="30mins">
                     </td>
                     <td>
                         <input type="radio" disabled name="30mins">
@@ -174,6 +132,9 @@
                     <td>
                         <input type="radio" disabled name="60mins">
                     </td>
+                    <td>
+                        <input type="radio" disabled name="60mins">
+                    </td>
                 </tr>
                 <tr>
                     <th>
@@ -187,6 +148,9 @@
                     </td>
                     <td>
                         <input type="radio" disabled class="class300" name="5hours">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="5hours">
                     </td>
                     <td>
                         <input type="radio" disabled name="5hours">
@@ -208,7 +172,31 @@
                         <input type="radio" disabled name="10hours">
                     </td>
                     <td>
-                        <input type="radio" disabled class="class500" name="10hours">
+                        <input type="radio" disabled class="class550" name="10hours">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="10hours">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        20 hours
+                    </th>
+                    <td>
+                        <input type="radio" disabled name="20hours">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="20hours">
+                    </td>
+
+                    <td>
+                        <input type="radio" disabled name="20hours">
+                    </td>
+                    <td>
+                        <input type="radio" disabled name="20hours">
+                    </td>
+                    <td>
+                        <input type="radio" disabled class="class1000" name="20hours">
                     </td>
                 </tr>
             </table>
@@ -229,7 +217,10 @@
                             <input type="radio" disabled class="class300" name="tutor">
                         </td>
                         <td>
-                            <input type="radio" disabled class="class500" name="tutor">
+                            <input type="radio" disabled class="class550" name="tutor">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class1000" name="tutor">
                         </td>
                     </tr>
                     <tr>
@@ -246,7 +237,10 @@
                             <input type="radio" disabled class="class300" name="analytics">
                         </td>
                         <td>
-                            <input type="radio" disabled class="class500" name="analytics">
+                            <input type="radio" disabled class="class550" name="analytics">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class1000" name="analytics">
                         </td>
                     </tr>
                     <tr>
@@ -263,7 +257,10 @@
                             <input type="radio" disabled class="class300" name="developer">
                         </td>
                         <td>
-                            <input type="radio" disabled class="class500" name="developer">
+                            <input type="radio" disabled class="class550" name="developer">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class1000" name="developer">
                         </td>
                     </tr>
                 </tbody>
@@ -274,32 +271,13 @@
                     style="transform: scale(1);">Click To Schedule</button>
             </div>
         </div>
-
-        <div id="carousel">
-        </div>
-
-        <div id="typeDiv">
-            <div id="titleDiv">
-            </div>
-
-            <div class="type"></div>
-
-            <div id="switchBtn">
-                <button id="rewind">
-                    << 
-                </button>
-                <button id="forward">
-                    >>
-                </button>
-            </div>
-        </div>
     </main>
 
     <div id="myModal1" class="modal myModal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/30-mins-private-tutoring-session?background_color=7e2832&text_color=ffffff&primary_color=fff300"
+                data-url="https://calendly.com/geronimo-perez/30-mins-private-tutoring-session?background_color=1a1a1a&text_color=ffffff"
                 style="min-width:320px;height:800px;"></div>
         </div>
     </div>
@@ -308,7 +286,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/private-tutoring-session?background_color=007d7d&text_color=fffafa&primary_color=ffeb3b"
+            data-url="https://calendly.com/geronimo-perez/private-tutoring-session?background_color=007d7d&text_color=ffffff&primary_color=2AF801"
                 style="min-width:320px;height:800px;"></div>
         </div>
     </div>
@@ -317,7 +295,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/private-tutoring-session?background_color=0277bd&text_color=fffafa&primary_color=ffeb3b"
+            data-url="https://calendly.com/geronimo-perez/1-of-5-private-tutoring-sessions?background_color=0277bd&text_color=fffafa&primary_color=24CB03"
                 style="min-width:320px;height:800px;"></div>
         </div>
     </div>
@@ -326,7 +304,16 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/ten-hours-for-private-tutoring-sessions?background_color=5c0035&text_color=f7f7f7&primary_color=edf702"
+            data-url="https://calendly.com/geronimo-perez/1-of-10-private-tutoring-sessions?background_color=dc5e00&text_color=ffffff"
+                style="min-width:320px;height:800px;"></div>
+        </div>
+    </div>
+
+    <div id="myModal5" class="modal myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="calendly-inline-widget"
+            data-url="https://calendly.com/geronimo-perez/1-of-20-private-tutoring-sessions?background_color=7d2626&text_color=ffffff&primary_color=2997F5"
                 style="min-width:320px;height:800px;"></div>
         </div>
     </div>
