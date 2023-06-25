@@ -3,284 +3,293 @@
 
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Analytics And Web Development</title>
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5NP8H7W');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVD9YG3HKH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-CVD9YG3HKH');
-    </script>
 </head>
 
 <body>
-    <a id="sale" class="calendly-badge-content"><img src="./assets/images/sale.png" alt="5 sessions sale"></a>
+    <nav>
+        <h1 id="co">Analytics And Web Development</h1>
+        <svg id="logoSvg">
+            <g id="circles">
+                <ellipse fill="teal" rx="8%" ry="9%" cx="2%" cy="10%" />
+                <ellipse fill="black" rx="7.5%" ry="8.5%" cx="2.55%" cy="9%" />
+            </g>
+        </svg>
+        <svg id="ship">
+            <defs>
+                <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="black" />
+                    <stop offset="10%" stop-color="teal" stop-opacity="0" />
+                    <stop offset="100%" stop-color="black" />
+                </linearGradient>
+            </defs>
 
-    <a href="mailto:concerns@analyticsandwebdevelopment.com" id="emailUs"><img src="./assets/images/emailUs3.png"
-            alt="email us"></a>
+            <rect id="leftWing" fill="white" x="15%" y="6.5%" width="6%" height="3%" />
+            <rect id="leftWing" fill="url(#Gradient2)" x="15%" y="6.5%" width="6%" height="3%" />
+            <ellipse fill="white" rx="1.5%" ry="2.01%" cx="33%" cy="12%" />
+            <ellipse fill="url(#Gradient2)" rx="1.5%" ry="2.01%" cx="33%" cy="12%" />
+            <rect fill="white" x="15%" y="10%" width="17.98%" height="4%" />
+            <rect fill="url(#Gradient2)" x="15%" y="10%" width="18%" height="4%" />
+            <text x="15.5%" y="12.5%" fill="white">Analytics and Web Development</text>
+            <rect id="rightWing" fill="black" opacity=".3" x="14%" y="14.5%" width="10%" height="3.5%" />
+            <rect id="rightWing" fill="white" x="15%" y="14.5%" width="6%" height="3%" />
+            <rect id="rightWing" fill="url(#Gradient2)" x="15%" y="14.5%" width="6%" height="3%" />
+            <text x="15.5%" y="16.5%" fill="white">.com</text>
+        </svg>
 
-    <div id="topDiv">
-        <div class="sessions">
-            <h4 class="text-center text-white fst-italic">Tutored over
-                <span class="hours">
-                    <svg class="smoke">
-                        <ellipse class="eli1"></ellipse>
-                        <ellipse class="eli2"></ellipse>
-                    </svg>
-                    <svg class="fire">
-                        <circle class="child_10"></circle>
-                        <circle class="child_1"></circle>
-                        <ellipse class="child_2"></ellipse>
-                        <circle class="child_3"></circle>
-                        <ellipse class="child_5"></ellipse>
-                        <ellipse class="child_6"></ellipse>
-                        <circle class="child_7"></circle>
-                        <circle class="child_4"></circle>
-                        <ellipse class="child_8"></ellipse>
-                        <ellipse class="child_9"></ellipse>
-                    </svg>
-                    <svg id="hours">
-                        <g>
-                            <text x='8' y='40' class="textShadow">4</text>
-                            <text x='2' y='38' class="textLetter">4</text>
-                            <text x='26' y='40' class="textShadow">,</text>
-                            <text x='24' y='38' class="textLetter">,</text>
-                            <text x='34' y='40' class="textShadow">0</text>
-                            <text x='28' y='38' class="textLetter">0</text>
-                            <text x='54' y='40' class="textShadow">0</text>
-                            <text x='48' y='38' class="textLetter">0</text>
-                            <text x='74' y='40' class="textShadow">0</text>
-                            <text x='68' y='38' class="textLetter">0</text>
-                        </g>
-                    </svg>
-                </span>
-                sessions
-            </h4>
+        <svg id="speed1">
+            <polyline fill="silver" stroke="silver" points="0,85 100,60"></polyline>
+            <polyline fill="silver" stroke="silver" points="125,80 175,70"></polyline>
+        </svg>
+        <svg id="speed2">
+            <!-- <polyline fill="silver" stroke="white" points="10,25 60,12"></polyline> -->
+            <polyline fill="silver" stroke="white" points="50,50 150,28"></polyline>
+        </svg>
+        <svg id="speed3">
+            <polyline fill="silver" stroke="white" points="0,80 80,62"></polyline>
+            <!-- <polyline fill="silver" stroke="white" points="100,20 170,5"></polyline> -->
+        </svg>
+        <img id="asteroid" src="./assets/images/asteroid.png" alt="" />
+
+        <div id="links">
+            <button id="syllabusBtn">Syllabus</button>
+            <a target="_blank" href="https://g.page/r/CeWB47Bolh99EAI/review">Reviews Us On Google</a>
+            <a target="_blank" href="https://linkedin.com/in/geronimoperez">Find Us On LinkedIn</a>
+            <a href="mailto:concerns@analyticsandwebdevelopment.com" id="emailUs">Email Us</a>
         </div>
+    </nav>
 
-        <div id='title' class="text-white m-auto">
-            <p class="text-center">
-                Learn data analytics and/or web development at your own pace
-            </p>
-            <a target="_blank" href="https://linkedin.com/in/geronimoperez">
-                <img src="./assets/images/linkedIn.png" class="titleImg">
-            </a>
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                aria-controls="collapseTwo">
-                Syllabus
-            </button>
-            <a target="_blank" href="https://g.page/r/CeWB47Bolh99EAI/review">
-                <img class="titleImg1" src="./assets/images/google-reviews2.png">
-            </a>
-        </div>
+    <div id="title">
+        <h1>Data Analysis</h1>
+        <h1>Web Development</h1>
+    </div>
 
-        <div class="accordion accordion-flush" id="accordionExample">
+    <div id="syllabus"></div>
 
-            <div class="accordion-item">
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body knowledgeDiv">
-                        <div class="analyticDiv">
-                            <h3>Data Analytics: </h3>
-                            Intermediate Excel
-                            <ul>
-                                <li> Pivot Tables</li>
-                                <li> VBA Scripting</li>
-                            </ul>
-                            Fundamental Statistics
-                            <ul>
-                                <li> Modelling</li>
-                                <li> Forecast</li>
-                            </ul>
-                            Python Programming
-                            <ul>
-                                <li> Python 3</li>
-                                <li> NumPy</li>
-                                <li> Pandas</li>
-                                <li> Matplotlib</li>
-                                <li> API Interactions</li>
-                            </ul>
-                            Databases
-                            <ul>
-                                <li> Postgres/pgAdmin</li>
-                                <li> MongoDB</li>
-                                <li> Extract-Transform-Load (ETL)</li>
-                            </ul>
-
-                            Front End Web Visualization
-                            <ul>
-                                <li> HTML</li>
-                                <li> CSS</li>
-                                <li> Bootstrap</li>
-                                <li> Dashboarding</li>
-                                <li> JavaScript</li>
-                                <li> Geomapping with JavaScript libraries</li>
-                            </ul>
-
-                            Business Intelligence Software
-                            <ul>
-                                <li> Tableau</li>
-                            </ul>
-
-                            Advanced Topics
-                            <ul>
-                                <li> Big Data Analytics with Hadoop</li>
-                                <li> Amazon Web Services</li>
-                                <li> Machine Learning</li>
-                            </ul>
-
-                        </div>
-                        <div class="webDiv">
-                            <h3>Web Developer: </h3>
-                            Computer Science applied to JavaScript
-                            <ul>
-                                <li> Design Patterns</li>
-                                <li> Data Structures</li>
-                                <li> Algorithms</li>
-                                <li> Big O Notation</li>
-                            </ul>
-
-                            Browser Based Technologies
-                            <ul>
-                                <li> HTML</li>
-                                <li> CSS</li>
-                                <li> JavaScript</li>
-                                <li> jQuery</li>
-                                <li> Responsive Design</li>
-                                <li> Bootstrap</li>
-                                <li> Handlebars</li>
-                                <li> Local Storage, Session Storage, IndexedDB</li>
-                                <li> React.js</li>
-                            </ul>
-
-                            Deployment
-                            <ul>
-                                <li> Heroku</li>
-                                <li> Git</li>
-                            </ul>
-
-                            Locally Popular MVC Framework
-                            <ul>
-                                <li> C#/ASP.NET</li>
-                                <li> Python/Django</li>
-                                <li> Java/Spring</li>
-                                <li> PHP/Laravel</li>
-                            </ul>
-
-                            Databases
-                            <ul>
-                                <li> MySQL</li>
-                                <li> MongoDB</li>
-                            </ul>
-
-                            Server-Side Development
-                            <ul>
-                                <li> Express</li>
-                                <li> User Authentication</li>
-                                <li> Sequelize</li>
-                                <li> MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
-                            </ul>
-
-                            Quality and Performance
-                            <ul>
-                                <li> Unit Testing</li>
-                                <li> Google Lighthouse</li>
-                                <li> Webpack</li>
-                                <li> PWAs (Progressive Web Apps)</li>
-                                <li> Lazy Loading</li>
-                                <li> Service Workers</li>
-                            </ul>
-
-                            Accessibility
-                            <ul>
-                                <li> Semantic HTML</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <main>
+        <div id="typeDiv">
+            <div id="titleDiv">
             </div>
 
+            <div class="type"></div>
 
-        </div>
-        <div class="schedule">
-            <h3 class="scheduleTitle1">** 60 minutes video call private lessons **</h3>
-            <h3 class="scheduleTitle2">** 60 MINUTES VIDEO CALL ** <br> ** PRIVATE LESSONS **</h3>
-            <div>
-
-                <button id="analyst" class="btn btn-outline-primary">
-                    <h3 class="g-font">Data Analytics</h3>
-                </button>
-
-                <button id="developer" class="btn btn-outline-primary">
-                    <h3 class="g-font">Web Development</h3>
-                </button>
+            <div id="switchBtn">
+                <button id="rewind">
+                    << </button>
+                        <button id="forward">
+                            >>
+                        </button>
             </div>
         </div>
-    </div>
 
-    <div id="typeDiv">
-        <div id="titleDiv">
-            <h4 id="speechTitle" class="scroll2"></h4>
-        </div>
-        <div class="type">
+        <div id="carousel">
         </div>
 
-        <div id="rewind">
-            <h1><<</h1>
-        </div>
-        <div id="forward">
-            <h1>>></h1>
-        </div>
-    </div>
+        <div id="offersDiv">
+            <button id="class35" class="color1" onclick="handleOffer(this)">$35</button>
+            <button id="class65" class="color2" onclick="handleOffer(this)">$65</button>
+            <button id="class300" class="color3" onclick="handleOffer(this)">$300</button>
+            <button id="class550" class="color4" onclick="handleOffer(this)">$550</button>
+            <button id="class1000" class="color5" onclick="handleOffer(this)">$1000</button>
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>
+                            30 mins
+                        </th>
+                        <td>
+                            <input type="radio" disabled class="class35" name="30mins">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="30mins">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="30mins">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="30mins">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="30mins">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            1 hour
+                        </th>
+                        <td>
+                            <input type="radio" disabled name="60mins">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class65" name="60mins">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="60mins">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="60mins">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="60mins">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            5 hours
+                        </th>
+                        <td>
+                            <input type="radio" disabled name="5hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="5hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class300" name="5hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="5hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="5hours">
+                        </td>
 
-    <div id="carousel">
-    </div>
+                    </tr>
+                    <tr>
+                        <th>
+                            10 hours
+                        </th>
+                        <td>
+                            <input type="radio" disabled name="10hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="10hours">
+                        </td>
 
-    <a href="mailto:concerns@AnalyticsAndWebDevelopment.com"> <button id="emailBtn">✉ Email us</button> </a>
+                        <td>
+                            <input type="radio" disabled name="10hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class550" name="10hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="10hours">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            20 hours
+                        </th>
+                        <td>
+                            <input type="radio" disabled name="20hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="20hours">
+                        </td>
+
+                        <td>
+                            <input type="radio" disabled name="20hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled name="20hours">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class1000" name="20hours">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>
+                            Tutor
+                        </th>
+                        <td>
+                            <input type="radio" disabled class="class35" name="tutor">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class65" name="tutor">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class300" name="tutor">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class550" name="tutor">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class1000" name="tutor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Analyst
+                        </th>
+                        <td>
+                            <input type="radio" disabled class="class35" name="analytics">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class65" name="analytics">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class300" name="analytics">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class550" name="analytics">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class1000" name="analytics">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Developer
+                        </th>
+                        <td>
+                            <input type="radio" disabled class="class35" name="developer">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class65" name="developer">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class300" name="developer">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class550" name="developer">
+                        </td>
+                        <td>
+                            <input type="radio" disabled class="class1000" name="developer">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div id="scheduleBtnDiv">
+                <button id="scheduleBtn" onclick="handleModal('myModal2')" class="color2"
+                    style="transform: scale(1);">Click To Schedule</button>
+            </div>
+        </div>
+    </main>
 
     <div id="myModal1" class="modal myModal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/5-sessions-bundle?background_color=7e2832&text_color=ffffff&primary_color=ffeb3b"
+                data-url="https://calendly.com/geronimo-perez/30-mins-private-tutoring-session?background_color=1a1a1a&text_color=ffffff"
                 style="min-width:320px;height:800px;"></div>
         </div>
     </div>
-
-    <!-- <div id="myModal1" class="modal myModal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/private-tutoring-session-1"
-                style="min-width:320px;height:630px;"></div>
-        </div>
-    </div> -->
 
     <div id="myModal2" class="modal myModal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/private-tutoring-session?background_color=007d7d&text_color=fffafa&primary_color=ffeb3b"
+                data-url="https://calendly.com/geronimo-perez/private-tutoring-session?background_color=007d7d&text_color=ffffff&primary_color=2AF801"
                 style="min-width:320px;height:800px;"></div>
         </div>
     </div>
@@ -289,22 +298,33 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/geronimo-perez/private-tutoring-session?background_color=0277bd&text_color=fffafa&primary_color=ffeb3b"
+                data-url="https://calendly.com/geronimo-perez/1-of-5-private-tutoring-sessions?background_color=0277bd&text_color=fffafa&primary_color=24CB03"
                 style="min-width:320px;height:800px;"></div>
         </div>
     </div>
 
+    <div id="myModal4" class="modal myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="calendly-inline-widget"
+                data-url="https://calendly.com/geronimo-perez/1-of-10-private-tutoring-sessions?background_color=dc5e00&text_color=ffffff"
+                style="min-width:320px;height:800px;"></div>
+        </div>
+    </div>
+
+    <div id="myModal5" class="modal myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="calendly-inline-widget"
+                data-url="https://calendly.com/geronimo-perez/1-of-20-private-tutoring-sessions?background_color=7d2626&text_color=ffffff&primary_color=2997F5"
+                style="min-width:320px;height:800px;"></div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
         crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-        crossorigin="anonymous"></script>
-
-    <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <script src="./assets/js/speech.js"></script>
     <script src="./assets/js/app.js"></script>
