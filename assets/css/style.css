@@ -13,7 +13,7 @@ nav {
     justify-content: end;
     align-items: center;
     color: white;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 2;
@@ -26,37 +26,34 @@ nav {
 }
 
 #logoSvg {
-    width: 1200px;
-    height: 800px;
+    width: 320px;
+    height: 180px;
     font-size: 100%;
     text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -0.5px 0.5px 3px black;
     font-weight: 900;
     font-style: italic;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 7px;
+    left: 10px;
     z-index: 2;
 }
 
 #ship {
-    width: 1200px;
-    height: 800px;
+    z-index: 3;
+    top: -40px;
+    left: 150px;
+    width: 400px;
+    height: 200px;
     font-size: 100%;
-    text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -0.5px 0.5px 3px black;
     font-weight: 900;
     font-style: italic;
-    position: fixed;
-    top: -134px;
-    left: 61px;
-    z-index: 3;
+    position: absolute;
+    transform: translate(-4.5%, 3%) rotate(-12deg);
+    text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -0.5px 0.5px 3px black;
 }
 
 #circles {
     transform: translate(12.5%);
-}
-
-#ship {
-    transform: translate(-4.5%, 3%) rotate(-12deg);
 }
 
 #leftWing {
@@ -68,26 +65,26 @@ nav {
 }
 
 #speed1 {
-    z-index: 4;
-    position: fixed;
     top: 3px;
-    left: 170px;
     opacity: 0;
+    z-index: 4;
+    left: 170px;
+    position: absolute;
     animation: speed 9s infinite ease-in-out;
 }
 
 #speed2 {
-    z-index: 4;
-    position: fixed;
     top: 0;
     left: 0;
     opacity: 0;
+    z-index: 4;
+    position: absolute;
     animation: speed 7s 5s infinite ease-in-out;
 }
 
 #speed3 {
     z-index: 4;
-    position: fixed;
+    position: absolute;
     top: -50px;
     left: 200px;
     opacity: 0;
@@ -109,7 +106,7 @@ nav {
 
 #asteroid {
     width: 50px;
-    position: fixed;
+    position: absolute;
     opacity: 0;
     top: 40px;
     left: 500px;
@@ -227,7 +224,7 @@ nav {
 }
 
 #title {
-    margin: 190px auto 0 auto;
+    margin: 80px auto 0 auto;
     display: flex;
     justify-content: space-around;
     width: 95%;
@@ -248,7 +245,7 @@ nav {
 #syllabus {
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 75%;
     /* max-width: 800px; */
     margin: 10px auto;
     padding: 10px;
@@ -624,6 +621,21 @@ tr>td {
 
 @media screen and (max-width:1400px) and (max-height:950px) {
 
+    #logoSvg {
+        width: 440px;
+        height: 150px;
+        top: 19px;
+        left: -110px;
+    }
+
+    #ship {
+        top: -40px;
+        left: 90px;
+        width: 400px;
+        height: 200px;
+        font-size: 100%;
+    }
+
     #links a, #links button {
         font-size: 150%;
         margin: 0 55px 0 0;
@@ -634,7 +646,7 @@ tr>td {
     }
 
     #syllabus {
-        width: 80%;
+        width: 65%;
         max-width: unset;
         margin: 10px auto 0;
         justify-content: space-between;
@@ -642,7 +654,7 @@ tr>td {
 
     #syllabus div {
         border-radius: 10px;
-        font-size: 150%;
+        font-size: 100%;
     }
 
     #typeDiv {
@@ -676,7 +688,7 @@ tr>td {
         justify-content: space-evenly;
         align-content: space-evenly;
     }
-        
+
     #class35, #class65, #class300, #class550, #class1000 {
         font-size: 75%;
         width: 15%;
@@ -707,43 +719,39 @@ tr>td {
     }
 
     #logoSvg {
-        width: 1028px;
-        height: 680px;
+        width: 410px;
+        height: 140px;
         font-size: 85%;
+        left: -120px;
+        top: 8px;
     }
 
     #ship {
-        top: -132px;
-        left: 52px;
-        width: 1140px;
-        height: 750px;
-        font-size: 90%;
+        top: -50px;
+        left: 70px;
+        width: 380px;
+        height: 190px;
+        font-size: 95%;
     }
 
     #speed1 {
         z-index: 4;
-        position: fixed;
         top: -20px;
         left: 100px;
-        animation: speed 5s infinite ease-in-out;
     }
 
     #speed2 {
         z-index: 4;
-        position: fixed;
         top: 0;
         left: 0;
         opacity: 0;
-        animation: speed 7s 5s infinite ease-in-out;
     }
 
     #speed3 {
         z-index: 4;
-        position: fixed;
         top: -50px;
         left: 200px;
         opacity: 0;
-        animation: speed 10s 10s infinite ease-in-out;
     }
 
 
@@ -854,7 +862,7 @@ tr>td {
     }
 
     #title {
-        margin: 140px 2.3% 0px auto;
+        margin: 50px 2.3% 0px auto;
         width: 73%;
     }
 
@@ -862,16 +870,16 @@ tr>td {
         height: 55vh;
         margin: 0 auto;
     }
-    
+
     #syllabus {
         justify-content: space-between;
-        margin: 10px 110px 10px auto;
+        margin: 10px 120px 10px auto;
         width: 60%;
     }
 
     #syllabus div {
         font-size: 120%;
-        width: 40%;
+        width: 35%;
         padding: 0 10px;
     }
 
@@ -975,19 +983,36 @@ tr>td {
 
 @media screen and (max-width:1200px) and (max-height:850px) {
 
+    #logoSvg {
+        width: 320px;
+        height: 140px;
+        top: 15px;
+        left: -105px;
+    }
+    
+    #ship {
+        z-index: 3;
+        top: -40px;
+        left: 40px;
+        width: 360px;
+        height: 180px;
+        font-size: 94%;
+    }
+
     #links a, #links button {
         font-size: 125%;
     }
 
     #syllabus {
-        justify-content: space-between;
+        margin: 10px auto;
+        width: 80%;
     }
 
     #syllabus div {
         border-radius: 10px;
     }
 
-    #title{
+    #title {
         border-radius: 5px;
     }
 
@@ -1013,7 +1038,7 @@ tr>td {
     }
 
     #offersDiv {
-        width: 23%;
+        width: 22%;
         justify-content: space-between;
         padding: 20px;
     }
@@ -1040,7 +1065,7 @@ tr>td {
     tr>td {
         width: 15%;
     }
-    
+
     #scheduleBtn {
         font-size: 110%;
         border-radius: 3px;
@@ -1055,8 +1080,18 @@ tr>td {
     }
 
     #title {
-        margin: 150px 2.3% 0px auto;
+        margin: 90px 2.3% 0px auto;
         width: 95%;
+    }
+
+    #syllabus {
+        margin: 10px auto;
+        width: 65%;
+    }
+
+    #syllabus div {
+        font-size: 100%;
+        width: 35%;
     }
 
     main {
@@ -1065,7 +1100,7 @@ tr>td {
     }
 
     #speechTitle {
-        font-size: 140%;
+        font-size: 103%;
     }
 
     .type p {
@@ -1115,7 +1150,7 @@ tr>td {
 @media screen and (max-width:1050px) and (max-height:600px) {
 
     #title {
-        margin: 110px 2.3% 0px auto;
+        margin: 45px 2.3% 0px auto;
         width: 73%;
     }
 
@@ -1129,10 +1164,18 @@ tr>td {
         font-size: 100%;
         padding: 0 10px;
     }
-    
+
     main {
         height: 51vh;
         margin: 0 auto;
+    }
+
+    #speechTitle {
+        font-size: 160%;
+    }
+
+    .type p {
+        font-size: 70%;
     }
 
     #offersDiv {
@@ -1170,11 +1213,13 @@ tr>td {
     }
 
     #logoSvg {
-        left: -30px;
+        left: -93px;
+        top: -9px;
     }
 
     #ship {
-        left: 35px;
+        left: 45px;
+        top: -60px;
     }
 
     #links a, #links button {
@@ -1183,13 +1228,14 @@ tr>td {
     }
 
     #title {
-        margin: 180px auto 0 auto;
+        margin: 100px auto 0 auto;
         border-radius: 5px;
     }
 
 
     #syllabus div {
         border-radius: 10px;
+        font-size: 100%;
     }
 
     main {
@@ -1253,15 +1299,18 @@ tr>td {
 @media screen and (max-width:950px) and (max-height:1400px) {
     nav {
         height: 5vh;
+        border-bottom: 5px solid teal;
     }
 
     #logoSvg {
-        top: -11px;
-        left: -40px;
+        top: -14px;
+        left: -150px;
+        height: 170px;
+        width: 430px;
     }
 
     #ship {
-        top: -141px;
+        top: -60px;
         left: 35px;
     }
 
@@ -1396,7 +1445,7 @@ tr>td {
     }
 
     #title {
-        margin: 170px auto 0 auto;
+        margin: 105px auto 0 auto;
     }
 
     main {
@@ -1461,33 +1510,36 @@ tr>td {
         margin: 0;
         padding: 0;
     }
-    
+
     nav {
         height: 13vh;
         border-bottom: 5px solid teal;
     }
 
     #logoSvg {
-        left: 10px;
+        left: -130px;
         top: -5px;
+        width: 390px;
+        height: 140px;
     }
 
     #ship {
-        left: 55px;
-        top: -125px;
-
+        left: 48px;
+        top: -55px;
+        width: 350px;
+        height: 175px;
     }
 
     #links a, #links button {
         margin: 0px 25px 0 0;
-        font-size: 100%;
+        font-size: 90%;
         border-bottom: 3px solid #7d2626;
     }
 
     #title {
         width: 69.5%;
         border-radius: 5px;
-        margin: 90px 25px 0 auto;
+        margin: 30px 25px 0 auto;
     }
 
     #title h1 {
@@ -1584,7 +1636,7 @@ tr>td {
         font-size: 70%;
         line-height: 13.5px;
     }
-    
+
     tr>td {
         width: 10%;
     }
@@ -1618,15 +1670,21 @@ tr>td {
 }
 
 @media screen and (max-width:900px) and (max-height:450px) {
-    
+
     #logoSvg {
-        top: 2px;
-        left: -7px;
+        top: -3px;
+        left: -120px;
+        width: 340px;
+        height: 150px;
+        transform: rotate(-2deg);
     }
-    
+
     #ship {
-        top: -120px;
-        left: 43px;
+        top: -62px;
+        left: 30px;
+        width: 400px;
+        height: 200px;
+        /* display: none; */
     }
 
     #asteroid {
@@ -1742,12 +1800,12 @@ tr>td {
 
 
     }
-    
+
     #links a, #links button {
         margin: 0px 25px 0 0;
         font-size: 95%;
     }
-    
+
     nav {
         height: 15vh;
         border-bottom: 5px solid teal;
@@ -1755,7 +1813,7 @@ tr>td {
 
     #title {
         border-radius: 5px;
-        margin: 95px 20px 0 auto;
+        margin: 27px 20px 0 auto;
         width: 68.5%;
     }
 
@@ -1892,6 +1950,22 @@ tr>td {
 }
 
 @media screen and (max-width:900px) and (max-height:400px) {
+
+    #logoSvg {
+        top: -3px;
+        left: -110px;
+        width: 320px;
+        height: 140px;
+    }
+    
+    #ship {
+        top: -52px;
+        left: 30px;
+        width: 350px;
+        height: 175px;
+    }
+
+
     main {
         height: 55vh;
     }
@@ -1913,7 +1987,7 @@ tr>td {
         height: auto;
         height: 49vh;
     }
-    
+
     tr th {
         font-size: 65%;
     }
@@ -1921,7 +1995,7 @@ tr>td {
     input[type="radio"] {
         width: 30%;
         height: 9.5px;
-    }   
+    }
 
     #class35, #class65, #class300, #class550, #class1000 {
         font-size: 55%;
@@ -1941,13 +2015,23 @@ tr>td {
 
 @media screen and (max-width:850px) and (max-height:1200px) {
 
+    #logoSvg {
+        top: 1px;
+        left: -70px;
+        height: 120px;
+        width: 260px;
+    }
+    
     #ship {
-        top: -150px;
-        left: 25px;
+        top: -40px;
+        left: 45px;
+        width: 300px;
+        height: 150px;
+        font-size: 75%;
     }
 
     #title {
-        margin: 175px auto 0 auto;
+        margin: 75px auto 0 auto;
         border-radius: 5px;
     }
 
@@ -1956,14 +2040,14 @@ tr>td {
     }
 
     main {
-        margin: 25px auto;
+        margin: 0 auto;
     }
 
     #carousel {
         width: 100%;
         order: 1;
         height: 32.5vh;
-        border-radius: 12px;
+        border-radius: 5px;
         margin-bottom: 35px;
     }
 
@@ -1989,7 +2073,7 @@ tr>td {
     .type p {
         font-size: 110%;
     }
-    
+
     .modal-content {
         width: 850px;
     }
@@ -2002,18 +2086,25 @@ tr>td {
 @media screen and (max-width:850px) and (max-height:400px) {
 
     #ship {
-        top: -120px;
-        left: 40px;
+        top: -54px;
+        left: 30px;
+        width: 350px;
+        height: 180px;
+    }
+
+    #links a, #links button {
+        margin: 0px 15px 0 0;
+        font-size: 95%;
     }
 
     #title {
-        margin: 89px 20px 0 auto;
+        margin: 30px 20px 0 auto;
         width: 67%;
     }
 
     main {
         margin: 0 auto;
-        height: 55vh;
+        height: 56vh;
     }
 
     #typeDiv {
@@ -2058,7 +2149,7 @@ tr>td {
     tr {
         line-height: 0;
     }
-    
+
     tr th {
         font-size: 65%;
     }
@@ -2103,15 +2194,16 @@ tr>td {
 
     #logoSvg {
         top: -16px;
-        left: -65px;
+        left: -80px;
+        top: 15px;
     }
 
     #ship {
-        top: -125px;
-        left: 12px;
-        width: 1100px;
-        height: 740px;
-        font-size: 93%;
+        top: -30px;
+        left: 40px;
+        width: 300px;
+        height: 150px;
+        font-size: 78%;
     }
 
     #links a, #links button {
@@ -2123,11 +2215,11 @@ tr>td {
     }
 
     #title {
-        margin: 165px auto 0 auto;
+        margin: 70px auto 0 auto;
     }
 
     main {
-        margin: 15px auto;
+        margin: 0 auto;
     }
 
     #offersDiv {
@@ -2149,7 +2241,7 @@ tr>td {
     .type p {
         font-size: 115%;
     }
-    
+
     .modal-content {
         position: relative;
         background-color: rgba(0, 0, 0, 0);
@@ -2169,18 +2261,19 @@ tr>td {
         height: 10vh;
         border-bottom: 5px solid teal;
     }
-    
+
     #logoSvg {
-        left: 10px;
+        left: -115px;
         top: 0px;
+        width: 350px;
     }
 
     #ship {
-        width: 1000px;
-        height: 670px;
-        top: -123px;
-        left: 56px;
-        font-size: 85%;
+        width: 300px;
+        height: 150px;
+        top: -40px;
+        left: 40px;
+        font-size: 79%;
     }
 
     #links a, #links button {
@@ -2192,7 +2285,7 @@ tr>td {
     }
 
     #title {
-        margin: 130px auto 0;
+        margin: 75px auto 0;
         width: 95%;
     }
 
@@ -2223,7 +2316,7 @@ tr>td {
     #speechTitle {
         font-size: 150%;
     }
-    
+
     .type p {
         font-size: 60%;
     }
@@ -2280,7 +2373,7 @@ tr>td {
     #scheduleBtnDiv {
         margin-top: 0px;
     }
-    
+
     #scheduleBtn {
         font-size: 70%;
         border-radius: 3px;
@@ -2299,23 +2392,23 @@ tr>td {
 }
 
 @media screen and (max-width:750px) and (max-height:400px) {
-    
+
     nav {
         height: 15vh;
     }
 
     #logoSvg {
-        top: 7px;
-        left: -10px;
-        width: 800px;
-        height: 460px;
+        top: 0px;
+        left: -90px;
+        width: 290px;
+        height: 120px;
     }
 
     #ship {
-        top: -110px;
-        left: 45px;
-        width: 900px;
-        height: 600px;
+        top: -43px;
+        left: 40px;
+        width: 300px;
+        height: 150px;
         font-size: 77%;
     }
 
@@ -2392,7 +2485,7 @@ tr>td {
             top: 20px;
             width: 25px;
         }
-        
+
         50% {
             opacity: 1;
             z-index: 3;
@@ -2424,7 +2517,7 @@ tr>td {
             z-index: 2;
             width: 25px;
         }
-        
+
         100% {
             opacity: 1;
             z-index: 2;
@@ -2436,24 +2529,25 @@ tr>td {
     }
 
     #links a, #links button {
-        font-size: 85%;
+        font-size: 80%;
     }
 
     #title {
-        margin: 100px auto 0;
-        width: 95%;
+        margin: 40px 18px 0 auto;
+        width: 68.8%;
     }
 
     #syllabus {
         margin: 5px 25px 5px auto;
         width: 62%;
     }
-    
+
     #syllabus div {
         border: 1px solid teal;
         border-radius: 5px;
-        font-size: 75%;
+        font-size: 65%;
         width: 40%;
+        padding: 0 0px 5px 15px;
     }
 
     #syllabus h3 {
@@ -2472,7 +2566,7 @@ tr>td {
     #speechTitle {
         font-size: 140%;
     }
-    
+
     .type {
         color: white;
         font-size: 0.5rem;
@@ -2538,7 +2632,7 @@ tr>td {
     #scheduleBtnDiv {
         margin-top: 5px;
     }
-    
+
     #scheduleBtn {
         font-size: 65%;
         padding: 3px 0 2px;
@@ -2567,22 +2661,23 @@ tr>td {
     nav {
         height: 10vh;
         border-bottom: 5px solid teal;
+        z-index: 7;
     }
 
     #logoSvg {
-        width: 740px;
-        height: 470px;
-        top: -45px;
-        left: 2px;
-        transform: rotate(-8deg);
+        width: 200px;
+        height: 88px;
+        top: -4px;
+        left: -43px;
+        transform: rotate(0deg);
     }
 
     #ship {
-        top: -90px;
-        left: 20px;
-        width: 750px;
-        height: 496px;
-        font-size: 65%;
+        top: -28px;
+        left: 50px;
+        width: 200px;
+        height: 100px;
+        font-size: 50%;
     }
 
     #speed1 {
@@ -2593,14 +2688,12 @@ tr>td {
 
     #speed2 {
         z-index: 3;
-        position: fixed;
         top: -42px;
         left: 66px;
     }
 
     #speed3 {
         z-index: 3;
-        position: fixed;
         top: 3px;
         left: -36px;
     }
@@ -2721,7 +2814,7 @@ tr>td {
     }
 
     #syllabus {
-        margin: 5px 50px 5px auto;
+        margin: 2px 50px 2px auto;
         width: 60%;
     }
 
@@ -2739,9 +2832,9 @@ tr>td {
     }
 
     #title {
-        margin: 65px 2.3% 0px auto;
-        width: 73%;
-        border-radius: 8px;
+        margin: 30px 2.3% 0px auto;
+        width: 69.5%;
+        border-radius: 5px;
     }
 
     main {
@@ -2842,7 +2935,7 @@ tr>td {
         box-shadow: -2px -2px 1px silver;
         text-shadow: -1px -1px 1px silver;
     }
-    
+
     #carousel {
         width: 45%;
         order: 2;
@@ -2868,24 +2961,23 @@ tr>td {
     }
 
     #logoSvg {
-        top: -34px;
-        height: 450px;
+        top: 7px;
+        height: 70px;
     }
 
     #ship {
-        /* display: none; */
-        left: 25px;
-        top: -85px;
+        left: 55px;
+        top: -25px;
     }
 
     #title {
         width: 70%;
         border-radius: 3px;
-        margin: 65px 2.3% 0px auto;
+        margin: 22px 2.3% 0px auto;
     }
 
     main {
-        margin: 5px auto;
+        margin: 0 auto;
         height: auto;
     }
 
@@ -2955,6 +3047,19 @@ tr>td {
         padding-top: 0px;
         border-radius: 3px;
         box-shadow: -1px -1px 1px silver;
+    }
+
+    .modal-content {
+        top: 20vh;
+    }
+
+    .close {
+        right: -60px;
+        display: block;
+        color: gray;
+        z-index: 6;
+        top: -20px;
+        text-shadow: 0 0 5px black;
     }
 }
 
@@ -3139,7 +3244,7 @@ tr>td {
         border-radius: 3px;
         margin-bottom: 2px;
     }
-    
+
     table {
         margin: -5px 0;
     }
@@ -3206,7 +3311,7 @@ tr>td {
     body {
         background-size: contain;
         height: 100vh;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     nav {
@@ -3215,19 +3320,20 @@ tr>td {
     }
 
     #logoSvg {
-        width: 600px;
-        height: 400px;
+        width: 170px;
+        height: 70px;
         font-size: 50%;
-        top: 2px;
-        left: -20px;
+        top: 8px;
+        left: -40px;
     }
 
     #ship {
-        width: 600px;
-        height: 390px;
-        top: -60px;
-        left: 10px;
-        font-size: 51%;
+        width: 160px;
+        height: 80px;
+        top: -10px;
+        left: 35px;
+        font-size: 40%;
+        /* display: none; */
     }
 
     #links a, #links button {
@@ -3371,7 +3477,7 @@ tr>td {
     }
 
     #title {
-        margin: 95px auto 0px auto;
+        margin: 40px auto 0px auto;
         width: 95%;
     }
 
@@ -3380,7 +3486,7 @@ tr>td {
         margin: 0px 2% 0px auto;
         font-size: .8rem;
         width: 95%;
-        padding: 15px;
+        padding: 10px;
     }
 
     #syllabus div {
@@ -3403,7 +3509,7 @@ tr>td {
         margin: 0px auto;
         width: 100%;
         flex-direction: row;
-        height: unset;
+        height: 75vh;
         z-index: 1;
     }
 
@@ -3422,9 +3528,9 @@ tr>td {
     #typeDiv {
         order: 3;
         order: 3;
-        width: 42%;
-        padding: 10px;
-        height: 36.4vh;
+        width: 45%;
+        padding: 3px;
+        height: 50%;
         margin: 0px auto;
         border-radius: 3px;
         border: 1px solid teal;
@@ -3444,22 +3550,23 @@ tr>td {
     }
 
     #offersDiv {
-        width: 40%;
+        width: 43%;
         margin: 0px auto;
         order: 2;
         border-radius: 3px;
         border: 1px solid teal;
         align-content: flex-start;
-        height: 33vh;
-        padding: 20px 15px 25px;
+        height: 50%;
+        padding: 5px 15px 0px;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        font-size: 50%;
-        font-weight: 900;
-        width: 15%;
-        height: 8%;
+        font-size: 60%;
+        font-weight: 600;
+        width: 17%;
+        height: 6%;
         border-radius: 3px;
+        margin: 5px 0 0;
     }
 
     #offersDiv hr {
@@ -3477,7 +3584,8 @@ tr>td {
     tr>th {
         width: 25%;
         text-align-last: left;
-        font-size: 75%;
+        font-size: 70%;
+        line-height: 0px;
     }
 
     tr>td {
@@ -3487,6 +3595,11 @@ tr>td {
 
     input[type="radio"] {
         width: 40%;
+        height: 9px;
+    }
+
+    #scheduleBtnDiv {
+        margin-top: 20px;
     }
 
     #scheduleBtn {
@@ -3680,11 +3793,11 @@ tr>td {
 }
 
 @media screen and (max-width:400px) and (max-height:900px) {
-    
+
     #scheduleBtn {
         padding: 5px 10px;
     }
-    
+
     #typeDiv {
         width: 82%;
         border-radius: 12px;
@@ -3702,7 +3815,7 @@ tr>td {
     body {
         overflow: auto;
     }
-    
+
     #co {
         width: 100%;
         color: #0ca1a1;
@@ -3714,7 +3827,7 @@ tr>td {
         font-style: italic;
         text-shadow: 0px 0px 1px black, -1px -1px 1px silver;
     }
-    
+
     #links a, #links button {
         position: relative;
         z-index: 3;
@@ -3727,11 +3840,11 @@ tr>td {
         border-radius: 3px;
         font-weight: 900;
     }
-    
+
     #links a:hover, #links button:hover {
         filter: brightness(2.5);
     }
-    
+
     #syllabus {
         margin: 0px auto;
         width: 90%;
