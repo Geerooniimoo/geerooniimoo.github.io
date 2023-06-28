@@ -279,3 +279,18 @@ const showSyllabus = () => {
         document.querySelector('#syllabus').style.transform = 'scaleY(100%)';
     };
 };
+
+
+let body = document.body;
+let width = body.getClientRects()[0].width;
+let height = body.getClientRects()[0].height;
+
+if (width<850 && height<400) {
+    if (body.requestFullscreen) {
+        body.requestFullscreen();
+      } else if (body.webkitRequestFullscreen) { /* Safari */
+        body.webkitRequestFullscreen();
+      } else if (body.msRequestFullscreen) { /* IE11 */
+        body.msRequestFullscreen();
+      }
+};
