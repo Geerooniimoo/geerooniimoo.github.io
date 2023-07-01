@@ -63,33 +63,6 @@ function handleForward() {
         handleSpeech()) : '';
 };
 
-window.onclick = ({target}) => {
-    if (target == myModal1 ||
-        target == myModal2 ||
-        target == myModal3 ||
-        target == myModal4 ||
-        target == myModal5 ||
-        target.classList.value == "close"
-    ) {
-        // btn1.style = 'display:block;animate: sale 50s infinite';
-        myModal1.style.display = "none";
-        myModal2.style.display = "none";
-        myModal3.style.display = "none";
-        myModal4.style.display = "none";
-        myModal5.style.display = "none";
-    };
-
-    if(target== syllabusBtn) {
-        showSyllabus();
-    } else {
-        document.querySelector('#syllabus').style.transform = 'scaleY(0%)'
-        setTimeout(() => {
-            document.getElementById('syllabus').innerHTML = '';
-        }, 1000);
-    };
-};
-
-// const handleModal = modal => console.log(modal);
 const handleModal = modal => {
     scheduleBtn.style.transform = 'scale(.9)';
     setTimeout(() => scheduleBtn.style.transform = 'scale(1)', 250);
@@ -138,13 +111,13 @@ const handleOffer = e => {
             e.id == 'class300' ? '3' :
             e.id == 'class550' ? '4' :
             e.id == 'class1000' ? '5' : '';
-        scheduleBtnDiv.innerHTML = `<button id="scheduleBtn" onclick="handleModal('myModal${offer}')" class="color${offer}">Click To Schedule</button>`;
+        scheduleBtnDiv.innerHTML = `<button id="scheduleBtn" onclick="myModal${offer}.showModal()" class="color${offer}">Click To Schedule</button>`;
         document.querySelector('#scheduleBtn').style = 'transform:scale(.9)'
-    }, radioList.length * 300)
+    }, radioList.length * 250)
 
     setTimeout(() => {
         document.querySelector('#scheduleBtn').style = 'transform:scale(1)';
-    }, radioList.length * 300 + 250)
+    }, radioList.length * 300 + 100)
 
 };
 
