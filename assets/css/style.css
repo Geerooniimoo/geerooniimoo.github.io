@@ -1300,12 +1300,12 @@ tr>td {
     }
 
     .modal-content {
-        width: 100%;
+        margin-top: 5vh;
     }
 
     .close {
-        right: 150px;
-        top: 0px;
+        right: 20px;
+        top: -10px;
     }
 
 }
