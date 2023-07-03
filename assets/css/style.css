@@ -948,6 +948,21 @@ tr>td {
     }
 
     .modal-content {
+        width: 40%;
+        padding: 15vh 30%;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.615);
+        margin: 0;
+    }
+
+    .close {
+        right: 18%;
+        top: 5%;
+        font-size: 6rem;
+    }
+
+    .calendly-inline-widget {
+        height: 75vh !important;
     }
 
 }
@@ -1247,7 +1262,7 @@ tr>td {
     }
 
     .modal-content {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -2464,17 +2479,20 @@ tr>td {
     }
 
     .modal-content {
-    width: 50%;
-    padding: 50px 75px;
+    width: 70%;
+    padding: 15vh 15%;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.615);
     }
 
     .close {
-    right: 22px;
-    top: -10px;
+    right: 6%;
+    top: 3vh;
     }
 
+    .calendly-inline-widget {
+        height: 80vh !important;
+    }
 }
 
 @media screen and (max-width:750px) and (max-height:400px) {
@@ -3143,12 +3161,12 @@ tr>td {
     }
 
     .modal-content {
-        top: 5vh;
+        /* top: 5vh; */
     }
 
     .close {
-        right: -60px;
-        top: -20px;
+        right: 5%;
+        top: 0vh;
     }
 }
 
@@ -4110,23 +4128,14 @@ tr>td {
     }
 
     .modal-content {
-        width: 300px;
+        width: 100%;
+        padding: 15vh 5%;
     }
 
     .close {
-        display: block;
-        right: 0px;
-        left: 0px;
-        top: 10px;
-        margin: 0 auto;
-        border: 2px solid silver;
-        width: 30px;
-        border-radius: 0 0 50% 50%;
-        height: 30px;
-        line-height: 0.9;
-        text-align: center;
-        font-size: 2rem;
-        color: red;
+        right: 5%;
+        top: 5vh;
+        font-size: 3rem;
     }
 
 }
