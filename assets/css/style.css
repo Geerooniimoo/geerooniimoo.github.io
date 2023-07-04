@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     background-image: url('../images/bg1.png');
@@ -228,7 +229,6 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 95%;
-    max-width: 2000px;
     border-radius: 5px;
     border: 1px solid teal;
     background: linear-gradient(215deg, black 48%, teal 60%);
@@ -272,12 +272,10 @@ main {
     justify-content: space-between;
     justify-items: stretch;
     width: 95%;
-    max-width: 2000px;
     position: relative;
     z-index: 2;
     margin: 0 auto;
     overflow: auto;
-    height: 55vh;
 }
 
 main::-webkit-scrollbar {
@@ -289,7 +287,8 @@ main::-webkit-scrollbar {
     background: black;
     border: 1px solid teal;
     border-radius: 5px;
-    width: 45%;
+    width: 53%;
+    height: 54vh;
 }
 
 #carousel img {
@@ -309,6 +308,11 @@ main::-webkit-scrollbar {
     width: 20%;
     padding: 5px;
     overflow: hidden;
+    height: 53vh;
+}
+
+#offersDiv {
+    height: 55vh;
 }
 
 #switchBtn {
@@ -362,6 +366,7 @@ main::-webkit-scrollbar {
     color: white;
     width: 95%;
     margin: 0 auto;
+    font-size: 130%;
 }
 
 .type a {
@@ -375,7 +380,7 @@ main::-webkit-scrollbar {
     color: white;
     padding: 5px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 140%;
 }
 
 #text {
@@ -384,38 +389,32 @@ main::-webkit-scrollbar {
 
 #offersDiv {
     text-align: center;
-    width: 25%;
-    padding: 2%;
+    width: 20%;
     border-radius: 5px;
     background: black;
     color: white;
     border: 1px solid teal;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    justify-content: space-around;
+    padding: 1vh;
+    height: 52vh;
+    align-content: space-around;
 }
 
 #class35, #class65, #class300, #class550, #class1000 {
     display: flex;
     text-align: center;
-    font-size: 3vh;
+    font-size: 100%;
     font-weight: 600;
-}
-
-#class35, #class65, #class300, #class550, #class1000 {
-    display: flex;
-    text-align: center;
-    font-size: 3vh;
-    font-weight: 600;
-    width: 18%;
-    align-items: center;
-    height: 10%;
-    border-radius: 12px;
+    width: 15%;
+    height: 7%;
+    border-radius: 5px;
     border: 1px solid silver;
     justify-content: space-evenly;
     box-shadow: -3px -3px 1px silver;
     filter: contrast(0);
+    align-items: center;
 }
 
 #offersDiv button:hover {
@@ -424,19 +423,18 @@ main::-webkit-scrollbar {
 
 #scheduleBtn {
     width: 100%;
-    height: 10%;
-    border-radius: 12px;
+    border-radius: 5px;
     border: 1px solid silver;
     justify-content: space-evenly;
     box-shadow: -3px -3px 1px silver;
-    font-size: 2vmax;
+    font-size: 180%;
     font-weight: 900;
 }
 
 #offersDiv hr {
-    width: 100%;
+    width: 96%;
     background: silver;
-    height: 5px;
+    height: 0px;
     border-radius: 8px;
 }
 
@@ -447,12 +445,21 @@ table {
 tr>th {
     width: 25%;
     text-align-last: left;
+    padding-left: 10px;
+    font-size: 110%;
 }
 
 tr>td {
-    width: 18%;
+    width: 15%;
     font-size: 100%;
     white-space: normal;
+}
+
+input[type="radio"] {
+    
+height: 2vh;
+    
+width: 25%;
 }
 
 .class35 {
@@ -476,7 +483,6 @@ tr>td {
 .class1000 {
     accent-color: #5c0035;
 }
-
 
 .scheduleBtn {
     background: transparent;
@@ -552,11 +558,7 @@ tr>td {
     text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
 }
 
-#scheduleBtnDiv {
-    width: 100%;
-    height: fit-content;
-    margin-top: 10px;
-}
+#scheduleBtnDiv {height: fit-content;width: 90%;}
 
 
 .myModal {
@@ -621,6 +623,7 @@ tr>td {
     cursor: pointer;
 }
 
+/* Surface Pro 7 */
 @media screen and (max-width:1400px) and (max-height:950px) {
 
     #logoSvg {
@@ -678,17 +681,20 @@ tr>td {
     }
 
     #offersDiv {
-        text-align: center;
         width: 22%;
-        padding: 1%;
-        border-radius: 5px;
-        background: black;
-        color: white;
-        border: 1px solid teal;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-content: space-evenly;
+    }
+
+    tr>th {
+        font-size: 120%;
+    }
+
+    tr>td {
+        width: 10%;
+    }
+
+    input[type="radio"] {
+        height: 2vh;
+        width: 40%;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -701,12 +707,7 @@ tr>td {
         font-weight: 500;
     }
 
-    tr>th {
-        line-height: 27px;
-    }
-
     #scheduleBtn {
-        width: 90%;
         font-size: 150%;
         border-radius: 5px;
         box-shadow: -2px -2px 1px silver;
@@ -726,6 +727,7 @@ tr>td {
     }
 }
 
+/* Nest Hub Max */
 @media screen and (max-width:1280px) and (max-height:800px) {
 
     #links a, #links button {
@@ -878,11 +880,10 @@ tr>td {
 
     #title {
         margin: 50px 2.3% 0px auto;
-        width: 73%;
+        width: 72.5%;
     }
 
     main {
-        height: 55vh;
         margin: 0 auto;
     }
 
@@ -905,27 +906,23 @@ tr>td {
 
     .type p {
         text-align: center;
-        font-size: 110%;
-    }
-
-    #offersDiv {
-        align-content: flex-start;
+        font-size: 85%;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        width: 16%;
+        width: 15%;
         height: 6%;
-        font-size: 80%;
-        margin: 0 5px;
+        font-size: 70%;
+        border-radius: 3px;
+    }
+
+    #offersDiv {
+        height: 52uvh;
     }
 
     #offersDiv hr {
-        height: 2px;
-        margin-top: 15px;
-    }
-
-    tr>th {
-        line-height: 25px;
+        height: 0px;
+        margin-top: 5px;
     }
 
     tr>td {
@@ -933,21 +930,30 @@ tr>td {
     }
 
     input[type="radio"] {
-        height: 15px;
-        width: 15px;
-    }
-
-    #scheduleBtnDiv {
-        width: 100%;
-        height: fit-content;
-        margin-top: 20px;
+        height: 12px;
+        width: 12px;
     }
 
     #scheduleBtn {
-        font-size: 140%;
+        font-size: 120%;
     }
 
     .modal-content {
+        width: 40%;
+        padding: 15vh 30%;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.615);
+        margin: 0;
+    }
+
+    .close {
+        right: 18%;
+        top: 5%;
+        font-size: 6rem;
+    }
+
+    .calendly-inline-widget {
+        height: 75vh !important;
     }
 
 }
@@ -999,6 +1005,7 @@ tr>td {
     }
 }
 
+/* iPad Air */
 @media screen and (max-width:1200px) and (max-height:850px) {
 
     #logoSvg {
@@ -1057,8 +1064,6 @@ tr>td {
 
     #offersDiv {
         width: 22%;
-        justify-content: space-between;
-        padding: 20px;
     }
 
     #offersDiv hr {
@@ -1067,21 +1072,25 @@ tr>td {
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        font-size: 80%;
+        font-size: 70%;
         border-radius: 5px;
         height: 30px;
-        margin: -5px -10px 5px;
         font-weight: 600;
     }
 
     tr>th {
         width: 30%;
-        font-size: 100%;
-        line-height: 30px;
+        font-size: 90%;
     }
 
     tr>td {
-        width: 15%;
+        width: 12%;
+        line-height: 10px;
+    }
+
+    input[type="radio"] {
+        height: 3vh;
+        width: 40%;
     }
 
     #scheduleBtn {
@@ -1107,6 +1116,7 @@ tr>td {
     
 }
 
+/* iPad Mini */
 @media screen and (max-width:1050px) and (max-height:800px) {
     #links a, #links button {
         margin: 0 20px 0;
@@ -1129,12 +1139,15 @@ tr>td {
     }
 
     main {
-        height: 45vh;
         margin: 0px auto;
     }
 
     #speechTitle {
         font-size: 103%;
+    }
+
+    #typeDiv {
+        height: 50.7vh;
     }
 
     .type p {
@@ -1145,17 +1158,27 @@ tr>td {
         font-size: 70%;
     }
 
-    #offersDiv {
-        align-content: flex-start;
+    #switchBtn {
+        bottom: 10px;
+        height: 30px;
     }
 
+    #carousel {
+        overflow: hidden;
+        background: black;
+        border: 1px solid teal;
+        border-radius: 5px;
+        width: 50%;
+        height: 52vh;
+    }
+
+    #offersDiv {
+        height: 50vh;
+    }
+    
     #class35, #class65, #class300, #class550, #class1000 {
-        font-size: 75%;
-        border-radius: 3px;
-        height: 20px;
-        margin: -5px -5px 5px;
-        width: 18%;
-        box-shadow: -2px -2px 1px silver;
+        height: 21px;
+        width: 17%;
     }
 
     #offersDiv hr {
@@ -1164,12 +1187,10 @@ tr>td {
 
     table th {
         font-size: 80%;
-        line-height: 0;
     }
 
-    table td {
-        font-size: 80%;
-        line-height: 0;
+    tr>td {
+        line-height: 25px;
     }
 
     input[type="radio"] {
@@ -1188,6 +1209,7 @@ tr>td {
     }    
 }
 
+/* Nest Hub */
 @media screen and (max-width:1050px) and (max-height:600px) {
 
     #title {
@@ -1207,7 +1229,6 @@ tr>td {
     }
 
     main {
-        height: 51vh;
         margin: 0 auto;
     }
 
@@ -1219,22 +1240,21 @@ tr>td {
         font-size: 70%;
     }
 
-    #offersDiv {
-        width: 20%;
-    }
-
     #class35, #class65, #class300, #class550, #class1000 {
         font-size: 60%;
         border-radius: 3px;
         height: 20px;
-        margin: -5px -5px 5px;
-        width: 18%;
+        width: 16%;
         box-shadow: -2px -2px 1px silver;
     }
 
     #offersDiv hr {
         height: 0px;
         margin-top: 10px;
+    }
+
+    tr>td {
+        line-height: 10px;
     }
 
     #scheduleBtnDiv {
@@ -1247,7 +1267,7 @@ tr>td {
     }
 
     .modal-content {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -1258,13 +1278,13 @@ tr>td {
     }
 
     #logoSvg {
-        left: -93px;
-        top: -9px;
+        left: -150px;
+        top: 5px;
     }
 
     #ship {
         left: 45px;
-        top: -60px;
+        top: -54px;
     }
 
     #links a, #links button {
@@ -1273,7 +1293,7 @@ tr>td {
     }
 
     #title {
-        margin: 100px auto 0 auto;
+        margin: 85px auto 0 auto;
         border-radius: 5px;
     }
 
@@ -1286,8 +1306,8 @@ tr>td {
     main {
         width: 95%;
         margin: 10px auto;
-        height: 70vh;
         flex-wrap: wrap;
+        height: 71vh;
     }
 
     #typeDiv {
@@ -1303,7 +1323,7 @@ tr>td {
 
     #carousel {
         order: 2;
-        height: 39vh;
+        height: 40vh;
         width: 55%;
         border-radius: 5px;
     }
@@ -1311,8 +1331,11 @@ tr>td {
     #offersDiv {
         order: 1;
         width: 38%;
-        height: 37vh;
-        align-content: flex-start;
+        height: 38vh;
+    }
+
+    #scheduleBtn {
+        font-size: 110%;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -1323,13 +1346,13 @@ tr>td {
         margin: 0 7px;
     }
 
-    tr>th {
-        line-height: 20px;
+    tr>td {
+        line-height: 5px;
     }
 
     #offersDiv hr {
         height: 0;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .modal-content {
@@ -1344,6 +1367,7 @@ tr>td {
 
 }
 
+/* Surface Pro 7 */
 @media screen and (max-width:950px) and (max-height:1400px) {
     nav {
         height: 5vh;
@@ -1498,7 +1522,6 @@ tr>td {
 
     main {
         flex-wrap: wrap;
-        height: auto;
         margin: 15px auto;
     }
 
@@ -1517,7 +1540,11 @@ tr>td {
     #offersDiv {
         order: 2;
         width: 45%;
-        height: 30vh;
+        height: 35vh;
+    }
+
+    input[type="radio"] {
+        height: 1vh;
     }
 
     #typeDiv {
@@ -1525,8 +1552,8 @@ tr>td {
         width: 45%;
         margin-top: 0;
         padding-bottom: 70px;
-        height: 27vh;
-        border-radius: 12px;
+        height: 31.8vh;
+        border-radius: 3px;
     }
 
     .type p {
@@ -1551,6 +1578,7 @@ tr>td {
     }
 }
 
+/* Samsung Galaxy S20 Ultra, A51, 71*/
 @media screen and (max-width:950px) and (max-height:450px) {
 
     body {
@@ -1656,7 +1684,6 @@ tr>td {
     #offersDiv {
         order: 3;
         height: 55vh;
-        padding: 10px 5px 3px;
         border-radius: 3px;
         width: 23%;
     }
@@ -1722,6 +1749,7 @@ tr>td {
     }
 }
 
+/* iPhone XR */
 @media screen and (max-width:900px) and (max-height:450px) {
 
     #logoSvg {
@@ -1867,7 +1895,7 @@ tr>td {
     #title {
         border-radius: 5px;
         margin: 27px 20px 0 auto;
-        width: 68.5%;
+        width: 68%;
     }
 
     #title h1 {
@@ -1898,7 +1926,6 @@ tr>td {
 
     main {
         flex-wrap: wrap;
-        height: auto;
         margin: 0 auto;
     }
 
@@ -1948,10 +1975,7 @@ tr>td {
     #offersDiv {
         order: 3;
         width: 23%;
-        height: 52vh;
-        padding: 10px;
-        align-content: flex-start;
-        justify-content: space-between;
+        height: 54vh;
         border-radius: 5px;
     }
 
@@ -1971,13 +1995,8 @@ tr>td {
         margin: 2px 0;
     }
 
-    tr {
-        line-height: 10px;
-    }
-
     tr th {
         font-size: 75%;
-        line-height: 10px;
     }
 
     tr td {
@@ -2017,6 +2036,7 @@ tr>td {
     
 }
 
+/* Pixel 5 */
 @media screen and (max-width:900px) and (max-height:400px) {
 
     #logoSvg {
@@ -2033,9 +2053,8 @@ tr>td {
         height: 175px;
     }
 
-
-    main {
-        height: 55vh;
+    #title {
+        width: 67.8%;
     }
 
     #typeDiv {
@@ -2052,12 +2071,12 @@ tr>td {
     }
 
     #offersDiv {
-        height: auto;
-        height: 49vh;
+        height: 52.3vh;
     }
 
     tr th {
         font-size: 65%;
+        line-height: 0px;
     }
 
     input[type="radio"] {
@@ -2081,6 +2100,7 @@ tr>td {
     }
 }
 
+/* iPad Air */
 @media screen and (max-width: 850px) and (max-height: 1200px) {
 
     #logoSvg {
@@ -2125,6 +2145,19 @@ tr>td {
         height: 30vh;
     }
 
+    tr>td {
+        line-height: 5px;
+    }
+
+    input[type="radio"] {
+        height: 1vh;
+        width: 25%;
+    }
+
+    #scheduleBtn {
+        font-size: 110%;
+    }
+
     #typeDiv {
         order: 3;
         width: 45%;
@@ -2159,6 +2192,7 @@ tr>td {
     }
 }
 
+/* iPhone 12 Pro */
 @media screen and (max-width:850px) and (max-height:400px) {
 
     #ship {
@@ -2169,25 +2203,24 @@ tr>td {
     }
 
     #links a, #links button {
-        margin: 0px 15px 0 0;
+        margin: 0px 25px 0 0;
         font-size: 95%;
     }
 
     #title {
         margin: 30px 20px 0 auto;
-        width: 67%;
+        width: 66.3%;
     }
 
     main {
         margin: 0 auto;
-        height: 56vh;
     }
 
     #typeDiv {
         order: 1;
         width: 25%;
         padding-bottom: 0px;
-        height: auto;
+        height: 53vh;
         border-radius: 5px;
     }
 
@@ -2219,11 +2252,7 @@ tr>td {
     #offersDiv {
         order: 3;
         width: 25%;
-        height: auto;
-    }
-
-    tr {
-        line-height: 0;
+        height: 53vh;
     }
 
     tr th {
@@ -2268,6 +2297,7 @@ tr>td {
 
 }
 
+/* iPad Mini */
 @media screen and (max-width:800px) and (max-height:1100px) {
 
     nav {
@@ -2308,6 +2338,15 @@ tr>td {
         height: 35vh;
     }
 
+    tr>td {
+        line-height: 0;
+    }
+
+    #scheduleBtn {
+        border-radius: 3px;
+        font-size: 100%;
+    }
+
     #typeDiv {
         height: 30.5vh;
     }
@@ -2321,7 +2360,7 @@ tr>td {
     }
 
     .type p {
-        font-size: 115%;
+        font-size: 100%;
     }
 
     .modal-content {
@@ -2338,6 +2377,7 @@ tr>td {
 
 }
 
+/* Surface Duo */
 @media screen and (max-width:750px) and (max-height:550px) {
 
     nav {
@@ -2411,7 +2451,12 @@ tr>td {
 
     #switchBtn {
         bottom: 8px;
-        height: 28px;
+        height: 20px;
+        line-height: -2;
+    }
+
+    #switchBtn>button {
+        font-size: 100%;
     }
 
     #carousel {
@@ -2426,7 +2471,6 @@ tr>td {
         height: 43vh;
         order: 3;
         width: 23%;
-        padding: 10px 15px 0;
     }
 
     #offersDiv hr {
@@ -2435,26 +2479,28 @@ tr>td {
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        font-size: 50%;
         font-weight: 600;
-        width: 20%;
-        height: 8%;
         border-radius: 3px;
+        font-weight: 600;
         margin: 0 -10px;
+        font-size: 50%;
+        width: 16%;
+        height: 6%;
+        margin: unset;
     }
-
-    table th {
+    
+    tr>th {
         font-size: 55%;
-        line-height: 0;
     }
 
     input[type="radio"] {
         height: 9px;
-        width: 10px;
+        width: 8px;
     }
 
     #scheduleBtnDiv {
-        margin-top: 0px;
+        width: 90%;
+        margin-top: 0;
     }
 
     #scheduleBtn {
@@ -2464,19 +2510,23 @@ tr>td {
     }
 
     .modal-content {
-    width: 50%;
-    padding: 50px 75px;
+    width: 70%;
+    padding: 15vh 15%;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.615);
     }
 
     .close {
-    right: 22px;
-    top: -10px;
+    right: 6%;
+    top: 3vh;
     }
 
+    .calendly-inline-widget {
+        height: 80vh !important;
+    }
 }
 
+/* Samsung Galaxy S8+ */
 @media screen and (max-width:750px) and (max-height:400px) {
 
     nav {
@@ -2681,7 +2731,6 @@ tr>td {
 
     #offersDiv {
         height: 44.3vh;
-        padding: 5px;
         border-radius: 3px;
     }
 
@@ -2707,7 +2756,6 @@ tr>td {
 
     tr td {
         width: 10%;
-        line-height: 5px;
     }
 
     input[type="radio"] {
@@ -2740,6 +2788,7 @@ tr>td {
     }
 }
 
+/* iPhone SE */
 @media screen and (max-width:700px) and (max-height:400px) {
 
 
@@ -2922,13 +2971,12 @@ tr>td {
 
     #title {
         margin: 30px 2.3% 0px auto;
-        width: 69.5%;
+        width: 68.8%;
         border-radius: 5px;
     }
 
     main {
         margin: 5px auto;
-        height: 60vh;
     }
 
     #typeDiv {
@@ -2971,9 +3019,7 @@ tr>td {
     #offersDiv {
         order: 3;
         width: 23%;
-        height: 50vh;
-        align-content: flex-start;
-        padding: 10px 10px 20px;
+        height: 55vh;
         border-radius: 5px;
     }
 
@@ -2981,9 +3027,8 @@ tr>td {
         font-size: 45%;
         font-weight: 500;
         width: 16%;
-        height: 10%;
+        height: 5%;
         border-radius: 3px;
-        margin: 0 -2px 5px;
         box-shadow: -2px -2px 2px silver;
     }
 
@@ -2993,7 +3038,7 @@ tr>td {
     }
 
     tr {
-        line-height: 0px;
+        line-height: 0;
     }
 
     tr>th {
@@ -3006,23 +3051,20 @@ tr>td {
     }
 
     input[type="radio"] {
-        width: 35%;
+        width: 30%;
         padding: 0;
         margin: 0;
         height: 14px;
     }
 
+    #scheduleBtnDiv {
+        width: 90%;
+    }
+
     #scheduleBtn {
-        height: 0%;
-        width: 100%;
-        font-size: 80%;
-        font-weight: 900;
-        padding-top: 7px;
+        font-size: 70%;
         border-radius: 3px;
-        border: 1px solid silver;
-        justify-content: space-evenly;
-        box-shadow: -2px -2px 1px silver;
-        text-shadow: -1px -1px 1px silver;
+        width: 100%;
     }
 
     #carousel {
@@ -3047,6 +3089,7 @@ tr>td {
 
 }
 
+/* Galaxy Fold */
 @media screen and (max-width:700px) and (max-height:300px) {
     nav {
         height: 15vh;
@@ -3071,7 +3114,6 @@ tr>td {
 
     main {
         margin: 0 auto;
-        height: auto;
     }
 
     #typeDiv {
@@ -3080,7 +3122,7 @@ tr>td {
         width: 23%;
         padding: 0px;
         height: 50vh;
-        border-radius: 5px;
+        border-radius: 3px;
     }
 
     #titleDiv {
@@ -3098,18 +3140,21 @@ tr>td {
 
     #carousel {
         height: 50vh;
+        width: 47%;
+        border-radius: 3px;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
         border-radius: 3px;
-        margin: 0 -2px 5px;
+        /* margin: 0 -2px 5px; */
         box-shadow: -1px -1px 1px silver;
         font-size: 35%;
         height: 10%;
     }
 
     input[type="radio"] {
-        height: 5px;
+        height: 2vh;
+        width: 29%;
     }
 
     #offersDiv hr {
@@ -3118,16 +3163,17 @@ tr>td {
 
     tr>th {
         font-size: 45%;
+        line-height: .6;
     }
 
-    tr td {
-        line-height: 7px;
+    tr>td {
+        width: 5%;
+        padding: 0;
     }
 
     #offersDiv {
-        height: 40vh;
-        padding-top: 5px;
-        padding-bottom: 25px;
+        height: 48vh;
+        border-radius: 3px;
     }
 
     #scheduleBtnDiv {
@@ -3136,19 +3182,18 @@ tr>td {
 
     #scheduleBtn {
         width: 90%;
-        font-size: 70%;
-        padding-top: 0px;
+        font-size: 52%;
         border-radius: 3px;
         box-shadow: -1px -1px 1px silver;
     }
 
     .modal-content {
-        top: 5vh;
+        /* top: 5vh; */
     }
 
     .close {
-        right: -60px;
-        top: -20px;
+        right: 5%;
+        top: 0vh;
     }
 }
 
@@ -3316,7 +3361,6 @@ tr>td {
     }
 
     #offersDiv {
-        align-content: flex-start;
         height: 35vh;
     }
 
@@ -3395,6 +3439,7 @@ tr>td {
     }
 }
 
+/* Surface Duo */
 @media screen and (max-width:550px) and (max-height:750px) {
 
     body {
@@ -3590,11 +3635,6 @@ tr>td {
     }
 
     main {
-        height: 60vh;
-        margin: 10px auto;
-    }
-
-    main {
         margin: 0px auto;
         width: 100%;
         flex-direction: row;
@@ -3619,7 +3659,7 @@ tr>td {
         order: 3;
         width: 45%;
         padding: 3px;
-        height: 50%;
+        height: 51%;
         margin: 0px auto;
         border-radius: 3px;
         border: 1px solid teal;
@@ -3644,9 +3684,7 @@ tr>td {
         order: 2;
         border-radius: 3px;
         border: 1px solid teal;
-        align-content: flex-start;
         height: 50%;
-        padding: 5px 15px 0px;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -3674,7 +3712,6 @@ tr>td {
         width: 25%;
         text-align-last: left;
         font-size: 70%;
-        line-height: 0px;
     }
 
     tr>td {
@@ -3744,6 +3781,7 @@ tr>td {
     }
 }
 
+/* iPhone XR */
 @media screen and (max-width:450px) and (max-height:950px) {
 
     nav {
@@ -3799,7 +3837,10 @@ tr>td {
     }
 
     #links a:hover, #links button:hover {
-        filter: brightness(1.3);
+    }
+
+    #syllabus {
+        width: 95%;
     }
 
     #syllabus div {
@@ -3824,17 +3865,15 @@ tr>td {
     main {
         margin: 0px auto;
         width: 100%;
-        flex-direction: column;
-        height: unset;
+        flex-direction: row;
     }
 
     #typeDiv {
         width: 82%;
-        border-radius: 12px;
         margin: 10px auto 100px;
         order: 3;
         border: 2px solid silver;
-        border-radius: 12px;
+        border-radius: 3px;
         padding: 5px;
         height: 35vh;
     }
@@ -3849,7 +3888,7 @@ tr>td {
     }
 
     #carousel {
-        border-radius: 8px;
+        border-radius: 3px;
         width: 85%;
         margin: 30px auto;
         order: 2;
@@ -3859,13 +3898,13 @@ tr>td {
         width: 80%;
         margin: 10px auto;
         order: 1;
-        border-radius: 8px;
+        border-radius: 3px;
         border: 2px solid silver;
         height: fit-content;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        font-size: 70%;
+        font-size: 80%;
         width: 15%;
         height: 25px;
         border-radius: 5px;
@@ -3877,11 +3916,10 @@ tr>td {
     }
 
     #scheduleBtn {
-        border-radius: 8px;
-        width: fit-content;
+        border-radius: 3px;
+        width: 100%;
         margin: 0 auto 10px;
-        padding: 10px;
-        font-size: 1.2rem;
+        font-size: 100%;
     }
 
     #logoCir {
@@ -3904,6 +3942,11 @@ tr>td {
         font-size: 0.7rem;
     }
 
+    input[type="radio"] {
+        height: 2vh;
+        width: 30%;
+    }
+
     .modal-content {
         width: 95%;
         height: 100vh;
@@ -3922,7 +3965,12 @@ tr>td {
     }
 }
 
+/* Pixel 5 */
 @media screen and (max-width:400px) and (max-height:900px) {
+
+    main {
+        height: 100vh;
+    }
 
     #scheduleBtn {
         padding: 5px 10px;
@@ -3940,6 +3988,7 @@ tr>td {
     }
 }
 
+/* iPhone SE */
 @media screen and (max-width:400px) and (max-height:750px) {
 
     body {
@@ -3972,7 +4021,11 @@ tr>td {
     }
 
     #links a:hover, #links button:hover {
-        filter: brightness(2.5);
+    }
+
+    main {
+        margin: 0px auto;
+        width: 100%;
     }
 
     #syllabus {
@@ -4054,6 +4107,7 @@ tr>td {
     }
 }
 
+/* Galaxy Fold */
 @media screen and (max-width:300px) and (max-height:700px) {
 
     body {
@@ -4088,8 +4142,9 @@ tr>td {
     #syllabus div {
         font-size: .5rem;
         padding: 5px;
-        width: 48%;
+        width: 40%;
         border: 1px solid teal;
+        border-radius: 3px;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -4105,64 +4160,24 @@ tr>td {
         font-size: .9rem;
     }
 
+    #scheduleBtn {
+        border-radius: 3px;
+        font-size: 100%;
+    }
+
     #speechTitle {
         font-size: 1.2rem;
     }
 
     .modal-content {
-        width: 300px;
+        width: 100%;
+        padding: 15vh 5%;
     }
 
     .close {
-        display: block;
-        right: 0px;
-        left: 0px;
-        top: 10px;
-        margin: 0 auto;
-        border: 2px solid silver;
-        width: 30px;
-        border-radius: 0 0 50% 50%;
-        height: 30px;
-        line-height: 0.9;
-        text-align: center;
-        font-size: 2rem;
-        color: red;
+        right: 5%;
+        top: 5vh;
+        font-size: 3rem;
     }
 
-}
-
-@media screen and (max-width:700px) and (max-height:300px) {
-    #logo {
-        position: relative;
-        bottom: -24px;
-        left: 30px;
-        transform: rotate(-10deg);
-        z-index: 3;
-    }
-
-    .logo {
-        left: -105px;
-        fill: red;
-    }
-
-    #logo h1 {
-        width: 125px;
-        font-size: .5rem;
-    }
-
-    #logo div {
-        width: 30%;
-        height: 12px;
-        font-size: .5rem;
-        position: relative;
-        left: 27px;
-    }
-
-    #logoCir {
-        position: absolute;
-        bottom: -60px;
-        left: 20px;
-        width: 190px;
-        height: 100px;
-    }
 }
