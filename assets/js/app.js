@@ -123,14 +123,17 @@ const handleOffer = e => {
 
 handleOffer(class65)
 
+let syllabus = document.getElementById('syllabus');
+
 const showSyllabus = () => {
-    if (document.getElementById('syllabus').innerHTML.length) {
-        document.querySelector('#syllabus').style.transform = 'scaleY(0%)'
+
+    if (syllabus.innerHTML.length) {
+        syllabus.style.transform = 'scaleY(0%)'
         setTimeout(() => {
-            document.getElementById('syllabus').innerHTML = '';
+            syllabus.innerHTML = '';
         }, 1000);
     } else {
-        document.querySelector('#syllabus').innerHTML = `
+        syllabus.innerHTML = `
 
         <div>
         <h3>Data Analytics:</h3>
@@ -249,10 +252,9 @@ const showSyllabus = () => {
         </ul>
         </div>
     `;
-        document.querySelector('#syllabus').style.transform = 'scaleY(100%)';
+        syllabus.style.transform = 'scaleY(100%)';
     };
 };
-
 
 let body = document.body;
 let width = body.getClientRects()[0].width;

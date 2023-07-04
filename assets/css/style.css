@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     background-image: url('../images/bg1.png');
@@ -228,7 +229,6 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 95%;
-    max-width: 2000px;
     border-radius: 5px;
     border: 1px solid teal;
     background: linear-gradient(215deg, black 48%, teal 60%);
@@ -272,12 +272,10 @@ main {
     justify-content: space-between;
     justify-items: stretch;
     width: 95%;
-    max-width: 2000px;
     position: relative;
     z-index: 2;
     margin: 0 auto;
     overflow: auto;
-    height: 55vh;
 }
 
 main::-webkit-scrollbar {
@@ -289,7 +287,8 @@ main::-webkit-scrollbar {
     background: black;
     border: 1px solid teal;
     border-radius: 5px;
-    width: 45%;
+    width: 53%;
+    height: 54vh;
 }
 
 #carousel img {
@@ -309,6 +308,11 @@ main::-webkit-scrollbar {
     width: 20%;
     padding: 5px;
     overflow: hidden;
+    height: 53vh;
+}
+
+#offersDiv {
+    height: 55vh;
 }
 
 #switchBtn {
@@ -362,6 +366,7 @@ main::-webkit-scrollbar {
     color: white;
     width: 95%;
     margin: 0 auto;
+    font-size: 130%;
 }
 
 .type a {
@@ -375,7 +380,7 @@ main::-webkit-scrollbar {
     color: white;
     padding: 5px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 140%;
 }
 
 #text {
@@ -384,38 +389,32 @@ main::-webkit-scrollbar {
 
 #offersDiv {
     text-align: center;
-    width: 25%;
-    padding: 2%;
+    width: 20%;
     border-radius: 5px;
     background: black;
     color: white;
     border: 1px solid teal;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    justify-content: space-around;
+    padding: 1vh;
+    height: 52vh;
+    align-content: space-around;
 }
 
 #class35, #class65, #class300, #class550, #class1000 {
     display: flex;
     text-align: center;
-    font-size: 3vh;
+    font-size: 100%;
     font-weight: 600;
-}
-
-#class35, #class65, #class300, #class550, #class1000 {
-    display: flex;
-    text-align: center;
-    font-size: 3vh;
-    font-weight: 600;
-    width: 18%;
-    align-items: center;
-    height: 10%;
-    border-radius: 12px;
+    width: 15%;
+    height: 7%;
+    border-radius: 5px;
     border: 1px solid silver;
     justify-content: space-evenly;
     box-shadow: -3px -3px 1px silver;
     filter: contrast(0);
+    align-items: center;
 }
 
 #offersDiv button:hover {
@@ -424,19 +423,18 @@ main::-webkit-scrollbar {
 
 #scheduleBtn {
     width: 100%;
-    height: 10%;
-    border-radius: 12px;
+    border-radius: 5px;
     border: 1px solid silver;
     justify-content: space-evenly;
     box-shadow: -3px -3px 1px silver;
-    font-size: 2vmax;
+    font-size: 180%;
     font-weight: 900;
 }
 
 #offersDiv hr {
-    width: 100%;
+    width: 96%;
     background: silver;
-    height: 5px;
+    height: 0px;
     border-radius: 8px;
 }
 
@@ -447,12 +445,21 @@ table {
 tr>th {
     width: 25%;
     text-align-last: left;
+    padding-left: 10px;
+    font-size: 110%;
 }
 
 tr>td {
-    width: 18%;
+    width: 15%;
     font-size: 100%;
     white-space: normal;
+}
+
+input[type="radio"] {
+    
+height: 2vh;
+    
+width: 25%;
 }
 
 .class35 {
@@ -476,7 +483,6 @@ tr>td {
 .class1000 {
     accent-color: #5c0035;
 }
-
 
 .scheduleBtn {
     background: transparent;
@@ -552,11 +558,7 @@ tr>td {
     text-shadow: 0px 0px 5px black, -2px 2px 1px silver;
 }
 
-#scheduleBtnDiv {
-    width: 100%;
-    height: fit-content;
-    margin-top: 10px;
-}
+#scheduleBtnDiv {height: fit-content;width: 90%;}
 
 
 .myModal {
@@ -678,17 +680,7 @@ tr>td {
     }
 
     #offersDiv {
-        text-align: center;
         width: 22%;
-        padding: 1%;
-        border-radius: 5px;
-        background: black;
-        color: white;
-        border: 1px solid teal;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-content: space-evenly;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -701,12 +693,7 @@ tr>td {
         font-weight: 500;
     }
 
-    tr>th {
-        line-height: 27px;
-    }
-
     #scheduleBtn {
-        width: 90%;
         font-size: 150%;
         border-radius: 5px;
         box-shadow: -2px -2px 1px silver;
@@ -878,11 +865,10 @@ tr>td {
 
     #title {
         margin: 50px 2.3% 0px auto;
-        width: 73%;
+        width: 72.5%;
     }
 
     main {
-        height: 55vh;
         margin: 0 auto;
     }
 
@@ -905,27 +891,23 @@ tr>td {
 
     .type p {
         text-align: center;
-        font-size: 110%;
-    }
-
-    #offersDiv {
-        align-content: flex-start;
+        font-size: 85%;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        width: 16%;
+        width: 15%;
         height: 6%;
-        font-size: 80%;
-        margin: 0 5px;
+        font-size: 70%;
+        border-radius: 3px;
+    }
+
+    #offersDiv {
+        height: 51vh;
     }
 
     #offersDiv hr {
-        height: 2px;
-        margin-top: 15px;
-    }
-
-    tr>th {
-        line-height: 25px;
+        height: 0px;
+        margin-top: 5px;
     }
 
     tr>td {
@@ -933,18 +915,12 @@ tr>td {
     }
 
     input[type="radio"] {
-        height: 15px;
-        width: 15px;
-    }
-
-    #scheduleBtnDiv {
-        width: 100%;
-        height: fit-content;
-        margin-top: 20px;
+        height: 12px;
+        width: 12px;
     }
 
     #scheduleBtn {
-        font-size: 140%;
+        font-size: 120%;
     }
 
     .modal-content {
@@ -1072,8 +1048,6 @@ tr>td {
 
     #offersDiv {
         width: 22%;
-        justify-content: space-between;
-        padding: 20px;
     }
 
     #offersDiv hr {
@@ -1082,21 +1056,25 @@ tr>td {
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        font-size: 80%;
+        font-size: 70%;
         border-radius: 5px;
         height: 30px;
-        margin: -5px -10px 5px;
         font-weight: 600;
     }
 
     tr>th {
         width: 30%;
-        font-size: 100%;
-        line-height: 30px;
+        font-size: 90%;
     }
 
     tr>td {
-        width: 15%;
+        width: 12%;
+        line-height: 10px;
+    }
+
+    input[type="radio"] {
+        height: 3vh;
+        width: 40%;
     }
 
     #scheduleBtn {
@@ -1144,7 +1122,6 @@ tr>td {
     }
 
     main {
-        height: 45vh;
         margin: 0px auto;
     }
 
@@ -1158,10 +1135,6 @@ tr>td {
 
     .type button {
         font-size: 70%;
-    }
-
-    #offersDiv {
-        align-content: flex-start;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -1179,12 +1152,10 @@ tr>td {
 
     table th {
         font-size: 80%;
-        line-height: 0;
     }
 
     table td {
         font-size: 80%;
-        line-height: 0;
     }
 
     input[type="radio"] {
@@ -1222,7 +1193,6 @@ tr>td {
     }
 
     main {
-        height: 51vh;
         margin: 0 auto;
     }
 
@@ -1232,10 +1202,6 @@ tr>td {
 
     .type p {
         font-size: 70%;
-    }
-
-    #offersDiv {
-        width: 20%;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -1273,13 +1239,13 @@ tr>td {
     }
 
     #logoSvg {
-        left: -93px;
-        top: -9px;
+        left: -150px;
+        top: 5px;
     }
 
     #ship {
         left: 45px;
-        top: -60px;
+        top: -54px;
     }
 
     #links a, #links button {
@@ -1288,7 +1254,7 @@ tr>td {
     }
 
     #title {
-        margin: 100px auto 0 auto;
+        margin: 85px auto 0 auto;
         border-radius: 5px;
     }
 
@@ -1301,8 +1267,8 @@ tr>td {
     main {
         width: 95%;
         margin: 10px auto;
-        height: 70vh;
         flex-wrap: wrap;
+        height: 71vh;
     }
 
     #typeDiv {
@@ -1318,7 +1284,7 @@ tr>td {
 
     #carousel {
         order: 2;
-        height: 39vh;
+        height: 40vh;
         width: 55%;
         border-radius: 5px;
     }
@@ -1326,8 +1292,11 @@ tr>td {
     #offersDiv {
         order: 1;
         width: 38%;
-        height: 37vh;
-        align-content: flex-start;
+        height: 38vh;
+    }
+
+    #scheduleBtn {
+        font-size: 110%;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -1338,13 +1307,13 @@ tr>td {
         margin: 0 7px;
     }
 
-    tr>th {
-        line-height: 20px;
+    tr>td {
+        line-height: 5px;
     }
 
     #offersDiv hr {
         height: 0;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .modal-content {
@@ -1513,7 +1482,6 @@ tr>td {
 
     main {
         flex-wrap: wrap;
-        height: auto;
         margin: 15px auto;
     }
 
@@ -1671,7 +1639,6 @@ tr>td {
     #offersDiv {
         order: 3;
         height: 55vh;
-        padding: 10px 5px 3px;
         border-radius: 3px;
         width: 23%;
     }
@@ -1913,7 +1880,6 @@ tr>td {
 
     main {
         flex-wrap: wrap;
-        height: auto;
         margin: 0 auto;
     }
 
@@ -1964,9 +1930,6 @@ tr>td {
         order: 3;
         width: 23%;
         height: 52vh;
-        padding: 10px;
-        align-content: flex-start;
-        justify-content: space-between;
         border-radius: 5px;
     }
 
@@ -1986,13 +1949,8 @@ tr>td {
         margin: 2px 0;
     }
 
-    tr {
-        line-height: 10px;
-    }
-
     tr th {
         font-size: 75%;
-        line-height: 10px;
     }
 
     tr td {
@@ -2046,11 +2004,6 @@ tr>td {
         left: 30px;
         width: 350px;
         height: 175px;
-    }
-
-
-    main {
-        height: 55vh;
     }
 
     #typeDiv {
@@ -2195,7 +2148,6 @@ tr>td {
 
     main {
         margin: 0 auto;
-        height: 56vh;
     }
 
     #typeDiv {
@@ -2235,10 +2187,6 @@ tr>td {
         order: 3;
         width: 25%;
         height: auto;
-    }
-
-    tr {
-        line-height: 0;
     }
 
     tr th {
@@ -2441,7 +2389,6 @@ tr>td {
         height: 43vh;
         order: 3;
         width: 23%;
-        padding: 10px 15px 0;
     }
 
     #offersDiv hr {
@@ -2460,7 +2407,6 @@ tr>td {
 
     table th {
         font-size: 55%;
-        line-height: 0;
     }
 
     input[type="radio"] {
@@ -2699,7 +2645,6 @@ tr>td {
 
     #offersDiv {
         height: 44.3vh;
-        padding: 5px;
         border-radius: 3px;
     }
 
@@ -2720,12 +2665,10 @@ tr>td {
 
     table th {
         font-size: 45%;
-        line-height: 0;
     }
 
     tr td {
         width: 10%;
-        line-height: 5px;
     }
 
     input[type="radio"] {
@@ -2946,7 +2889,6 @@ tr>td {
 
     main {
         margin: 5px auto;
-        height: 60vh;
     }
 
     #typeDiv {
@@ -2990,8 +2932,6 @@ tr>td {
         order: 3;
         width: 23%;
         height: 50vh;
-        align-content: flex-start;
-        padding: 10px 10px 20px;
         border-radius: 5px;
     }
 
@@ -3089,7 +3029,6 @@ tr>td {
 
     main {
         margin: 0 auto;
-        height: auto;
     }
 
     #typeDiv {
@@ -3138,14 +3077,8 @@ tr>td {
         font-size: 45%;
     }
 
-    tr td {
-        line-height: 7px;
-    }
-
     #offersDiv {
         height: 40vh;
-        padding-top: 5px;
-        padding-bottom: 25px;
     }
 
     #scheduleBtnDiv {
@@ -3334,7 +3267,6 @@ tr>td {
     }
 
     #offersDiv {
-        align-content: flex-start;
         height: 35vh;
     }
 
@@ -3608,11 +3540,6 @@ tr>td {
     }
 
     main {
-        height: 60vh;
-        margin: 10px auto;
-    }
-
-    main {
         margin: 0px auto;
         width: 100%;
         flex-direction: row;
@@ -3662,9 +3589,7 @@ tr>td {
         order: 2;
         border-radius: 3px;
         border: 1px solid teal;
-        align-content: flex-start;
         height: 50%;
-        padding: 5px 15px 0px;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -3692,7 +3617,6 @@ tr>td {
         width: 25%;
         text-align-last: left;
         font-size: 70%;
-        line-height: 0px;
     }
 
     tr>td {
@@ -3843,7 +3767,6 @@ tr>td {
         margin: 0px auto;
         width: 100%;
         flex-direction: column;
-        height: unset;
     }
 
     #typeDiv {
