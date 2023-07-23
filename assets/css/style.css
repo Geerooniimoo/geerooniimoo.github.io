@@ -584,7 +584,7 @@ width: 25%;
 
 .modal {
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 4;
     left: 0;
     top: 0;
