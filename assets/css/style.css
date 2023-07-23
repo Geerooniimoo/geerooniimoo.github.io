@@ -596,6 +596,7 @@ width: 25%;
 }
 
 .modal-content {
+    position: absolute;
     width: 70%;
     padding: 15vh 15%;
     border-radius: 5px;
