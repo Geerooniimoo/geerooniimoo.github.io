@@ -10,7 +10,7 @@ const speech =
             title: 'U.S. Census Analysis Dashboard ',
             message: `How about if we obtain Census Data from a data bank like Kaggle and with the use of HTML, CSS and JavaScript libraries create an interactive website that would allows us to visually analyze correlation between location, obesity, income, helthcare, and smokers.`,
             images: ['D3-Projects.gif'],
-            website: 'https://analyticsandwebdevelopment.com/US-Census-Analysis-Dashboard/'
+            website: '/US-Census-Analysis-Dashboard/'
         },
         {
             title: 'Tableau',
@@ -28,7 +28,7 @@ const speech =
             title: 'Latitude & Weather Analysis',
             message: `Or how about obtaining current weather of hundreds of cities around the world to conduct your own study about the effect of latitude on the climate and then displaying it on your own interactive website.`,
             images: ['web_1.png', 'web_2.png'],
-            website: 'https://analyticsandwebdevelopment.com/Weather_And_Latitude_Analysis'
+            website: '/Weather_And_Latitude_Analysis'
         },
         {
             title: 'Employees Management Node Sql Js',
@@ -70,19 +70,19 @@ const speech =
             title: 'React Memory Game',
             message: `How about if we start by creating a single page react game application which reinforces memory power.  Which the objective of the game would be to click all images once as the change position in every click`,
             images: ['reactMemoryGame.png'],
-            website: 'https://analyticsandwebdevelopment.com/react-memory-game/'
+            website: '/react-memory-game/'
         },
         {
             title: 'GenPass',
             message: `It's difficult to keep creating passwords to secure all our electronic interactions and remembering them when you need them.  Imagine creating a password management solution.`,
             images: ['genPass1.png','genPass2.png','genPass3.png','genPass4.png','genPass5.png','genPass6.png'],
-            website: 'https://analyticsandwebdevelopment.com/Password-Generator/'
+            website: '/Password-Generator/'
         },
         {
             title: 'Spiritual Engineering',
             message: `How about if we strive for greatness and we provide the users more than a game.  We provide them with a spiritual experience like no other`,
             images: ['SpiritualEngineering.png'],
-            website: 'http://analyticsandwebdevelopment.com/SpiritualEngineering/'
+            website: '/SpiritualEngineering/'
         },
         {
             title: 'Node Team Builder',
@@ -100,7 +100,7 @@ const speech =
             title: 'Weather Dashboard',
             message: `Let's create an application that provides a weather dashboard from which you can obtain current weather conditions for any city and a five days forecast, all from a public API.  This includes the UV index with a numeric value and danger color scale.`,
             images: ['weather.png'],
-            website: ''
+            website: '/WeatherForecast'
         },
         {
             title: 'Mission to Jupiter',
@@ -130,7 +130,7 @@ const speech =
             title: 'React Portfolio',
             message: `Imagine creating a react portfolio that showcase some of your created applications and provides contact information`,
             images: ['portfolio1.png','portfolio2.png','portfolio3.png','portfolio4.png','portfolio5.png','portfolio6.png','portfolio7.png'],
-            website: 'https://analyticsandwebdevelopment.com/Portfolio/'
+            website: '/Portfolio/'
         },
         {
             title: 'LIRI a SIRI\'s simulation',
