@@ -31,6 +31,7 @@ function handleSpeech() {
         imgIndex < images.length
             ? (
                 clearTimeout(imgId),
+                document.querySelector('.caroImg').setAttribute('alt', `${images[imgIndex]}`),
                 document.querySelector('.caroImg').setAttribute('src', `./assets/images/${images[imgIndex]}`),
                 imgIndex++,
                 imgId = setTimeout(changeImg, 3000)
