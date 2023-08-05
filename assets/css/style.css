@@ -3681,12 +3681,12 @@ width: 25%;
         flex-wrap: wrap;
         position: unset;
         border-bottom: 2px solid darkgray;
-        border-radius: 16px;
+        /* border-radius: 16px; */
     }
 
     #co {
         width: 100%;
-        color: #0ca1a1;
+        color: lightseagreen;
         margin: 10px auto 0;
         padding: 5px;
         text-align: center;
