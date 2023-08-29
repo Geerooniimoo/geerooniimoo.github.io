@@ -10,7 +10,7 @@ const speech =
             title: 'Professional ReadMe Gen',
             message: `This application can help you generate profesional readme files for your projects`,
             images: ['mockup.png','mockup2.png','mockup3.png','mockup4.png','mockup5.png'],
-            website: '/Professional-ReadMe-Gen'
+            website: 'ProfessionalReadmeGenerator'
         },
         { 
             title: 'U.S. Census Analysis Dashboard ',
