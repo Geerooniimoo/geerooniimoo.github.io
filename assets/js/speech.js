@@ -7,6 +7,12 @@ const speech =
             website: ''
         },
         { 
+            title: 'Professional ReadMe Gen',
+            message: `This application can help you generate profesional readme files for your projects`,
+            images: ['mockup.png','mockup2.png','mockup3.png','mockup4.png','mockup5.png'],
+            website: '/Professional-ReadMe-Gen'
+        },
+        { 
             title: 'U.S. Census Analysis Dashboard ',
             message: `How about if we obtain Census Data from a data bank like Kaggle and with the use of HTML, CSS and JavaScript libraries create an interactive website that would allows us to visually analyze correlation between location, obesity, income, helthcare, and smokers.`,
             images: ['D3-Projects.gif'],
