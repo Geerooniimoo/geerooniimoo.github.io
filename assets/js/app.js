@@ -3,7 +3,19 @@ let imgId;
 let speechId;
 let speechIndex = 0;
 
+(() => localStorage.freeSession ? freeSessionDiv.style.display = 'none' : '')();
+
 handleSpeech();
+
+freeSession.onclick = () => {
+    myModal6.showModal();
+    freeSessionDiv.style.display = 'none';
+    localStorage.freeSession = true;
+}
+
+closeFree.onclick = () => {
+    freeSessionDiv.style.display = 'none';
+}
 
 function handleSpeech() {
     let imgIndex = 0;
