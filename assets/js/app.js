@@ -137,137 +137,170 @@ const handleOffer = e => {
 handleOffer(class65)
 
 let syllabus = document.getElementById('syllabus');
+     
+let showContent = id => {
 
-const showSyllabus = () => {
+    id == 'showSyllabus' ?
 
-    if (syllabus.innerHTML.length) {
-        syllabus.style.transform = 'scaleY(0%)'
-        setTimeout(() => {
-            syllabus.innerHTML = '';
-        }, 1000);
-    } else {
-        syllabus.innerHTML = `
+        (
+            syllabus.innerHTML = `
+                <div>
+                <h3>Data Analytics:</h3>
+                Intermediate Excel
+                <ul>
+                    <li> Pivot Tables</li>
+                    <li> VBA Scripting</li>
+                </ul>
+                Fundamental Statistics
+                <ul>
+                    <li> Modelling</li>
+                    <li> Forecast</li>
+                </ul>
+                Python Programming
+                <ul>
+                    <li> Python 3</li>
+                    <li> NumPy</li>
+                    <li> Pandas</li>
+                    <li> Matplotlib</li>
+                    <li> API Interactions</li>
+                </ul>
+                Databases
+                <ul>
+                    <li> Postgres/pgAdmin</li>
+                    <li> MongoDB</li>
+                    <li> (ETL) <br> Extract-Transform-Load</li>
+                </ul>
 
-        <div>
-        <h3>Data Analytics:</h3>
-        Intermediate Excel
-        <ul>
-            <li> Pivot Tables</li>
-            <li> VBA Scripting</li>
-        </ul>
-        Fundamental Statistics
-        <ul>
-            <li> Modelling</li>
-            <li> Forecast</li>
-        </ul>
-        Python Programming
-        <ul>
-            <li> Python 3</li>
-            <li> NumPy</li>
-            <li> Pandas</li>
-            <li> Matplotlib</li>
-            <li> API Interactions</li>
-        </ul>
-        Databases
-        <ul>
-            <li> Postgres/pgAdmin</li>
-            <li> MongoDB</li>
-            <li> (ETL) <br> Extract-Transform-Load</li>
-        </ul>
+                Front End Web Visualization
+                <ul>
+                    <li> HTML</li>
+                    <li> CSS</li>
+                    <li> Bootstrap</li>
+                    <li> Dashboarding</li>
+                    <li> JavaScript</li>
+                    <li> Geomapping with <br> JavaScript libraries</li>
+                </ul>
 
-        Front End Web Visualization
-        <ul>
-            <li> HTML</li>
-            <li> CSS</li>
-            <li> Bootstrap</li>
-            <li> Dashboarding</li>
-            <li> JavaScript</li>
-            <li> Geomapping with <br> JavaScript libraries</li>
-        </ul>
+                Business Intelligence Software
+                <ul>
+                    <li> Tableau</li>
+                </ul>
 
-        Business Intelligence Software
-        <ul>
-            <li> Tableau</li>
-        </ul>
+                Advanced Topics
+                <ul>
+                    <li> Big Data Analytics with Hadoop</li>
+                    <li> Amazon Web Services</li>
+                    <li> Machine Learning</li>
+                </ul>
 
-        Advanced Topics
-        <ul>
-            <li> Big Data Analytics with Hadoop</li>
-            <li> Amazon Web Services</li>
-            <li> Machine Learning</li>
-        </ul>
+                </div>
+                <div>
+                <h3>Web Developer:</h3>
+                Computer Science applied to JavaScript
+                <ul>
+                    <li> Design Patterns</li>
+                    <li> Data Structures</li>
+                    <li> Algorithms</li>
+                    <li> Big O Notation</li>
+                </ul>
 
-        </div>
-        <div>
-        <h3>Web Developer:</h3>
-        Computer Science applied to JavaScript
-        <ul>
-            <li> Design Patterns</li>
-            <li> Data Structures</li>
-            <li> Algorithms</li>
-            <li> Big O Notation</li>
-        </ul>
+                Browser Based Technologies
+                <ul>
+                    <li> HTML</li>
+                    <li> CSS</li>
+                    <li> JavaScript</li>
+                    <li> jQuery</li>
+                    <li> Responsive Design</li>
+                    <li> Bootstrap</li>
+                    <li> Handlebars</li>
+                    <li> Local Storage,<br> Session Storage, IndexedDB</li>
+                    <li> React.js</li>
+                </ul>
 
-        Browser Based Technologies
-        <ul>
-            <li> HTML</li>
-            <li> CSS</li>
-            <li> JavaScript</li>
-            <li> jQuery</li>
-            <li> Responsive Design</li>
-            <li> Bootstrap</li>
-            <li> Handlebars</li>
-            <li> Local Storage,<br> Session Storage, IndexedDB</li>
-            <li> React.js</li>
-        </ul>
+                Deployment
+                <ul>
+                    <li> Heroku</li>
+                    <li> Git</li>
+                </ul>
 
-        Deployment
-        <ul>
-            <li> Heroku</li>
-            <li> Git</li>
-        </ul>
+                Locally Popular MVC Framework
+                <ul>
+                    <li> C#/ASP.NET</li>
+                    <li> Python/Django</li>
+                    <li> Java/Spring</li>
+                    <li> PHP/Laravel</li>
+                </ul>
 
-        Locally Popular MVC Framework
-        <ul>
-            <li> C#/ASP.NET</li>
-            <li> Python/Django</li>
-            <li> Java/Spring</li>
-            <li> PHP/Laravel</li>
-        </ul>
+                Databases
+                <ul>
+                    <li> MySQL</li>
+                    <li> MongoDB</li>
+                </ul>
 
-        Databases
-        <ul>
-            <li> MySQL</li>
-            <li> MongoDB</li>
-        </ul>
+                Server-Side Development
+                <ul>
+                    <li> Express</li>
+                    <li> User Authentication</li>
+                    <li> Sequelize</li>
+                    <li> MERN Stack <br>(MongoDB, Express.js, <br> React.js, Node.js)</li>
+                </ul>
 
-        Server-Side Development
-        <ul>
-            <li> Express</li>
-            <li> User Authentication</li>
-            <li> Sequelize</li>
-            <li> MERN Stack <br>(MongoDB, Express.js, <br> React.js, Node.js)</li>
-        </ul>
+                Quality and Performance
+                <ul>
+                    <li> Unit Testing</li>
+                    <li> Google Lighthouse</li>
+                    <li> Webpack</li>
+                    <li> PWAs (Progressive Web Apps)</li>
+                    <li> Lazy Loading</li>
+                    <li> Service Workers</li>
+                </ul>
 
-        Quality and Performance
-        <ul>
-            <li> Unit Testing</li>
-            <li> Google Lighthouse</li>
-            <li> Webpack</li>
-            <li> PWAs (Progressive Web Apps)</li>
-            <li> Lazy Loading</li>
-            <li> Service Workers</li>
-        </ul>
+                Accessibility
+                <ul>
+                    <li> Semantic HTML</li>
+                </ul>
+                </div>`
+        ) :
 
-        Accessibility
-        <ul>
-            <li> Semantic HTML</li>
-        </ul>
-        </div>
-    `;
-        syllabus.style.transform = 'scaleY(100%)';
-    };
+        (
+            syllabus.innerHTML = `
+                <div style="display:flex;justify-content:space-around">
+                    <a target="_blank" href="https://AnalysisAndDevelopment.com/ProfessionalReadmeGenerator">
+                        <img style="width:300px;height:300px;margin:10px 20px;border-radius:12px" src="assets/images/mockup.png">
+                        <figcaption style="color:white;text-align:center">Professional ReadMe Generator</figcaption>
+                    </a>
+
+                    <a target="_blank" href="https://AnalysisAndDevelopment.com/Password-Generator">
+                        <img style="width:300px;height:300px;margin:10px 20px;border-radius:12px" src="assets/images/GenPass1.png">
+                        <figcaption style="color:white;text-align:center">Password Generator</figcaption>
+                    </a>
+
+                    <a target="_blank" href="https://AnalysisAndDevelopment.com/WeatherForecast">
+                        <img style="width:300px;height:300px;margin:10px 20px;border-radius:12px" src="assets/images/weather.png">
+                        <figcaption style="color:white;text-align:center">Weather Forecast</figcaption>
+                    </a>
+
+                </div>
+            
+            `
+        )
+                
+    syllabus.style.transform = 'scaleY(100%)'
 };
+
+
+const showThis = id => {
+
+    syllabus.innerHTML.length ? 
+        
+        (
+            syllabus.style.transform = 'scaleY(0%)',
+            setTimeout(() => {
+                syllabus.innerHTML = ''
+            }, 1000)
+        ) : showContent(id);
+};
+
 
 let body = document.body;
 let width = body.getClientRects()[0].width;

@@ -224,6 +224,9 @@ nav {
 
 #links {
     z-index: 4;
+    width: 70%;
+    display: flex;
+    justify-content: end;
 }
 
 #links a, #links button {
