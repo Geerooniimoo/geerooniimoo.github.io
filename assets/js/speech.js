@@ -2,7 +2,7 @@ const speech =
     [
         {
             title: 'Introduction',
-            message: `Here are some examples of the many things we can do together.<br><br>`,
+            message: `Learn Data Analysis and/or Full Stack Web Development at your own pace with help of a tutor.<br><br>`,
             images: ['leaflet-map1.png','plotly_1.png','bike4.png','jup_3.png','web_2.png','D3-Projects.gif','pandas-3.png','crudburger1.png','mars5.png','matplotlib_regression.png'],
             website: ''
         },
@@ -65,12 +65,6 @@ const speech =
             message: `Or what about creating a interative dashboard with JavaScript and D3JS library that allows us to analyze biodiversity very close to home, our belly button. How about if with the Python language we analyze financial data to obtain a summary of revenue fluctuations in which we can see the average revenue change, total gain or loss, greatest increase and greatest decrease.`,
             images: ['plotly_1.png'],
             website: ''
-        },
-        {
-            title: 'Professional ReadMe Generator',
-            message: 'We can also create an application that builds a professional readme file for any project.',
-            images: ['readme4.png','readme3.png','readme2.png','readme.png'],
-            webside: ''
         },
         {
             title: 'React Memory Game',
