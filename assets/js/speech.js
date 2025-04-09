@@ -2,7 +2,18 @@ const speech =
     [
         {
             title: 'Introduction',
-            message: `Learn Data Analysis and/or Full Stack Web Development at your own pace with help of a tutor.<br><br>`,
+            message: `
+            <h4>Stay Sharp on AI and AGI!</h4>
+            <p>Boost your knowledge of Artificial Intelligence and Artificial General Intelligence—schedule as many sessions with me as you need.</p>
+            <br>
+            <p>To get started:</p>
+            <ol>
+                <li>Head to the "Click To Sschedule" section.</li>
+                <li>Choose one of the five available packages by clicking any of the top buttons.</li>
+                <li>Then, click the "Click To Schedule" button at the bottom to lock in your spot.</li>
+            </ol>
+            <p>Let’s dive into AI together—at your pace, on your terms.</p>
+`,
             images: ['leaflet-map1.png','plotly_1.png','bike4.png','jup_3.png','web_2.png','D3-Projects.gif','pandas-3.png','crudburger1.png','mars5.png','matplotlib_regression.png'],
             website: ''
         },
