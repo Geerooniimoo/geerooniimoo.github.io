@@ -5,7 +5,6 @@ const speech =
             message: `
             <h4>Stay Sharp on AI and AGI!</h4>
             <p>Boost your knowledge of Artificial Intelligence and Artificial General Intelligence—schedule as many sessions with me as you need.</p>
-            <br>
             <p>To get started:</p>
             <ol>
                 <li>Head to the "Click To Sschedule" section.</li>
