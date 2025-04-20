@@ -783,7 +783,7 @@ tr>td {
     }
 }
 /* iPad Pro */
-@media screen and (max-width:1366px) and (max-height:1024px) {
+@media screen and (max-width:1370px) and (max-height:1025px) {
 
     #logoSvg {
         width: 320px;
@@ -1330,7 +1330,7 @@ tr>td {
     }
 
     #links a, #links button {
-        font-size: 90%;
+        font-size: 1.3rem;
     }
 
     #syllabus {
@@ -1356,8 +1356,12 @@ tr>td {
         font-size: 133%
     }
 
-    .type p {
-        font-size: 100%;
+    .type h4 {
+        margin: 10px;
+    }
+
+    .type p, .type ol {
+        font-size: .8rem;
     }
 
     #carousel {
@@ -1487,7 +1491,7 @@ tr>td {
 }
 
 /* iPad Pro*/
-@media screen and (max-width:1024px) and (max-height:1366px) {
+@media screen and (max-width:1025px) and (max-height:1370px) {
     nav {
         height: 5vh;
         border-bottom: 5px solid teal;
@@ -1629,7 +1633,7 @@ tr>td {
 
     #links a, #links button {
         margin: 0px 17px 0 0;
-        font-size: 1.2vmax;
+        font-size: 1.3rem;
         border-bottom: 3px solid #7d2626;
     }
 
@@ -1658,7 +1662,7 @@ tr>td {
         order: 2;
         width: 40%;
         padding: 15px;
-        height: 32vh;
+        height: 33.8vh;
     }
 
     input[type="radio"] {
@@ -1674,8 +1678,16 @@ tr>td {
         border-radius: 3px;
     }
 
-    .type p {
-        font-size: 100%;
+    #speechTitle {
+        font-size: 1.8rem;
+    }
+
+    .type h4 {
+        font-size: 1.2rem;
+    }
+
+    .type p, .type ol {
+        font-size: 1.2rem;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -1684,6 +1696,10 @@ tr>td {
         width: 16%;
         height: 8%;
         border-radius: 5px;
+    }
+
+    .modal-content {
+        padding: 10vh 2%;
     }
 
     .close {
@@ -1772,6 +1788,9 @@ tr>td {
     #class35, #class65, #class300, #class550, #class1000 {
         height: 21px;
         width: 17%;
+        display: flex;
+        justify-content: center;
+        font-size: 0.6rem;
     }
 
     #offersDiv hr {
@@ -2021,7 +2040,7 @@ tr>td {
 
 }
 
-/* Surface Pro 7, iPad Air */
+/* Surface Pro 7 */
 @media screen and (max-width:950px) and (max-height:1400px) {
     nav {
         height: 5vh;
@@ -2806,6 +2825,16 @@ tr>td {
         border-radius: 5px;
     }
 
+    #links a, #links button {
+        margin: 0px 17px 0 0;
+        font-size: 1rem;
+        border-bottom: 3px solid #7d2626;
+    }
+
+    #syllabus {
+        width: 90%;
+    }
+
     #syllabus div {
         border-radius: 10px;
     }
@@ -2826,6 +2855,10 @@ tr>td {
         order: 2;
         width: 45%;
         height: 30vh;
+    }
+
+    tr>th {
+        width: 21%;
     }
 
     tr>td {
@@ -2854,8 +2887,13 @@ tr>td {
         font-size: 185%;
     }
 
-    .type p {
-        font-size: 110%;
+    .type h4 {
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+
+    .type p, .type ol {
+        font-size: .9rem;
     }
 
     .modal-content {
