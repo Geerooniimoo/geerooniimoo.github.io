@@ -726,8 +726,12 @@ tr>td {
         font-size: 140%;
     }
 
-    .type p {
-        font-size: 100%;
+    .type h4 {
+        margin: 10px 5px;
+    }
+
+    .type p, .type ol {
+        font-size: 1rem;
     }
 
     #carousel {
@@ -802,13 +806,13 @@ tr>td {
     }
 
     #links a, #links button {
-        font-size: 1rem;
+        font-size: 1.5rem;
         border-bottom: 3px solid #7d2626;
     }
 
     #syllabus {
         margin: 10px auto;
-        width: 80%;
+        width: 60%;
     }
 
     #syllabus div {
@@ -2181,9 +2185,13 @@ tr>td {
         }
     }
 
+    #syllabus {
+        width: 85%;
+    }
+
     #links a, #links button {
         margin: 0px 17px 0 0;
-        font-size: 1vmax;
+        font-size: 1rem;
         border-bottom: 3px solid #7d2626;
     }
 
@@ -2199,6 +2207,14 @@ tr>td {
 
     .type {
         color: white;
+        font-size: 1rem;
+    }
+
+    .type h4 {
+        margin: 10px;
+    }
+
+    .type p, .type ol {
         font-size: 1rem;
     }
 
@@ -4072,7 +4088,7 @@ tr>td {
 
     #links a, #links button {
         margin: 0 5px;
-        font-size: 1.2vmax;
+        font-size: .7rem;
         border-bottom: 3px solid #7d2626;
         border-radius: 4px;
     }
