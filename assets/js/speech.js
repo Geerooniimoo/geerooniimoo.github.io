@@ -24,7 +24,7 @@ const speech =
         },
         { 
             title: 'U.S. Census Analysis Dashboard ',
-            message: `How about if we obtain Census Data from a data bank like Kaggle and with the use of HTML, CSS and JavaScript libraries create an interactive website that would allows us to visually analyze correlation between location, obesity, income, helthcare, and smokers.`,
+            message: `<p>How about if we obtain Census Data from a data bank like Kaggle and with the use of HTML, CSS and JavaScript libraries create an interactive website that would allows us to visually analyze correlation between location, obesity, income, helthcare, and smokers.</p>`,
             images: ['D3-Projects.gif'],
             website: '/US-Census-Analysis-Dashboard/'
         },
@@ -54,7 +54,7 @@ const speech =
         },
         {
             title: 'Schools Analysis',
-            message: `For example with the Python language and Pandas library we conduct an analysis of reginal schools' data to obtain an inside on school budget, school types, students count, passing averages of the math and reading scores to determine the difference between charter or district, inexpensive or expensive schools have on overall passing grades.`,
+            message: `<p>For example with the Python language and Pandas library we conduct an analysis of reginal schools' data to obtain an inside on school budget, school types, students count, passing averages of the math and reading scores to determine the difference between charter or district, inexpensive or expensive schools have on overall passing grades.</p>`,
             images: ['pandas-4.png', 'pandas-1.png', 'pandas-2.png', 'pandas-3.png'],
             website: ''
         },
@@ -72,7 +72,7 @@ const speech =
         },
         {
             title: 'Biodiversity',
-            message: `Or what about creating a interative dashboard with JavaScript and D3JS library that allows us to analyze biodiversity very close to home, our belly button. How about if with the Python language we analyze financial data to obtain a summary of revenue fluctuations in which we can see the average revenue change, total gain or loss, greatest increase and greatest decrease.`,
+            message: `<p>Or what about creating a interative dashboard with JavaScript and D3JS library that allows us to analyze biodiversity very close to home, our belly button. How about if with the Python language we analyze financial data to obtain a summary of revenue fluctuations in which we can see the average revenue change, total gain or loss, greatest increase and greatest decrease.</p>`,
             images: ['plotly_1.png'],
             website: ''
         },
@@ -144,7 +144,7 @@ const speech =
         },
         {
             title: 'LIRI a SIRI\'s simulation',
-            message: `How about if we create a backend application that similates Iphone's SIRI.  While SIRI is a speech interpretation and recognition interface, our app would be a language interpretation and recognition interface.  With the use NodeJS and a few APIs we would create command line app that would provide Spotify songs, concerts from Bands in Town, tweets from Twitter and movies from OMDB.`,
+            message: `<p>How about if we create a backend application that similates Iphone's SIRI.  While SIRI is a speech interpretation and recognition interface, our app would be a language interpretation and recognition interface.  With the use NodeJS and a few APIs we would create command line app that would provide Spotify songs, concerts from Bands in Town, tweets from Twitter and movies from OMDB.</p>`,
             images: ['liri1.png', 'liri2.png', 'liri3.png', 'liri4.png'],
             website: ''
         }
