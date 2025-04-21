@@ -21,7 +21,7 @@ function handleSpeech() {
     let imgIndex = 0;
     const { title, message, images, website } = speech[speechIndex];
     titleDiv.innerHTML = `<h1 id='speechTitle'>${title}</h1>`;
-    document.querySelector('.type').innerHTML = `<p>${message}</p>`;
+    document.querySelector('.type').innerHTML = `${message}`;
 
     images.length
         ? (
@@ -53,7 +53,6 @@ function handleSpeech() {
     };
 };
 
-
 document.getElementById('rewind').addEventListener('click', handleRewind);
 document.getElementById('forward').addEventListener('click', handleForward);
 
@@ -83,7 +82,6 @@ const handleModal = modal => {
 };
 
 const handleOffer = e => {
-
     ['#class35', '#class65', '#class300', '#class550', '#class1000']
         .forEach(e => {
             document.querySelector(e).style.filter = 'contrast(0)';
@@ -134,7 +132,7 @@ const handleOffer = e => {
 
 };
 
-handleOffer(class65)
+handleOffer(class300)
 
 let syllabus = document.getElementById('syllabus');
      
