@@ -902,7 +902,7 @@ tr>td {
 }
 
 /* Asus Zenbook Fold, Hub Max */
-@media screen and (max-width:1280px) and (max-height:853px) {
+@media screen and (max-width:1285px) and (max-height:860px) {
 
     #logoSvg {
         width: 320px;
@@ -921,12 +921,12 @@ tr>td {
     }
 
     #links a, #links button {
-        font-size: 90%;
+        font-size: 1.5rem;
     }
 
     #syllabus {
         margin: 10px auto;
-        width: 80%;
+        width: 70%;
     }
 
     #syllabus div {
@@ -947,8 +947,8 @@ tr>td {
         font-size: 133%
     }
 
-    .type p {
-        font-size: 100%;
+    .type p, .type ol {
+        font-size: .9rem;
     }
 
     #carousel {
@@ -1027,11 +1027,11 @@ tr>td {
 }
 
 /* Nest Hub Max */
-@media screen and (max-width:1280px) and (max-height:800px) {
+@media screen and (max-width:1285px) and (max-height:805px) {
 
     #links a, #links button {
         margin: 0 34px;
-        font-size: 1.2vmax;
+        font-size: 1.3rem;
     }
 
     #logoSvg {
@@ -1187,7 +1187,7 @@ tr>td {
 
     #syllabus {
         justify-content: space-between;
-        margin: 10px 120px 10px auto;
+        margin: 10px auto;
         width: 60%;
     }
 
@@ -1430,68 +1430,6 @@ tr>td {
         font-weight: 900;
     }
 
-}
-
-/* Nest Hub */
-@media screen and (max-width:1050px) and (max-height:600px) {
-
-    #title {
-        margin: 45px 2.3% 0px auto;
-        width: 73%;
-    }
-
-    #syllabus {
-        width: 70%;
-        margin-right: 25px;
-    }
-
-    #syllabus div {
-        width: 33%;
-        font-size: 100%;
-        padding: 0 10px;
-    }
-
-    main {
-        margin: 0 auto;
-    }
-
-    #speechTitle {
-        font-size: 160%;
-    }
-
-    .type p {
-        font-size: 70%;
-    }
-
-    #class35, #class65, #class300, #class550, #class1000 {
-        font-size: 60%;
-        border-radius: 3px;
-        height: 20px;
-        width: 16%;
-        box-shadow: -2px -2px 1px silver;
-    }
-
-    #offersDiv hr {
-        height: 0px;
-        margin-top: 10px;
-    }
-
-    tr>td {
-        line-height: 10px;
-    }
-
-    #scheduleBtnDiv {
-        width: 100%;
-        margin-top: 5px;
-    }
-
-    #scheduleBtn {
-        font-size: 100%;
-    }
-
-    .modal-content {
-        width: 60%;
-    }
 }
 
 /* iPad Pro*/
@@ -1822,30 +1760,35 @@ tr>td {
 }
 
 /* Nest Hub */
-@media screen and (max-width:1024px) and (max-height:600px) {
+@media screen and (max-width:1030px) and (max-height:610px) {
+
+    nav {
+        height: 10vh;
+        border-bottom: 5px solid teal;
+    }
 
     #logoSvg {
         width: 320px;
         height: 140px;
-        top: 15px;
+        top: -10px;
         left: -105px;
     }
 
     #ship {
         z-index: 3;
-        top: -40px;
-        left: 40px;
-        width: 360px;
-        height: 180px;
-        font-size: 94%;
+        top: -60px;
+        left: 30px;
+        width: 380px;
+        height: 190px;
+        font-size: 1.1rem;
     }
 
     #links a, #links button {
-        font-size: 90%;
+        font-size: 1.2rem;
     }
 
     #syllabus {
-        margin: 10px auto;
+        margin: 5px auto;
         width: 80%;
     }
 
@@ -1854,14 +1797,15 @@ tr>td {
     }
 
     #title {
-        border-radius: 5px;
+        margin: 70px 2.3% 0px auto;
+        width: 95%;
     }
 
     #typeDiv {
         order:1;
         border-radius: 5px;
         width: 20%;
-        height: 58vh;
+        height: 55vh;
     }
 
     #speechTitle {
@@ -1869,7 +1813,7 @@ tr>td {
     }
 
     .type h4 {
-        font-size: .9rem;
+        font-size: .8rem;
         margin-top: 0;
     }
 
@@ -1888,12 +1832,13 @@ tr>td {
         border: 1px solid teal;
         border-radius: 5px;
         width: 50%;
-        height: 60vh;
+        height: 56.5vh;
+        margin-bottom: 0;
     }
 
     #offersDiv {
         width: 22%;
-        height: 55vh;
+        height: 51.5vh;
     }
 
     #offersDiv hr {
@@ -1925,9 +1870,10 @@ tr>td {
     }
 
     #scheduleBtn {
-        font-size: 110%;
+        font-size: 0.9rem;
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
+        margin-top: 5px;
     }
     
     .modal-content {
@@ -2397,7 +2343,7 @@ tr>td {
         order: 3;
         height: 51vh;
         border-radius: 3px;
-        width: 23%;
+        width: 25%;
         padding: 15px 5px;
     }
 
