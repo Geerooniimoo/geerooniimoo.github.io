@@ -13,7 +13,7 @@ const speech =
             </ol>
             <p>Let’s dive into AI together—at your pace, on your terms.</p>
 `,
-            images: ['leaflet-map1.png','plotly_1.png','bike4.png','jup_3.png','web_2.png','D3-Projects.gif','pandas-3.png','crudburger1.png','mars5.png','matplotlib_regression.png'],
+            images: ['learnAnalyzeDevelop2.png','leaflet-map1.png','plotly_1.png','bike4.png','jup_3.png','web_2.png','pandas-3.png','crudburger1.png','mars5.png','matplotlib_regression.png','D3-Projects.gif'],
             website: ''
         },
         { 
@@ -31,7 +31,7 @@ const speech =
         {
             title: 'Tableau',
             message: `how about with Tableau, we can create detailed visualizations which proivdes a quick analysis into CitiBiki's data.`,
-            images: ['bike1.png', 'bike2.png', 'bike3.png', 'bike4.png', 'bike5.png', 'bike6.png'],
+            images: ['bike1.png', 'bike2.png', 'bike3.png', 'bike4.png', 'bike6.png'],
             website: 'https://public.tableau.com/app/profile/geronimo.augusto.perez/viz/GroveStationMostActiveDepartureTime/CitiBikeAnalysis?publish=yes'
         },
         {

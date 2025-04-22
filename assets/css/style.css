@@ -1014,18 +1014,6 @@ tr>td {
     }
 }
 
-@media screen and (max-width:1250px) and (max-height:850px) {
-    tr>th {
-        font-size: 100%;
-    }
-
-    #scheduleBtn {
-        font-size: 130%;
-        border-radius: 5px;
-        box-shadow: -2px -2px 1px silver;
-    }
-}
-
 /* Nest Hub Max */
 @media screen and (max-width:1285px) and (max-height:805px) {
 
@@ -1039,12 +1027,12 @@ tr>td {
         height: 140px;
         font-size: 85%;
         left: -120px;
-        top: 8px;
+        top: -5px;
     }
 
     #ship {
-        top: -50px;
-        left: 70px;
+        top: -58px;
+        left: 58px;
         width: 380px;
         height: 190px;
         font-size: 95%;
@@ -1263,20 +1251,22 @@ tr>td {
 
 }
 
-@media screen and (max-width:1280px) and (max-height:600px) {
+/* TV */
+@media screen and (max-width:1285px) and (max-height:605px) {
 
     #links a, #links button {
         margin: 0 30px 0 0;
+        font-size: 1.5rem;
     }
 
     #title {
-        margin: 100px 2.3% 0px auto;
-        width: 73%;
+        margin: 30px 2.3% 0px auto;
+        width: 68.9%;
     }
 
     #syllabus {
         justify-content: space-between;
-        margin: 10px 5px 10px auto;
+        margin: 0px 5px 10px auto;
         width: 75%;
     }
 
@@ -1284,16 +1274,56 @@ tr>td {
         margin: 0 auto;
     }
 
-    #titleDiv {
-        font-size: 0.6rem;
+    #typeDiv {
+        border-radius: 5px;
+        width: 25%;
+        height: 57vh;
     }
 
-    .type p {
-        font-size: .8rem;
+    .type p, .type ol {
+        font-size: .7rem;
+    }
+
+    #switchBtn {
+        position: absolute;
+        bottom: 10px;
+        height: 30px;
+        overflow: hidden;
+        display: flex;
+        width: 90%;
+        left: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #carousel {
+        overflow: hidden;
+        background: black;
+        border: 1px solid teal;
+        border-radius: 5px;
+        width: 50%;
+        height: 59vh;
+    }
+
+    #offersDiv {
+        height: 55.8vh;
+        padding: 9px;
     }
 
     .modal-content {
         width: 1000px;
+    }
+}
+
+@media screen and (max-width:1250px) and (max-height:850px) {
+    tr>th {
+        font-size: 100%;
+    }
+
+    #scheduleBtn {
+        font-size: 130%;
+        border-radius: 5px;
+        box-shadow: -2px -2px 1px silver;
     }
 }
 
@@ -1889,6 +1919,31 @@ tr>td {
         color: silver;
         font-size: 4rem;
         font-weight: 900;
+    }
+}
+
+/* TV2 */
+@media screen and (max-width:1030px) and (max-height:570px) {
+
+    .type p, .type ol {
+        font-size: 0.6rem;
+    }
+
+    #carousel {
+        overflow: hidden;
+        background: black;
+        border: 1px solid teal;
+        border-radius: 5px;
+        width: 50%;
+        height: 56.5vh;
+        margin-bottom: 0;
+        order: 2;
+    }
+    
+    #offersDiv {
+        width: 22%;
+        order: 3;
+        height: 53.8vh;
     }
 }
 
