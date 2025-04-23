@@ -649,6 +649,87 @@ tr>td {
     cursor: pointer;
 }
 
+/* Monitor */
+@media screen and (max-width:1930px) and (max-height:1090px) {
+
+    #logoSvg {
+        width: 400px;
+        height: 200px;
+        font-size: 100%;
+        text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -0.5px 0.5px 3px black;
+        font-weight: 900;
+        font-style: italic;
+        position: absolute;
+        top: -3px;
+        left: -60px;
+        z-index: 2;
+    }
+
+    #ship {
+        z-index: 3;
+        top: -69px;
+        left: 120px;
+        width: 500px;
+        height: 250px;
+        font-size: 1.5rem;
+        font-weight: 900;
+        font-style: italic;
+        position: absolute;
+        transform: translate(-4.5%, 3%) rotate(-12deg);
+        text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -0.5px 0.5px 3px black;
+    }
+
+    #speechTitle {
+        text-align: center;
+        font-size: 2rem;
+        color: cornflowerblue;
+        font-family: Abril Fatface, Arial, sans-serif;
+        margin: 5px;
+    }
+
+    #offersDiv h2 {
+        font-size: 2.5rem;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        text-align: center;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        width: 15%;
+        height: 8%;
+        border-radius: 5px;
+        border: 1px solid silver;
+        box-shadow: -3px -3px 1px silver;
+        align-items: center;
+    }
+
+    #scheduleBtn {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid silver;
+        justify-content: space-evenly;
+        box-shadow: -3px -3px 1px silver;
+        font-size: 1.5rem;
+        font-weight: 900;
+        padding: 5px;
+    }
+
+    .type {
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+
+    .type h4 {
+        margin: 10px;
+    }
+
+    .type p, .type ol {
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (max-width:1550px) and (max-height:800px) {
 
     #logoSvg {
@@ -1213,7 +1294,7 @@ tr>td {
     }
 
     #offersDiv {
-        height: 52uvh;
+        height: 52vh;
     }
 
     #offersDiv hr {
@@ -1325,6 +1406,66 @@ tr>td {
 
     #scheduleBtn {
         font-size: 130%;
+        border-radius: 5px;
+        box-shadow: -2px -2px 1px silver;
+    }
+}
+
+/* Surface 7 Pro */
+@media screen and (max-width:1220px) and (max-height:820px) {
+    #links a, #links button {
+        margin: 0 34px;
+        font-size: 1.2rem;
+    }
+
+    #speechTitle {
+        font-size: 131%;
+        margin-bottom: 0px;
+    }
+    
+    #typeDiv {
+        border-radius: 5px;
+        width: 25%;
+        height: 55vh;
+    }
+
+    .type {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    
+    .type p, .type ol {
+        font-size: 0.8rem;
+    }
+
+    #carousel {
+        overflow: hidden;
+        background: black;
+        border: 1px solid teal;
+        border-radius: 5px;
+        width: 50%;
+        height: 56.7vh;
+    }
+
+    #offersDiv {
+        height: 55vh;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.6rem;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        width: 16%;
+        height: 5vh;
+        font-size: 0.7rem;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #scheduleBtn {
+        font-size: 1.1rem;
         border-radius: 5px;
         box-shadow: -2px -2px 1px silver;
     }
