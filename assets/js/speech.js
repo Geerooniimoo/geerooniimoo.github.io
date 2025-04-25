@@ -11,16 +11,9 @@ const speech =
                 <li>Choose one of the five available packages by clicking any of the top buttons.</li>
                 <li>Then, click the "Click To Schedule" button at the bottom to lock in your spot.</li>
             </ol>
-            <p>Let’s dive into AI together—at your pace, on your terms.</p>
-`,
-            images: ['leaflet-map1.png','plotly_1.png','bike4.png','jup_3.png','web_2.png','D3-Projects.gif','pandas-3.png','crudburger1.png','mars5.png','matplotlib_regression.png'],
+            <p>Let’s dive into AI together—at your pace, on your terms.</p>`,
+            images: ['learnAnalyzeDevelop2.png','leaflet-map1.png','plotly_1.png','bike4.png','jup_3.png','web_2.png','pandas-3.png','crudburger1.png','mars5.png','matplotlib_regression.png','D3-Projects.gif'],
             website: ''
-        },
-        { 
-            title: 'Professional ReadMe Gen',
-            message: `This application can help you generate profesional readme files for your projects`,
-            images: ['mockup.png','mockup2.png','mockup3.png','mockup4.png','mockup5.png'],
-            website: 'ProfessionalReadmeGenerator'
         },
         { 
             title: 'U.S. Census Analysis Dashboard ',
@@ -29,9 +22,15 @@ const speech =
             website: '/US-Census-Analysis-Dashboard/'
         },
         {
+            title: 'Mission to Jupiter',
+            message: `Imagine automatically going to multiple NASA's websites and collecting information about Jupiter to store it on a SQL database and display it any way you like on your own website.`,
+            images: ['jup_2.png', 'jup_3.png'],
+            website: ''
+        },
+        {
             title: 'Tableau',
             message: `how about with Tableau, we can create detailed visualizations which proivdes a quick analysis into CitiBiki's data.`,
-            images: ['bike1.png', 'bike2.png', 'bike3.png', 'bike4.png', 'bike5.png', 'bike6.png'],
+            images: ['bike1.png', 'bike2.png', 'bike3.png', 'bike4.png', 'bike6.png'],
             website: 'https://public.tableau.com/app/profile/geronimo.augusto.perez/viz/GroveStationMostActiveDepartureTime/CitiBikeAnalysis?publish=yes'
         },
         {
@@ -113,21 +112,9 @@ const speech =
             website: '/WeatherForecast'
         },
         {
-            title: 'Mission to Jupiter',
-            message: `Imagine automatically going to multiple NASA's websites and collecting information about Jupiter to store it on a SQL database and display it any way you like on your own website.`,
-            images: ['jup_2.png', 'jup_3.png'],
-            website: ''
-        },
-        {
             title: 'SQL Data Management',
             message: `How about creating a full stack application that through a website securely manages a restaurant's data on an SQL Database server.`,
             images: ['crudburger1.png', 'crudburger1.png'],
-            website: ''
-        },
-        {
-            title: 'Mission to Mars',
-            message: `How about if we display the latest news and updates of the planet Mars by scrapping the latest images, news and weather information from NASA, Twitter, Space Facts and USGS websites.`,
-            images: ['mars2.png', 'mars3.png', 'mars4.png', 'mars5.png'],
             website: ''
         },
         {
@@ -147,5 +134,11 @@ const speech =
             message: `<p>How about if we create a backend application that similates Iphone's SIRI.  While SIRI is a speech interpretation and recognition interface, our app would be a language interpretation and recognition interface.  With the use NodeJS and a few APIs we would create command line app that would provide Spotify songs, concerts from Bands in Town, tweets from Twitter and movies from OMDB.</p>`,
             images: ['liri1.png', 'liri2.png', 'liri3.png', 'liri4.png'],
             website: ''
+        },
+        { 
+            title: 'Professional ReadMe Gen',
+            message: `This application can help you generate profesional readme files for your projects`,
+            images: ['mockup.png','mockup2.png','mockup3.png','mockup4.png','mockup5.png'],
+            website: 'ProfessionalReadmeGenerator'
         }
     ];

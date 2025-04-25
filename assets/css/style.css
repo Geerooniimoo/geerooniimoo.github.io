@@ -292,7 +292,6 @@ nav {
     color: white;
 }
 
-
 main {
     display: flex;
     justify-content: space-between;
@@ -429,6 +428,12 @@ main::-webkit-scrollbar {
     align-content: space-around;
 }
 
+#offersDiv h4 {
+    margin: 0;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
 #class35, #class65, #class300, #class550, #class1000 {
     text-align: center;
     font-size: 70%;
@@ -497,7 +502,6 @@ tr>td {
 .class550 {
     accent-color: #dc5e00;
 }
-
 
 .class1000 {
     accent-color: #5c0035;
@@ -582,7 +586,6 @@ tr>td {
     width: 90%;
 }
 
-
 .myModal {
     position: absolute;
     top: 0px;
@@ -644,6 +647,87 @@ tr>td {
     color: red;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Monitor */
+@media screen and (max-width:1930px) and (max-height:1090px) {
+
+    #logoSvg {
+        width: 400px;
+        height: 200px;
+        font-size: 100%;
+        text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -0.5px 0.5px 3px black;
+        font-weight: 900;
+        font-style: italic;
+        position: absolute;
+        top: -3px;
+        left: -60px;
+        z-index: 2;
+    }
+
+    #ship {
+        z-index: 3;
+        top: -69px;
+        left: 120px;
+        width: 500px;
+        height: 250px;
+        font-size: 1.5rem;
+        font-weight: 900;
+        font-style: italic;
+        position: absolute;
+        transform: translate(-4.5%, 3%) rotate(-12deg);
+        text-shadow: 0px 0px 1px black, -1px 1px 1px gray, -0.5px 0.5px 3px black;
+    }
+
+    #speechTitle {
+        text-align: center;
+        font-size: 2rem;
+        color: cornflowerblue;
+        font-family: Abril Fatface, Arial, sans-serif;
+        margin: 5px;
+    }
+
+    #offersDiv h2 {
+        font-size: 2.5rem;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        text-align: center;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        width: 15%;
+        height: 8%;
+        border-radius: 5px;
+        border: 1px solid silver;
+        box-shadow: -3px -3px 1px silver;
+        align-items: center;
+    }
+
+    #scheduleBtn {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid silver;
+        justify-content: space-evenly;
+        box-shadow: -3px -3px 1px silver;
+        font-size: 1.5rem;
+        font-weight: 900;
+        padding: 5px;
+    }
+
+    .type {
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+
+    .type h4 {
+        margin: 10px;
+    }
+
+    .type p, .type ol {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width:1550px) and (max-height:800px) {
@@ -786,27 +870,28 @@ tr>td {
         top: 10%;
     }
 }
+
 /* iPad Pro */
-@media screen and (max-width:1370px) and (max-height:1025px) {
+@media screen and (max-width:1367px) and (max-height:1025px) {
 
     #logoSvg {
-        width: 320px;
-        height: 140px;
-        top: 15px;
-        left: -105px;
+        width: 450px;
+        height: 210px;
+        top: -4px;
+        left: -165px;
     }
 
     #ship {
         z-index: 3;
-        top: -40px;
-        left: 40px;
-        width: 360px;
-        height: 180px;
-        font-size: 94%;
+        top: -81px;
+        left: 35px;
+        width: 550px;
+        height: 275px;
+        font-size: 1.7rem;
     }
 
     #links a, #links button {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         border-bottom: 3px solid #7d2626;
     }
 
@@ -820,12 +905,18 @@ tr>td {
     }
 
     #title {
+        margin: 110px auto 0 auto;
+        display: flex;
+        justify-content: space-around;
+        width: 95%;
         border-radius: 5px;
+        border: 1px solid teal;
+        background: linear-gradient(215deg, black 48%, teal 60%);
     }
 
     #typeDiv {
         border-radius: 5px;
-        width: 20%;
+        width: 23%;
         height: 49vh;
     }
 
@@ -833,8 +924,8 @@ tr>td {
         font-size: 133%
     }
 
-    .type p {
-        font-size: 100%;
+    .type p, .type ol {
+        font-size: 1rem;
     }
 
     #carousel {
@@ -850,15 +941,20 @@ tr>td {
         width: 22%;
     }
 
+    #offersDiv h2 {
+        font-size: 2.2rem;
+        margin: 0;
+    }
+
     #offersDiv hr {
         width: 100%;
         height: 2px;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        font-size: 60%;
+        font-size: 0.8rem;
         border-radius: 5px;
-        height: 30px;
+        height: 40px;
         font-weight: 600;
         padding-left: 3px;
     }
@@ -883,7 +979,7 @@ tr>td {
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
     }
-    
+
     .modal-content {
         height: 100vh;
         width: 85%;
@@ -997,7 +1093,7 @@ tr>td {
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
     }
-    
+
     .modal-content {
         height: 100vh;
         width: 85%;
@@ -1014,18 +1110,6 @@ tr>td {
     }
 }
 
-@media screen and (max-width:1250px) and (max-height:850px) {
-    tr>th {
-        font-size: 100%;
-    }
-
-    #scheduleBtn {
-        font-size: 130%;
-        border-radius: 5px;
-        box-shadow: -2px -2px 1px silver;
-    }
-}
-
 /* Nest Hub Max */
 @media screen and (max-width:1285px) and (max-height:805px) {
 
@@ -1039,12 +1123,12 @@ tr>td {
         height: 140px;
         font-size: 85%;
         left: -120px;
-        top: 8px;
+        top: -5px;
     }
 
     #ship {
-        top: -50px;
-        left: 70px;
+        top: -58px;
+        left: 58px;
         width: 380px;
         height: 190px;
         font-size: 95%;
@@ -1079,7 +1163,6 @@ tr>td {
         80% {
             opacity: .2;
         }
-
     }
 
     #asteroid {
@@ -1202,27 +1285,35 @@ tr>td {
         margin-bottom: 10px;
     }
 
+    .type {
+        padding: 0px;
+        font-size: 1.2rem;
+    }
+
     .type h4 {
         margin-top: 0;
     }
 
-    .type p {
-        font-size: .9rem;
-    }
-
-    .type ol {
+    .type p, .type ol {
         font-size: .9rem;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        width: 15%;
-        height: 6%;
-        font-size: 70%;
+        width: 16%;
+        height: 10%;
+        font-size: 0.8rem;
         border-radius: 3px;
+        display: flex;
+        justify-content: center;
     }
 
     #offersDiv {
-        height: 52uvh;
+        height: 48.7vh;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.8rem;
+        margin: 10px auto 0;
     }
 
     #offersDiv hr {
@@ -1263,20 +1354,22 @@ tr>td {
 
 }
 
-@media screen and (max-width:1280px) and (max-height:600px) {
+/* TV */
+@media screen and (max-width:1285px) and (max-height:605px) {
 
     #links a, #links button {
         margin: 0 30px 0 0;
+        font-size: 1.5rem;
     }
 
     #title {
-        margin: 100px 2.3% 0px auto;
-        width: 73%;
+        margin: 30px 2.3% 0px auto;
+        width: 68.9%;
     }
 
     #syllabus {
         justify-content: space-between;
-        margin: 10px 5px 10px auto;
+        margin: 0px 5px 10px auto;
         width: 75%;
     }
 
@@ -1284,16 +1377,116 @@ tr>td {
         margin: 0 auto;
     }
 
-    #titleDiv {
-        font-size: 0.6rem;
+    #typeDiv {
+        border-radius: 5px;
+        width: 25%;
+        height: 57vh;
     }
 
-    .type p {
-        font-size: .8rem;
+    .type p, .type ol {
+        font-size: .7rem;
+    }
+
+    #switchBtn {
+        position: absolute;
+        bottom: 10px;
+        height: 30px;
+        overflow: hidden;
+        display: flex;
+        width: 90%;
+        left: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #carousel {
+        overflow: hidden;
+        background: black;
+        border: 1px solid teal;
+        border-radius: 5px;
+        width: 50%;
+        height: 59vh;
+    }
+
+    #offersDiv {
+        height: 55.8vh;
+        padding: 9px;
     }
 
     .modal-content {
         width: 1000px;
+    }
+}
+
+@media screen and (max-width:1250px) and (max-height:850px) {
+    tr>th {
+        font-size: 100%;
+    }
+
+    #scheduleBtn {
+        font-size: 130%;
+        border-radius: 5px;
+        box-shadow: -2px -2px 1px silver;
+    }
+}
+
+/* Surface Pro 7 */
+@media screen and (max-width:1220px) and (max-height:820px) {
+    #links a, #links button {
+        margin: 0 34px;
+        font-size: 1.2rem;
+    }
+
+    #speechTitle {
+        font-size: 131%;
+        margin-bottom: 0px;
+    }
+
+    #typeDiv {
+        border-radius: 5px;
+        width: 25%;
+        height: 55vh;
+    }
+
+    .type {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .type p, .type ol {
+        font-size: 0.8rem;
+    }
+
+    #carousel {
+        overflow: hidden;
+        background: black;
+        border: 1px solid teal;
+        border-radius: 5px;
+        width: 50%;
+        height: 56.7vh;
+    }
+
+    #offersDiv {
+        height: 55vh;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.6rem;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        width: 16%;
+        height: 5vh;
+        font-size: 0.7rem;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #scheduleBtn {
+        font-size: 1.1rem;
+        border-radius: 5px;
+        box-shadow: -2px -2px 1px silver;
     }
 }
 
@@ -1334,7 +1527,7 @@ tr>td {
     }
 
     #links a, #links button {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     #syllabus {
@@ -1352,7 +1545,7 @@ tr>td {
 
     #typeDiv {
         border-radius: 5px;
-        width: 20%;
+        width: 23%;
         height: 49vh;
     }
 
@@ -1360,8 +1553,14 @@ tr>td {
         font-size: 133%
     }
 
+    .type {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
     .type h4 {
         margin: 10px;
+        font-size: 1rem;
     }
 
     .type p, .type ol {
@@ -1378,7 +1577,12 @@ tr>td {
     }
 
     #offersDiv {
-        width: 22%;
+        height: 48vh;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.6rem;
+        margin: 0;
     }
 
     #offersDiv hr {
@@ -1414,7 +1618,7 @@ tr>td {
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
     }
-    
+
     .modal-content {
         height: 100vh;
         width: 85%;
@@ -1583,6 +1787,7 @@ tr>td {
         margin: 30px 25px 0 auto;
         width: 70%;
     }
+
     main {
         flex-wrap: wrap;
         margin: 0px auto;
@@ -1607,12 +1812,17 @@ tr>td {
         height: 33.8vh;
     }
 
+    #offersDiv h2 {
+        font-size: 2.7rem;
+        margin: 0;
+    }
+
     input[type="radio"] {
         height: 1vh;
     }
 
     #typeDiv {
-        order: 3;
+        order: 2;
         width: 50%;
         margin-top: 0;
         padding-bottom: 5px;
@@ -1636,8 +1846,19 @@ tr>td {
         font-size: 90%;
         font-weight: 900;
         width: 16%;
-        height: 8%;
+        height: 10%;
         border-radius: 5px;
+    }
+
+    #scheduleBtn {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid silver;
+        justify-content: space-evenly;
+        box-shadow: -3px -3px 1px silver;
+        font-size: 1.5rem;
+        font-weight: 900;
+        height: 2.5rem;
     }
 
     .modal-content {
@@ -1657,11 +1878,24 @@ tr>td {
 /* iPad Mini */
 @media screen and (max-width:1024px) and (max-height:770px) {
 
+    nav {
+        height: 10vh;
+        border-bottom: 5px solid teal;
+    }
+
     #logoSvg {
-        top: -45px;
+        top: -5px;
         left: -150px;
         height: 170px;
         width: 430px;
+    }
+
+    #ship {
+        top: -66px;
+        left: 35px;
+        width: 450px;
+        height: 225px;
+        font-size: 1.4rem;
     }
 
     #links a, #links button {
@@ -1693,13 +1927,22 @@ tr>td {
     }
 
     #typeDiv {
-        height: 50.5vh;
+        height: 48vh;
         width: 25%;
         order: 1;
     }
 
-    .type p {
-        font-size: 75%;
+    .type {
+        padding: 0 5px;
+    }
+
+    .type h4 {
+        font-size: .9rem;
+        margin: 5px;
+    }
+
+    .type p, .type ol {
+        font-size: .8rem;
     }
 
     .type button {
@@ -1717,26 +1960,28 @@ tr>td {
         border: 1px solid teal;
         border-radius: 5px;
         width: 40%;
-        height: 52vh;
+        height: 49vh;
     }
 
     #offersDiv {
         order: 2;
         width: 25%;
         padding: 15px;
-        height: 48.5vh;
+        height: 45vh;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        height: 21px;
+        height: 35px;
         width: 17%;
         display: flex;
         justify-content: center;
         font-size: 0.6rem;
+        margin: 0px auto;
     }
 
-    #offersDiv hr {
-        height: 0px;
+    #offersDiv h2 {
+        font-size: 2rem;
+        margin: 0;
     }
 
     table th {
@@ -1745,6 +1990,17 @@ tr>td {
 
     input[type="radio"] {
         height: 12px;
+    }
+
+    #scheduleBtn {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid silver;
+        justify-content: space-evenly;
+        box-shadow: -3px -3px 1px silver;
+        font-size: 1.3rem;
+        font-weight: 900;
+        height: 2.5rem;
     }
 
     .modal-content {
@@ -1802,7 +2058,7 @@ tr>td {
     }
 
     #typeDiv {
-        order:1;
+        order: 1;
         border-radius: 5px;
         width: 20%;
         height: 55vh;
@@ -1841,6 +2097,11 @@ tr>td {
         height: 51.5vh;
     }
 
+    #offersDiv h2 {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
     #offersDiv hr {
         width: 100%;
         height: 2px;
@@ -1870,12 +2131,12 @@ tr>td {
     }
 
     #scheduleBtn {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
         margin-top: 5px;
     }
-    
+
     .modal-content {
         height: 100vh;
         width: 85%;
@@ -1889,6 +2150,31 @@ tr>td {
         color: silver;
         font-size: 4rem;
         font-weight: 900;
+    }
+}
+
+/* TV2 */
+@media screen and (max-width:1030px) and (max-height:570px) {
+
+    .type p, .type ol {
+        font-size: 0.6rem;
+    }
+
+    #carousel {
+        overflow: hidden;
+        background: black;
+        border: 1px solid teal;
+        border-radius: 5px;
+        width: 50%;
+        height: 56.5vh;
+        margin-bottom: 0;
+        order: 2;
+    }
+
+    #offersDiv {
+        width: 22%;
+        order: 3;
+        height: 53.8vh;
     }
 }
 
@@ -1987,6 +2273,75 @@ tr>td {
         right: 10%;
         top: 5vh;
     }
+
+}
+
+/* Half Monitor */
+@media screen and (max-width:970px) and (max-height:980px) {
+    #links a, #links button {
+        margin: 0 20px 0 0;
+        font-size: 1.2rem;
+    }
+
+    #title {
+        margin: 30px 20px 0px auto;
+        border-radius: 5px;
+        width: 75%;
+    }
+
+    #syllabus {
+        margin: 0px 8% 5px auto;
+        width: 60%;
+    }
+
+    main {
+        width: 95%;
+        margin: 10px auto;
+        flex-wrap: wrap;
+        height: 77vh;
+    }
+
+    #carousel {
+        order: 1;
+        height: 40vh;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+
+    #typeDiv {
+        order: 2;
+        width: 52%;
+        height: 32.2vh;
+        border-radius: 5px;
+    }
+
+    .type h4 {
+        font-size: 1rem;
+        margin: 0px 5px 5px;
+    }
+
+    .type p, .type ol {
+        font-size: 0.9rem;
+    }
+
+    #syllabus {
+        margin: 0px 8% 5px auto;
+        width: 60%;
+    }
+
+    #offersDiv {
+        order: 3;
+        width: 40%;
+        height: 31.3vh;
+        padding-top: 3px;
+    }
+
+    #offersDiv h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
 
 }
 
@@ -2182,7 +2537,7 @@ tr>td {
     }
 
     #typeDiv {
-        order: 3;
+        order: 2;
         width: 45%;
         margin-top: 0;
         padding-bottom: 70px;
@@ -2390,8 +2745,10 @@ tr>td {
     #scheduleBtn {
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
-        line-height: 1;
-        font-size: 0.7rem;
+        line-height: 0;
+        font-size: 1rem;
+        height: 1.5rem;
+        margin-top: 2px;
     }
 
     .modal-content {
@@ -2407,6 +2764,48 @@ tr>td {
     .calendly-inline-widget {
         height: 80vh !important;
         ;
+    }
+}
+
+/* iPhone Pro Max */
+@media screen and (max-width:935px) and (max-height:435px) {
+
+    #speechTitle {
+        font-size: 1rem;
+    }
+
+    .type {
+        font-size: .7rem;
+        padding: 5px;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.5rem;
+        margin: 0 auto 5px;
+    }
+}
+
+/* Pixel 7 */
+@media screen and (max-width:920px) and (max-height:415px) {
+
+    .type p, .type ol {
+        font-size: .5rem;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        height: 12%;
+        margin: 5px 4px;
+        font-size: 60%;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        border-radius: 5px;
+        box-shadow: -2px -2px 1px silver;
+    }
+
+    #scheduleBtnDiv {
+        width: 90%;
+        margin: 0px auto;
     }
 }
 
@@ -2600,7 +2999,11 @@ tr>td {
     }
 
     #speechTitle {
-        font-size: 190%;
+        font-size: 1rem;
+    }
+
+    .type {
+        padding: 0 5px;
     }
 
     .type p {
@@ -2637,8 +3040,14 @@ tr>td {
     #offersDiv {
         order: 3;
         width: 23%;
-        height: 51vh;
+        height: 56vh;
         border-radius: 5px;
+        padding: 5px;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.5rem;
+        margin: 0 auto;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -2651,12 +3060,7 @@ tr>td {
         height: 8%;
         border-radius: 3px;
         margin-bottom: 5px;
-        margin: 0px 0px 5px;
-    }
-
-    #offersDiv hr {
-        height: 0;
-        margin: 2px 0;
+        margin: 5px 0px 5px;
     }
 
     tr th {
@@ -2674,11 +3078,11 @@ tr>td {
 
     #scheduleBtnDiv {
         width: 90%;
-        margin: 5px auto 0;
+        margin: 0px auto;
     }
 
     #scheduleBtn {
-        height: 3%;
+        height: 1.5rem;
         font-size: 75%;
         border-radius: 3px;
     }
@@ -2761,7 +3165,20 @@ tr>td {
         border-radius: 5px;
     }
 
-    .close {}
+}
+
+/* Asus ZenBook Fold */
+@media Screen and (max-width:860px) and (max-height:1285px) {
+
+    #typeDiv {
+        order: 2;
+        width: 45%;
+        margin-top: 0;
+        padding-bottom: 70px;
+        height: 31.8vh;
+        border-radius: 3px;
+    }
+
 }
 
 /* iPad Air */
@@ -2819,6 +3236,21 @@ tr>td {
         height: 30vh;
     }
 
+    #offersDiv h2 {
+        font-size: 2.6rem;
+        margin: 0;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        font-weight: 900;
+        width: 16%;
+        height: 12%;
+        border-radius: 5px;
+    }
+
     tr>th {
         width: 21%;
     }
@@ -2837,7 +3269,7 @@ tr>td {
     }
 
     #typeDiv {
-        order: 3;
+        order: 2;
         width: 45%;
         padding-bottom: 70px;
         height: 26.6vh;
@@ -2908,10 +3340,15 @@ tr>td {
     }
 
     #speechTitle {
-        font-size: 170%;
+        font-size: 1rem;
     }
 
-    .type p {
+    .type h4 {
+        font-size: .8rem;
+        margin: 5px;
+    }
+
+    .type p, .type ol {
         font-size: .5rem;
     }
 
@@ -2935,7 +3372,22 @@ tr>td {
     #offersDiv {
         order: 3;
         width: 25%;
-        height: 49vh;
+        height: 55vh;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        font-size: 0.5rem;
+        display: flex;
+        justify-content: center;
+        font-weight: 900;
+        width: 16%;
+        height: 12%;
+        border-radius: 5px;
     }
 
     tr th {
@@ -3021,6 +3473,11 @@ tr>td {
         height: 35vh;
     }
 
+    #offersDiv h2 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
     tr>td {
         line-height: 0;
     }
@@ -3032,6 +3489,7 @@ tr>td {
 
     #typeDiv {
         height: 30.5vh;
+        order: 2;
     }
 
     #speechTitle {
@@ -3042,16 +3500,18 @@ tr>td {
         font-size: 150%;
     }
 
+    .type {
+        color: white;
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+
     .type h4 {
         font-size: 1rem;
-        margin: 10px 5px;
+        margin: 5px;
     }
 
-    .type p {
-        font-size: 1rem;
-    }
-
-    .type ol {
+    .type p, .type ol {
         font-size: .9rem;
     }
 
@@ -3170,9 +3630,14 @@ tr>td {
     }
 
     #offersDiv {
-        height: 39.8vh;
+        height: 42vh;
         order: 3;
         width: 23%;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.2rem;
+        margin: 5px auto 0;
     }
 
     #offersDiv hr {
@@ -3187,7 +3652,7 @@ tr>td {
         margin: 0 -10px;
         font-size: 50%;
         width: 16%;
-        height: 6%;
+        height: 10%;
         margin: unset;
     }
 
@@ -3207,9 +3672,12 @@ tr>td {
     }
 
     #scheduleBtn {
-        font-size: 70%;
+        font-size: 0.8rem;
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
+        height: 1.4rem;
+        padding: 0;
+        margin: 5px auto 0;
     }
 
     .modal-content {
@@ -3403,18 +3871,19 @@ tr>td {
     }
 
     #speechTitle {
-        font-size: 140%;
+        font-size: .9rem;
         margin: 0;
     }
 
-    .type p {
+    .type {
+        padding: 0;
+    }
+
+    .type p, .type ol {
         font-size: 0.4rem;
         margin-bottom: 0px;
     }
 
-    .type ol {
-        font-size: .4rem;
-    }
     .type h4 {
         font-size: .6rem;
         margin: 0 0 5px;
@@ -3447,7 +3916,12 @@ tr>td {
         width: 25%;
         padding: 5px;
     }
-    
+
+    #offersDiv h2 {
+        font-size: 1.2rem;
+        margin: 0 auto;
+    }
+
     #class35, #class65, #class300, #class550, #class1000 {
         font-size: 50%;
         font-weight: 600;
@@ -3456,11 +3930,6 @@ tr>td {
         border-radius: 3px;
         margin: 2px 0 0;
         box-shadow: -1px -1px 1px silver;
-    }
-
-    #offersDiv hr {
-        height: 0px;
-        margin-top: 3px;
     }
 
     table th {
@@ -3502,9 +3971,139 @@ tr>td {
     }
 }
 
+/* Galaxy Fold */
+@media screen and (max-width:890px) and (max-height:350px) {
+    nav {
+        height: 15vh;
+        border-bottom: 2px solid teal;
+    }
+
+    #logoSvg {
+        top: 7px;
+        height: 70px;
+    }
+
+    #ship {
+        left: 38px;
+        top: -51px;
+        width: 300px;
+        height: 150px;
+        font-size: .9rem;
+    }
+
+    #title {
+        width: 70.5%;
+        border-radius: 3px;
+        margin: 22px 2.3% 0px auto;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+
+    #typeDiv {
+        order: 1;
+        margin: 0;
+        width: 23%;
+        padding: 0px;
+        height: 50vh;
+        border-radius: 3px;
+    }
+
+    #titleDiv {
+        font-size: 0.5rem;
+        margin: 0px;
+    }
+
+    #speechTitle {
+        font-size: 0.7rem;
+        margin: 5px auto 0px;
+    }
+
+    .type {
+        font-size: .5rem;
+        padding: 5px;
+    }
+
+    .type p, .type ol {
+        font-size: .4rem;
+    }
+
+    #switchBtn {
+        height: 20px;
+    }
+
+    #rewind, #forward {
+        width: 48%;
+        background: black;
+        color: white;
+        border: 1px solid teal;
+        font-size: 1rem;
+        height: 20px;
+    }
+
+    #carousel {
+        height: 50vh;
+        width: 47%;
+        border-radius: 3px;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        border-radius: 3px;
+        /* margin: 0 -2px 5px; */
+        box-shadow: -1px -1px 1px silver;
+        font-size: 35%;
+        height: 10%;
+    }
+
+    input[type="radio"] {
+        height: 2vh;
+        width: 29%;
+    }
+
+    #offersDiv {
+        height: 47vh;
+        border-radius: 3px;
+    }
+
+    #offersDiv hr {
+        height: 0;
+        margin: 0;
+    }
+
+    tr>th {
+        font-size: 45%;
+        line-height: .6;
+    }
+
+    tr>td {
+        width: 5%;
+        padding: 0;
+    }
+
+    #scheduleBtnDiv {
+        margin-top: 0px;
+    }
+
+    #scheduleBtn {
+        width: 90%;
+        font-size: 52%;
+        border-radius: 3px;
+        box-shadow: -1px -1px 1px silver;
+    }
+
+    .modal-content {
+        /* top: 5vh; */
+    }
+
+    .close {
+        right: 5%;
+        top: 0vh;
+    }
+}
+
 /* iPhone SE */
 @media screen and (max-width:700px) and (max-height:400px) {
-
 
     body {
         height: 99%;
@@ -3685,7 +4284,7 @@ tr>td {
 
     #title {
         margin: 30px 2.3% 0px auto;
-        width: 70%;
+        width: 68.8%;
         border-radius: 5px;
     }
 
@@ -3706,9 +4305,15 @@ tr>td {
         font-size: .7rem;
     }
 
+    .type {
+        font-size: .6rem;
+        margin-top: 0px;
+        padding: 5px;
+    }
+
     .type h4 {
         font-size: .55rem;
-        margin: 0 0 5px;
+        margin: 0px;
     }
 
     .type p {
@@ -3749,8 +4354,12 @@ tr>td {
     #offersDiv {
         order: 3;
         width: 23%;
-        height: 49vh;
+        height: 54.5vh;
         border-radius: 5px;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.1rem;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -3764,11 +4373,6 @@ tr>td {
         box-shadow: -2px -2px 2px silver;
     }
 
-    #offersDiv hr {
-        height: 0;
-        margin: 2px 0;
-    }
-
     tr {
         line-height: 0;
     }
@@ -3778,7 +4382,7 @@ tr>td {
     }
 
     tr>td {
-        width: 10%;
+        width: 12%;
         padding: 0;
     }
 
@@ -3821,137 +4425,8 @@ tr>td {
 
 }
 
-/* Galaxy Fold */
-@media screen and (max-width:890px) and (max-height:350px) {
-    nav {
-        height: 15vh;
-        border-bottom: 2px solid teal;
-    }
-
-    #logoSvg {
-        top: 7px;
-        height: 70px;
-    }
-
-    #ship {
-        left: 38px;
-        top: -51px;
-        width: 300px;
-        height: 150px;
-    }
-
-    #title {
-        width: 70.5%;
-        border-radius: 3px;
-        margin: 22px 2.3% 0px auto;
-    }
-
-    main {
-        margin: 0 auto;
-    }
-
-    #typeDiv {
-        order: 1;
-        margin: 0;
-        width: 23%;
-        padding: 0px;
-        height: 50vh;
-        border-radius: 3px;
-    }
-
-    #titleDiv {
-        font-size: 0.5rem;
-        margin: 0px;
-    }
-    
-    #speechTitle {
-        font-size: 0.7rem;
-        margin: 5px auto 0px;
-    }
-
-    .type {
-        font-size: .5rem;
-        padding: 5px;
-    }
-
-    .type p, .type ol {
-        font-size: .4rem;
-    }
-
-    #switchBtn {
-        height: 20px;
-    }
-
-    #rewind, #forward {
-        width: 48%;
-        background: black;
-        color: white;
-        border: 1px solid teal;
-        font-size: 1rem;
-        height: 20px;
-    }
-
-    #carousel {
-        height: 50vh;
-        width: 47%;
-        border-radius: 3px;
-    }
-
-    #class35, #class65, #class300, #class550, #class1000 {
-        border-radius: 3px;
-        /* margin: 0 -2px 5px; */
-        box-shadow: -1px -1px 1px silver;
-        font-size: 35%;
-        height: 10%;
-    }
-
-    input[type="radio"] {
-        height: 2vh;
-        width: 29%;
-    }
-
-    #offersDiv hr {
-        height: 0;
-    }
-
-    tr>th {
-        font-size: 45%;
-        line-height: .6;
-    }
-
-    tr>td {
-        width: 5%;
-        padding: 0;
-    }
-
-    #offersDiv {
-        height: 41.5vh;
-        border-radius: 3px;
-    }
-
-    #scheduleBtnDiv {
-        margin-top: 2px;
-    }
-
-    #scheduleBtn {
-        width: 90%;
-        font-size: 52%;
-        border-radius: 3px;
-        box-shadow: -1px -1px 1px silver;
-    }
-
-    .modal-content {
-        /* top: 5vh; */
-    }
-
-    .close {
-        right: 5%;
-        top: 0vh;
-    }
-}
-
-/* Half Surface */
-@media screen and (max-width:650px) and (max-height:700px) {
+/* Half Surface Pro 7*/
+@media screen and (max-width:610px) and (max-height:710px) {
 
     #logoSvg {
         left: -55px;
@@ -3967,6 +4442,14 @@ tr>td {
         font-size: 60%;
         left: 53px;
         top: -26px;
+    }
+
+    #links a, #links button {
+        margin: 0px 12px 0 0;
+        font-size: 0.7rem;
+        border-bottom: 2px solid #7d2626;
+        border-radius: 2px;
+        filter: brightness(2);
     }
 
     #title {
@@ -4009,8 +4492,24 @@ tr>td {
     }
 
     #typeDiv {
-        height: 26vh;
+        height: 27vh;
         border-radius: 3px;
+        order: 2;
+    }
+
+    .type {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0 5px;
+    }
+
+    .type h4 {
+        font-size: 1rem;
+        margin: 0px 0px 5px;
+    }
+
+    .type p, .type ol {
+        font-size: .5rem;
     }
 
     #speechTitle {
@@ -4252,8 +4751,7 @@ tr>td {
     }
 
     #typeDiv {
-        order: 3;
-        order: 3;
+        order: 2;
         width: 45%;
         padding: 3px;
         height: 54.3%;
@@ -4286,14 +4784,19 @@ tr>td {
         order: 2;
         border-radius: 3px;
         border: 1px solid teal;
-        height: 50%;
+        height: 39vh;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.7rem;
+        margin: 5px auto 0;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
         font-size: 60%;
         font-weight: 600;
         width: 17%;
-        height: 6%;
+        height: 10%;
         border-radius: 3px;
         margin: 5px 0 0;
     }
@@ -4334,6 +4837,7 @@ tr>td {
         width: 95%;
         padding: 1px;
         border-radius: 3px;
+        height: 2rem;
     }
 
     .modal-content {
@@ -4571,15 +5075,14 @@ tr>td {
         color: #0ca1a1;
         margin: 5px 0 10px 0;
         border-radius: 3px;
-        font-size: .6rem;
+        font-size: .65rem;
         font-weight: 600;
-        border: 1px solid;
+        border: none;
+        border-bottom: 3px solid red;
         padding: 4px;
         filter: brightness(1.3);
-        box-shadow: -2px -2px 1px #7d7b7b;
+        box-shadow: none;
     }
-
-    #links a:hover, #links button:hover {}
 
     #syllabus {
         width: 95%;
@@ -4644,6 +5147,11 @@ tr>td {
         border-radius: 3px;
         border: 2px solid silver;
         height: fit-content;
+    }
+
+    #offersDiv h2 {
+        font-size: 2rem;
+        margin: 10px auto 0px;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -4733,6 +5241,22 @@ tr>td {
 /* iPhone 12 Pro */
 @media screen and (max-width:400px) and (max-height:850px) {
 
+    #links a, #links button {
+        position: relative;
+        z-index: 3;
+        background: black;
+        color: #0ca1a1;
+        margin: 5px 0 10px 0;
+        border-radius: 3px;
+        font-size: 0.55rem;
+        font-weight: 600;
+        border: none;
+        border-bottom: 3px solid red;
+        padding: 4px;
+        filter: brightness(1.3);
+        box-shadow: none;
+    }
+
     main {
         height: 100vh;
     }
@@ -4787,14 +5311,14 @@ tr>td {
         background: black;
         color: #0c5663;
         margin: 0px -10px;
-        font-size: .53rem;
+        font-size: .55rem;
         padding: 2px 3px;
         filter: brightness(2.5);
-        border-radius: 3px;
+        border: none;
+        border-bottom: 2px solid red;
+        box-shadow: none;
         font-weight: 900;
     }
-
-    #links a:hover, #links button:hover {}
 
     main {
         margin: 0px auto;
