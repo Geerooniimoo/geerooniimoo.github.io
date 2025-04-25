@@ -1163,7 +1163,6 @@ tr>td {
         80% {
             opacity: .2;
         }
-
     }
 
     #asteroid {
@@ -1286,27 +1285,35 @@ tr>td {
         margin-bottom: 10px;
     }
 
+    .type {
+        padding: 0px;
+        font-size: 1.2rem;
+    }
+
     .type h4 {
         margin-top: 0;
     }
 
-    .type p {
-        font-size: .9rem;
-    }
-
-    .type ol {
+    .type p, .type ol {
         font-size: .9rem;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
-        width: 15%;
-        height: 6%;
-        font-size: 70%;
+        width: 16%;
+        height: 10%;
+        font-size: 0.8rem;
         border-radius: 3px;
+        display: flex;
+        justify-content: center;
     }
 
     #offersDiv {
-        height: 52vh;
+        height: 48.7vh;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.8rem;
+        margin: 10px auto 0;
     }
 
     #offersDiv hr {
@@ -1871,11 +1878,24 @@ tr>td {
 /* iPad Mini */
 @media screen and (max-width:1024px) and (max-height:770px) {
 
+    nav {
+        height: 10vh;
+        border-bottom: 5px solid teal;
+    }
+
     #logoSvg {
-        top: -45px;
+        top: -5px;
         left: -150px;
         height: 170px;
         width: 430px;
+    }
+
+    #ship {
+        top: -66px;
+        left: 35px;
+        width: 450px;
+        height: 225px;
+        font-size: 1.4rem;
     }
 
     #links a, #links button {
@@ -1907,7 +1927,7 @@ tr>td {
     }
 
     #typeDiv {
-        height: 50.5vh;
+        height: 48vh;
         width: 25%;
         order: 1;
     }
@@ -1940,14 +1960,14 @@ tr>td {
         border: 1px solid teal;
         border-radius: 5px;
         width: 40%;
-        height: 52vh;
+        height: 49vh;
     }
 
     #offersDiv {
         order: 2;
         width: 25%;
         padding: 15px;
-        height: 48.5vh;
+        height: 45vh;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -1970,6 +1990,17 @@ tr>td {
 
     input[type="radio"] {
         height: 12px;
+    }
+
+    #scheduleBtn {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid silver;
+        justify-content: space-evenly;
+        box-shadow: -3px -3px 1px silver;
+        font-size: 1.3rem;
+        font-weight: 900;
+        height: 2.5rem;
     }
 
     .modal-content {
@@ -2066,6 +2097,11 @@ tr>td {
         height: 51.5vh;
     }
 
+    #offersDiv h2 {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
     #offersDiv hr {
         width: 100%;
         height: 2px;
@@ -2095,7 +2131,7 @@ tr>td {
     }
 
     #scheduleBtn {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
         margin-top: 5px;
@@ -2501,7 +2537,7 @@ tr>td {
     }
 
     #typeDiv {
-        order: 3;
+        order: 2;
         width: 45%;
         margin-top: 0;
         padding-bottom: 70px;
@@ -2709,8 +2745,10 @@ tr>td {
     #scheduleBtn {
         border-radius: 3px;
         box-shadow: -2px -2px 1px silver;
-        line-height: 1;
-        font-size: 0.7rem;
+        line-height: 0;
+        font-size: 1rem;
+        height: 1.5rem;
+        margin-top: 2px;
     }
 
     .modal-content {
@@ -3044,7 +3082,7 @@ tr>td {
     }
 
     #scheduleBtn {
-        height: 3%;
+        height: 1.5rem;
         font-size: 75%;
         border-radius: 3px;
     }
@@ -3125,6 +3163,20 @@ tr>td {
         width: 70%;
         padding: 15vh 15%;
         border-radius: 5px;
+    }
+
+}
+
+/* Asus ZenBook Fold */
+@media Screen and (max-width:860px) and (max-height:1285px) {
+
+    #typeDiv {
+        order: 2;
+        width: 45%;
+        margin-top: 0;
+        padding-bottom: 70px;
+        height: 31.8vh;
+        border-radius: 3px;
     }
 
 }
@@ -3217,7 +3269,7 @@ tr>td {
     }
 
     #typeDiv {
-        order: 3;
+        order: 2;
         width: 45%;
         padding-bottom: 70px;
         height: 26.6vh;
@@ -3320,7 +3372,22 @@ tr>td {
     #offersDiv {
         order: 3;
         width: 25%;
-        height: 49vh;
+        height: 55vh;
+    }
+
+    #offersDiv h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    #class35, #class65, #class300, #class550, #class1000 {
+        font-size: 0.5rem;
+        display: flex;
+        justify-content: center;
+        font-weight: 900;
+        width: 16%;
+        height: 12%;
+        border-radius: 5px;
     }
 
     tr th {
@@ -3422,6 +3489,7 @@ tr>td {
 
     #typeDiv {
         height: 30.5vh;
+        order: 2;
     }
 
     #speechTitle {
@@ -3431,7 +3499,6 @@ tr>td {
         margin: 5px;
         font-size: 150%;
     }
-
 
     .type {
         color: white;
@@ -3921,6 +3988,7 @@ tr>td {
         top: -51px;
         width: 300px;
         height: 150px;
+        font-size: .9rem;
     }
 
     #title {
@@ -3993,8 +4061,14 @@ tr>td {
         width: 29%;
     }
 
+    #offersDiv {
+        height: 47vh;
+        border-radius: 3px;
+    }
+
     #offersDiv hr {
         height: 0;
+        margin: 0;
     }
 
     tr>th {
@@ -4007,13 +4081,8 @@ tr>td {
         padding: 0;
     }
 
-    #offersDiv {
-        height: 41.5vh;
-        border-radius: 3px;
-    }
-
     #scheduleBtnDiv {
-        margin-top: 2px;
+        margin-top: 0px;
     }
 
     #scheduleBtn {
@@ -4682,8 +4751,7 @@ tr>td {
     }
 
     #typeDiv {
-        order: 3;
-        order: 3;
+        order: 2;
         width: 45%;
         padding: 3px;
         height: 54.3%;
