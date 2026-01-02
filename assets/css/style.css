@@ -115,6 +115,10 @@ nav {
     animation: speed 10s 10s infinite ease-in-out;
 }
 
+#offersDiv h2 {
+    font-size: 2.2rem;
+    margin: 0;
+}
 
 @keyframes speed {
     20% {
@@ -688,7 +692,7 @@ tr>td {
     }
 
     #offersDiv h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #class35, #class65, #class300, #class550, #class1000 {
@@ -942,7 +946,7 @@ tr>td {
     }
 
     #offersDiv h2 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         margin: 0;
     }
 
@@ -2098,7 +2102,7 @@ tr>td {
     }
 
     #offersDiv h2 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         margin: 0;
     }
 
@@ -3774,7 +3778,7 @@ tr>td {
     }
 
     #offersDiv h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 0;
     }
 
